@@ -232,8 +232,21 @@ export default function RedLightTherapy() {
             </div>
           </div>
 
+          {/* Medical Disclaimer */}
+          <div className="mt-12 p-6 bg-[#E8DDD4]/50 border border-[#D4C5B5]/30 text-sm text-[#9A9086]">
+            <p className="font-medium text-[#3D3935] mb-2">Disclaimer</p>
+            <p className="leading-relaxed">
+              The information provided on this website is for general informational and educational purposes only 
+              and is not intended as, nor should it be considered, medical advice. I am not a doctor or healthcare 
+              professional. Always consult with a qualified healthcare provider or dermatologist before starting 
+              any new treatment. Individual results may vary. Never disregard professional medical advice or delay 
+              seeking it because of something you have read on this website. Use of any information provided is 
+              solely at your own risk.
+            </p>
+          </div>
+
           {/* Author */}
-          <div className="mt-12 pt-8 border-t border-[#D4C5B5]/30 flex items-center gap-4">
+          <div className="mt-8 pt-8 border-t border-[#D4C5B5]/30 flex items-center gap-4">
             <Image
               src="/janine.jpg"
               alt="Janine"

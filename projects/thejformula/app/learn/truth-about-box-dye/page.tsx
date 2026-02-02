@@ -24,7 +24,7 @@ export default function BoxDyeTruth() {
           {/* Hero Image */}
           <div className="relative aspect-[16/9] mb-12 overflow-hidden">
             <Image
-              src="/article-boxdye.jpg"
+              src="/work-dimensional-brunette.jpg"
               alt="Hair coloring products"
               fill
               className="object-cover"

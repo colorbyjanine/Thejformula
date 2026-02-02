@@ -6,6 +6,7 @@ const posts = [
     title: "Why Your Toner Fades So Fast",
     excerpt: "The science behind toner longevity and what you can do about it. Spoiler: it's not always your stylist's fault.",
     category: "Color Science",
+    categoryDisplay: "Color Talk",
     readTime: "8 min read",
   },
   {
@@ -13,6 +14,7 @@ const posts = [
     title: "The Truth About Box Dye",
     excerpt: "What actually happens when you use drugstore color — no judgment, just facts you deserve to know.",
     category: "Education",
+    categoryDisplay: "Hair Talk",
     readTime: "10 min read",
   },
   {
@@ -20,6 +22,7 @@ const posts = [
     title: "How Medications Can Mess With Your Hair Color",
     excerpt: "That new prescription might be affecting more than you realize — including how your hair holds color.",
     category: "Education",
+    categoryDisplay: "Medications",
     readTime: "7 min read",
   },
   {
@@ -27,6 +30,7 @@ const posts = [
     title: "Top 10 Vitamins & Supplements for Hair Growth",
     excerpt: "What actually works, what's overhyped, and what I personally take for healthy hair.",
     category: "Hair Health",
+    categoryDisplay: "Wellness",
     readTime: "9 min read",
   },
   {
@@ -34,6 +38,7 @@ const posts = [
     title: "Red Light Therapy for Hair Growth: What the Studies Say",
     excerpt: "Is this the future of hair restoration or just another wellness trend? Let's look at the science.",
     category: "Hair Health",
+    categoryDisplay: "Wellness",
     readTime: "8 min read",
   },
 ];
@@ -86,9 +91,11 @@ export default function Learn() {
             {posts.map((post) => (
               <article key={post.slug} className="group">
                 <Link href={`/learn/${post.slug}`}>
-                  {/* Image placeholder */}
-                  <div className="aspect-[4/3] bg-[#E8DDD4] mb-6 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-[#D4C5B5]/50 to-[#E8DDD4] group-hover:scale-105 transition-transform duration-500" />
+                  {/* Card with cursive category */}
+                  <div className="aspect-[4/3] bg-gradient-to-br from-[#E8DDD4] to-[#D4C5B5]/70 mb-6 overflow-hidden relative flex items-center justify-center group-hover:from-[#D4C5B5]/70 group-hover:to-[#E8DDD4] transition-all duration-500">
+                    <span className="text-4xl md:text-5xl font-[family-name:var(--font-cormorant)] italic text-[#3D3935]/40 group-hover:text-[#3D3935]/60 transition-colors">
+                      {post.categoryDisplay}
+                    </span>
                   </div>
                   
                   <div className="flex items-center gap-4 mb-3">
