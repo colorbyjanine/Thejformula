@@ -9,10 +9,10 @@ export default function Navigation() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/learn", label: "Learn" },
     { href: "/formulas", label: "Formulas" },
-    { href: "/style", label: "Style" },
     { href: "/shop", label: "Shop" },
     { href: "/book", label: "Book" },
   ];

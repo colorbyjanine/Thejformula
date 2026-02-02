@@ -5,48 +5,48 @@ const colorTheoryFormulas = [
     name: "Creamy Vanilla Platinum",
     description: "Cool-leaning cream blonde with body that never reads grey",
     melt: "7NB + 8VB (equal parts)",
-    ends: "10WG + 10GI + 10AA (equal parts)",
-    explanation: "The melt uses NB's blue undertone to intercept orange at level 7 while VB introduces violet-blue higher up to fight yellow. At the ends, 10WG pushes vanilla warmth, 10GI adds champagne beige, and 10AA's green base pulls back excess warmth.",
+    ends: "10WG + 10GI + Clear (equal parts)",
+    explanation: "The melt uses NB's red-violet undertone to add warmth and depth at level 7 while VB introduces blue-green to fight orange. At the ends, 10WG pushes vanilla warmth with its yellow-orange base, 10GI's blue-gold iridescence adds champagne dimension, and Clear sheers it out to prevent over-deposit.",
     tags: ["Blonde", "Cool Tones", "Level 10"],
   },
   {
     name: "Toasted Honey Bronde",
     description: "Multi-tonal warm blonde that shifts in different light",
     melt: "6N + 7NB (2:1)",
-    ends: "9WG + 9G + 9GI (equal parts)",
-    explanation: "6N is the neutral anchor while 7NB keeps the shadow zone from going coppery. Three different warm blonde expressions layer at the ends — 9WG reads buttery, 9G brings sunlight, 9GI prevents brassiness.",
+    ends: "9WG + 9GI + 9P (equal parts)",
+    explanation: "6N is the neutral anchor with its blue undertone. 7NB adds red-violet warmth to the shadow zone. Three different expressions layer at the ends — 9WG reads buttery (yellow-orange), 9GI brings champagne beige (blue-gold iridescence), 9P's gold-violet balance adds luminosity.",
     tags: ["Bronde", "Warm Tones", "Dimensional"],
   },
   {
     name: "Smoky Mushroom Melt",
     description: "Moody, editorial cool with alive dimension",
-    melt: "5N + 6VB (equal parts)",
-    ends: "8T + 8VB + 8GI (2:1:½)",
-    explanation: "5N gives true mid-depth neutral. The ends use 8T titanium for steel-silver smoke, 8VB ensures no warmth breaks through, and the small hit of 8GI keeps the mushroom alive and three-dimensional.",
+    melt: "5N + 6M (equal parts)",
+    ends: "8T + 8NA + 8GI (2:1:½)",
+    explanation: "5N gives true mid-depth neutral with its blue base. 6M's blue-mahogany undertone creates earthy, muted tones without going ashy. The ends use 8T titanium (silver-blue, the coolest in the line) for steel-silver smoke, 8NA's blue-violet cancels brass, and 8GI keeps the mushroom alive with dimensional blue-gold iridescence.",
     tags: ["Brunette", "Cool Tones", "Editorial"],
   },
   {
     name: "Iced Espresso Brunette",
     description: "Cool, expensive brunette — cold brew, not hot chocolate",
     melt: "4N + 5NB (equal parts)",
-    ends: "7AA + 7VB + 7NB (2:1:1)",
-    explanation: "4N builds rich dark-chocolate base. 7AA leads because its green base cancels warm copper-red tones at level 7. 7VB handles orange, 7NB balances so you don't skew too green or violet.",
+    ends: "7NA + 7M + 7NB (2:1:1)",
+    explanation: "4N builds rich dark-chocolate base with its blue undertone. 7NA leads with blue-violet to cancel both orange and yellow. 7M's blue-mahogany neutralizes red without going ashy, 7NB's red-violet balances for natural-looking depth.",
     tags: ["Brunette", "Cool Tones", "Rich"],
   },
   {
     name: "Rose Gold Champagne",
     description: "Blush champagne that reads 'Is that her natural color?'",
-    melt: "6N + 7RB (2:1)",
+    melt: "6NB + 7RB (2:1)",
     ends: "9RB + 9P + 9GI (equal parts)",
-    explanation: "7RB weaves in red-brown for warm mauve shadow. At the ends, 9RB delivers soft rose-copper, 9P pastelizes the rose, 9GI transforms pink into champagne territory.",
+    explanation: "NB's red-violet creates warm foundation. 7RB weaves in red-brown for warm mauve shadow. At the ends, 9RB delivers soft rose-copper (red-brown undertone), 9P's gold-violet creates luminous cool warmth, 9GI's blue-gold transforms it into champagne territory.",
     tags: ["Rose Gold", "Fashion Color", "Warm Tones"],
   },
   {
     name: "Sun-Drenched Bronze",
     description: "Liquid bronze that catches light like metal",
     melt: "5NB + 6CB (equal parts)",
-    ends: "8C + 8G + 8WG (2:1:1)",
-    explanation: "Cool base against warm ends creates powerful dimension. 8C deposits liquid bronze, 8G pushes toward honey, 8WG softens and butters the whole thing.",
+    ends: "8C + 8WG + 8GG (2:1:1)",
+    explanation: "NB's red-violet undertone creates dimension against warm ends. 8C (pure copper, no background) deposits vibrant orange. 8WG's yellow-orange pushes toward honey-butter. 8GG's pure gold on brown-to-tan background softens the whole thing into wearable bronze.",
     tags: ["Bronze", "Warm Tones", "Dimensional"],
   },
 ];
@@ -56,26 +56,26 @@ const signatureFormulas = [
     name: "Gunmetal Ash",
     description: "Deliberately smoked shadow root melting into clean, airy blonde",
     root: "6N + 6T",
-    ends: "8VB + 9N",
-    explanation: "Titanium at level 6 deposits smoky, metallic coolness that reads deliberately placed. Creates graphite-to-platinum gradient that looks intentional and modern.",
+    ends: "8NA + 9GI",
+    explanation: "Titanium at level 6 is silver-blue — the coolest series in the entire line. Creates graphite-to-platinum gradient. 8NA's blue-violet cancels brass at the transition. 9GI's blue-gold iridescence keeps ends luminous, not flat.",
     tags: ["Signature", "Ash", "Editorial"],
     isSignature: true,
   },
   {
     name: "Golden Hour Velvet",
     description: "Rich warm blonde with violet sophistication underneath",
-    base: "7NB + 7G",
+    base: "7NB + 7GG",
     ends: "8VG + 9GI + 8WG",
-    explanation: "8VG is the star — violet-gold carries warmth but violet's refinement. This separates it from just another warm blonde. The VG creates dimensional, three-dimensional warmth.",
+    explanation: "NB's red-violet undertone creates depth. GG is pure gold on brown-tan background. 8VG is the star — violet-gold with no background creates multi-dimensional warmth that separates it from basic brass. GI's blue-gold keeps it champagne.",
     tags: ["Signature", "Warm Blonde", "Dimensional"],
     isSignature: true,
   },
   {
     name: "Violet Frost",
     description: "Editorial mahogany shadow dissolving into lavender-platinum",
-    base: "7M + 9N",
+    base: "7M + 8NA",
     ends: "10P + 10T + 10NB",
-    explanation: "7M creates plummy, wine-stained shadow. The ends are pure ice: P sheers the deposit, T adds steel, NB keeps yellow eliminated. The contrast is what makes this editorial.",
+    explanation: "7M's blue-mahogany creates plummy, wine-stained shadow. 8NA bridges with blue-violet. The ends are pure ice: P's gold-violet sheers the deposit, T's silver-blue adds steel, NB's red-violet keeps it from going grey. The contrast is editorial.",
     tags: ["Signature", "Fashion Color", "Editorial"],
     isSignature: true,
   },
@@ -84,7 +84,7 @@ const signatureFormulas = [
     description: "Your-hair-but-platinum — wearable, not severe",
     base: "7NB + 6N",
     ends: "10NB + 9NW + 10P",
-    explanation: "The secret is 9NW: that whisper of natural warmth makes platinum wearable versus severe. Pure cool at level 10 can read grey; NW softens without warming.",
+    explanation: "The secret is 9NW: Natural Warm has gold undertone on brown-tan background — that whisper of warmth makes platinum wearable versus severe. Pure cool at level 10 can read grey; NW softens without going brassy. NB's red-violet keeps yellow eliminated.",
     tags: ["Signature", "Platinum", "Wearable"],
     isSignature: true,
   },
@@ -93,7 +93,7 @@ const signatureFormulas = [
     description: "Brunette sorcery — single-level dimension that makes brown look expensive",
     base: "5N + 5NB",
     ends: "5NW + 6NB + 6GI",
-    explanation: "This is how you make brown hair look expensive. Tonal shift without level change — light bouncing between cool and warm within a narrow band creates internal reflectivity.",
+    explanation: "This is how you make brown hair look expensive. N's blue undertone plays against NB's red-violet. NW's gold adds warmth, GI's blue-gold iridescence adds reflectivity. Tonal shift without level change — light bouncing between cool and warm creates internal dimension.",
     tags: ["Signature", "Brunette", "Luxury"],
     isSignature: true,
   },
@@ -102,7 +102,7 @@ const signatureFormulas = [
     description: "Fashion-forward lavender-platinum without fully committing",
     base: "9M + 7N",
     ends: "10VV + 10N + 10P",
-    explanation: "10VV is double violet — true lavender-lilac at level 10. 10N grounds it, 10P sheers it out. For the client who wants purple-platinum space without full fashion color commitment.",
+    explanation: "10VV is double violet with NO background — pure violet pigment for true lavender-lilac at level 10. Heavy-hitting yellow cancellation. 10N's blue undertone grounds it, 10P's gold-violet sheers it out. For the client who wants purple-platinum without full fashion commitment.",
     tags: ["Signature", "Fashion Color", "Violet"],
     isSignature: true,
   },
@@ -127,6 +127,46 @@ export default function Formulas() {
           <div className="inline-block bg-[#E8DDD4] px-6 py-3">
             <p className="text-sm text-[#3D3935]">
               🎨 Curated by Janine • Shades EQ Formulas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Color Theory Basics */}
+      <section className="section bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
+              Understanding the Three Backgrounds
+            </h2>
+            <p className="text-[#9A9086]">
+              Every Shades EQ shade has a background foundation. Understanding this is key to formulating.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-[#2c3e50] to-[#4a6a8a] text-white p-6 rounded-lg">
+              <h3 className="text-xl font-[family-name:var(--font-cormorant)] mb-3">⬛ Black to Gray</h3>
+              <p className="text-sm opacity-90 mb-3">Cool foundation that diminishes warmth. Cancels orange and yellow.</p>
+              <p className="text-xs opacity-70">Series: T, N, NA, B, ABn, V, VB, M, GI, Gn, G, AG</p>
+            </div>
+            <div className="bg-gradient-to-br from-[#8B6914] to-[#c49b47] text-white p-6 rounded-lg">
+              <h3 className="text-xl font-[family-name:var(--font-cormorant)] mb-3">🟫 Brown to Tan</h3>
+              <p className="text-sm opacity-90 mb-3">Balanced, natural foundation. Great for gray coverage. Enhances warmth naturally.</p>
+              <p className="text-xs opacity-70">Series: NB, NW, WG, GG, GN, GB, GRo, P, NCh, CB, RB</p>
+            </div>
+            <div className="bg-gradient-to-br from-[#e74c8b] via-[#f39c12] to-[#9b59b6] text-white p-6 rounded-lg">
+              <h3 className="text-xl font-[family-name:var(--font-cormorant)] mb-3">🌈 No Background</h3>
+              <p className="text-sm opacity-90 mb-3">Most vibrant, true-to-tone results. Pure reflect with no dilution.</p>
+              <p className="text-xs opacity-70">Series: AA, C, CC, CR, R, RR, RV, VV, VG, VRo</p>
+            </div>
+          </div>
+
+          <div className="bg-[#eef6ff] border-l-4 border-[#3498db] p-6 rounded-r-lg">
+            <p className="text-[#2471a3] font-medium mb-2">💡 Key Principle</p>
+            <p className="text-[#555] text-sm">
+              To neutralize unwanted tone, use its opposite on the color wheel: 
+              <strong> Violet cancels Yellow</strong>, <strong>Blue cancels Orange</strong>, <strong>Green cancels Red</strong>.
             </p>
           </div>
         </div>
@@ -236,9 +276,9 @@ export default function Formulas() {
         </div>
       </section>
 
-      {/* Color Wheel Reference */}
+      {/* Accurate Tone Reference */}
       <section className="section bg-[#FAF7F2]">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
               Shades EQ Tone Reference
@@ -248,27 +288,119 @@ export default function Formulas() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              { code: "N", name: "Neutral", desc: "Clean, balanced depth" },
-              { code: "NB", name: "Neutral Blue", desc: "Neutralizes orange" },
-              { code: "NW", name: "Natural Warm", desc: "Soft, sun-kissed warmth" },
-              { code: "G", name: "Gold", desc: "Pure gold, direct sunlight" },
-              { code: "GI", name: "Gold Iridescent", desc: "Champagne beige" },
-              { code: "WG", name: "Warm Gold", desc: "Buttery, rich gold" },
-              { code: "VG", name: "Violet Gold", desc: "Warm surface, cool underneath" },
-              { code: "VB", name: "Violet Blue", desc: "Cancels orange + yellow" },
-              { code: "V", name: "Violet", desc: "Opposes yellow" },
-              { code: "T", name: "Titanium", desc: "Steel-silver metallic" },
-              { code: "AA", name: "Double Ash", desc: "Green base, opposes red" },
-              { code: "RB", name: "Red Brown", desc: "Cinnamon, rose, mauve" },
-            ].map((tone) => (
-              <div key={tone.code} className="bg-white p-4 text-center">
-                <span className="text-2xl font-mono text-[#3D3935] block mb-1">{tone.code}</span>
-                <span className="text-sm font-medium text-[#3D3935] block">{tone.name}</span>
-                <span className="text-xs text-[#9A9086]">{tone.desc}</span>
+          {/* Cool Series */}
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-[#2c3e50] mb-4 border-l-4 border-[#3498db] pl-3">
+              ❄️ Cool Series — Black to Gray Background
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {[
+                { code: "T", name: "Titanium", undertone: "Silver / Blue", desc: "Coolest in the line. Icy silver." },
+                { code: "N", name: "Natural", undertone: "Blue", desc: "Cool neutral. Tones yellow." },
+                { code: "NA", name: "Natural Ash", undertone: "Blue / Violet", desc: "Cancels orange AND yellow." },
+                { code: "V", name: "Violet", undertone: "Blue / Violet", desc: "Cancels yellow. Watch for green on orange." },
+                { code: "VB", name: "Violet Blue", undertone: "Blue / Green", desc: "Cool blonde. Can go green on yellow." },
+                { code: "M", name: "Matte", undertone: "Blue / Mahogany", desc: "Neutralizes red without ash." },
+                { code: "GI", name: "Gold Iridescent", undertone: "Blue / Gold", desc: "Champagne beige. Blonde favorite." },
+                { code: "G", name: "Gold", undertone: "Green / Yellow", desc: "GREEN-gold, not warm gold!" },
+              ].map((tone) => (
+                <div key={tone.code} className="bg-white p-4 border-l-2 border-[#2c3e50]">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg font-mono font-bold text-[#2c3e50]">{tone.code}</span>
+                    <span className="text-xs text-[#9A9086]">{tone.name}</span>
+                  </div>
+                  <p className="text-xs font-medium text-[#3498db] mb-1">{tone.undertone}</p>
+                  <p className="text-xs text-[#9A9086]">{tone.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Warm Series */}
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-[#8B6914] mb-4 border-l-4 border-[#e67e22] pl-3">
+              🔥 Neutral & Warm Series — Brown to Tan Background
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {[
+                { code: "NB", name: "Neutral Brown", undertone: "Red / Violet", desc: "TRUE natural. Must use for gray coverage." },
+                { code: "NW", name: "Natural Warm", undertone: "Gold", desc: "Warmth with restraint." },
+                { code: "WG", name: "Warm Gold", undertone: "Yellow / Orange", desc: "Perfect for tinting back to brown." },
+                { code: "GG", name: "Gold Gold", undertone: "Gold (Pure)", desc: "Intense warmth. Double gold." },
+                { code: "P", name: "Pearl", undertone: "Gold / Violet", desc: "Luminous. Never goes flat." },
+                { code: "CB", name: "Copper Brown", undertone: "Red / Orange", desc: "Rustic red-brown." },
+                { code: "RB", name: "Red Brown", undertone: "Red / Brown", desc: "Rose, cinnamon, mauve." },
+                { code: "GRo", name: "Gold Rosé", undertone: "Gold / Rosé", desc: "Rose-gold blonde." },
+              ].map((tone) => (
+                <div key={tone.code} className="bg-white p-4 border-l-2 border-[#8B6914]">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg font-mono font-bold text-[#8B6914]">{tone.code}</span>
+                    <span className="text-xs text-[#9A9086]">{tone.name}</span>
+                  </div>
+                  <p className="text-xs font-medium text-[#e67e22] mb-1">{tone.undertone}</p>
+                  <p className="text-xs text-[#9A9086]">{tone.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Vibrant Series */}
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-[#c0392b] mb-4 border-l-4 border-[#e74c3c] pl-3">
+              💥 Vibrant Series — No Background
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {[
+                { code: "AA", name: "Double Copper", undertone: "Orange / Orange", desc: "Vibrant copper. NOT ash!" },
+                { code: "C", name: "Copper", undertone: "Orange", desc: "Pure copper. Bright." },
+                { code: "CC", name: "Copper Copper", undertone: "Orange / Red", desc: "Intensely pigmented copper-red." },
+                { code: "R", name: "Red", undertone: "Red", desc: "Pure red. Very vibrant." },
+                { code: "RV", name: "Red Violet", undertone: "Red / Violet", desc: "Plum and berry tones." },
+                { code: "VV", name: "Violet Violet", undertone: "Violet", desc: "Heavy-hitting violet. Lavender toner." },
+                { code: "VG", name: "Violet Gold", undertone: "Violet / Gold", desc: "Multi-dimensional beige." },
+                { code: "VRo", name: "Violet Rosé", undertone: "Violet / Rosé", desc: "Soft rosy-violet." },
+              ].map((tone) => (
+                <div key={tone.code} className="bg-white p-4 border-l-2 border-[#c0392b]">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg font-mono font-bold text-[#c0392b]">{tone.code}</span>
+                    <span className="text-xs text-[#9A9086]">{tone.name}</span>
+                  </div>
+                  <p className="text-xs font-medium text-[#e74c3c] mb-1">{tone.undertone}</p>
+                  <p className="text-xs text-[#9A9086]">{tone.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Cancellation Reference */}
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-lg font-medium text-[#3D3935] mb-4">🗺️ Quick Cancellation Reference</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-[#7b2d8e]"></span>
+                <span><strong>Violet</strong> cancels <strong>Yellow</strong></span>
               </div>
-            ))}
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-[#4a69bd]"></span>
+                <span><strong>Blue</strong> cancels <strong>Orange</strong></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-[#27ae60]"></span>
+                <span><strong>Green</strong> cancels <strong>Red</strong></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-gradient-to-r from-[#4a69bd] to-[#7b2d8e]"></span>
+                <span><strong>Blue/Violet</strong> cancels <strong>Yellow-Orange</strong></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-gradient-to-r from-[#2e86c1] to-[#27ae60]"></span>
+                <span><strong>Blue/Green</strong> cancels <strong>Red-Orange</strong></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-gradient-to-r from-[#7b2d8e] to-[#e63946]"></span>
+                <span><strong>Red/Violet</strong> cancels <strong>Yellow-Green</strong></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

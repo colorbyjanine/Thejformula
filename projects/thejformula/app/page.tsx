@@ -209,6 +209,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Shop My Favorites */}
+      <section className="section bg-[#FAF7F2]">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-[#E8DDD4] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="text-center md:text-left">
+                <p className="text-sm tracking-[0.3em] uppercase text-[#9A9086] mb-2">
+                  Curated by Janine
+                </p>
+                <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-3">
+                  Shop My Favorites
+                </h2>
+                <p className="text-[#9A9086] max-w-md">
+                  The products I actually use and love — from hair essentials to lifestyle picks. 
+                  No random sponsorships, just real recommendations.
+                </p>
+              </div>
+              <Link 
+                href="/shop" 
+                className="btn-primary whitespace-nowrap flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                Shop Now
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest from the Blog Preview */}
       <section className="section bg-[#FAF7F2]">
         <div className="container mx-auto">

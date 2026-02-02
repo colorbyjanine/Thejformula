@@ -31,6 +31,8 @@
 
 ### Vagaro (Booking)
 - URL: vagaro.com/volumeiiisalon
+- Username: Christine.sirope@gmail.com
+- Password: (pending)
 
 ---
 

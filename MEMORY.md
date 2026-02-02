@@ -69,11 +69,22 @@ Janine wants to build something huge to **help kids in need**. The J Formula bra
 
 ---
 
+## Amazon Affiliate
+- **Tag:** thejformula-20 (also janinefernand-20 - both are hers)
+- **30 day deadline** to make first sale or account closes
+- Shop page live at thejformula.com/shop with 25+ products
+
+## Brave Search API
+- Account: colorbyjanine@gmail.com
+- Plan: Free (2,000 requests/month)
+- Status: Subscribed, needs to generate API key and configure OpenClaw
+
 ## Future Plans
 - Twilio setup for virtual receptionist (SMS handling)
 - Instagram content strategy and management
-- Amazon storefront curation
-- Potentially: toner formulas as paid product/course
+- Amazon storefront curation (lifestyle products beyond hair)
+- Formula sales with paywall ($27/$67 tiers)
+- Full browser capability (needs browser deps installed)
 - Long-term: scale to fund her mission for kids in need
 
 ---
