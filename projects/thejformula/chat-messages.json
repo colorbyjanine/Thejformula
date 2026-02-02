@@ -1,0 +1,34 @@
+[
+  {
+    "id": "msg_1770011589924",
+    "message": "Hey can I make and appointment",
+    "userName": "Instagram Visitor",
+    "userContact": "Not provided yet",
+    "timestamp": "2026-02-02T05:53:09.002Z",
+    "replied": false
+  },
+  {
+    "id": "msg_1770011607660",
+    "message": "I need something next week",
+    "userName": "Instagram Visitor",
+    "userContact": "Not provided yet",
+    "timestamp": "2026-02-02T05:53:27.540Z",
+    "replied": false
+  },
+  {
+    "id": "msg_1770011628267",
+    "message": "[Contact Info] Name: Monica , Contact: 8184504430",
+    "userName": "Monica ",
+    "userContact": "8184504430",
+    "timestamp": "2026-02-02T05:53:48.146Z",
+    "replied": false
+  },
+  {
+    "id": "msg_1770011650459",
+    "message": "Did you find me a date?",
+    "userName": "Monica ",
+    "userContact": "8184504430",
+    "timestamp": "2026-02-02T05:54:10.349Z",
+    "replied": false
+  }
+]
