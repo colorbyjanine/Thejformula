@@ -22,6 +22,16 @@ export default function WhyTonerFades() {
             </p>
           </div>
 
+          {/* Hero Image */}
+          <div className="relative aspect-[16/9] mb-12 overflow-hidden">
+            <Image
+              src="/article-toner.jpg"
+              alt="Beautiful toned hair"
+              fill
+              className="object-cover"
+            />
+          </div>
+
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <div className="space-y-8 text-[#3D3935]/80">
