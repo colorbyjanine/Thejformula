@@ -41,22 +41,33 @@ export default function About() {
               </h1>
               <div className="space-y-6 text-[#3D3935]/80 leading-relaxed">
                 <p>
-                  For 15 years, I've been obsessed with one thing: helping people feel 
-                  absolutely incredible in their hair. What started as a passion has become 
-                  my life's work — understanding color at a molecular level, perfecting 
-                  formulas that actually work, and sharing that knowledge with everyone 
-                  who wants to learn.
+                  For 15 years, I've stood behind the chair transforming the way women see 
+                  themselves. Color and extensions — that's where my heart lives. There's an 
+                  artistry in formulating the perfect shade, in understanding tone and depth 
+                  and dimension the way a painter understands light. I'm obsessed with color 
+                  theory, with the chemistry of it, with that moment a client sees her reflection 
+                  and finally looks like the version of herself she's been carrying in her head.
                 </p>
                 <p>
-                  I'm also a wife, a mom of three, and currently pursuing law school 
-                  (because apparently I don't believe in free time). But no matter how 
-                  busy life gets, the chair is where I come alive.
+                  But I was never meant to stay in one lane. I'm drawn to anything that lets me 
+                  create — clothing, jewelry, interior design. Beauty, to me, is a lifestyle. 
+                  It's intentional. It's curated. And while building all of that, I quietly 
+                  worked toward something nobody saw coming: law school. No announcements, 
+                  no countdowns — just head down, hands busy, let the results do the talking.
                 </p>
                 <p>
-                  <strong>The J Formula</strong> is the culmination of everything I've learned. 
-                  It's for the client who wants to understand why their color does what it does. 
-                  It's for the stylist who's tired of guessing and ready for precision. 
-                  It's the formula — literally.
+                  I live by a simple philosophy: <strong>execution over excuses.</strong> Comfort 
+                  zones don't grow empires. I've opened three businesses, mastered my craft, and 
+                  earned my way into law school while raising three children — because I don't 
+                  believe success is a finish line. There's always a next level.
+                </p>
+                <p>
+                  Everything I pour myself into is a brick in something bigger. I'm building a 
+                  legacy for my children — not just financial, but a standard. I want them to 
+                  grow up watching their mother create, evolve, and refuse to stop reaching.
+                </p>
+                <p className="italic text-[#9A9086]">
+                  Stay disciplined. Stay hungry. Build in silence and let the results speak.
                 </p>
               </div>
             </div>
@@ -80,11 +91,11 @@ export default function About() {
                 <span className="text-4xl font-[family-name:var(--font-cormorant)] text-[#D4C5B5]">01</span>
                 <div>
                   <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2">
-                    Education Over Everything
+                    Execution Over Excuses
                   </h3>
                   <p className="text-[#3D3935]/70">
-                    When you understand your hair, you can care for it. I don't just do your color — 
-                    I teach you why and how.
+                    Talking about your dreams doesn't build them. You have to show up on 
+                    the days when motivation disappears and let discipline carry you through.
                   </p>
                 </div>
               </div>
@@ -93,11 +104,11 @@ export default function About() {
                 <span className="text-4xl font-[family-name:var(--font-cormorant)] text-[#D4C5B5]">02</span>
                 <div>
                   <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2">
-                    Formulas Are Science
+                    Mastery Is the Standard
                   </h3>
                   <p className="text-[#3D3935]/70">
-                    Beautiful color isn't an accident. It's chemistry, timing, and precision. 
-                    I've spent years perfecting these formulas so you don't have to guess.
+                    Beautiful color isn't an accident — it's chemistry, timing, and 15 years 
+                    of obsession. I've spent a decade perfecting formulas so you don't have to guess.
                   </p>
                 </div>
               </div>
@@ -106,11 +117,11 @@ export default function About() {
                 <span className="text-4xl font-[family-name:var(--font-cormorant)] text-[#D4C5B5]">03</span>
                 <div>
                   <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2">
-                    Community Elevates
+                    Build Your Own Table
                   </h3>
                   <p className="text-[#3D3935]/70">
-                    The best stylists share what they know. I'm not here to gatekeep — 
-                    I'm here to help every stylist level up.
+                    You don't wait for opportunities — you make them. You don't beg for a seat 
+                    at someone's table. You build your own.
                   </p>
                 </div>
               </div>
