@@ -295,14 +295,23 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { slug: "why-toner-fades", title: "Why Your Toner Fades Fast", desc: "The science behind toner longevity and what you can do about it.", icon: "⏱️", accent: "from-[#9CAF88] to-[#B5C4A8]" },
-              { slug: "truth-about-box-dye", title: "The Truth About Box Dye", desc: "What actually happens when you use drugstore color — no judgment, just facts.", icon: "📦", accent: "from-[#C4B5A0] to-[#D4C5B0]" },
-              { slug: "vitamins-for-hair-growth", title: "Top 10 Vitamins for Hair Growth", desc: "What actually works, what's overhyped, and what I personally take.", icon: "💊", accent: "from-[#D4C8BC] to-[#E8DDD4]" },
+              { slug: "why-toner-fades", title: "Why Your Toner Fades Fast", repeatText: "TONER FADES", desc: "The science behind toner longevity and what you can do about it.", accent: "from-[#9CAF88] to-[#B5C4A8]", textColor: "text-[#7A9070]" },
+              { slug: "truth-about-box-dye", title: "The Truth About Box Dye", repeatText: "BOX DYE", desc: "What actually happens when you use drugstore color — no judgment, just facts.", accent: "from-[#C4B5A0] to-[#D4C5B0]", textColor: "text-[#A09080]" },
+              { slug: "vitamins-for-hair-growth", title: "Top 10 Vitamins for Hair Growth", repeatText: "VITAMINS", desc: "What actually works, what's overhyped, and what I personally take.", accent: "from-[#D4C8BC] to-[#E8DDD4]", textColor: "text-[#B5A898]" },
             ].map((post, i) => (
               <Link key={i} href={`/learn/${post.slug}`} className="group cursor-pointer">
                 <article>
-                  <div className={`aspect-[4/3] bg-gradient-to-br ${post.accent} mb-6 overflow-hidden relative flex items-center justify-center`}>
-                    <span className="text-6xl opacity-30 group-hover:scale-110 transition-transform duration-500">{post.icon}</span>
+                  <div className={`aspect-[4/3] bg-gradient-to-br ${post.accent} mb-6 overflow-hidden relative`}>
+                    {/* Repeated text pattern */}
+                    <div className={`absolute inset-0 flex flex-col justify-center items-center opacity-20 ${post.textColor} font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-bold leading-tight select-none overflow-hidden`}>
+                      {[...Array(6)].map((_, row) => (
+                        <div key={row} className="whitespace-nowrap">
+                          {[...Array(3)].map((_, col) => (
+                            <span key={col} className="mx-2">{post.repeatText}</span>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
                     <div className="absolute inset-0 bg-[#3D3935]/0 group-hover:bg-[#3D3935]/10 transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2 group-hover:text-[#9A9086] transition-colors">
