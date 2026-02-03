@@ -313,36 +313,6 @@ const skincare = [
 
 const jewelry = [
   {
-    name: "PAVOI 14K Gold Plated Eternity Ring",
-    description: "Dainty stackable ring that looks way more expensive than it is. Perfect for everyday.",
-    amazonId: "B07BGXMF1Q",
-    price: "$14",
-  },
-  {
-    name: "NOKMIT 14K Gold Chunky Statement Ring",
-    description: "That trendy chunky gold look without the price tag. So cute stacked or alone.",
-    amazonId: "B09XDVPNJS",
-    price: "$13",
-  },
-  {
-    name: "PAVOI 14K Gold Wavy Ring",
-    description: "Unique wavy design that catches the light. Gets compliments every time.",
-    amazonId: "B08RDML4VV",
-    price: "$16",
-  },
-  {
-    name: "PAVOI Gold Chunky Open Twist Ring",
-    description: "Bold, modern, adjustable. The statement piece your hand needs.",
-    amazonId: "B08RDN9L9Z",
-    price: "$14",
-  },
-  {
-    name: "Gold Stackable Rings Set",
-    description: "Why pick one? Get a set of dainty stackables and mix & match.",
-    amazonId: "B0BKWD6D1V",
-    price: "$15",
-  },
-  {
     name: "PAVOI Gold Bangle Bracelet",
     description: "Classic gold bangle that goes with everything. Adjustable and tarnish-resistant.",
     amazonId: "B0BNP5Z8J5",
