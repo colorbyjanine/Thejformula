@@ -213,15 +213,71 @@ export default function Vault() {
         </div>
       </section>
 
-      {/* What You Get */}
+      {/* Cost Comparison */}
       <section className="section bg-[#FAF7F2]">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-sm tracking-[0.3em] uppercase text-[#9A9086] mb-4">
+                The Real Numbers
+              </p>
+              <h2 className="text-4xl font-[family-name:var(--font-cormorant)] text-[#3D3935]">
+                What This Would Cost You Otherwise
+              </h2>
+            </div>
+            
+            <div className="space-y-4 mb-8">
+              <div className="flex justify-between items-center p-5 bg-white rounded-lg shadow-sm border-l-4 border-[#FF6B6B]">
+                <div>
+                  <h3 className="font-semibold text-[#3D3935]">Hire a Business Attorney</h3>
+                  <p className="text-sm text-[#3D3935]/60">To draft custom contracts for your salon</p>
+                </div>
+                <span className="text-xl font-semibold text-[#FF6B6B]">$300-500/hr</span>
+              </div>
+              
+              <div className="flex justify-between items-center p-5 bg-white rounded-lg shadow-sm border-l-4 border-[#FF6B6B]">
+                <div>
+                  <h3 className="font-semibold text-[#3D3935]">LegalZoom Business Templates</h3>
+                  <p className="text-sm text-[#3D3935]/60">Generic forms, not California-specific</p>
+                </div>
+                <span className="text-xl font-semibold text-[#FF6B6B]">$150-300</span>
+              </div>
+              
+              <div className="flex justify-between items-center p-5 bg-white rounded-lg shadow-sm border-l-4 border-[#FF6B6B]">
+                <div>
+                  <h3 className="font-semibold text-[#3D3935]">Generic Etsy Templates (×6)</h3>
+                  <p className="text-sm text-[#3D3935]/60">Not AB-5 compliant, not California-specific</p>
+                </div>
+                <span className="text-xl font-semibold text-[#FF6B6B]">$150-300</span>
+              </div>
+              
+              <div className="flex justify-between items-center p-5 bg-white rounded-lg shadow-sm border-l-4 border-[#FF6B6B]">
+                <div>
+                  <h3 className="font-semibold text-[#3D3935]">EDD Misclassification Penalty</h3>
+                  <p className="text-sm text-[#3D3935]/60">Per worker, plus back taxes and interest</p>
+                </div>
+                <span className="text-xl font-semibold text-[#FF6B6B]">$5,000-25,000</span>
+              </div>
+            </div>
+            
+            <div className="p-6 bg-[#9CAF88] rounded-lg text-center text-white">
+              <p className="text-sm uppercase tracking-wider mb-2">The Stylist Legal Vault</p>
+              <p className="text-4xl font-[family-name:var(--font-cormorant)] mb-2">$97</p>
+              <p className="text-sm opacity-90">California-specific. AB-5 compliant. Industry-tested.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get */}
+      <section className="section bg-[#E8DDD4]">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl font-[family-name:var(--font-cormorant)] text-[#3D3935] text-center mb-10">
               Everything You Get
             </h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-4 bg-[#FAF7F2] rounded-lg shadow-sm">
                 <span className="text-2xl">📄</span>
                 <div>
                   <h3 className="font-semibold text-[#3D3935]">6 Complete Legal Templates</h3>
@@ -229,7 +285,7 @@ export default function Vault() {
                 </div>
                 <span className="text-[#3D3935]/50 ml-auto">$162 value</span>
               </div>
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-4 bg-[#FAF7F2] rounded-lg shadow-sm">
                 <span className="text-2xl">📝</span>
                 <div>
                   <h3 className="font-semibold text-[#3D3935]">Editable Word & PDF Formats</h3>
@@ -237,7 +293,7 @@ export default function Vault() {
                 </div>
                 <span className="text-[#3D3935]/50 ml-auto">Included</span>
               </div>
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-4 bg-[#FAF7F2] rounded-lg shadow-sm">
                 <span className="text-2xl">🎥</span>
                 <div>
                   <h3 className="font-semibold text-[#3D3935]">Video Walkthrough Guide</h3>
@@ -245,7 +301,7 @@ export default function Vault() {
                 </div>
                 <span className="text-[#3D3935]/50 ml-auto">$47 value</span>
               </div>
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-4 bg-[#FAF7F2] rounded-lg shadow-sm">
                 <span className="text-2xl">🔄</span>
                 <div>
                   <h3 className="font-semibold text-[#3D3935]">Free Lifetime Updates</h3>
@@ -253,7 +309,7 @@ export default function Vault() {
                 </div>
                 <span className="text-[#3D3935]/50 ml-auto">Priceless</span>
               </div>
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 p-4 bg-[#FAF7F2] rounded-lg shadow-sm">
                 <span className="text-2xl">📧</span>
                 <div>
                   <h3 className="font-semibold text-[#3D3935]">Email Support</h3>
