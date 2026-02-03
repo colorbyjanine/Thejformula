@@ -11,6 +11,8 @@ const brandStyles: Record<string, { bg: string; text: string; accent: string }> 
   "Kenra": { bg: "from-[#C9C4BC] to-[#B8B3AB]", text: "#4A4540", accent: "#6B6560" },
   "UNITE": { bg: "from-[#6B5B4F] to-[#5C4A40]", text: "#E8DDD4", accent: "#C4B5A0" },
   "Nutrafol": { bg: "from-[#9CAF88] to-[#8A9D78]", text: "#2F3A28", accent: "#4A5A40" },
+  "Thorne": { bg: "from-[#2A5934] to-[#1E4228]", text: "#FFFFFF", accent: "#A8D5B0" },
+  "MaryRuth's": { bg: "from-[#F5E6D3] to-[#E8D4BE]", text: "#5C4A32", accent: "#8B7355" },
   "Sports Research": { bg: "from-[#A09080] to-[#908070]", text: "#FFFFFF", accent: "#E8DDD4" },
   "Vital Proteins": { bg: "from-[#E0D8D0] to-[#D0C8C0]", text: "#5A5048", accent: "#7A7068" },
   "Nordic Naturals": { bg: "from-[#C4D4C8] to-[#B4C4B8]", text: "#3A4A3E", accent: "#5A6A5E" },
@@ -134,34 +136,52 @@ const hairProducts = [
 
 const supplements = [
   {
+    name: "MaryRuth's Liquid Multivitamin + Hair Growth",
+    description: "Clinically tested for thicker hair in 3 weeks! Biotin 10,000mcg + Lustriva. My liquid go-to.",
+    amazonId: "B0CGKVHHCY",
+    price: "$75",
+  },
+  {
+    name: "Thorne Biotin",
+    description: "Pharmaceutical-grade biotin for hair, skin & nails. The brand doctors trust.",
+    amazonId: "B0797CG5R8",
+    price: "$28",
+  },
+  {
+    name: "Thorne Zinc Picolinate 30mg",
+    description: "Essential for hair growth. Well-absorbed form that's gentle on stomach.",
+    amazonId: "B0012ZQPKG",
+    price: "$20",
+  },
+  {
+    name: "Thorne Vitamin D + K2 Liquid",
+    description: "600 servings! Most people are deficient & it shows in their hair. Easy drops.",
+    amazonId: "B0038NF8MG",
+    price: "$34",
+  },
+  {
+    name: "Thorne Iron Bisglycinate",
+    description: "Low iron = hair loss. This form absorbs well without stomach upset. Game changer.",
+    amazonId: "B0797GZDZL",
+    price: "$16",
+  },
+  {
+    name: "Thorne Super EPA Omega-3",
+    description: "Supports scalp health, reduces inflammation, adds shine. No fishy aftertaste.",
+    amazonId: "B0018CJ17W",
+    price: "$41",
+  },
+  {
     name: "Nutrafol Women",
     description: "The hair growth supplement with actual clinical studies behind it. Takes 3-6 months to see results.",
     amazonId: "B01NGTV7PQ",
     price: "$88",
   },
   {
-    name: "Sports Research Biotin",
-    description: "High-quality biotin with coconut oil for better absorption. 5,000 mcg.",
-    amazonId: "B00JGCBGZQ",
-    price: "$15",
-  },
-  {
     name: "Vital Proteins Collagen Peptides",
     description: "I put this in my coffee every morning. Great for hair, skin, and nails.",
     amazonId: "B00K6JUG4K",
     price: "$27",
-  },
-  {
-    name: "Nordic Naturals Omega-3",
-    description: "Clean fish oil that doesn't taste fishy. Supports scalp health and hair shine.",
-    amazonId: "B002CQU55G",
-    price: "$28",
-  },
-  {
-    name: "Nature Made Vitamin D3",
-    description: "Most people are deficient. Essential for hair follicle health.",
-    amazonId: "B004GW1X9G",
-    price: "$12",
   },
 ];
 
