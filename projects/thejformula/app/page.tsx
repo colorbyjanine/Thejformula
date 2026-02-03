@@ -24,32 +24,15 @@ export default function Home() {
                 Formulas for those who create.
               </p>
               {/* Main CTAs - Book & Shop side by side, both black */}
-              <div className="flex flex-wrap gap-4 mb-4">
+              <div className="flex flex-wrap gap-3 mb-6">
                 <Link href="/book" className="btn-primary bg-[#3D3935] text-[#FAF7F2] hover:bg-[#2D2925]">
                   Book an Appointment
                 </Link>
                 <Link href="/shop" className="btn-primary bg-[#3D3935] text-[#FAF7F2] hover:bg-[#2D2925]">
                   Shop My Picks
                 </Link>
-              </div>
-
-              {/* Formulas below */}
-              <div className="mb-4">
                 <Link href="/formulas" className="btn-secondary">
                   Explore Formulas
-                </Link>
-              </div>
-
-              {/* Chat with Jane at bottom */}
-              <div className="mb-6">
-                <Link 
-                  href="/chat"
-                  className="inline-flex items-center gap-2 text-[#9A9086] hover:text-[#3D3935] transition-colors text-sm"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                  </svg>
-                  Chat with Jane
                 </Link>
               </div>
 
@@ -115,6 +98,42 @@ export default function Home() {
             <Link href="/about" className="btn-secondary">
               My Story
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Booking Options - After About */}
+      <section className="py-12 bg-[#FAF7F2]">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <a 
+                href="https://vagaro.com/volumeiiisalon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border border-[#E8DDD4] p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all group"
+              >
+                <div className="w-12 h-12 bg-[#E8DDD4] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#D4C5B5] transition-colors">
+                  <svg className="w-6 h-6 text-[#3D3935]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1">Book on Vagaro</h3>
+                <p className="text-sm text-[#9A9086]">Self-schedule your appointment</p>
+              </a>
+              <Link 
+                href="/chat"
+                className="bg-white border border-[#E8DDD4] p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all group"
+              >
+                <div className="w-12 h-12 bg-[#E8DDD4] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#D4C5B5] transition-colors">
+                  <svg className="w-6 h-6 text-[#3D3935]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1">Chat with Jane</h3>
+                <p className="text-sm text-[#9A9086]">Questions? Need something ASAP?</p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
