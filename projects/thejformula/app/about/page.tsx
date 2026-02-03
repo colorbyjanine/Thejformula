@@ -51,9 +51,15 @@ export default function About() {
                 <p>
                   But I was never meant to stay in one lane. I'm drawn to anything that lets me 
                   create — clothing, jewelry, interior design. Beauty, to me, is a lifestyle. 
-                  It's intentional. It's curated. And while building all of that, I quietly 
-                  worked toward something nobody saw coming: law school. No announcements, 
-                  no countdowns — just head down, hands busy, let the results do the talking.
+                  It's intentional. It's curated. And somewhere along the way, I started law school. 
+                  Not to leave this world behind — but because I've never believed we have to choose 
+                  just one version of ourselves. I want to keep learning, keep growing, keep 
+                  challenging what I think I'm capable of. The goal has always been expansion, not limitation.
+                </p>
+                <p>
+                  And if you're reading this with a dream you've been sitting on — start. You're 
+                  more capable than you give yourself credit for. We all are. The only thing standing 
+                  between you and that next chapter is deciding you're ready to write it.
                 </p>
                 <p>
                   I live by a simple philosophy: <strong>execution over excuses.</strong> Comfort 
