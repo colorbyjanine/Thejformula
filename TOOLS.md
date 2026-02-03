@@ -2,6 +2,13 @@
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
+## Vercel
+
+- **Token:** `369IrVEcUPljODrOIr0e2dch` (full account access, no expiration)
+- **Project:** thejformula
+- **Team:** janine-fernandez-s-projects
+- **Usage:** `npx vercel ls --token="$TOKEN"` or `npx vercel --prod --token="$TOKEN" --yes`
+
 ## What Goes Here
 
 Things like:
