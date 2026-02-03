@@ -30,6 +30,30 @@ const brandStyles: Record<string, { bg: string; text: string; accent: string }> 
   "Fohufo": { bg: "from-[#C9BDB1] to-[#B9ADA1]", text: "#5A4A40", accent: "#7A6A60" },
   "JIRIS": { bg: "from-[#D8CEC5] to-[#C8BEB5]", text: "#5C4A32", accent: "#8B7355" },
   "French": { bg: "from-[#E0D8D0] to-[#D0C8C0]", text: "#5A5048", accent: "#7A7068" },
+  "TYMO": { bg: "from-[#D4C8BC] to-[#C9BDB1]", text: "#5A4A40", accent: "#7A6A60" },
+  "Stunning": { bg: "from-[#E8DDD4] to-[#D8CEC5]", text: "#5C4A32", accent: "#8B7355" },
+  "EcoGems": { bg: "from-[#B5C4A8] to-[#A8B5A0]", text: "#3D4A35", accent: "#5A6B50" },
+  "Kstyle": { bg: "from-[#D4C5B0] to-[#C4B5A0]", text: "#5C4A32", accent: "#8B7355" },
+  "Bopiu": { bg: "from-[#E0D4C8] to-[#D0C4B8]", text: "#5A4A40", accent: "#7A6A60" },
+  "FANCIME": { bg: "from-[#C4D4C8] to-[#B4C4B8]", text: "#3A4A3E", accent: "#5A6A5E" },
+  "ABILITH": { bg: "from-[#C9C4BC] to-[#B8B3AB]", text: "#4A4540", accent: "#6B6560" },
+  "SOLY": { bg: "from-[#D4C8BC] to-[#C9BDB1]", text: "#5A4A40", accent: "#7A6A60" },
+  "Chouyatou": { bg: "from-[#B5C4A8] to-[#A8B5A0]", text: "#3D4A35", accent: "#5A6B50" },
+  "OFEEFAN": { bg: "from-[#E0D8D0] to-[#D0C8C0]", text: "#5A5048", accent: "#7A7068" },
+  "VDWIP": { bg: "from-[#D4C5A0] to-[#C4B590]", text: "#5C4A32", accent: "#8B7355" },
+  "Women's": { bg: "from-[#E8DDD4] to-[#D8CEC5]", text: "#3D3935", accent: "#9A9086" },
+  "Barrel": { bg: "from-[#C9C4BC] to-[#B8B3AB]", text: "#4A4540", accent: "#6B6560" },
+  "rag": { bg: "from-[#5A554F] to-[#4A4540]", text: "#E8E0D8", accent: "#C4B8A8" },
+  "Vtopmart": { bg: "from-[#B5C4A8] to-[#A8B5A0]", text: "#3D4A35", accent: "#5A6B50" },
+  "CiWiVOKi": { bg: "from-[#D4C5B0] to-[#C4B5A0]", text: "#5C4A32", accent: "#8B7355" },
+  "ZOBER": { bg: "from-[#C9C4BC] to-[#B8B3AB]", text: "#4A4540", accent: "#6B6560" },
+  "Rechargeable": { bg: "from-[#E0D8D0] to-[#D0C8C0]", text: "#5A5048", accent: "#7A7068" },
+  "Woodure": { bg: "from-[#C4B498] to-[#B4A488]", text: "#4A3F30", accent: "#6B5B4F" },
+  "Snap-Tight": { bg: "from-[#D4C8BC] to-[#C9BDB1]", text: "#5A4A40", accent: "#7A6A60" },
+  "StorageWorks": { bg: "from-[#C4B498] to-[#B4A488]", text: "#4A3F30", accent: "#6B5B4F" },
+  "Yurhap": { bg: "from-[#D4C5A0] to-[#C4B590]", text: "#5C4A32", accent: "#8B7355" },
+  "Necklace": { bg: "from-[#E8DDD4] to-[#D8CEC5]", text: "#5C4A32", accent: "#8B7355" },
+  "Gold": { bg: "from-[#D4C5B0] to-[#C4B5A0]", text: "#5C4A32", accent: "#8B7355" },
   "default": { bg: "from-[#E8DDD4] to-[#D8CEC5]", text: "#3D3935", accent: "#9A9086" },
 };
 
@@ -175,9 +199,21 @@ const luxuryHaircare = [
     amazonId: "B0D2LV7DHF",
     price: "$62",
   },
+  {
+    name: "Kérastase Nectar Thermique Heat Cream",
+    description: "Nourishing heat protectant up to 450°F. Reduces frizz, adds shine. For medium to thick hair.",
+    amazonId: "B0BZZJ2CZK",
+    price: "$50",
+  },
 ];
 
 const toolsAccessories = [
+  {
+    name: "TYMO Auto Rotating Curling Iron",
+    description: "Automatic curling wand — just hold and it curls for you. Beach waves in minutes!",
+    amazonId: "B0DP542W7G",
+    price: "$50",
+  },
   {
     name: "SHASH German Boar Bristle Brush",
     description: "Handmade in Germany since 1869. Gently detangles, no pulling. Smooths and conditions naturally.",
@@ -286,6 +322,216 @@ const jewelry = [
     amazonId: "B0BKWD6D1V",
     price: "$15",
   },
+  {
+    name: "PAVOI Gold Bangle Bracelet",
+    description: "Classic gold bangle that goes with everything. Adjustable and tarnish-resistant.",
+    amazonId: "B0BNP5Z8J5",
+    price: "$15",
+  },
+  {
+    name: "PAVOI CZ Stackable Ring",
+    description: "Sparkly cubic zirconia that looks like real diamonds. Stack 'em up!",
+    amazonId: "B08CT7ZY8C",
+    price: "$14",
+  },
+  {
+    name: "PAVOI Initial Huggie Earrings",
+    description: "Personalized huggies with your initial. Sterling silver with CZ sparkle.",
+    amazonId: "B094BXX4XT",
+    price: "$15",
+  },
+  {
+    name: "Stunning Flame Rose Gold CZ Studs",
+    description: "18K rose gold plated studs that look like real diamonds. So sparkly!",
+    amazonId: "B0CH9ZZCYJ",
+    price: "$18",
+  },
+  {
+    name: "PAVOI Watch Strap Chain Bracelet",
+    description: "That trendy watch-link look. Waterproof and won't tarnish. So chic.",
+    amazonId: "B0D53XKP7B",
+    price: "$18",
+  },
+  {
+    name: "PAVOI Pear Solitaire CZ Ring",
+    description: "Gorgeous pear-shaped stone. Looks like an engagement ring but costs way less.",
+    amazonId: "B0D51D919K",
+    price: "$16",
+  },
+  {
+    name: "EcoGems Moissanite Tennis Bracelet",
+    description: "Lab-grown moissanite that sparkles like crazy. Ethical and stunning.",
+    amazonId: "B0DQLJ39G6",
+    price: "$189",
+  },
+  {
+    name: "Necklace Layering Clasp",
+    description: "Genius little tool to layer multiple necklaces without tangling. Game changer!",
+    amazonId: "B0B3RBMDJL",
+    price: "$10",
+  },
+  {
+    name: "PAVOI Bubble Letter Necklace",
+    description: "Chunky bubble letter initial. So trendy right now. Gets tons of compliments.",
+    amazonId: "B0DNMXGVPV",
+    price: "$17",
+  },
+  {
+    name: "PAVOI Star Shine Hoop Earrings",
+    description: "Celestial CZ hoops that catch the light beautifully. Lightweight and comfy.",
+    amazonId: "B0DNM7HCSG",
+    price: "$16",
+  },
+  {
+    name: "Kstyle Moissanite Spinelli Ring",
+    description: "Interlocked stackable rings with moissanite. Unique and eye-catching.",
+    amazonId: "B0FHTLDJT5",
+    price: "$45",
+  },
+  {
+    name: "Bopiu Gold Stackable Rings Set",
+    description: "18K gold plated CZ rings. Mix metals for that trendy layered look.",
+    amazonId: "B0D73B1DS7",
+    price: "$16",
+  },
+  {
+    name: "PAVOI Cross Necklace",
+    description: "Simple, elegant cross pendant. 14K gold plated, perfect for everyday.",
+    amazonId: "B07QTJ1WWL",
+    price: "$14",
+  },
+  {
+    name: "FANCIME Birthstone Bracelet",
+    description: "Sterling silver with your birthstone. Makes a perfect personalized gift.",
+    amazonId: "B0CRVSGD7J",
+    price: "$35",
+  },
+  {
+    name: "ABILITH Silver Chunky Earrings",
+    description: "Bold chunky hoops. Hypoallergenic and lightweight despite the size.",
+    amazonId: "B0D175S8NG",
+    price: "$14",
+  },
+  {
+    name: "PAVOI Hammered Bracelet",
+    description: "Textured hammered gold look. Waterproof — wear it in the shower!",
+    amazonId: "B0DBSMKHLV",
+    price: "$16",
+  },
+];
+
+const summerDresses = [
+  {
+    name: "OFEEFAN Spaghetti Strap Sundress",
+    description: "Perfect vacation dress. Flowy, flattering, and so easy to pack.",
+    amazonId: "B0G182H8QY",
+    price: "$35",
+  },
+  {
+    name: "SOLY HUX Backless Spaghetti Dress",
+    description: "Sexy backless design. Great for date night or beach vacation.",
+    amazonId: "B0DSD23HGN",
+    price: "$32",
+  },
+  {
+    name: "Chouyatou Striped Smocked Dress",
+    description: "Cute stripes with smocked bodice. Comfortable and so flattering.",
+    amazonId: "B0D1C9HPV3",
+    price: "$38",
+  },
+  {
+    name: "SOLY HUX Striped Sleeveless Dress",
+    description: "Classic stripes, easy fit. Perfect for running errands or brunch.",
+    amazonId: "B0F4X97CM3",
+    price: "$30",
+  },
+];
+
+const clothing = [
+  {
+    name: "VDWIP Yellow Cardigan Sweater",
+    description: "The happiest cardigan. Soft knit, perfect for layering.",
+    amazonId: "B0D7VRCML9",
+    price: "$32",
+  },
+  {
+    name: "Women's Stretchy T-Shirt",
+    description: "Basic but elevated. Stretchy, flattering, comes in great colors.",
+    amazonId: "B0F8BHD2B4",
+    price: "$18",
+  },
+  {
+    name: "Barrel Boyfriend Jeans",
+    description: "The trendy barrel leg everyone's wearing. Comfy elastic waist.",
+    amazonId: "B0CZKDYWH5",
+    price: "$42",
+  },
+  {
+    name: "rag & bone Charlie Barrel Jeans",
+    description: "Designer quality barrel jeans. Worth the splurge — fit is *chef's kiss*.",
+    amazonId: "B0FXQFK54K",
+    price: "$225",
+  },
+];
+
+const homeOrganization = [
+  {
+    name: "Vtopmart Organization Containers",
+    description: "Clear bins that make your pantry look Pinterest-worthy. So satisfying.",
+    amazonId: "B0BZNPDHR9",
+    price: "$28",
+  },
+  {
+    name: "CiWiVOKi Storage Bins with Bamboo Lids",
+    description: "Stackable acrylic bins with bamboo lids. Aesthetic AND functional.",
+    amazonId: "B0FND53JHY",
+    price: "$28",
+  },
+  {
+    name: "ZOBER Wrapping Paper Storage",
+    description: "Finally, a place for all that gift wrap. Fits under the bed!",
+    amazonId: "B08WYS4TFY",
+    price: "$16",
+  },
+  {
+    name: "Rechargeable Magnetic Light",
+    description: "Stick these anywhere — closet, under cabinets. So handy and rechargeable.",
+    amazonId: "B0BDF8CVBN",
+    price: "$25",
+  },
+  {
+    name: "Woodure Stuffed Animal Organizer",
+    description: "Corral all the stuffies! Kids love picking their own animals from it.",
+    amazonId: "B0DNDQY4V5",
+    price: "$45",
+  },
+  {
+    name: "Snap-Tight Portable Organizer",
+    description: "Great for magazines, craft supplies, anything you need to store.",
+    amazonId: "B01GTX8KQ2",
+    price: "$20",
+  },
+  {
+    name: "Vtopmart Airtight Pantry Containers",
+    description: "Keep cereal fresh forever. These seals are no joke.",
+    amazonId: "B08ZK5WDWN",
+    price: "$35",
+  },
+  {
+    name: "StorageWorks Hyacinth Baskets",
+    description: "Natural woven baskets with handles. Pretty enough to leave out.",
+    amazonId: "B0881LL44Y",
+    price: "$35",
+  },
+];
+
+const babyLifestyle = [
+  {
+    name: "Yurhap Checkered Baby Blanket",
+    description: "The cutest checkered blanket for baby. Soft, cozy, neutral colors.",
+    amazonId: "B0CYC37TNN",
+    price: "$18",
+  },
 ];
 
 function ProductCard({ product }: { product: { name: string; description: string; amazonId: string; price: string } }) {
@@ -376,10 +622,14 @@ export default function Shop() {
         <ProductRow title="Hair Treatments & Styling" products={hairProducts} />
         <ProductRow title="Luxury Haircare" products={luxuryHaircare} />
         <ProductRow title="Tools & Accessories" products={toolsAccessories} />
+        <ProductRow title="Cute Jewelry Finds" products={jewelry} />
+        <ProductRow title="Summer '26 Dresses" products={summerDresses} />
+        <ProductRow title="Clothing Picks" products={clothing} />
+        <ProductRow title="Home & Organization" products={homeOrganization} />
+        <ProductRow title="Baby & Lifestyle" products={babyLifestyle} />
         <ProductRow title="Vitamins & Supplements" products={supplements} />
         <ProductRow title="Skin & Beauty" products={skincare} />
         <ProductRow title="Red Light Therapy" products={redLightDevices} />
-        <ProductRow title="Cute Jewelry Finds" products={jewelry} />
       </section>
 
       {/* Affiliate Disclaimer */}
