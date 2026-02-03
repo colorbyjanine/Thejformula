@@ -436,7 +436,7 @@ export default function Formulas() {
                 <p className="text-sm text-[#FAF7F2]/80 mb-2">One-time purchase</p>
                 <p className="text-5xl font-[family-name:var(--font-cormorant)] text-[#FAF7F2] mb-4">$27</p>
                 <a 
-                  href="https://payhip.com/b/formulaguide" 
+                  href="https://payhip.com/b/tNTmd" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-[#FAF7F2] text-[#3D3935] rounded-lg hover:bg-[#E8DDD4] transition-colors font-semibold"
