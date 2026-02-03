@@ -1,0 +1,25 @@
+Jane Backup - 20260203_221825
+========================
+Created: Tue Feb  3 22:18:25 UTC 2026
+Server: ip-172-31-31-91
+
+Files included:
+total 48
+drwxrwxr-x 3 openclaw openclaw 4096 Feb  3 22:18 .
+drwxrwxr-x 3 openclaw openclaw 4096 Feb  3 22:18 ..
+-rw-rw-r-- 1 openclaw openclaw 7869 Feb  3 22:18 AGENTS.md
+-rw-rw-r-- 1 openclaw openclaw  168 Feb  3 22:18 HEARTBEAT.md
+-rw-rw-r-- 1 openclaw openclaw  269 Feb  3 22:18 IDENTITY.md
+-rw-rw-r-- 1 openclaw openclaw    0 Feb  3 22:18 MANIFEST.txt
+-rw-rw-r-- 1 openclaw openclaw 4031 Feb  3 22:18 MEMORY.md
+-rw-rw-r-- 1 openclaw openclaw 1673 Feb  3 22:18 SOUL.md
+-rw-rw-r-- 1 openclaw openclaw 1108 Feb  3 22:18 TOOLS.md
+-rw-rw-r-- 1 openclaw openclaw  727 Feb  3 22:18 USER.md
+drwxrwxr-x 2 openclaw openclaw 4096 Feb  3 22:18 memory
+-rw------- 1 openclaw openclaw 1699 Feb  3 22:18 openclaw.json
+
+To restore:
+1. Copy *.md files to /home/openclaw/.openclaw/workspace/
+2. Copy memory/* to /home/openclaw/.openclaw/workspace/memory/
+3. Copy openclaw.json to /home/openclaw/.openclaw/
+4. Restart gateway: openclaw gateway restart
