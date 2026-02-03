@@ -106,7 +106,7 @@ export default function Vault() {
             </span>
           </div>
           <a 
-            href="https://thejformula.gumroad.com/l/stylist-legal-vault" 
+            href="https://payhip.com/b/ghuML" 
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-block text-lg px-8 py-4"
@@ -324,7 +324,7 @@ export default function Vault() {
                 Your Price: $97
               </p>
               <a 
-                href="https://thejformula.gumroad.com/l/stylist-legal-vault" 
+                href="https://payhip.com/b/ghuML" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-[#FAF7F2] text-[#3D3935] rounded-lg hover:bg-[#E8DDD4] transition-colors font-semibold"
@@ -453,7 +453,7 @@ export default function Vault() {
             everything you've built. For less than the cost of one balayage, get the protection you need.
           </p>
           <a 
-            href="https://thejformula.gumroad.com/l/stylist-legal-vault" 
+            href="https://payhip.com/b/ghuML" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-lg px-10 py-4 bg-[#FAF7F2] text-[#3D3935] rounded-lg hover:bg-[#E8DDD4] transition-colors font-semibold"
