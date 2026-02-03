@@ -79,14 +79,38 @@ Janine wants to build something huge to **help kids in need**. The J Formula bra
 - Plan: Free (2,000 requests/month)
 - Status: Subscribed, needs to generate API key and configure OpenClaw
 
+## Accounts & Access
+
+### GitHub
+- **Account:** colorbyjanine
+- **Repo:** github.com/colorbyjanine/Thejformula
+- **Status:** Connected to Vercel for auto-deploy ✅
+- **Token:** Stored (expires ~May 2026)
+
+### Vercel
+- **Project:** thejformula
+- **URL:** https://vercel.com/janine-fernandez-s-projects/thejformula
+- **Auto-deploy:** Connected to GitHub ✅
+
+### Brave Search API
+- **Account:** colorbyjanine@gmail.com
+- **Plan:** Free (2,000 requests/month)
+- **Status:** Configured in OpenClaw ✅
+
+### Amazon Associates
+- **Tag:** thejformula-20 (also janinefernand-20)
+- **Status:** Active, needs first sale within 30 days
+- **Tax info:** Needs to be submitted
+
 ## Future Plans
 - Twilio setup for virtual receptionist (SMS handling)
 - Instagram content strategy and management
 - Amazon storefront curation (lifestyle products beyond hair)
 - Formula sales with paywall ($27/$67 tiers)
 - Full browser capability (needs browser deps installed)
+- **Janine HQ notes tab** - needs to be built/fixed
 - Long-term: scale to fund her mission for kids in need
 
 ---
 
-*Last updated: 2026-02-02*
+*Last updated: 2026-02-03*

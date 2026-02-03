@@ -27,6 +27,9 @@ export default function Home() {
                 <Link href="/book" className="btn-primary">
                   Book With Me
                 </Link>
+                <Link href="/shop" className="btn-primary bg-[#3D3935] text-[#FAF7F2] hover:bg-[#2D2925]">
+                  Shop My Picks
+                </Link>
                 <Link href="/formulas" className="btn-secondary">
                   Explore Formulas
                 </Link>
