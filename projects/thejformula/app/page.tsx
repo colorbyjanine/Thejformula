@@ -295,14 +295,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { slug: "why-toner-fades", title: "Why Your Toner Fades Fast", desc: "The science behind toner longevity and what you can do about it." },
-              { slug: "truth-about-box-dye", title: "The Truth About Box Dye", desc: "What actually happens when you use drugstore color — no judgment, just facts." },
-              { slug: "vitamins-for-hair-growth", title: "Top 10 Vitamins for Hair Growth", desc: "What actually works, what's overhyped, and what I personally take." },
+              { slug: "why-toner-fades", title: "Why Your Toner Fades Fast", desc: "The science behind toner longevity and what you can do about it.", icon: "⏱️", accent: "from-[#9CAF88] to-[#B5C4A8]" },
+              { slug: "truth-about-box-dye", title: "The Truth About Box Dye", desc: "What actually happens when you use drugstore color — no judgment, just facts.", icon: "📦", accent: "from-[#C4B5A0] to-[#D4C5B0]" },
+              { slug: "vitamins-for-hair-growth", title: "Top 10 Vitamins for Hair Growth", desc: "What actually works, what's overhyped, and what I personally take.", icon: "💊", accent: "from-[#D4C8BC] to-[#E8DDD4]" },
             ].map((post, i) => (
               <Link key={i} href={`/learn/${post.slug}`} className="group cursor-pointer">
                 <article>
-                  <div className="aspect-[4/3] bg-[#E8DDD4] mb-6 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-[#D4C5B5]/50 to-[#E8DDD4] group-hover:scale-105 transition-transform duration-500" />
+                  <div className={`aspect-[4/3] bg-gradient-to-br ${post.accent} mb-6 overflow-hidden relative flex items-center justify-center`}>
+                    <span className="text-6xl opacity-30 group-hover:scale-110 transition-transform duration-500">{post.icon}</span>
+                    <div className="absolute inset-0 bg-[#3D3935]/0 group-hover:bg-[#3D3935]/10 transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2 group-hover:text-[#9A9086] transition-colors">
                     {post.title}
