@@ -405,6 +405,51 @@ export default function Formulas() {
         </div>
       </section>
 
+      {/* Product CTA */}
+      <section className="section bg-[#3D3935]">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-sm tracking-[0.3em] uppercase text-[#9CAF88] mb-4">
+              📚 Take It With You
+            </p>
+            <h2 className="text-4xl font-[family-name:var(--font-cormorant)] text-[#FAF7F2] mb-6">
+              Get the Complete Formula Guide
+            </h2>
+            <p className="text-[#B5A191] max-w-2xl mx-auto mb-8">
+              All 12 formulas + complete Shades EQ tone reference in one downloadable PDF. 
+              Print it, save it to your phone, reference it behind the chair.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-[#2A2826] p-6 rounded-lg text-left">
+                <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#FAF7F2] mb-4">What's Inside:</h3>
+                <ul className="space-y-2 text-[#B5A191]">
+                  <li>✓ 6 Color Theory Formulas</li>
+                  <li>✓ 6 Signature Formulas</li>
+                  <li>✓ Complete Tone Reference Chart</li>
+                  <li>✓ Three Backgrounds Explained</li>
+                  <li>✓ Quick Cancellation Guide</li>
+                  <li>✓ Printable PDF Format</li>
+                </ul>
+              </div>
+              <div className="bg-[#9CAF88] p-6 rounded-lg flex flex-col justify-center">
+                <p className="text-sm text-[#FAF7F2]/80 mb-2">One-time purchase</p>
+                <p className="text-5xl font-[family-name:var(--font-cormorant)] text-[#FAF7F2] mb-4">$27</p>
+                <a 
+                  href="https://payhip.com/b/formulaguide" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 bg-[#FAF7F2] text-[#3D3935] rounded-lg hover:bg-[#E8DDD4] transition-colors font-semibold"
+                >
+                  Get the Guide →
+                </a>
+                <p className="text-xs text-[#FAF7F2]/70 mt-2">Instant download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section bg-[#E8DDD4]">
         <div className="container mx-auto text-center">
