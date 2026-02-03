@@ -11,6 +11,7 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/learn", label: "Learn" },
+    { href: "/formulas", label: "Formulas" },
     { href: "/shop", label: "Shop" },
     { href: "/vault", label: "Vault" },
     { href: "/book", label: "Book" },
