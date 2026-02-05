@@ -37,11 +37,17 @@ const freeFormulas = [
     timing: "15-20 minutes",
     tags: ["Rose Gold", "Fashion Color", "Warm Tones"],
   },
+  {
+    name: "Sun-Drenched Bronze",
+    description: "Liquid bronze that catches light like metal",
+    formula: "7CG + 8GI + Gold Kicker (1:1:drop)",
+    timing: "20 minutes",
+    tags: ["Bronze", "Warm Tones", "Dimensional"],
+  },
 ];
 
 // Locked formulas (blurred preview)
 const lockedFormulas = [
-  { name: "Sun-Drenched Bronze", description: "Liquid bronze that catches light like metal", tags: ["Bronze", "Warm", "Dimensional"] },
   { name: "Gunmetal Ash", description: "Smoked shadow root melting into clean blonde", tags: ["Signature", "Ash", "Editorial"] },
   { name: "Golden Hour Velvet", description: "Rich warm blonde with violet sophistication", tags: ["Signature", "Warm Blonde"] },
   { name: "Violet Frost", description: "Mahogany shadow dissolving into lavender-platinum", tags: ["Signature", "Fashion"] },
