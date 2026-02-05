@@ -53,70 +53,49 @@ const lockedFormulas = [
 export default function Formulas() {
   return (
     <div className="min-h-screen pt-24">
-      {/* Hero */}
-      <section className="section bg-[#FAF7F2] texture-overlay">
-        <div className="container mx-auto text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-[#9A9086] mb-4">
-            For Professionals Only
-          </p>
-          <h1 className="text-4xl md:text-6xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6">
+      {/* Hero - Compact */}
+      <section className="pt-24 pb-6 bg-[#FAF7F2]">
+        <div className="container mx-auto text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-3">
             The Formula Vault
           </h1>
-          <p className="text-base md:text-lg text-[#9A9086] max-w-2xl mx-auto mb-8 px-4">
-            15 years behind the chair, refined into formulas that work. 
-            5 free to try — unlock the full vault for more.
+          <p className="text-sm md:text-base text-[#9A9086] max-w-xl mx-auto">
+            15 years behind the chair. 5 free — unlock the vault for more.
           </p>
         </div>
       </section>
 
-      {/* FREE FORMULAS */}
-      <section className="section bg-white">
+      {/* FORMULAS GRID */}
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <span className="inline-block bg-[#9CAF88] text-white text-sm px-4 py-1 rounded-full mb-4">
-              FREE — NO CATCH
-            </span>
-            <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935]">
-              5 Formulas On Me
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-5xl mx-auto">
             {freeFormulas.map((formula, index) => (
               <div 
                 key={index}
-                className="bg-[#FAF7F2] border border-[#E8DDD4] p-4 md:p-5 rounded-lg"
+                className="bg-[#FAF7F2] border border-[#E8DDD4] p-3 md:p-4 rounded-lg"
               >
-                {/* FREE Badge */}
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-[#9CAF88] flex items-center justify-center">
-                    <span className="text-white text-sm">✓</span>
-                  </span>
-                  <span className="text-[10px] md:text-xs text-[#9CAF88] font-semibold uppercase">Free</span>
-                </div>
-
                 {/* Title */}
-                <h3 className="text-base md:text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2 leading-tight">
+                <h3 className="text-sm md:text-base font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1 leading-tight">
                   {formula.name}
                 </h3>
 
                 {/* Description */}
-                <p className="text-xs md:text-sm text-[#9A9086] mb-3">
+                <p className="text-[11px] md:text-xs text-[#9A9086] mb-2 line-clamp-2">
                   {formula.description}
                 </p>
 
                 {/* VISIBLE Formula */}
-                <div className="bg-white p-3 rounded border border-[#E8DDD4] mb-3">
-                  <p className="text-xs md:text-sm font-mono text-[#3D3935] leading-relaxed">
-                    <span className="text-[#9A9086]">Formula:</span> {formula.formula}<br/>
-                    <span className="text-[#9A9086]">Time:</span> {formula.timing}
+                <div className="bg-white p-2 md:p-3 rounded border border-[#E8DDD4] mb-2">
+                  <p className="text-[10px] md:text-xs font-mono text-[#3D3935] leading-relaxed">
+                    {formula.formula}<br/>
+                    <span className="text-[#9A9086]">{formula.timing}</span>
                   </p>
                 </div>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1">
                   {formula.tags.map((tag, i) => (
-                    <span key={i} className="text-[9px] md:text-[10px] bg-white text-[#3D3935] px-2 py-0.5 rounded">
+                    <span key={i} className="text-[8px] md:text-[10px] bg-white text-[#3D3935] px-1.5 py-0.5 rounded">
                       {tag}
                     </span>
                   ))}
@@ -128,19 +107,16 @@ export default function Formulas() {
       </section>
 
       {/* UNLOCK CTA */}
-      <section className="py-12 bg-[#3D3935]">
+      <section className="py-8 bg-[#3D3935]">
         <div className="container mx-auto text-center px-4">
-          <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-white mb-4">
+          <h2 className="text-xl md:text-2xl font-[family-name:var(--font-cormorant)] text-white mb-3">
             Want More?
           </h2>
-          <p className="text-[#B5A191] mb-6 max-w-xl mx-auto">
-            Unlock the full vault — 12+ signature formulas with color theory breakdowns.
-          </p>
           <a 
             href="https://payhip.com/b/tNTmd"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#9CAF88] text-white px-8 py-3 md:px-10 md:py-4 text-lg md:text-xl hover:bg-[#8a9d78] transition-colors rounded-full"
+            className="inline-block bg-[#9CAF88] text-white px-6 py-2.5 md:px-8 md:py-3 text-base md:text-lg hover:bg-[#8a9d78] transition-colors rounded-full"
           >
             🔓 Unlock All — $27
           </a>
@@ -148,64 +124,50 @@ export default function Formulas() {
       </section>
 
       {/* LOCKED FORMULAS PREVIEW */}
-      <section className="section bg-[#FAF7F2]">
+      <section className="py-8 bg-[#FAF7F2]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2">
-              More Inside the Vault
-            </h2>
-            <p className="text-sm text-[#9A9086]">Preview what's waiting</p>
-          </div>
+          <h2 className="text-xl md:text-2xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4 text-center">
+            More In the Vault
+          </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-5xl mx-auto">
             {lockedFormulas.map((formula, index) => (
               <a 
                 key={index}
                 href="https://payhip.com/b/tNTmd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white border border-[#E8DDD4] p-4 md:p-5 rounded-lg group hover:shadow-lg transition-all"
+                className="bg-white border border-[#E8DDD4] p-3 md:p-4 rounded-lg group hover:shadow-lg transition-all"
               >
-                {/* Lock Badge */}
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-[#C4B5A0] flex items-center justify-center group-hover:bg-[#9CAF88] transition-colors">
-                    <span className="text-white text-sm">🔒</span>
+                {/* Lock + Title Row */}
+                <div className="flex items-start gap-2 mb-2">
+                  <span className="w-7 h-7 rounded-full bg-[#C4B5A0] flex items-center justify-center shrink-0 group-hover:bg-[#9CAF88] transition-colors">
+                    <span className="text-white text-xs">🔒</span>
                   </span>
-                  {formula.tags.includes("Signature") && (
-                    <span className="text-[9px] bg-[#3D3935] text-white px-2 py-0.5 uppercase">Signature</span>
-                  )}
+                  <h3 className="text-sm md:text-base font-[family-name:var(--font-cormorant)] text-[#3D3935] leading-tight">
+                    {formula.name}
+                  </h3>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-base md:text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2 leading-tight">
-                  {formula.name}
-                </h3>
-
                 {/* Description */}
-                <p className="text-xs md:text-sm text-[#9A9086] mb-3">
+                <p className="text-[11px] md:text-xs text-[#9A9086] mb-2 line-clamp-2">
                   {formula.description}
                 </p>
 
                 {/* BLURRED Formula */}
-                <div className="bg-[#FAF7F2] p-3 rounded mb-3 select-none">
-                  <p className="text-xs font-mono text-[#9A9086] blur-[5px] leading-relaxed">
-                    Formula: ●●● + ●●● (●:●)<br/>
-                    Time: ●● minutes
+                <div className="bg-[#FAF7F2] p-2 rounded mb-2 select-none">
+                  <p className="text-[10px] font-mono text-[#9A9086] blur-[4px] leading-relaxed">
+                    ●●● + ●●● (●:●) • ●● min
                   </p>
                 </div>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1">
                   {formula.tags.filter(t => t !== "Signature").map((tag, i) => (
-                    <span key={i} className="text-[9px] md:text-[10px] bg-[#FAF7F2] text-[#3D3935] px-2 py-0.5 rounded">
+                    <span key={i} className="text-[8px] md:text-[10px] bg-[#FAF7F2] text-[#3D3935] px-1.5 py-0.5 rounded">
                       {tag}
                     </span>
                   ))}
-                </div>
-
-                {/* Unlock text on hover */}
-                <div className="mt-3 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-xs text-[#9CAF88] font-medium">Tap to Unlock →</span>
                 </div>
               </a>
             ))}
@@ -214,19 +176,16 @@ export default function Formulas() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 bg-[#3D3935]">
+      <section className="py-8 bg-[#3D3935]">
         <div className="container mx-auto text-center px-4">
-          <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-white mb-4">
-            Ready for the Full Vault?
-          </h2>
-          <p className="text-[#B5A191] mb-6">
-            One-time payment • Instant PDF • Lifetime access
+          <p className="text-[#B5A191] text-sm mb-3">
+            One-time • Instant PDF • Lifetime access
           </p>
           <a 
             href="https://payhip.com/b/tNTmd"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#3D3935] px-8 py-3 md:px-10 md:py-4 text-lg hover:bg-[#FAF7F2] transition-colors rounded-full font-medium"
+            className="inline-block bg-white text-[#3D3935] px-6 py-2.5 text-base hover:bg-[#FAF7F2] transition-colors rounded-full font-medium"
           >
             Get All Formulas — $27
           </a>
