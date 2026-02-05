@@ -1,48 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
 
-const MESSAGES_FILE = path.join(process.cwd(), "chat-messages.json");
-
-interface ChatMessage {
-  id: string;
-  message: string;
-  userName: string;
-  userContact: string;
-  timestamp: string;
-  replied: boolean;
-}
-
-async function getMessages(): Promise<ChatMessage[]> {
-  try {
-    const data = await fs.readFile(MESSAGES_FILE, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
-}
-
-async function saveMessages(messages: ChatMessage[]): Promise<void> {
-  await fs.writeFile(MESSAGES_FILE, JSON.stringify(messages, null, 2));
-}
+// Webhook URL for Janine HQ (appointment notifications)
+const HQ_WEBHOOK = "https://janine-hq.vercel.app/api/appointments";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { message, userName, userContact, timestamp } = body;
-
-    // Save the message
-    const messages = await getMessages();
-    const newMessage: ChatMessage = {
-      id: `msg_${Date.now()}`,
-      message,
-      userName,
-      userContact,
-      timestamp,
-      replied: false,
-    };
-    messages.push(newMessage);
-    await saveMessages(messages);
 
     // Generate a helpful auto-reply based on common questions
     let reply = "Thanks for your message! I'll make sure Janine sees this and we'll get back to you soon. 🤍";
@@ -63,10 +27,38 @@ export async function POST(request: NextRequest) {
       reply = "Hey there! 👋 Thanks for reaching out. Are you looking to book an appointment, or do you have questions I can help with?";
     }
 
+    // Send to Janine HQ as appointment request (if it looks like a booking inquiry)
+    const isAppointmentRelated = lowerMessage.includes("book") || 
+                                  lowerMessage.includes("appointment") || 
+                                  lowerMessage.includes("available") ||
+                                  lowerMessage.includes("consultation") ||
+                                  lowerMessage.includes("schedule") ||
+                                  userContact; // If they provided contact info, it's likely serious
+
+    if (isAppointmentRelated || userContact) {
+      try {
+        await fetch(HQ_WEBHOOK, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: userName || "Website Visitor",
+            email: userContact || "",
+            message: message,
+            source: "thejformula.com/chat",
+            timestamp: timestamp || new Date().toISOString()
+          })
+        });
+        console.log("[Chat] Sent appointment request to HQ");
+      } catch (webhookError) {
+        console.error("[Chat] Failed to notify HQ:", webhookError);
+        // Don't fail the user's request if webhook fails
+      }
+    }
+
     return NextResponse.json({ 
       success: true, 
       reply,
-      messageId: newMessage.id 
+      messageId: `msg_${Date.now()}`
     });
   } catch (error) {
     console.error("Chat API error:", error);
@@ -78,14 +70,8 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
-  try {
-    const messages = await getMessages();
-    return NextResponse.json({ messages });
-  } catch (error) {
-    console.error("Chat API error:", error);
-    return NextResponse.json(
-      { success: false, error: "Failed to get messages" },
-      { status: 500 }
-    );
-  }
+  return NextResponse.json({ 
+    status: "Chat API active",
+    message: "POST messages to this endpoint" 
+  });
 }

@@ -130,8 +130,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1">Chat with Jane</h3>
-                <p className="text-sm text-[#9A9086]">Questions? Need something ASAP?</p>
+                <h3 className="text-lg font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1">Request Appointment</h3>
+                <p className="text-sm text-[#9A9086]">Submit your preferred dates</p>
               </Link>
             </div>
           </div>
@@ -409,7 +409,7 @@ export default function Home() {
               Book Appointment
             </Link>
             <Link href="/chat" className="btn-secondary border-[#FAF7F2] text-[#FAF7F2] hover:bg-[#FAF7F2] hover:text-[#3D3935]">
-              Chat with Jane
+              Request Appointment
             </Link>
           </div>
         </div>

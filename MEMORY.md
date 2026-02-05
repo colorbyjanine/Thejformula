@@ -111,6 +111,40 @@ Janine wants to build something huge to **help kids in need**. The J Formula bra
 - **Janine HQ notes tab** - needs to be built/fixed
 - Long-term: scale to fund her mission for kids in need
 
+## The Canvas Co (New Project - 2026-02-04)
+- Website building service business
+- Live at: https://the-canvas-co.vercel.app
+- Pricing: $497 / $997 / $1,997 tiers
+- 9 industry-specific questionnaires built
+- Needs: domain, Stripe, email system, LLC
+- Janine prefers light cream palette with video background
+
+## Project Documentation
+All project docs now stored in: `/projects/docs/`
+- MASTER-CONFIG.md - All credentials and configs
+- THE-CANVAS-CO.md - Canvas Co project details
+- THEJFORMULA.md - J Formula project details
+- JANINE-HQ.md - HQ dashboard details
+- INVESTMENT-RESEARCH.md - Market research
+- INVESTMENT-DEEP-DIVE.md - Deep analysis & picks
+- JANINE-PORTFOLIO.md - Her watchlist & positions
+
+## Investing (Started 2026-02-04)
+Janine wants to build an investment portfolio. I'm actively monitoring the market.
+
+**Her Watchlist:**
+- PWR (Quanta Services) - #1 pick, AI infrastructure
+- DOC (Healthpeak) - 40% undervalued REIT, 7% yield
+- KHC (Kraft Heinz) - 50% undervalued
+- VZ (Verizon) - 7% yield
+- BTC (Bitcoin) - $150K-$250K target
+- NKE (Nike) - Speculative turnaround
+
+**Monitoring Schedule:**
+- 6am PT weekdays: Pre-market check
+- 2pm PT weekdays: Market close review
+- Alert immediately on opportunities
+
 ---
 
-*Last updated: 2026-02-03*
+*Last updated: 2026-02-04*
