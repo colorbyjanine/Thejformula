@@ -1,115 +1,78 @@
 import Link from "next/link";
 
-// 5 FREE preview formulas - fully visible
-const freeFormulas = [
+const formulas = [
   {
-    name: "Vanilla Cream Blonde",
-    category: "Blonde",
-    description: "Cool-toned cream blonde that never reads grey or ashy",
-    formula: "6N + 9V + Clear (1:1:½)",
-    timing: "20 minutes",
-    tip: "Perfect for neutralizing brass on level 8+ blondes",
+    name: "Creamy Vanilla Platinum",
+    description: "Cool-leaning cream blonde with body that never reads grey",
+    tags: ["Blonde", "Cool Tones", "Level 10"],
+    signature: false,
   },
   {
-    name: "Caramel Drizzle",
-    category: "Bronde",
-    description: "Warm, sun-kissed dimension that melts seamlessly",
-    formula: "7GB + 8WG + Gold Kicker (2:1:¼)",
-    timing: "20 minutes",
-    tip: "Best applied as a glaze over balayage",
+    name: "Toasted Honey Bronde",
+    description: "Multi-tonal warm blonde that shifts in different light",
+    tags: ["Bronde", "Warm Tones", "Dimensional"],
+    signature: false,
   },
   {
-    name: "Espresso Shot",
-    category: "Brunette",
-    description: "Rich, glossy brunette with red undertone control",
-    formula: "4N + 5RV + Ash Kicker (2:1:drop)",
-    timing: "20 minutes",
-    tip: "Neutralizes unwanted warmth while adding dimension",
+    name: "Smoky Mushroom Melt",
+    description: "Moody, editorial cool with alive dimension",
+    tags: ["Brunette", "Cool Tones", "Editorial"],
+    signature: false,
   },
   {
-    name: "Champagne Toast",
-    category: "Blonde",
-    description: "Beige-pink champagne with wearable warmth",
-    formula: "9P + 9RB + Clear (1:½:1)",
-    timing: "15-20 minutes",
-    tip: "Sheer application for lived-in rose gold",
+    name: "Iced Espresso Brunette",
+    description: "Cool, expensive brunette — cold brew, not hot chocolate",
+    tags: ["Brunette", "Cool Tones", "Rich"],
+    signature: false,
   },
   {
-    name: "Mushroom Melt",
-    category: "Brunette",
-    description: "Cool, ashy brunette with that editorial mushroom tone",
-    formula: "6T + 7NB + Ash Kicker (1:1:¼)",
-    timing: "20 minutes",
-    tip: "Pre-tone any warmth before applying",
+    name: "Rose Gold Champagne",
+    description: "Blush champagne that reads 'Is that her natural color?'",
+    tags: ["Rose Gold", "Fashion Color", "Warm Tones"],
+    signature: false,
   },
-];
-
-// 55 Locked formula previews
-const lockedFormulas = [
-  { name: "Iced Platinum", category: "Platinum", description: "Ultra-cool white blonde without going lavender" },
-  { name: "Smoky Quartz", category: "Brunette", description: "Grey-brown crystal clarity with cool undertones" },
-  { name: "Honey Butter", category: "Blonde", description: "Warm, buttery blonde with golden dimension" },
-  { name: "Rose Gold Drip", category: "Fashion", description: "Wearable pink-gold that fades beautifully" },
-  { name: "Toasted Almond", category: "Bronde", description: "Neutral-warm bronde perfection" },
-  { name: "Silver Fox", category: "Grey Blend", description: "Seamless grey coverage that looks natural" },
-  { name: "Cinnamon Swirl", category: "Red", description: "Spiced copper with brunette depth" },
-  { name: "Arctic Blonde", category: "Platinum", description: "Ice queen platinum without the damage" },
-  { name: "Toffee Apple", category: "Bronde", description: "Red-toned bronde for fall vibes" },
-  { name: "Pearl Drops", category: "Blonde", description: "Pearlescent blonde with violet undertones" },
-  { name: "Cognac Kiss", category: "Red", description: "Deep auburn with sophisticated warmth" },
-  { name: "Shadow Root Melt", category: "Technique", description: "Seamless root-to-ends color melt" },
-  { name: "Golden Hour", category: "Blonde", description: "That magic sunset blonde glow" },
-  { name: "Velvet Espresso", category: "Brunette", description: "Luxuriously rich, single-process brunette" },
-  { name: "Dusty Rose", category: "Fashion", description: "Muted mauve-pink that reads expensive" },
-  { name: "Beach Bronze", category: "Bronde", description: "California surfer girl bronze" },
-  { name: "Charcoal Smoke", category: "Grey Blend", description: "Editorial grey-brown for bold clients" },
-  { name: "Butterscotch", category: "Blonde", description: "Warm caramel-blonde sweetness" },
-  { name: "Merlot Magic", category: "Red", description: "Wine-stained brunette sophistication" },
-  { name: "Icy Lavender", category: "Fashion", description: "Pale purple-grey for platinum bases" },
-  { name: "Chestnut Glow", category: "Brunette", description: "Warm, dimensional chestnut brown" },
-  { name: "Sandstorm", category: "Blonde", description: "Neutral sandy blonde perfection" },
-  { name: "Copper Penny", category: "Red", description: "Bright, shiny copper that pops" },
-  { name: "Pewter Mist", category: "Grey Blend", description: "Soft grey blend for transitioning clients" },
-  { name: "Hazelnut Cream", category: "Bronde", description: "Creamy hazel tones with depth" },
-  { name: "Violet Crush", category: "Fashion", description: "Deep purple with brunette base" },
-  { name: "Caramel Macchiato", category: "Bronde", description: "Coffee house inspired warmth" },
-  { name: "Strawberry Milk", category: "Fashion", description: "Soft pink for blondes" },
-  { name: "Onyx Shine", category: "Brunette", description: "Blue-black with mirror shine" },
-  { name: "Vanilla Bean", category: "Blonde", description: "Creamy, warm blonde neutral" },
-  { name: "Autumn Leaf", category: "Red", description: "Orange-copper fall foliage tones" },
-  { name: "Moonstone", category: "Grey Blend", description: "Iridescent grey-blonde shimmer" },
-  { name: "Dark Chocolate", category: "Brunette", description: "Rich cocoa without red tones" },
-  { name: "Peach Bellini", category: "Fashion", description: "Soft coral-peach for summer" },
-  { name: "Platinum Ice", category: "Platinum", description: "The coldest, cleanest platinum" },
-  { name: "Maple Syrup", category: "Bronde", description: "Warm amber-brown sweetness" },
-  { name: "Steel Grey", category: "Grey Blend", description: "Industrial cool grey coverage" },
-  { name: "Brick Red", category: "Red", description: "Earthy, terracotta red tones" },
-  { name: "Cotton Candy", category: "Fashion", description: "Pastel pink fantasy color" },
-  { name: "Walnut Stain", category: "Brunette", description: "Deep, rich walnut brown" },
-  { name: "Apricot Glow", category: "Red", description: "Soft peachy-copper warmth" },
-  { name: "Gunmetal", category: "Grey Blend", description: "Dark metallic grey blend" },
-  { name: "Lemon Drop", category: "Blonde", description: "Bright, sunny yellow-blonde" },
-  { name: "Mulberry Wine", category: "Red", description: "Deep berry-red sophistication" },
-  { name: "Sage Mist", category: "Fashion", description: "Muted green-grey editorial" },
-  { name: "Mocha Latte", category: "Bronde", description: "Coffee-inspired neutral bronde" },
-  { name: "Pink Champagne", category: "Fashion", description: "Bubbly rose-gold blonde" },
-  { name: "Jet Black", category: "Brunette", description: "True black with blue undertones" },
-  { name: "Coral Reef", category: "Fashion", description: "Vivid coral-orange fashion shade" },
-  { name: "Truffle", category: "Brunette", description: "Luxurious deep brown with dimension" },
-  { name: "Baby Pink", category: "Fashion", description: "Delicate pastel pink perfection" },
-  { name: "Auburn Fire", category: "Red", description: "Classic auburn with fire undertones" },
-  { name: "Snow White", category: "Platinum", description: "Pure white platinum blonde" },
-  { name: "Root Shadow Blend", category: "Technique", description: "Natural-looking root transition" },
-  { name: "Color Melt Master", category: "Technique", description: "Seamless multi-tone blending" },
-];
-
-// Signature formulas (included in vault)
-const signatureFormulas = [
-  { name: "The Janine Blonde", category: "Signature", description: "My go-to dimensional blonde formula" },
-  { name: "Studio Brunette", category: "Signature", description: "The brunette that books repeat clients" },
-  { name: "Red Carpet Ready", category: "Signature", description: "Special occasion color that photographs perfectly" },
-  { name: "Natural Enhancer", category: "Signature", description: "When they want 'my color but better'" },
-  { name: "Grey Blending Secret", category: "Signature", description: "The grey coverage formula clients rave about" },
+  {
+    name: "Sun-Drenched Bronze",
+    description: "Liquid bronze that catches light like metal",
+    tags: ["Bronze", "Warm Tones", "Dimensional"],
+    signature: false,
+  },
+  {
+    name: "Gunmetal Ash",
+    description: "Deliberately smoked shadow root melting into clean, airy blonde",
+    tags: ["Signature", "Ash", "Editorial"],
+    signature: true,
+  },
+  {
+    name: "Golden Hour Velvet",
+    description: "Rich warm blonde with violet sophistication underneath",
+    tags: ["Signature", "Warm Blonde", "Dimensional"],
+    signature: true,
+  },
+  {
+    name: "Violet Frost",
+    description: "Editorial mahogany shadow dissolving into lavender-platinum",
+    tags: ["Signature", "Fashion Color", "Editorial"],
+    signature: true,
+  },
+  {
+    name: "Soft Platinum",
+    description: "Your-hair-but-platinum — wearable, not severe",
+    tags: ["Signature", "Platinum", "Wearable"],
+    signature: true,
+  },
+  {
+    name: "Espresso Silk",
+    description: "Brunette sorcery — single-level dimension that makes brown look expensive",
+    tags: ["Signature", "Brunette", "Luxury"],
+    signature: true,
+  },
+  {
+    name: "Amethyst Frost",
+    description: "Fashion-forward lavender-platinum without fully committing",
+    tags: ["Signature", "Fashion Color", "Violet"],
+    signature: true,
+  },
 ];
 
 export default function Formulas() {
@@ -121,229 +84,156 @@ export default function Formulas() {
           <p className="text-sm tracking-[0.3em] uppercase text-[#9A9086] mb-4">
             For Professionals Only
           </p>
-          <h1 className="text-5xl md:text-6xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6">
+          <h1 className="text-4xl md:text-6xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6">
             The Formula Vault
           </h1>
-          <p className="text-lg text-[#9A9086] max-w-2xl mx-auto mb-8">
+          <p className="text-base md:text-lg text-[#9A9086] max-w-2xl mx-auto mb-8 px-4">
             15 years of experimentation, refined into formulas that work. 
             Built on color theory. Salon tested. Dimension focused.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <span className="px-4 py-2 bg-white border border-[#E8DDD4] rounded-full text-sm text-[#3D3935]">
-              🎁 5 Free Formulas
+          <div className="flex flex-wrap justify-center gap-3 mb-8 px-4">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-white border border-[#E8DDD4] rounded-full text-xs md:text-sm text-[#3D3935]">
+              🎨 12 Signature Formulas
             </span>
-            <span className="px-4 py-2 bg-white border border-[#E8DDD4] rounded-full text-sm text-[#3D3935]">
-              🔓 60+ in the Vault
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-white border border-[#E8DDD4] rounded-full text-xs md:text-sm text-[#3D3935]">
+              📚 Color Theory Explained
             </span>
-            <span className="px-4 py-2 bg-white border border-[#E8DDD4] rounded-full text-sm text-[#3D3935]">
+            <span className="px-3 py-1.5 md:px-4 md:py-2 bg-white border border-[#E8DDD4] rounded-full text-xs md:text-sm text-[#3D3935]">
               ⚡ Instant Download
             </span>
           </div>
         </div>
       </section>
 
-      {/* FREE FORMULAS SECTION */}
-      <section className="section bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#9CAF88] text-white text-sm px-4 py-1 rounded-full mb-4">
-              FREE PREVIEW
-            </span>
-            <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
-              5 Formulas on Me
-            </h2>
-            <p className="text-[#9A9086] max-w-xl mx-auto">
-              Try these out behind the chair. When you're ready for more, the vault is waiting.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
-            {freeFormulas.map((formula, index) => (
-              <div 
-                key={index}
-                className="bg-[#FAF7F2] border border-[#E8DDD4] p-4 md:p-6 hover:shadow-lg transition-shadow"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs bg-[#9CAF88] text-white px-2 py-1 rounded">
-                    {formula.category}
-                  </span>
-                  <span className="text-xs text-[#9CAF88] font-medium">FREE</span>
-                </div>
-                
-                <h3 className="text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-2">
-                  {formula.name}
-                </h3>
-                
-                <p className="text-sm text-[#9A9086] mb-4">
-                  {formula.description}
-                </p>
-
-                {/* Visible formula */}
-                <div className="bg-white p-4 rounded border border-[#E8DDD4] mb-3">
-                  <p className="text-sm font-mono text-[#3D3935] mb-2">
-                    <span className="text-[#9A9086]">Formula:</span> {formula.formula}
-                  </p>
-                  <p className="text-sm font-mono text-[#3D3935]">
-                    <span className="text-[#9A9086]">Timing:</span> {formula.timing}
-                  </p>
-                </div>
-
-                <p className="text-xs text-[#9CAF88] italic">
-                  💡 {formula.tip}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* UNLOCK THE VAULT CTA */}
-      <section className="py-16 bg-[#3D3935]">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-[family-name:var(--font-cormorant)] text-white mb-4">
-            Unlock the Full Vault
+      {/* Unlock CTA */}
+      <section className="py-12 bg-[#3D3935]">
+        <div className="container mx-auto text-center px-4">
+          <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-white mb-4">
+            Unlock All Formulas
           </h2>
-          <p className="text-[#B5A191] mb-2 max-w-xl mx-auto">
-            Get instant access to <span className="text-white font-semibold">60+ formulas</span> with full mixing ratios, 
-            color theory breakdowns, and application tips.
-          </p>
-          <p className="text-[#9A9086] mb-8">
-            One-time payment • Instant PDF download • Lifetime access
+          <p className="text-[#B5A191] mb-6 max-w-xl mx-auto text-sm md:text-base">
+            Get instant access to every formula with full color theory breakdowns, mixing ratios, and application notes.
           </p>
           <a 
             href="https://payhip.com/b/tNTmd"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#9CAF88] text-white px-10 py-4 text-xl hover:bg-[#8a9d78] transition-colors"
+            className="inline-block bg-[#9CAF88] text-white px-8 py-3 md:px-10 md:py-4 text-lg md:text-xl hover:bg-[#8a9d78] transition-colors"
           >
-            🔓 Unlock All Formulas — $27
+            Get Full Access — $27
           </a>
+          <p className="text-[#9A9086] text-xs md:text-sm mt-4">
+            One-time payment • Instant PDF download • Lifetime access
+          </p>
         </div>
       </section>
 
-      {/* LOCKED FORMULAS PREVIEW */}
+      {/* Formula Cards - 2 COLUMN GRID */}
       <section className="section bg-[#FAF7F2]">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
-              55 More Formulas Inside
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
+              What's Inside
             </h2>
-            <p className="text-[#9A9086]">
-              Preview what's waiting for you in the vault
+            <p className="text-[#9A9086] text-sm md:text-base">
+              Preview the formulas — unlock to see full mixing ratios & color theory
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {lockedFormulas.map((formula, index) => (
-              <div 
+          {/* 2-COLUMN GRID ON MOBILE */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+            {formulas.map((formula, index) => (
+              <a 
                 key={index}
-                className="relative bg-white border border-[#E8DDD4] p-4 group hover:shadow-md transition-all cursor-pointer"
-                onClick={() => window.open("https://payhip.com/b/tNTmd", "_blank")}
+                href="https://payhip.com/b/tNTmd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white border border-[#E8DDD4] p-3 md:p-6 hover:shadow-lg transition-shadow group"
               >
-                {/* Lock icon */}
-                <div className="absolute top-2 right-2 text-[#E8DDD4] group-hover:text-[#9CAF88] transition-colors">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 1C8.676 1 6 3.676 6 7v2H4v14h16V9h-2V7c0-3.324-2.676-6-6-6zm0 2c2.276 0 4 1.724 4 4v2H8V7c0-2.276 1.724-4 4-4zm0 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/>
-                  </svg>
+                {/* Lock + Signature Badge */}
+                <div className="flex items-center justify-between mb-2 md:mb-3">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#C4B5A0] flex items-center justify-center">
+                    <span className="text-white text-sm md:text-base">🔒</span>
+                  </div>
+                  {formula.signature && (
+                    <span className="text-[8px] md:text-[10px] bg-[#3D3935] text-white px-1.5 py-0.5 md:px-2 md:py-1 uppercase tracking-wider">
+                      Signature
+                    </span>
+                  )}
                 </div>
 
-                <span className="text-[10px] text-[#9A9086] uppercase tracking-wide">
-                  {formula.category}
-                </span>
-                
-                <h3 className="text-sm font-[family-name:var(--font-cormorant)] text-[#3D3935] mt-1 mb-2 leading-tight">
+                {/* Title */}
+                <h3 className="text-sm md:text-xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-1 md:mb-2 leading-tight">
                   {formula.name}
                 </h3>
-                
-                <p className="text-xs text-[#9A9086] line-clamp-2">
+
+                {/* Description */}
+                <p className="text-[10px] md:text-sm text-[#9A9086] mb-3 md:mb-4 line-clamp-2">
                   {formula.description}
                 </p>
 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-[#3D3935]/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-white text-xs font-medium flex items-center gap-1">
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                    Unlock
-                  </span>
+                {/* Blurred Formula Preview */}
+                <div className="bg-[#FAF7F2] p-2 md:p-3 rounded mb-3 md:mb-4 select-none">
+                  <p className="text-[10px] md:text-xs text-[#9A9086] blur-[4px] font-mono leading-relaxed">
+                    Melt: ●●● + ●●● (●:●)<br/>
+                    Ends: ●●● + ●●● + ●●●<br/>
+                    Processing: ●● minutes
+                  </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* SIGNATURE FORMULAS TEASER */}
-      <section className="section bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#3D3935] text-white text-xs px-3 py-1 rounded-full mb-4">
-              VAULT EXCLUSIVE
-            </span>
-            <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
-              + 5 Signature Formulas
-            </h2>
-            <p className="text-[#9A9086]">
-              My personal go-to formulas that keep clients coming back
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {signatureFormulas.map((formula, index) => (
-              <div 
-                key={index}
-                className="bg-gradient-to-br from-[#3D3935] to-[#5A534D] p-5 text-center"
-              >
-                <span className="text-2xl mb-2 block">⭐</span>
-                <h3 className="text-white font-[family-name:var(--font-cormorant)] text-lg mb-2">
-                  {formula.name}
-                </h3>
-                <p className="text-[#B5A191] text-xs">
-                  {formula.description}
-                </p>
-              </div>
+                {/* Tags */}
+                <div className="flex flex-wrap gap-1 md:gap-2">
+                  {formula.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="text-[8px] md:text-xs bg-[#FAF7F2] text-[#3D3935] px-1.5 py-0.5 md:px-2 md:py-1 rounded"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </a>
             ))}
           </div>
         </div>
       </section>
 
       {/* What You Get */}
-      <section className="section bg-[#FAF7F2]">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
-              What's In the Vault
+      <section className="section bg-white">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-4">
+              What You Get
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className="flex gap-4">
               <div className="text-2xl">🎨</div>
               <div>
-                <h3 className="font-semibold text-[#3D3935] mb-2">60+ Complete Formulas</h3>
-                <p className="text-sm text-[#9A9086]">From icy platinum to rich brunette, every formula is salon-tested and client-approved.</p>
+                <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">12 Signature Formulas</h3>
+                <p className="text-xs md:text-sm text-[#9A9086]">From icy platinum to rich brunette, each formula is salon-tested and client-approved.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="text-2xl">🧪</div>
               <div>
-                <h3 className="font-semibold text-[#3D3935] mb-2">Color Theory Breakdowns</h3>
-                <p className="text-sm text-[#9A9086]">Understand WHY each formula works — the undertones, the science, the art.</p>
+                <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Color Theory Breakdowns</h3>
+                <p className="text-xs md:text-sm text-[#9A9086]">Understand WHY each formula works — the undertones, the science, the art.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="text-2xl">📐</div>
               <div>
-                <h3 className="font-semibold text-[#3D3935] mb-2">Exact Mixing Ratios</h3>
-                <p className="text-sm text-[#9A9086]">No guessing. Precise ratios for consistent, repeatable results.</p>
+                <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Exact Mixing Ratios</h3>
+                <p className="text-xs md:text-sm text-[#9A9086]">No guessing. Precise ratios for consistent, repeatable results.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="text-2xl">💡</div>
               <div>
-                <h3 className="font-semibold text-[#3D3935] mb-2">Pro Application Tips</h3>
-                <p className="text-sm text-[#9A9086]">Techniques from 15 years behind the chair to nail each formula.</p>
+                <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Application Tips</h3>
+                <p className="text-xs md:text-sm text-[#9A9086]">Pro techniques from 15 years behind the chair.</p>
               </div>
             </div>
           </div>
@@ -351,23 +241,23 @@ export default function Formulas() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-[#3D3935]">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-[family-name:var(--font-cormorant)] text-white mb-4">
-            Ready to Fill Your Formula Book?
+      <section className="py-12 md:py-16 bg-[#3D3935]">
+        <div className="container mx-auto text-center px-4">
+          <h2 className="text-2xl md:text-4xl font-[family-name:var(--font-cormorant)] text-white mb-4">
+            Ready to Elevate Your Color Game?
           </h2>
-          <p className="text-[#B5A191] mb-8 max-w-xl mx-auto">
-            Join hundreds of stylists who've unlocked the vault.
+          <p className="text-[#B5A191] mb-6 md:mb-8 max-w-xl mx-auto text-sm md:text-base">
+            Join hundreds of stylists who've unlocked the formula vault.
           </p>
           <a 
             href="https://payhip.com/b/tNTmd"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#9CAF88] text-white px-10 py-4 text-xl hover:bg-[#8a9d78] transition-colors"
+            className="inline-block bg-[#9CAF88] text-white px-8 py-3 md:px-10 md:py-4 text-lg md:text-xl hover:bg-[#8a9d78] transition-colors"
           >
-            🔓 Get the Full Vault — $27
+            Unlock All Formulas — $27
           </a>
-          <p className="text-[#9A9086] text-sm mt-6">
+          <p className="text-[#9A9086] text-xs md:text-sm mt-4 md:mt-6">
             ✓ Instant download &nbsp;&nbsp; ✓ Lifetime access &nbsp;&nbsp; ✓ PDF format
           </p>
         </div>
@@ -375,31 +265,27 @@ export default function Formulas() {
 
       {/* FAQ */}
       <section className="section bg-white">
-        <div className="container mx-auto max-w-2xl">
-          <h2 className="text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-8 text-center">
+        <div className="container mx-auto max-w-2xl px-4">
+          <h2 className="text-2xl md:text-3xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6 md:mb-8 text-center">
             Questions?
           </h2>
           
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <div className="border-b border-[#E8DDD4] pb-4">
-              <h3 className="font-semibold text-[#3D3935] mb-2">What format is the guide?</h3>
-              <p className="text-sm text-[#9A9086]">PDF format — works on any device, easy to reference behind the chair.</p>
+              <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">What format is the guide?</h3>
+              <p className="text-xs md:text-sm text-[#9A9086]">PDF format — works on any device, easy to reference behind the chair.</p>
             </div>
             <div className="border-b border-[#E8DDD4] pb-4">
-              <h3 className="font-semibold text-[#3D3935] mb-2">Are these Shades EQ formulas?</h3>
-              <p className="text-sm text-[#9A9086]">Yes! All formulas are built around Redken Shades EQ with full color theory explanations.</p>
+              <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Are these Shades EQ formulas?</h3>
+              <p className="text-xs md:text-sm text-[#9A9086]">Yes! All formulas are built around Redken Shades EQ with full color theory explanations.</p>
             </div>
             <div className="border-b border-[#E8DDD4] pb-4">
-              <h3 className="font-semibold text-[#3D3935] mb-2">How many formulas total?</h3>
-              <p className="text-sm text-[#9A9086]">60+ formulas covering blondes, brunettes, reds, grey blending, fashion colors, and signature techniques.</p>
-            </div>
-            <div className="border-b border-[#E8DDD4] pb-4">
-              <h3 className="font-semibold text-[#3D3935] mb-2">Will there be updates?</h3>
-              <p className="text-sm text-[#9A9086]">Future formula drops are in the works! Purchasers get first access to new releases.</p>
+              <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Will there be updates?</h3>
+              <p className="text-xs md:text-sm text-[#9A9086]">Future formula drops are in the works! Purchasers get first access to new releases.</p>
             </div>
             <div className="pb-4">
-              <h3 className="font-semibold text-[#3D3935] mb-2">Can I get a refund?</h3>
-              <p className="text-sm text-[#9A9086]">Due to the digital nature of the product, all sales are final. But we're confident you'll love it!</p>
+              <h3 className="font-semibold text-[#3D3935] mb-2 text-sm md:text-base">Can I get a refund?</h3>
+              <p className="text-xs md:text-sm text-[#9A9086]">Due to the digital nature of the product, all sales are final. But we're confident you'll love it!</p>
             </div>
           </div>
         </div>
