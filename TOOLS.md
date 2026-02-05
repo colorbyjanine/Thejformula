@@ -4,10 +4,10 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 
 ## Vercel
 
-- **Token:** `369IrVEcUPljODrOIr0e2dch` (full account access, no expiration)
+- **Token:** See `.secrets/CREDENTIALS.md` 🔐
 - **Project:** thejformula
 - **Team:** janine-fernandez-s-projects
-- **Usage:** `npx vercel ls --token="$TOKEN"` or `npx vercel --prod --token="$TOKEN" --yes`
+- **Usage:** Token stored securely
 
 ## What Goes Here
 

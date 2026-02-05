@@ -1,251 +1,245 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
-interface Message {
-  id: number;
-  text: string;
-  sender: "user" | "bot";
-  timestamp: Date;
-}
+const SERVICES = [
+  "Balayage",
+  "Full Color",
+  "Color Correction",
+  "Highlights",
+  "Gloss / Toner",
+  "Haircut & Style",
+  "Consultation",
+  "Other (describe below)",
+];
 
-export default function ChatPage() {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: 1,
-      text: "Hi! 👋 I'm Jane, Janine's assistant at The J Formula. I'm here to help you with booking, pricing, questions about services — whatever you need! How can I help you today?",
-      sender: "bot",
-      timestamp: new Date(),
-    },
-  ]);
-  const [inputValue, setInputValue] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
-  const [userName, setUserName] = useState("");
-  const [userContact, setUserContact] = useState("");
-  const [showContactForm, setShowContactForm] = useState(false);
-  const [contactSaved, setContactSaved] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+export default function BookingRequestPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    contact: "",
+    service: "",
+    date1: "",
+    date2: "",
+    date3: "",
+    notes: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    if (!formData.name || !formData.contact || !formData.service || !formData.date1) {
+      setError("Please fill in your name, contact info, service, and at least one preferred date.");
+      return;
+    }
 
-  const sendMessage = async (text: string) => {
-    if (!text.trim()) return;
-
-    const userMessage: Message = {
-      id: messages.length + 1,
-      text: text.trim(),
-      sender: "user",
-      timestamp: new Date(),
-    };
-
-    setMessages((prev) => [...prev, userMessage]);
-    setInputValue("");
-    setIsTyping(true);
+    setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("/api/booking-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          message: text.trim(),
-          userName: userName || "Instagram Visitor",
-          userContact: userContact || "Not provided yet",
+          ...formData,
           timestamp: new Date().toISOString(),
-          source: "instagram-link",
+          source: "thejformula.com/chat",
         }),
       });
 
-      const data = await response.json();
-
-      setTimeout(() => {
-        setIsTyping(false);
-        const botMessage: Message = {
-          id: messages.length + 2,
-          text: data.reply || "Thanks for your message! I'll make sure Janine sees this. 🤍",
-          sender: "bot",
-          timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, botMessage]);
-
-        // After second user message, prompt for contact if not saved
-        if (!contactSaved && messages.length >= 2) {
-          setTimeout(() => {
-            setShowContactForm(true);
-          }, 1500);
-        }
-      }, 1000);
-    } catch (error) {
-      setIsTyping(false);
-      const botMessage: Message = {
-        id: messages.length + 2,
-        text: "Thanks for reaching out! Your message has been received. We'll get back to you soon! 🤍",
-        sender: "bot",
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, botMessage]);
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or DM @colorbyjanine on Instagram.");
+      }
+    } catch {
+      setError("Connection error. Please try again or DM @colorbyjanine on Instagram.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
-  const handleContactSubmit = async () => {
-    if (userContact.trim()) {
-      setShowContactForm(false);
-      setContactSaved(true);
-
-      // Save contact info
-      await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: `[Contact Info] Name: ${userName || "Not provided"}, Contact: ${userContact}`,
-          userName: userName || "Instagram Visitor",
-          userContact: userContact,
-          timestamp: new Date().toISOString(),
-          source: "instagram-link",
-        }),
-      });
-
-      const botMessage: Message = {
-        id: messages.length + 1,
-        text: `Perfect! I've saved your contact info. I'll reach out to ${userContact} if I need to follow up. Now, what else can I help you with? 😊`,
-        sender: "bot",
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, botMessage]);
-    }
-  };
+  if (submitted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-[#FAF7F2] to-[#E8DDD4] flex flex-col items-center justify-center p-6">
+        <div className="bg-white rounded-3xl p-8 max-w-md w-full shadow-xl text-center">
+          <div className="w-20 h-20 bg-[#3D3935] rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-semibold text-[#3D3935] mb-3">Request Received! 🎉</h2>
+          <p className="text-[#9A9086] mb-6">
+            Janine will review your request and get back to you soon to confirm your appointment.
+          </p>
+          <a
+            href="/"
+            className="inline-block bg-[#3D3935] text-white px-8 py-3 rounded-full font-medium hover:bg-[#9A9086] transition-colors"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FAF7F2] to-[#E8DDD4] flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-[#FAF7F2] to-[#E8DDD4]">
       {/* Header */}
-      <div className="bg-[#3D3935] text-white p-4 shadow-lg">
+      <div className="bg-[#3D3935] text-white p-6 shadow-lg">
         <div className="max-w-lg mx-auto flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#B5A191]">
+          <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#B5A191]">
             <Image
               src="/janine.jpg"
-              alt="The J Formula"
-              width={48}
-              height={48}
+              alt="Janine"
+              width={56}
+              height={56}
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h1 className="font-semibold">The J Formula</h1>
-            <p className="text-sm text-[#B5A191]">Chat with Jane • Janine's Assistant</p>
+            <h1 className="text-xl font-semibold">Book with Janine</h1>
+            <p className="text-sm text-[#B5A191]">The J Formula • @colorbyjanine</p>
           </div>
         </div>
       </div>
 
-      {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 max-w-lg mx-auto w-full">
-        <div className="space-y-4 pb-4">
-          {messages.map((message) => (
-            <div
-              key={message.id}
-              className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+      {/* Form */}
+      <div className="max-w-lg mx-auto p-6">
+        <div className="bg-white rounded-3xl p-6 shadow-xl">
+          <h2 className="text-lg font-semibold text-[#3D3935] mb-2">Request an Appointment</h2>
+          <p className="text-sm text-[#9A9086] mb-6">
+            Fill out the form below and I'll get back to you to confirm your booking!
+          </p>
+
+          <form onSubmit={handleSubmit} className="space-y-5">
+            {/* Name */}
+            <div>
+              <label className="block text-sm font-medium text-[#3D3935] mb-2">Your Name *</label>
+              <input
+                type="text"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                placeholder="Jane Doe"
+                className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
+              />
+            </div>
+
+            {/* Contact */}
+            <div>
+              <label className="block text-sm font-medium text-[#3D3935] mb-2">Phone or Email *</label>
+              <input
+                type="text"
+                value={formData.contact}
+                onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                placeholder="(555) 123-4567 or email@example.com"
+                className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
+              />
+            </div>
+
+            {/* Service */}
+            <div>
+              <label className="block text-sm font-medium text-[#3D3935] mb-2">Service *</label>
+              <select
+                value={formData.service}
+                onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2] appearance-none"
+              >
+                <option value="">Select a service...</option>
+                {SERVICES.map((service) => (
+                  <option key={service} value={service}>
+                    {service}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Preferred Dates */}
+            <div>
+              <label className="block text-sm font-medium text-[#3D3935] mb-2">
+                Preferred Dates & Times
+              </label>
+              <p className="text-xs text-[#9A9086] mb-3">
+                Give me a few options that work for you (at least one required)
+              </p>
+              <div className="space-y-3">
+                <input
+                  type="text"
+                  value={formData.date1}
+                  onChange={(e) => setFormData({ ...formData, date1: e.target.value })}
+                  placeholder="Option 1: e.g. Saturday Feb 15, afternoon *"
+                  className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
+                />
+                <input
+                  type="text"
+                  value={formData.date2}
+                  onChange={(e) => setFormData({ ...formData, date2: e.target.value })}
+                  placeholder="Option 2 (optional)"
+                  className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
+                />
+                <input
+                  type="text"
+                  value={formData.date3}
+                  onChange={(e) => setFormData({ ...formData, date3: e.target.value })}
+                  placeholder="Option 3 (optional)"
+                  className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
+                />
+              </div>
+            </div>
+
+            {/* Notes */}
+            <div>
+              <label className="block text-sm font-medium text-[#3D3935] mb-2">
+                Anything else I should know?
+              </label>
+              <textarea
+                value={formData.notes}
+                onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                placeholder="Tell me about your hair goals, current color, inspiration photos, etc."
+                rows={4}
+                className="w-full p-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2] resize-none"
+              />
+            </div>
+
+            {/* Error */}
+            {error && (
+              <div className="p-4 bg-red-50 text-red-600 rounded-xl text-sm">
+                {error}
+              </div>
+            )}
+
+            {/* Submit */}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full bg-[#3D3935] text-white py-4 rounded-full font-medium hover:bg-[#9A9086] transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
             >
-              <div
-                className={`max-w-[85%] p-4 rounded-2xl ${
-                  message.sender === "user"
-                    ? "bg-[#3D3935] text-white rounded-br-sm"
-                    : "bg-white text-[#3D3935] rounded-bl-sm shadow-md"
-                }`}
-              >
-                <p className="text-sm leading-relaxed">{message.text}</p>
-              </div>
-            </div>
-          ))}
-          
-          {isTyping && (
-            <div className="flex justify-start">
-              <div className="bg-white text-[#3D3935] p-4 rounded-2xl rounded-bl-sm shadow-md">
-                <div className="flex gap-1.5">
-                  <span className="w-2 h-2 bg-[#9A9086] rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
-                  <span className="w-2 h-2 bg-[#9A9086] rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
-                  <span className="w-2 h-2 bg-[#9A9086] rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
-                </div>
-              </div>
-            </div>
-          )}
-          
-          <div ref={messagesEndRef} />
-        </div>
-      </div>
+              {isSubmitting ? "Sending..." : "Send Request ✨"}
+            </button>
+          </form>
 
-      {/* Contact Form Popup */}
-      {showContactForm && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl">
-            <h3 className="text-lg font-semibold text-[#3D3935] mb-2">Stay Connected 💫</h3>
-            <p className="text-sm text-[#9A9086] mb-4">
-              Drop your info so I can reach out about appointments or follow up on your questions!
-            </p>
-            <input
-              type="text"
-              placeholder="Your name"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              className="w-full p-3 mb-3 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935]"
-            />
-            <input
-              type="text"
-              placeholder="Phone number or email"
-              value={userContact}
-              onChange={(e) => setUserContact(e.target.value)}
-              className="w-full p-3 mb-4 rounded-xl border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935]"
-            />
-            <div className="flex gap-3">
-              <button
-                onClick={handleContactSubmit}
-                className="flex-1 bg-[#3D3935] text-white py-3 rounded-xl text-sm font-medium hover:bg-[#9A9086] transition-colors"
-              >
-                Save & Continue
-              </button>
-              <button
-                onClick={() => setShowContactForm(false)}
-                className="px-4 py-3 text-[#9A9086] text-sm hover:text-[#3D3935]"
-              >
-                Skip
-              </button>
-            </div>
-          </div>
+          <p className="text-center text-xs text-[#9A9086] mt-6">
+            Or DM me directly:{" "}
+            <a
+              href="https://instagram.com/colorbyjanine"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#3D3935]"
+            >
+              @colorbyjanine
+            </a>
+          </p>
         </div>
-      )}
 
-      {/* Input Area */}
-      <div className="bg-white border-t border-[#E8DDD4] p-4">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            sendMessage(inputValue);
-          }}
-          className="max-w-lg mx-auto flex gap-3"
-        >
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Type your message..."
-            className="flex-1 p-4 rounded-full border border-[#E8DDD4] text-sm focus:outline-none focus:border-[#3D3935] bg-[#FAF7F2]"
-          />
-          <button
-            type="submit"
-            className="w-12 h-12 bg-[#3D3935] text-white rounded-full flex items-center justify-center hover:bg-[#9A9086] transition-colors shadow-lg"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-            </svg>
-          </button>
-        </form>
-        <p className="text-center text-xs text-[#9A9086] mt-3">
-          Powered by <a href="/" className="underline">The J Formula</a>
-        </p>
+        {/* Back link */}
+        <div className="text-center mt-6">
+          <a href="/" className="text-sm text-[#9A9086] hover:text-[#3D3935]">
+            ← Back to The J Formula
+          </a>
+        </div>
       </div>
     </div>
   );

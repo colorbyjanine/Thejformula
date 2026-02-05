@@ -56,20 +56,20 @@ export default function Book() {
                 <span className="text-2xl">✨</span>
               </div>
               <h2 className="text-2xl font-[family-name:var(--font-cormorant)] mb-3">
-                Need Something Sooner?
+                Request an Appointment
               </h2>
               <p className="text-[#B5A191] mb-6 text-sm">
-                Don't see availability that works? Have questions first? 
-                Message Jane and she'll help get you scheduled.
+                Don't see availability that works? Submit a request with your preferred dates 
+                and I'll get back to you personally.
               </p>
               <Link 
                 href="/chat"
                 className="inline-block w-full py-3 px-6 bg-white text-[#3D3935] font-medium tracking-wide uppercase text-sm hover:bg-[#FAF7F2] transition-colors"
               >
-                Chat with Jane
+                Request Appointment
               </Link>
               <p className="text-xs text-[#B5A191] mt-4">
-                For urgent requests & questions
+                I'll respond within 24 hours
               </p>
             </div>
 
@@ -89,7 +89,7 @@ export default function Book() {
               You can book as a guest — no account needed!
             </p>
             <p className="text-sm text-[#9A9086]">
-              Not sure which service to pick? <Link href="/services" className="underline hover:text-[#3D3935]">View my full menu</Link> or <Link href="/chat" className="underline hover:text-[#3D3935]">ask Jane</Link>.
+              Not sure which service to pick? <Link href="/services" className="underline hover:text-[#3D3935]">View my full menu</Link> or <Link href="/chat" className="underline hover:text-[#3D3935]">send a request</Link>.
             </p>
           </div>
         </div>
