@@ -60,7 +60,7 @@ export default function Formulas() {
             The Formula Vault
           </h1>
           <p className="text-sm md:text-base text-[#9A9086] max-w-xl mx-auto">
-            15 years behind the chair. 5 free — unlock the vault for more.
+            15 years behind the chair, refined into formulas that work.
           </p>
         </div>
       </section>
