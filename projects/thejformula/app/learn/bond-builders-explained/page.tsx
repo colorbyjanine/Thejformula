@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ShareButton from "@/components/ShareButton";
 
 export const metadata = {
   title: "Bond Builders Explained: Olaplex, K18 & More | The J Formula",
@@ -15,9 +16,10 @@ export default function BondBuildersArticle() {
           <h1 className="font-cormorant text-4xl md:text-5xl lg:text-6xl mb-6">
             Bond Builders Explained
           </h1>
-          <p className="text-white/70 text-lg">
+          <p className="text-white/70 text-lg mb-6">
             Olaplex, K18, Redken Acidic Bonding — what's the difference and which one do you actually need?
           </p>
+          <ShareButton url="/learn/bond-builders-explained" title="Bond Builders Explained" />
         </div>
       </section>
 

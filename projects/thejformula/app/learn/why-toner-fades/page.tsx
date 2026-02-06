@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ShareButton from "@/components/ShareButton";
 
 export default function WhyTonerFades() {
   return (
@@ -12,6 +13,8 @@ export default function WhyTonerFades() {
               <span className="text-xs tracking-widest uppercase text-[#9A9086]">Color Science</span>
               <span className="text-xs text-[#D4C5B5]">•</span>
               <span className="text-xs text-[#9A9086]">8 min read</span>
+              <span className="text-xs text-[#D4C5B5]">•</span>
+              <ShareButton url="/learn/why-toner-fades" title="Why Your Toner Fades" />
             </div>
             <h1 className="text-4xl md:text-5xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6">
               Why Your Toner Fades So Fast (And What You Can Do About It)

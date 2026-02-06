@@ -1,4 +1,9 @@
 {
-  "lastChecked": null,
-  "alertedBookingIds": []
+  "lastChecked": "2026-02-06T06:07:55Z",
+  "alertedBookingIds": [
+    "msg_1770011589924",
+    "msg_1770011607660",
+    "msg_1770011628267",
+    "msg_1770011650459"
+  ]
 }

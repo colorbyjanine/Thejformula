@@ -1,0 +1,2536 @@
+{
+  "metadata": {
+    "title": "Comprehensive Bar Exam Study Resource",
+    "version": "1.0.0",
+    "lastUpdated": "2026-02-06",
+    "disclaimer": "This resource is for educational purposes. Always verify current law and consult official bar exam materials.",
+    "coverage": "MBE subjects + California-specific subjects for California Bar Exam"
+  },
+  "subjects": [
+    {
+      "id": "torts",
+      "name": "Torts",
+      "isMBE": true,
+      "overview": "Torts is the area of law dealing with civil wrongs that cause harm or loss, resulting in legal liability for the person who commits the tortious act.",
+      "topics": [
+        {
+          "category": "Intentional Torts Against Persons",
+          "subtopics": [
+            {
+              "name": "Battery",
+              "rule": "Battery is the intentional infliction of a harmful or offensive contact with the person of another.",
+              "elements": [
+                "1. Intent - The defendant acted with purpose or substantial certainty to cause contact",
+                "2. Harmful or offensive contact - Contact that causes pain, injury, or would offend a reasonable person's sense of dignity",
+                "3. With the person of another - Direct or indirect contact with the plaintiff's body or anything closely connected to it"
+              ],
+              "examples": [
+                "Punching someone in the face (harmful contact)",
+                "Spitting on someone (offensive contact)",
+                "Knocking a hat off someone's head (extension of person)",
+                "Pulling a chair out from under someone about to sit (indirect contact)",
+                "Kissing someone without consent (offensive contact)"
+              ],
+              "defenses": [
+                "Consent (express or implied)",
+                "Self-defense (reasonable force, proportionate response)",
+                "Defense of others (reasonable belief of threat)",
+                "Defense of property (reasonable non-deadly force)",
+                "Necessity (public or private)",
+                "Authority of law (lawful arrest)"
+              ],
+              "mnemonics": "Battery = Bad Touch (contact required, unlike assault)",
+              "essayTips": "Always check for transferred intent - if D intended to hit A but hit B, battery still applies to B. Discuss whether contact was 'offensive' using reasonable person standard. Don't forget indirect contact (setting a trap, poison).",
+              "mbeTips": "Intent is KEY - look for 'purpose' OR 'substantial certainty.' Defendant need not intend harm, just the contact. Contact with anything closely connected (cane, purse, car plaintiff is in) counts."
+            },
+            {
+              "name": "Assault",
+              "rule": "Assault is the intentional creation of a reasonable apprehension in the mind of the victim of an imminent harmful or offensive contact.",
+              "elements": [
+                "1. Intent - Defendant acted with purpose or substantial certainty to cause apprehension",
+                "2. Reasonable apprehension - Plaintiff actually perceived the threat and a reasonable person would have",
+                "3. Imminent - The threatened contact must appear to be immediate, not future",
+                "4. Harmful or offensive contact - The type of contact threatened must be harmful or offensive"
+              ],
+              "examples": [
+                "Raising a fist at someone who sees it and fears being struck",
+                "Pointing an unloaded gun at plaintiff who believes it's loaded",
+                "Swinging a bat at someone's head but missing",
+                "Lunging at someone with a knife"
+              ],
+              "notAssault": [
+                "Threats of future harm ('I'll get you tomorrow')",
+                "Threats plaintiff doesn't perceive (sleeping victim)",
+                "Words alone without overt act (generally)",
+                "Contact from behind without prior awareness"
+              ],
+              "defenses": [
+                "Consent",
+                "Self-defense",
+                "Defense of others",
+                "Defense of property"
+              ],
+              "mnemonics": "Assault = Apprehension (fear of contact, no touch needed)",
+              "essayTips": "Contrast with battery - assault requires NO contact but requires awareness. If victim is unaware (sleeping, attacked from behind), no assault. Words alone usually insufficient - need overt act. Apparent ability to carry out threat is sufficient (unloaded gun victim believes is loaded).",
+              "mbeTips": "Watch for 'imminent' - future threats fail. Plaintiff must actually perceive the threat. Apparent ability counts (fake gun). Words + overt act can suffice."
+            },
+            {
+              "name": "False Imprisonment",
+              "rule": "False imprisonment is the intentional confinement of another within boundaries fixed by the defendant, without consent or legal privilege.",
+              "elements": [
+                "1. Intent - Defendant acted with purpose or substantial certainty to confine",
+                "2. Confinement - Plaintiff is restricted to a bounded area",
+                "3. Awareness or harm - Plaintiff is aware of confinement OR is harmed by it",
+                "4. No reasonable means of escape - Plaintiff has no reasonable route of escape known to them"
+              ],
+              "examples": [
+                "Locking someone in a room",
+                "Taking someone's clothes while swimming, leaving them unable to leave",
+                "Refusing to stop a moving vehicle when passenger demands to exit",
+                "Threatening to harm family member if plaintiff leaves",
+                "Invalid use of legal process to confine"
+              ],
+              "notFalseImprisonment": [
+                "Blocking one exit when another reasonable exit exists",
+                "Moral pressure alone (embarrassment about leaving)",
+                "Future threats ('if you leave, I'll fire you tomorrow')",
+                "Plaintiff unaware and unharmed"
+              ],
+              "shopkeepersPrivilege": {
+                "rule": "A shopkeeper may detain a suspected shoplifter for a reasonable time, in a reasonable manner, for investigation.",
+                "requirements": [
+                  "Reasonable belief of theft",
+                  "Reasonable duration",
+                  "Reasonable manner (no excessive force)",
+                  "Purpose is investigation, not punishment"
+                ]
+              },
+              "defenses": [
+                "Consent",
+                "Shopkeeper's privilege",
+                "Valid legal authority (lawful arrest)",
+                "Reasonable means of escape existed"
+              ],
+              "mnemonics": "FI = Forced Inside (bounded area, no escape)",
+              "essayTips": "Check if plaintiff knew of a reasonable escape route. The area must be BOUNDED - blocking one direction in an open field is not enough. Note shopkeeper's privilege for retail theft scenarios. Physical force not required - threats and duress count.",
+              "mbeTips": "Confinement can be by physical barriers, threats, duress, or assertion of legal authority. Must be aware OR harmed. Moral pressure alone insufficient. No minimum time required."
+            },
+            {
+              "name": "Intentional Infliction of Emotional Distress (IIED)",
+              "rule": "IIED occurs when the defendant, by extreme and outrageous conduct, intentionally or recklessly causes severe emotional distress to another.",
+              "elements": [
+                "1. Extreme and outrageous conduct - Conduct exceeding all bounds of decency tolerated in civilized society",
+                "2. Intent or recklessness - Defendant intended to cause distress OR acted with reckless disregard",
+                "3. Causation - Defendant's conduct caused the distress",
+                "4. Severe emotional distress - Distress beyond what a reasonable person could be expected to endure"
+              ],
+              "outrageousnessFactors": [
+                "Defendant is in position of authority or power",
+                "Defendant knows of plaintiff's particular vulnerability",
+                "Conduct is continuous or repeated",
+                "Defendant is a common carrier or innkeeper"
+              ],
+              "examples": [
+                "Telling someone falsely that their child has been killed in an accident",
+                "Harassing phone calls in the middle of the night repeatedly",
+                "Extreme workplace harassment exploiting known vulnerabilities",
+                "Debt collector threatening violence against family",
+                "Practical joke causing heart attack"
+              ],
+              "notOutrageous": [
+                "Mere insults, even if offensive",
+                "Single rude act without more",
+                "Hurt feelings from true statements",
+                "Normal business conduct, even if distressing"
+              ],
+              "bystanderRecovery": {
+                "rule": "A bystander may recover for IIED if present at the scene, closely related to the victim, and defendant knew of their presence.",
+                "elements": [
+                  "Plaintiff was present when conduct occurred",
+                  "Plaintiff was a close family member of the target",
+                  "Defendant knew or should have known of plaintiff's presence"
+                ]
+              },
+              "defenses": [
+                "First Amendment (some speech protections)",
+                "Conduct was not outrageous",
+                "Distress was not severe"
+              ],
+              "mnemonics": "IIED = Intentional Incredibly Evil Deeds (must be EXTREME)",
+              "essayTips": "This is a HIGH bar - emphasize that conduct must be 'beyond all bounds of decency.' Insults alone rarely qualify. Look for vulnerabilities defendant exploited. Physical manifestation of distress helps but is not required in most jurisdictions. Check for bystander recovery if family member witnessed.",
+              "mbeTips": "The conduct must be truly OUTRAGEOUS, not just rude or mean. Consider defendant's knowledge of plaintiff's sensitivity. Recklessness is sufficient for intent. Mere insults = not outrageous."
+            }
+          ]
+        },
+        {
+          "category": "Intentional Torts Against Property",
+          "subtopics": [
+            {
+              "name": "Trespass to Land",
+              "rule": "Trespass to land is the intentional physical invasion of another's real property.",
+              "elements": [
+                "1. Intent - Defendant intended the physical act that resulted in the entry (not intent to trespass)",
+                "2. Physical invasion - Defendant or something set in motion by defendant enters the land",
+                "3. Another's property - The land belongs to or is in possession of another"
+              ],
+              "examples": [
+                "Walking onto someone's land without permission",
+                "Throwing an object onto someone's property",
+                "Flooding a neighbor's land by damming a stream",
+                "Shooting bullets or shining lights across property",
+                "Remaining on land after permission is revoked"
+              ],
+              "scope": [
+                "Includes the surface, airspace above, and soil below",
+                "Reasonable airspace invasion (normal flight) typically not trespass",
+                "Low-flying aircraft may constitute trespass"
+              ],
+              "defenses": [
+                "Consent",
+                "Necessity (public or private)",
+                "Authority of law",
+                "Recapture of chattels (limited)"
+              ],
+              "damages": "Nominal damages available without proof of actual harm; actual damages if property damaged.",
+              "mnemonics": "Trespass = 'T'ouching land without permission",
+              "essayTips": "Remember: intent to ENTER, not intent to TRESPASS. Mistake about ownership is not a defense. Includes particles (pollution), water, objects. Continuing trespass = new cause of action each day. Compare with nuisance (interference with USE of land, not physical invasion).",
+              "mbeTips": "Mistake is NOT a defense - if D intends to walk onto land, it's trespass even if D thought it was their land. Physical invasion required (contrast with nuisance). Nominal damages available without actual harm."
+            },
+            {
+              "name": "Trespass to Chattels",
+              "rule": "Trespass to chattels is the intentional interference with another's right of possession in personal property, causing some actual harm or deprivation of use.",
+              "elements": [
+                "1. Intent - Defendant intended the act that interfered with the chattel",
+                "2. Interference - Defendant damaged, used, or intermeddled with the property",
+                "3. Possession - The property was in another's possession",
+                "4. Damages - Actual harm or deprivation of use (unlike trespass to land)"
+              ],
+              "examples": [
+                "Denting someone's car",
+                "Using someone's computer without permission, causing delay",
+                "Keeping someone's property for a short time",
+                "Damaging someone's animal"
+              ],
+              "contrastWithConversion": "Trespass to chattels = minor interference; Conversion = major interference warranting forced sale",
+              "defenses": [
+                "Consent",
+                "Necessity",
+                "Recapture of chattels",
+                "Defense of property"
+              ],
+              "mnemonics": "Trespass to Chattels = 'Tampering' with things (minor interference)",
+              "essayTips": "Unlike trespass to land, actual damages required. The key distinction from conversion is severity - if interference is substantial, analyze conversion instead. Consider whether the chattel can be returned in essentially the same condition.",
+              "mbeTips": "Must show ACTUAL damages - unlike trespass to land, no nominal damages for mere touching. Distinguish from conversion based on severity of interference."
+            },
+            {
+              "name": "Conversion",
+              "rule": "Conversion is the intentional exercise of dominion or control over another's chattel that so seriously interferes with the owner's rights as to justify requiring the defendant to pay the full value of the property.",
+              "elements": [
+                "1. Intent - Defendant intended the act of dominion or control",
+                "2. Serious interference - The interference substantially deprives the owner of use",
+                "3. Over another's chattel - The personal property belongs to another"
+              ],
+              "factorsForSeriousness": [
+                "Extent and duration of control",
+                "Defendant's intent to assert ownership",
+                "Good faith of defendant",
+                "Extent of harm to the chattel",
+                "Inconvenience and expense to the owner"
+              ],
+              "examples": [
+                "Stealing someone's car",
+                "Selling someone else's property",
+                "Substantially damaging or destroying property",
+                "Refusing to return property on demand",
+                "Materially altering property"
+              ],
+              "remedies": {
+                "damages": "Fair market value at time of conversion (forced sale)",
+                "replevin": "Recovery of the actual chattel"
+              },
+              "defenses": [
+                "Consent",
+                "Necessity",
+                "Good faith purchaser (limited - still liable but in good faith)"
+              ],
+              "mnemonics": "Conversion = Complete takeover (you bought it now - pay full price)",
+              "essayTips": "This is essentially a 'forced sale' - defendant pays FMV and 'owns' the chattel. Good faith is NOT a defense but may affect damages. Compare severity to trespass to chattels. Analyze whether return is possible and practical.",
+              "mbeTips": "Look at the SEVERITY of interference. Mistake about ownership is NOT a defense. Damages = full FMV. Contrast with trespass to chattels (minor interference, actual damages only)."
+            }
+          ]
+        },
+        {
+          "category": "Defenses to Intentional Torts",
+          "subtopics": [
+            {
+              "name": "Consent",
+              "rule": "Consent is a defense to intentional torts when the plaintiff voluntarily agrees to the defendant's conduct or to the invasion of their interests.",
+              "types": [
+                {
+                  "type": "Express Consent",
+                  "rule": "Plaintiff explicitly grants permission by words or writing.",
+                  "limitations": [
+                    "Must be voluntarily given",
+                    "Fraud vitiates consent as to essential nature of act",
+                    "Consent beyond scope not protected"
+                  ]
+                },
+                {
+                  "type": "Implied Consent",
+                  "rule": "Consent inferred from custom, conduct, or circumstances.",
+                  "examples": [
+                    "Athletes consent to contact normal to the sport",
+                    "Emergency medical treatment when patient unconscious",
+                    "Crowded places - normal jostling"
+                  ]
+                }
+              ],
+              "limitations": [
+                "Cannot consent to criminal acts in most jurisdictions",
+                "Consent obtained by fraud (to essential nature) is invalid",
+                "Consent obtained by duress is invalid",
+                "Incapacity (minor, intoxicated, incompetent) may invalidate",
+                "Exceeding scope of consent removes protection"
+              ],
+              "essayTips": "Distinguish express from implied consent. Analyze whether consent exceeded scope. Check if plaintiff had capacity. Fraud only vitiates if it goes to the essential nature of the act.",
+              "mbeTips": "Consent to being touched ≠ consent to being harmed. Exceeding scope = no defense. Check for incapacity. Emergency implied consent for medical treatment."
+            },
+            {
+              "name": "Self-Defense",
+              "rule": "A person may use reasonable force to protect themselves against an imminent threat of harm when they reasonably believe such force is necessary.",
+              "elements": [
+                "1. Reasonable belief - Defendant reasonably believed they were threatened",
+                "2. Imminent threat - Threat must be immediate, not past or future",
+                "3. Proportionate response - Force used must be proportionate to threat",
+                "4. No excessive force - Cannot use more force than reasonably necessary"
+              ],
+              "deadlyForce": {
+                "rule": "Deadly force is justified only when reasonably necessary to prevent death or serious bodily injury.",
+                "restrictions": [
+                  "Must reasonably believe deadly force is about to be used",
+                  "Majority rule: No duty to retreat before using deadly force",
+                  "Minority rule: Duty to retreat if safe to do so (except in one's home)"
+                ]
+              },
+              "initialAggressor": {
+                "rule": "An initial aggressor generally cannot claim self-defense unless they withdraw and communicate withdrawal.",
+                "exception": "If victim responds with excessive force, initial aggressor may defend against that excess"
+              },
+              "mnemonics": "Self-defense = Reasonable Response to Real threat (3 Rs)",
+              "essayTips": "Always analyze proportionality - deadly force only for deadly threats. Check if defendant was initial aggressor. Discuss retreat rules if applicable. Reasonable BELIEF standard - mistaken belief may still be protected if reasonable.",
+              "mbeTips": "Objective reasonableness standard. No duty to retreat in majority. Initial aggressor loses defense unless withdrawal. Can only meet force with like force."
+            },
+            {
+              "name": "Defense of Others",
+              "rule": "A person may use reasonable force to defend another person when they reasonably believe that person is being threatened with imminent harm.",
+              "elements": [
+                "1. Reasonable belief - Defendant reasonably believed third party was threatened",
+                "2. Proportionate force - Force used must match the perceived threat",
+                "3. Privilege extends as far as the third party's own right to defend"
+              ],
+              "modernRule": "Majority rule: Defendant judged by reasonable appearances, even if mistaken about actual threat (reasonable mistake permitted).",
+              "oldRule": "Minority/Old rule: Defendant 'stands in the shoes' of the person defended - if that person had no privilege, neither does defendant.",
+              "mnemonics": "Defense of Others = You can be someone's hero (reasonable belief standard)",
+              "essayTips": "Most jurisdictions now use reasonable appearances test. Analyze what a reasonable person would believe. Force must be proportionate to apparent threat.",
+              "mbeTips": "Modern rule: Reasonable belief test. Mistake is allowed if reasonable. Cannot use more force than the threatened person could use."
+            },
+            {
+              "name": "Defense of Property",
+              "rule": "A person may use reasonable non-deadly force to protect their real or personal property from invasion or theft.",
+              "elements": [
+                "1. Reasonable belief - Defendant reasonably believed property was threatened",
+                "2. Non-deadly force only - Deadly force NEVER permitted merely to defend property",
+                "3. Request to desist - Generally must first request intruder to leave (if practical)"
+              ],
+              "realProperty": {
+                "rule": "Owner may use reasonable force to prevent or terminate unlawful entry.",
+                "limitations": [
+                  "Must first request departure if practical",
+                  "Force must be proportionate",
+                  "Spring guns/traps generally not permitted (deadly force)"
+                ]
+              },
+              "personalProperty": {
+                "rule": "Owner may use reasonable force to prevent theft or recover chattel.",
+                "recaptureOfChattels": {
+                  "rule": "Owner may use reasonable force to recapture chattels if in 'fresh pursuit'.",
+                  "requirements": [
+                    "Wrongful taking (not voluntary transfer)",
+                    "Fresh pursuit (without unreasonable delay)",
+                    "Reasonable force only"
+                  ]
+                }
+              },
+              "mnemonics": "Defense of Property = No Death for Stuff (deadly force prohibited)",
+              "essayTips": "CRITICAL: No deadly force to protect property. Spring gun/trap cases = classic bar exam issue. Fresh pursuit required for recapture of chattels. Analyze whether request to leave was practical.",
+              "mbeTips": "Never deadly force for property alone. Spring guns = not allowed. Fresh pursuit needed for recapture. Force must be reasonable and proportionate."
+            },
+            {
+              "name": "Necessity",
+              "rule": "A person may interfere with the property of another to prevent greater harm, if the interference is reasonable and necessary.",
+              "types": [
+                {
+                  "type": "Public Necessity",
+                  "rule": "Complete defense when acting to protect the public from a significant threat.",
+                  "damages": "No compensation owed - complete privilege",
+                  "example": "Firefighters destroying home to create firebreak protecting town"
+                },
+                {
+                  "type": "Private Necessity",
+                  "rule": "Qualified defense when acting to protect oneself or one's own property.",
+                  "damages": "Must pay for actual damages caused",
+                  "example": "Mooring boat to someone's dock during sudden storm",
+                  "rights": [
+                    "May enter and remain as long as necessity exists",
+                    "Owner cannot expel during continuing necessity",
+                    "Must compensate for actual harm caused"
+                  ]
+                }
+              ],
+              "limitations": [
+                "Threat must be imminent",
+                "No reasonable alternative available",
+                "Response must be proportionate to threat"
+              ],
+              "mnemonics": "Public = Free pass, Private = Pay for damages",
+              "essayTips": "Distinguish public (complete defense) from private (pay for damages). Ploof v. Putnam is the classic private necessity case. Vincent v. Lake Erie - must still pay for damages. Owner cannot eject during continuing necessity.",
+              "mbeTips": "Public necessity = complete defense, no payment. Private necessity = privilege to enter but must pay damages. Cannot be expelled during ongoing emergency."
+            }
+          ]
+        },
+        {
+          "category": "Negligence",
+          "subtopics": [
+            {
+              "name": "Negligence - Overview",
+              "rule": "Negligence is conduct that falls below the standard of care established by law for the protection of others against unreasonable risk of harm.",
+              "elements": [
+                "1. Duty - Defendant owed a duty of care to plaintiff",
+                "2. Breach - Defendant breached that duty",
+                "3. Causation - Defendant's breach caused plaintiff's harm (actual and proximate)",
+                "4. Damages - Plaintiff suffered actual harm"
+              ],
+              "mnemonics": "DBCD = Duty, Breach, Causation, Damages",
+              "essayTips": "Always analyze all four elements systematically. Many essays turn on duty or proximate cause issues. Don't forget to consider defenses after establishing prima facie case.",
+              "mbeTips": "Process of elimination - if any element is missing, no negligence. Duty questions often involve scope of duty. Causation is frequently tested."
+            },
+            {
+              "name": "Duty of Care",
+              "rule": "The general duty is to act as a reasonable person would under the same or similar circumstances.",
+              "generalDuty": {
+                "rule": "All persons owe a duty to all foreseeable plaintiffs to exercise reasonable care.",
+                "foreseeablePlaintiff": "Palsgraf rule - duty is owed only to those within the foreseeable zone of danger"
+              },
+              "standardsOfCare": [
+                {
+                  "type": "Reasonable Person",
+                  "rule": "Objective standard - what would a reasonable person of ordinary prudence do",
+                  "factors": [
+                    "Physical characteristics considered (blindness, height)",
+                    "Mental characteristics NOT considered (low intelligence, inexperience)",
+                    "Knowledge possessed by defendant is considered"
+                  ]
+                },
+                {
+                  "type": "Professionals",
+                  "rule": "Held to standard of a reasonably competent member of that profession",
+                  "specialRules": [
+                    "Specialists held to higher standard within specialty",
+                    "Doctors: Historically locality rule, now generally national standard",
+                    "Informed consent: Must disclose material risks"
+                  ]
+                },
+                {
+                  "type": "Children",
+                  "rule": "Child of similar age, intelligence, and experience",
+                  "exception": "Adult standard applies when child engages in adult activities (driving, operating powerboats)"
+                }
+              ],
+              "mnemonics": "Reasonable Person = 'What Would a Normal Adult Do?' (WWNAD)",
+              "essayTips": "Identify who the plaintiff is and whether they are foreseeable. Apply correct standard based on defendant's status. For professionals, discuss applicable standard of care within the profession.",
+              "mbeTips": "Physical disabilities considered, mental disabilities NOT. Child standard unless adult activity. Professionals judged by their profession's standards."
+            },
+            {
+              "name": "Special Duty Rules",
+              "subtopics": [
+                {
+                  "name": "Duty to Rescue/Affirmative Acts",
+                  "rule": "Generally, there is no duty to rescue or assist a stranger in peril.",
+                  "exceptions": [
+                    "Special relationship (parent-child, employer-employee, carrier-passenger)",
+                    "Defendant created the peril",
+                    "Defendant undertook to rescue (must continue with reasonable care)",
+                    "Statutory duty (Good Samaritan laws may impose or protect)",
+                    "Contractual duty"
+                  ]
+                },
+                {
+                  "name": "Landowner Duties",
+                  "traditionalRules": [
+                    {
+                      "entrant": "Trespasser",
+                      "duty": "Only refrain from willful/wanton conduct; no concealed traps",
+                      "discoveredTrespasser": "Once discovered, duty to warn of known dangers"
+                    },
+                    {
+                      "entrant": "Licensee",
+                      "duty": "Warn of known concealed dangers; no duty to inspect",
+                      "examples": "Social guests, door-to-door salespeople"
+                    },
+                    {
+                      "entrant": "Invitee",
+                      "duty": "Reasonable care to inspect and discover dangers and make safe or warn",
+                      "examples": "Business patrons, public invitees"
+                    }
+                  ],
+                  "modernTrend": "Many jurisdictions abandon categories; apply reasonable care to all entrants",
+                  "attractiveNuisance": {
+                    "rule": "Landowner owes duty of care to trespassing children for artificial conditions if:",
+                    "elements": [
+                      "1. Owner knows or should know children likely to trespass",
+                      "2. Condition poses unreasonable risk of serious injury/death to children",
+                      "3. Children don't appreciate the danger due to their youth",
+                      "4. Utility of condition is slight compared to risk",
+                      "5. Owner fails to use reasonable care to protect children"
+                    ]
+                  }
+                },
+                {
+                  "name": "Negligent Infliction of Emotional Distress (NIED)",
+                  "rule": "Plaintiff may recover for emotional distress negligently caused by defendant.",
+                  "approaches": [
+                    {
+                      "type": "Zone of Danger",
+                      "rule": "Plaintiff must be within zone of physical danger from defendant's negligence",
+                      "requirements": "Physical impact or threat of impact required"
+                    },
+                    {
+                      "type": "Bystander (Dillon/Thing)",
+                      "rule": "Bystander may recover for witnessing injury to close family member",
+                      "factors": [
+                        "Closely related to victim",
+                        "Present at scene and witnessed the injury",
+                        "Suffered serious emotional distress"
+                      ]
+                    }
+                  ],
+                  "physicalManifestation": "Some jurisdictions require physical symptoms of distress"
+                }
+              ],
+              "essayTips": "Landowner duty questions: First identify status of entrant. Note trend toward single standard. Attractive nuisance is frequently tested. NIED: Know whether jurisdiction follows zone of danger or bystander approach.",
+              "mbeTips": "Know the three categories of entrants and duties owed. Attractive nuisance is for ARTIFICIAL conditions only. Bystander NIED requires presence at scene and close family relationship."
+            },
+            {
+              "name": "Breach of Duty",
+              "rule": "Breach occurs when defendant's conduct falls below the applicable standard of care.",
+              "tests": [
+                {
+                  "name": "Hand Formula (Risk-Utility)",
+                  "rule": "Breach if B < P x L (burden of precaution less than probability times magnitude of harm)"
+                },
+                {
+                  "name": "Custom",
+                  "rule": "Industry custom is relevant but not conclusive evidence of reasonable care"
+                },
+                {
+                  "name": "Violation of Statute (Negligence Per Se)",
+                  "rule": "Violation of a safety statute may establish breach if:",
+                  "elements": [
+                    "1. Plaintiff is within the class of persons the statute protects",
+                    "2. Harm is of the type the statute was designed to prevent"
+                  ],
+                  "effect": "Violation is conclusive on breach unless excuse applies",
+                  "excuses": [
+                    "Compliance would be more dangerous",
+                    "Compliance was impossible",
+                    "Emergency not of defendant's making",
+                    "Defendant incapacitated"
+                  ]
+                },
+                {
+                  "name": "Res Ipsa Loquitur",
+                  "rule": "The thing speaks for itself - inference of negligence from the nature of the accident",
+                  "elements": [
+                    "1. The accident is of a kind that ordinarily does not occur without negligence",
+                    "2. The instrumentality was in defendant's exclusive control",
+                    "3. Plaintiff did not contribute to the accident"
+                  ],
+                  "effect": "Creates inference of negligence; may permit case to go to jury"
+                }
+              ],
+              "mnemonics": "Negligence Per Se = 'Plaintiff in Protected class, Harm of intended type'",
+              "essayTips": "Analyze breach using reasonable person standard, then check for negligence per se or res ipsa. Custom is evidence but not dispositive (TJ Hooper). Res ipsa is an evidentiary tool when specific acts unknown.",
+              "mbeTips": "Negligence per se requires both protected class AND type of harm. Res ipsa requires exclusive control. Compliance with statute is evidence of due care but not conclusive."
+            },
+            {
+              "name": "Actual Causation (Cause in Fact)",
+              "rule": "Defendant's conduct must be the actual cause of plaintiff's harm.",
+              "tests": [
+                {
+                  "name": "But-For Test",
+                  "rule": "But for defendant's negligent conduct, would plaintiff's injury have occurred?",
+                  "application": "Standard test for most cases"
+                },
+                {
+                  "name": "Substantial Factor Test",
+                  "rule": "Used when multiple causes each sufficient to cause harm",
+                  "application": "Each defendant's conduct must be a substantial factor in causing harm",
+                  "example": "Two fires merge and burn plaintiff's property - both tortfeasors liable"
+                },
+                {
+                  "name": "Alternative Causation (Summers v. Tice)",
+                  "rule": "When two defendants act negligently but only one caused harm, burden shifts to each to prove they did not cause injury",
+                  "requirements": [
+                    "All possible tortfeasors before the court",
+                    "Each acted negligently",
+                    "Plaintiff cannot identify which caused harm"
+                  ]
+                },
+                {
+                  "name": "Market Share Liability",
+                  "rule": "In DES-type cases, manufacturers liable in proportion to market share",
+                  "requirements": [
+                    "Fungible product",
+                    "Plaintiff unable to identify specific manufacturer",
+                    "Substantial share of market before court"
+                  ]
+                }
+              ],
+              "lostChance": {
+                "rule": "Some jurisdictions allow recovery for negligently reduced chance of survival",
+                "approaches": [
+                  "All-or-nothing (traditional)",
+                  "Proportional recovery (modern trend)"
+                ]
+              },
+              "mnemonics": "But-For = 'Would it have happened anyway?'",
+              "essayTips": "But-for test works in most cases. Switch to substantial factor for concurrent sufficient causes. Summers v. Tice for alternative liability (both shot, one hit). Market share for fungible products.",
+              "mbeTips": "But-for is default. Substantial factor when multiple sufficient causes. Burden shifting in alternative liability. Market share is rare but testable."
+            },
+            {
+              "name": "Proximate Causation (Legal Cause)",
+              "rule": "Defendant is liable only for harms that are within the scope of the foreseeable risk created by defendant's negligence.",
+              "tests": [
+                {
+                  "name": "Foreseeability Test",
+                  "rule": "Was the type of harm foreseeable as a result of defendant's conduct?",
+                  "palsgraf": "Defendant liable only for harms to foreseeable plaintiffs from foreseeable risks"
+                },
+                {
+                  "name": "Direct Cause Test",
+                  "rule": "Defendant liable for all direct consequences, however unforeseeable (minority view)"
+                }
+              ],
+              "interveningCauses": {
+                "rule": "An intervening cause breaks the chain of causation only if it is a superseding cause.",
+                "superseding": [
+                  "Unforeseeable intervening acts",
+                  "Intentional criminal acts (usually superseding)",
+                  "Acts of God (unforeseeable natural events)"
+                ],
+                "notSuperseding": [
+                  "Foreseeable intervening acts",
+                  "Medical malpractice in treating plaintiff's injury",
+                  "Rescue attempts",
+                  "Subsequent accident caused by original injury",
+                  "Plaintiff's own negligence (usually)"
+                ]
+              },
+              "eggshellPlaintiff": {
+                "rule": "Defendant takes plaintiff as they find them - liable for full extent of injuries even if unforeseeable due to plaintiff's preexisting condition",
+                "note": "TYPE of harm must be foreseeable, but EXTENT need not be"
+              },
+              "mnemonics": "Proximate Cause = 'Foreseeable harm to foreseeable plaintiff'",
+              "essayTips": "Foreseeability is key - was the TYPE of harm within the risk? Eggshell plaintiff means extent doesn't matter. Analyze whether intervening acts are superseding. Criminal acts usually supersede but not if foreseeable.",
+              "mbeTips": "Focus on foreseeability of TYPE of harm. Eggshell plaintiff = no limit on damages for preexisting conditions. Medical malpractice is foreseeable and does not supersede. Rescuers are foreseeable."
+            },
+            {
+              "name": "Damages",
+              "rule": "Plaintiff must prove actual damages to recover in negligence.",
+              "types": [
+                {
+                  "type": "Compensatory Damages",
+                  "categories": [
+                    "Economic: Medical expenses, lost wages, property damage",
+                    "Non-economic: Pain and suffering, emotional distress, loss of enjoyment"
+                  ]
+                },
+                {
+                  "type": "Nominal Damages",
+                  "rule": "NOT available in negligence - actual harm required"
+                },
+                {
+                  "type": "Punitive Damages",
+                  "rule": "Available only for reckless or willful conduct, not ordinary negligence"
+                }
+              ],
+              "collateralSource": {
+                "rule": "Benefits received from independent sources (insurance) do not reduce defendant's liability"
+              },
+              "mitigationDuty": {
+                "rule": "Plaintiff must take reasonable steps to mitigate damages after injury"
+              },
+              "wrongfulDeath": {
+                "rule": "Statutory action for death caused by defendant's tortious conduct",
+                "damages": "Lost support, companionship (varies by jurisdiction)"
+              },
+              "survivalAction": {
+                "rule": "Decedent's own claims survive death and may be brought by estate",
+                "damages": "What decedent could have recovered if they had lived"
+              },
+              "mnemonics": "Negligence Needs ACTUAL harm (no nominal damages)",
+              "essayTips": "Always prove actual damages - no nominal damages in negligence. Collateral source rule means don't reduce for insurance. Discuss mitigation duty. Distinguish wrongful death from survival actions.",
+              "mbeTips": "Actual damages required. Collateral source = no reduction for insurance. Mitigation duty exists. Know difference between wrongful death and survival actions."
+            }
+          ]
+        },
+        {
+          "category": "Negligence Defenses",
+          "subtopics": [
+            {
+              "name": "Contributory Negligence",
+              "rule": "Traditional rule: Plaintiff's own negligence, however slight, completely bars recovery.",
+              "jurisdictions": "Only followed in Alabama, Maryland, North Carolina, Virginia, DC",
+              "lastClearChance": {
+                "rule": "Doctrine that allows plaintiff to recover despite contributory negligence if defendant had the last clear chance to avoid the harm",
+                "helpless": "Defendant discovered or should have discovered plaintiff's peril",
+                "inattentive": "Defendant actually discovered plaintiff's peril"
+              },
+              "mnemonics": "Contributory = Complete bar (harsh old rule)",
+              "essayTips": "Identify which negligence regime applies. If contributory, always discuss last clear chance. Compare to modern comparative negligence.",
+              "mbeTips": "Most jurisdictions have abandoned contributory negligence. Know last clear chance doctrine. Watch for jurisdiction-specific questions."
+            },
+            {
+              "name": "Comparative Negligence",
+              "rule": "Modern rule: Plaintiff's damages reduced in proportion to their own fault.",
+              "types": [
+                {
+                  "type": "Pure Comparative",
+                  "rule": "Plaintiff recovers their percentage of damages regardless of fault percentage",
+                  "example": "Plaintiff 90% at fault can still recover 10% of damages",
+                  "states": "California, New York, Florida (about 13 states)"
+                },
+                {
+                  "type": "Modified Comparative (50%)",
+                  "rule": "Plaintiff barred from recovery if 50% or more at fault",
+                  "example": "Plaintiff 49% at fault recovers 51% of damages; 50% recovers nothing"
+                },
+                {
+                  "type": "Modified Comparative (51%)",
+                  "rule": "Plaintiff barred from recovery if 51% or more at fault",
+                  "example": "Plaintiff 50% at fault recovers 50%; 51% recovers nothing"
+                }
+              ],
+              "mnemonics": "Comparative = Cut by percentage",
+              "essayTips": "Always identify which type of comparative negligence applies. Calculate percentages. Most bar exams use pure comparative unless otherwise stated. Note that many intentional torts do not reduce for comparative fault.",
+              "mbeTips": "Pure = always recover something. Modified = bars at 50% or 51%. Calculate recovery carefully. Check if jurisdiction is pure or modified."
+            },
+            {
+              "name": "Assumption of Risk",
+              "rule": "Plaintiff who voluntarily assumes a known risk may be barred from or limited in recovery.",
+              "types": [
+                {
+                  "type": "Express Assumption of Risk",
+                  "rule": "Written waiver/release of liability",
+                  "validity": "Generally enforceable except for essential services, gross negligence, intentional acts, or public policy violations"
+                },
+                {
+                  "type": "Implied Primary Assumption of Risk",
+                  "rule": "Plaintiff impliedly consents to risks inherent in an activity",
+                  "effect": "Eliminates defendant's duty - complete defense",
+                  "example": "Baseball spectator hit by foul ball"
+                },
+                {
+                  "type": "Implied Secondary Assumption of Risk",
+                  "rule": "Plaintiff knowingly encounters a risk created by defendant's negligence",
+                  "effect": "In comparative negligence jurisdictions, merges into comparative fault analysis"
+                }
+              ],
+              "elements": [
+                "1. Knowledge of the risk",
+                "2. Appreciation of the risk",
+                "3. Voluntary encounter with the risk"
+              ],
+              "mnemonics": "Assumption = 'A-Knew and A-Chose to Encounter'",
+              "essayTips": "Distinguish primary (no duty, complete bar) from secondary (comparative fault analysis). Express waivers: Check for essential services, gross negligence, unequal bargaining power. Sports/recreation cases often involve primary assumption.",
+              "mbeTips": "Know the types and effects. Express waivers valid in most contexts but not essential services. Primary = complete bar. Secondary = merged with comparative fault in most jurisdictions."
+            }
+          ]
+        },
+        {
+          "category": "Strict Liability",
+          "subtopics": [
+            {
+              "name": "Strict Liability - Overview",
+              "rule": "Defendant is liable regardless of fault for harm caused by certain activities or things.",
+              "categories": [
+                "Abnormally dangerous activities",
+                "Wild animals",
+                "Domestic animals with known dangerous propensities",
+                "Products liability (covered separately)"
+              ]
+            },
+            {
+              "name": "Abnormally Dangerous Activities",
+              "rule": "One who carries on an abnormally dangerous activity is strictly liable for resulting harm.",
+              "factors": [
+                "1. High degree of risk of harm",
+                "2. Likelihood that harm will be great",
+                "3. Inability to eliminate risk by reasonable care",
+                "4. Extent to which activity is not common",
+                "5. Inappropriateness of activity to location",
+                "6. Extent to which value to community is outweighed by danger"
+              ],
+              "examples": [
+                "Blasting/explosives",
+                "Storage of large quantities of explosives or flammables",
+                "Crop dusting",
+                "Fumigation with toxic gases",
+                "Keeping wild animals"
+              ],
+              "notAbnormallyDangerous": [
+                "Driving",
+                "Maintaining utility lines",
+                "Construction activities (generally)"
+              ],
+              "scope": {
+                "rule": "Strict liability applies only to harm within the type of risk that makes the activity abnormally dangerous",
+                "example": "Blasting - liable for harm from explosion/vibration, not for truck running over pedestrian while transporting explosives"
+              },
+              "mnemonics": "Abnormally Dangerous = Can't make it safe no matter how careful",
+              "essayTips": "Apply the six-factor test. Focus on inability to eliminate risk with care. Scope limitation is important - only liable for risks that make activity dangerous. Compare with negligence for activities that don't qualify.",
+              "mbeTips": "Key factor: Cannot be made safe with reasonable care. Common activities rarely qualify. Harm must be from the type of risk that makes it dangerous."
+            },
+            {
+              "name": "Animals",
+              "rules": [
+                {
+                  "type": "Wild Animals",
+                  "rule": "Strict liability for injuries caused by wild animals kept by defendant",
+                  "scope": "Harm must be from dangerous propensity characteristic of the species"
+                },
+                {
+                  "type": "Domestic Animals",
+                  "rule": "Strict liability only if owner knew or should have known of animal's dangerous propensity",
+                  "onebitere": "Once an animal has shown dangerous tendencies, owner is strictly liable for future incidents"
+                },
+                {
+                  "type": "Trespassing Animals",
+                  "rule": "Owner strictly liable for foreseeable damage by livestock/animals trespassing on another's land",
+                  "exceptions": "Cats and dogs (negligence only); animals on public road"
+                }
+              ],
+              "mnemonics": "Wild = Always strict; Domestic = 'One bite' rule (known propensity needed)",
+              "essayTips": "Classify the animal first - wild or domestic. For domestic animals, analyze knowledge of propensity. Trespassing livestock is separate doctrine. Scope limitation applies to wild animals.",
+              "mbeTips": "Wild animals = automatic strict liability. Domestic = need prior knowledge. 'One bite' is a misnomer - any known propensity counts, not just biting."
+            }
+          ]
+        },
+        {
+          "category": "Products Liability",
+          "subtopics": [
+            {
+              "name": "Products Liability - Overview",
+              "rule": "Manufacturers, distributors, and sellers may be liable for injuries caused by defective products.",
+              "theories": [
+                "Negligence",
+                "Strict liability",
+                "Breach of warranty"
+              ],
+              "defendants": [
+                "Manufacturers",
+                "Wholesalers/distributors",
+                "Retailers",
+                "Component part manufacturers",
+                "Assemblers"
+              ],
+              "mnemonics": "Products Liability = Three theories: Negligence, Strict Liability, Warranty",
+              "essayTips": "Analyze all three theories when applicable. Check who is in the chain of distribution. Consider whether defendant is a commercial seller. Note statute of limitations and repose issues.",
+              "mbeTips": "Know all three theories. Commercial sellers only for strict liability. Negligence available against any defendant. Warranty depends on privity rules."
+            },
+            {
+              "name": "Strict Products Liability",
+              "rule": "A commercial seller who sells a defective product that is unreasonably dangerous is strictly liable for harm caused to users or consumers.",
+              "elements": [
+                "1. Commercial seller or distributor",
+                "2. Defective product",
+                "3. Defect existed when product left defendant's control",
+                "4. Defect caused plaintiff's harm",
+                "5. Plaintiff is a foreseeable user or bystander"
+              ],
+              "defectTypes": [
+                {
+                  "type": "Manufacturing Defect",
+                  "rule": "Product departs from its intended design",
+                  "test": "Does this unit differ from other products from the same line?",
+                  "example": "Car with improperly installed brake line"
+                },
+                {
+                  "type": "Design Defect",
+                  "rule": "All products of that design are defective",
+                  "tests": [
+                    {
+                      "name": "Consumer Expectations Test",
+                      "rule": "Product fails to meet safety expectations of an ordinary consumer"
+                    },
+                    {
+                      "name": "Risk-Utility Test",
+                      "rule": "Risk of harm outweighs benefits of design; reasonable alternative design available"
+                    }
+                  ],
+                  "example": "SUV prone to rollover due to high center of gravity"
+                },
+                {
+                  "type": "Warning Defect (Failure to Warn)",
+                  "rule": "Inadequate warnings or instructions render product defective",
+                  "duty": "Must warn of foreseeable risks of harm",
+                  "learnedIntermediary": "For prescription drugs, warning to physician may satisfy duty",
+                  "example": "Medication without warning of dangerous side effects"
+                }
+              ],
+              "mnemonics": "Three Defects: Make, Design, Warn (MDW)",
+              "essayTips": "Identify the defect type first. Manufacturing = deviation from design. Design = all products have the defect. Warnings = analyze what was disclosed and what should have been. Learned intermediary doctrine for prescription drugs.",
+              "mbeTips": "Distinguish the three defect types. Risk-utility test is most common for design defects. Manufacturer has duty to warn of foreseeable misuse. Bystanders can recover."
+            },
+            {
+              "name": "Products Liability Defenses",
+              "defenses": [
+                {
+                  "defense": "Comparative Fault",
+                  "rule": "In comparative fault jurisdictions, plaintiff's negligence reduces recovery",
+                  "application": "Applies to misuse, failure to follow instructions, or failure to discover defect"
+                },
+                {
+                  "defense": "Assumption of Risk",
+                  "rule": "Plaintiff who knowingly and voluntarily uses defective product may be barred",
+                  "requirements": "Actual knowledge of specific defect and its danger"
+                },
+                {
+                  "defense": "Product Misuse",
+                  "rule": "Unforeseeable misuse may bar or reduce recovery",
+                  "note": "Foreseeable misuse does NOT bar recovery - manufacturer must anticipate"
+                },
+                {
+                  "defense": "Product Alteration",
+                  "rule": "Substantial unforeseeable alteration after sale may bar recovery",
+                  "note": "Modification that does not cause the injury is not a defense"
+                },
+                {
+                  "defense": "Compliance with Regulations",
+                  "rule": "Compliance with government standards is evidence of non-defect but not conclusive"
+                },
+                {
+                  "defense": "State of the Art",
+                  "rule": "Evidence that safer design was not feasible - relevant to risk-utility analysis"
+                }
+              ],
+              "notDefenses": [
+                "Disclaimer or waiver (generally unenforceable for personal injury)",
+                "Lack of privity (not required for strict liability or negligence)",
+                "Contributory negligence (minority view - generally merged with comparative fault)"
+              ],
+              "essayTips": "Analyze whether misuse or alteration was foreseeable. Comparative fault applies in most jurisdictions. Waivers ineffective for personal injury in strict products liability.",
+              "mbeTips": "Foreseeable misuse is not a defense - must be unforeseeable. Privity is NOT required for strict liability or negligence. Disclaimers don't work for personal injury claims."
+            }
+          ]
+        },
+        {
+          "category": "Vicarious Liability",
+          "subtopics": [
+            {
+              "name": "Respondeat Superior",
+              "rule": "An employer is vicariously liable for the tortious acts of employees committed within the scope of employment.",
+              "elements": [
+                "1. Employer-employee relationship (not independent contractor)",
+                "2. Tortious act by employee",
+                "3. Act within scope of employment"
+              ],
+              "scopeOfEmployment": {
+                "within": [
+                  "Acts of the kind hired to perform",
+                  "Acts occurring substantially within authorized time and place",
+                  "Acts motivated, at least in part, by purpose of serving employer"
+                ],
+                "outside": [
+                  "Frolic: Substantial departure from employment duties",
+                  "Intentional torts (unless foreseeable or in furtherance of employment)",
+                  "Acts purely for personal reasons"
+                ],
+                "detour": "Minor deviation from employment - still within scope"
+              },
+              "comingAndGoing": {
+                "rule": "Commuting to/from work generally not within scope",
+                "exceptions": [
+                  "Special errand for employer",
+                  "Employer-provided transportation",
+                  "Travel is integral part of job"
+                ]
+              },
+              "intentionalTorts": {
+                "rule": "Generally outside scope unless:",
+                "exceptions": [
+                  "Force is authorized (security guards)",
+                  "Friction with others is foreseeable",
+                  "Tort furthers employer's business"
+                ]
+              },
+              "mnemonics": "Scope = 'Serving the boss's purposes, not frolic'",
+              "essayTips": "Distinguish frolic (major departure, no liability) from detour (minor, liability). Analyze whether employee was serving employer's interests. Intentional torts require special analysis. Coming and going rule is frequently tested.",
+              "mbeTips": "Frolic = outside scope. Detour = within scope. Coming and going generally excludes commuting. Intentional torts may be within scope if job-related."
+            },
+            {
+              "name": "Independent Contractors",
+              "rule": "Generally, a principal is NOT vicariously liable for the torts of an independent contractor.",
+              "exceptions": [
+                "Non-delegable duties (inherently dangerous activities, duty to maintain property)",
+                "Negligence in selecting/supervising contractor",
+                "Apparent authority (contractor appears to be employee)",
+                "Employer retains control over the work"
+              ],
+              "employeeVsIC": {
+                "factors": [
+                  "Control over manner and means of work (key factor)",
+                  "Skill required for the job",
+                  "Who supplies tools",
+                  "Length of employment",
+                  "Method of payment",
+                  "Whether work is regular business of employer"
+                ]
+              },
+              "mnemonics": "IC = 'I Control my own work' (no vicarious liability)",
+              "essayTips": "First determine if relationship is employee or IC. If IC, analyze exceptions. Control is the key factor. Non-delegable duties are frequently tested (inherently dangerous activities).",
+              "mbeTips": "Control is the key factor for employee vs IC. Know the exceptions to IC non-liability. Non-delegable duties cannot be delegated to ICs."
+            },
+            {
+              "name": "Joint and Several Liability",
+              "rule": "Each tortfeasor is independently liable for the entire amount of plaintiff's damages.",
+              "application": [
+                "Acting in concert",
+                "Concurrent tortfeasors causing indivisible harm",
+                "Vicarious liability situations"
+              ],
+              "contribution": {
+                "rule": "Joint tortfeasor who pays more than their share may seek contribution from others",
+                "methods": [
+                  "Pro rata shares (equal division)",
+                  "Comparative fault shares (by percentage of fault)"
+                ]
+              },
+              "indemnity": {
+                "rule": "Complete shifting of loss from one tortfeasor to another",
+                "situations": [
+                  "Vicarious liability (employer seeks indemnity from employee)",
+                  "Contractual indemnity",
+                  "Strict liability retailer seeks indemnity from manufacturer"
+                ]
+              },
+              "modernTrend": "Many jurisdictions have modified joint and several liability to proportional liability or hybrid approaches",
+              "mnemonics": "Joint & Several = 'Sue one for all, then they sort it out'",
+              "essayTips": "Discuss whether joint and several applies or if jurisdiction uses several liability only. Analyze contribution rights among defendants. Indemnity is appropriate in vicarious liability and products liability chain cases.",
+              "mbeTips": "Many jurisdictions have modified joint and several. Know contribution (sharing) vs indemnity (complete shift). Comparative fault has affected these rules significantly."
+            }
+          ]
+        },
+        {
+          "category": "Nuisance",
+          "subtopics": [
+            {
+              "name": "Private Nuisance",
+              "rule": "A private nuisance is a substantial and unreasonable interference with another's use and enjoyment of their land.",
+              "elements": [
+                "1. Substantial interference - More than slight inconvenience; offensive to normal person",
+                "2. Unreasonable interference - Gravity of harm outweighs utility of conduct",
+                "3. Use and enjoyment - Affects plaintiff's ability to use their property"
+              ],
+              "factors": [
+                "Character of the neighborhood",
+                "Frequency and duration of interference",
+                "Severity of harm",
+                "Social value of defendant's conduct",
+                "Ability of plaintiff to avoid harm",
+                "Ability of defendant to prevent harm"
+              ],
+              "typesOfInterference": [
+                "Noise",
+                "Odors",
+                "Pollution",
+                "Vibrations",
+                "Obstruction of light or view (limited)",
+                "Fear of harm"
+              ],
+              "remedies": [
+                "Damages",
+                "Injunction (if damages inadequate)",
+                "Self-help (abatement) with limitations"
+              ],
+              "mnemonics": "Private Nuisance = Neighbor's nasty conduct affecting YOUR property enjoyment",
+              "essayTips": "Balance gravity of harm vs. utility of conduct. Coming to the nuisance is not a complete bar but is a factor. Distinguish from trespass (physical invasion vs. interference with use). Hypersensitive plaintiffs don't set the standard.",
+              "mbeTips": "Requires interference with USE, not physical invasion. Balancing test - gravity vs. utility. Coming to nuisance is NOT a bar. Abnormally sensitive plaintiffs don't recover for that sensitivity."
+            },
+            {
+              "name": "Public Nuisance",
+              "rule": "A public nuisance is an unreasonable interference with a right common to the general public.",
+              "examples": [
+                "Obstruction of public roads",
+                "Pollution of navigable waters",
+                "Operating illegal gambling establishment",
+                "Maintaining conditions conducive to disease"
+              ],
+              "whoCanSue": {
+                "publicAuthorities": "Government officials can seek abatement or damages",
+                "privateParties": "Only if suffering special damage different in kind from general public"
+              },
+              "specialDamage": {
+                "rule": "Private plaintiff must show harm different in KIND (not just degree) from that suffered by public",
+                "example": "Obstruction of highway: General delay (no standing) vs. blocked access to plaintiff's property (special damage)"
+              },
+              "mnemonics": "Public Nuisance = Harm to community; private suit needs SPECIAL damage",
+              "essayTips": "Distinguish from private nuisance. For private suit, emphasize special damage requirement - different in KIND from public. Public authorities can always sue.",
+              "mbeTips": "Private plaintiff needs special damage different in kind, not just degree. Public officials can always sue for public nuisances."
+            }
+          ]
+        },
+        {
+          "category": "Defamation",
+          "subtopics": [
+            {
+              "name": "Defamation - Elements",
+              "rule": "Defamation is the publication of a false statement of fact that causes injury to another's reputation.",
+              "elements": [
+                "1. Defamatory statement - Statement that tends to harm reputation, expose to hatred/contempt, or discourage others from associating",
+                "2. Of and concerning the plaintiff - Statement is reasonably understood to refer to plaintiff",
+                "3. Publication - Communication to at least one third party",
+                "4. Falsity - Statement is false (constitutional requirement)",
+                "5. Fault - At least negligence, or actual malice for public figures",
+                "6. Damages - Harm to reputation (or presumed in some cases)"
+              ],
+              "types": [
+                {
+                  "type": "Libel",
+                  "rule": "Written or permanently recorded defamation",
+                  "damages": "Presumed in many jurisdictions (libel per se)"
+                },
+                {
+                  "type": "Slander",
+                  "rule": "Spoken defamation",
+                  "damages": "Must prove special damages unless slander per se"
+                }
+              ],
+              "slanderPerSe": {
+                "categories": [
+                  "Crime involving moral turpitude",
+                  "Loathsome disease",
+                  "Conduct incompatible with business or profession",
+                  "Serious sexual misconduct (unchastity - historically)"
+                ],
+                "effect": "Damages presumed; no proof of special damages required"
+              },
+              "mnemonics": "DPPFD = Defamatory, Publication, Plaintiff identified, Falsity, Damages. Slander per se = 'Business, Loathsome, Criminal, Unchaste' (BLCU)",
+              "essayTips": "Distinguish libel from slander. For slander, check if per se category applies. Analyze fault standard based on plaintiff's status. Note opinion is protected. Publication to one person is enough.",
+              "mbeTips": "Know slander per se categories - damages presumed. Libel per se often presumed too. One third party is sufficient publication. Each republication is new defamation."
+            },
+            {
+              "name": "Constitutional Defamation Standards",
+              "rule": "The First Amendment imposes fault requirements beyond common law.",
+              "plaintiffCategories": [
+                {
+                  "type": "Public Officials",
+                  "definition": "Government employees with substantial responsibility for government affairs",
+                  "standard": "Actual malice required (New York Times v. Sullivan)",
+                  "scope": "Official conduct or fitness for office"
+                },
+                {
+                  "type": "Public Figures",
+                  "subtypes": [
+                    {
+                      "name": "All-Purpose Public Figure",
+                      "definition": "Pervasive fame or notoriety",
+                      "standard": "Actual malice"
+                    },
+                    {
+                      "name": "Limited-Purpose Public Figure",
+                      "definition": "Voluntarily injected themselves into particular public controversy",
+                      "standard": "Actual malice for statements related to that controversy"
+                    }
+                  ]
+                },
+                {
+                  "type": "Private Figures",
+                  "standard": "At least negligence required (Gertz v. Welch)",
+                  "stateOption": "States may allow presumed/punitive damages only with actual malice"
+                }
+              ],
+              "actualMalice": {
+                "definition": "Knowledge of falsity OR reckless disregard for truth or falsity",
+                "notActualMalice": [
+                  "Failure to investigate",
+                  "Negligence",
+                  "Ill will or spite alone"
+                ]
+              },
+              "mnemonics": "Actual Malice = Knew it was false or didn't care if it was false",
+              "essayTips": "Classify plaintiff FIRST - this determines fault standard. Actual malice is a constitutional standard, not common law malice. Private figures get more protection. Analyze whether public controversy exists for limited-purpose public figures.",
+              "mbeTips": "Public official/figure = actual malice. Private figure = negligence (minimum). Actual malice = knowledge of falsity OR reckless disregard. NOT mere negligence or failure to investigate."
+            },
+            {
+              "name": "Defamation Defenses and Privileges",
+              "defenses": [
+                {
+                  "defense": "Truth",
+                  "rule": "Complete defense - truth is an absolute bar to defamation liability",
+                  "note": "Substantial truth is sufficient"
+                },
+                {
+                  "defense": "Opinion",
+                  "rule": "Pure opinion is protected, but opinion implying false facts may be actionable",
+                  "test": "Would a reasonable listener understand as asserting facts?"
+                },
+                {
+                  "defense": "Absolute Privileges",
+                  "types": [
+                    "Judicial proceedings (statements by parties, witnesses, lawyers, judges)",
+                    "Legislative proceedings (legislators in official capacity)",
+                    "Executive communications (high-ranking officials)",
+                    "Between spouses",
+                    "Required publications (by law)"
+                  ]
+                },
+                {
+                  "defense": "Qualified Privileges",
+                  "types": [
+                    "Fair report privilege (accurate reports of official proceedings)",
+                    "Common interest privilege (statements to those sharing legitimate interest)",
+                    "Self-defense (responding to defamation)"
+                  ],
+                  "lostBy": [
+                    "Excessive publication (beyond interested group)",
+                    "Abuse (actual malice)",
+                    "Lack of good faith"
+                  ]
+                }
+              ],
+              "mnemonics": "Absolute = Cannot be lost; Qualified = Can be abused away",
+              "essayTips": "Always check for truth first. Distinguish absolute from qualified privileges. Qualified privileges can be lost by abuse. Fair report privilege requires accuracy about the proceeding.",
+              "mbeTips": "Truth is absolute defense. Opinion is protected but fact-implying opinions are not. Qualified privileges can be lost by abuse or excessive publication."
+            }
+          ]
+        },
+        {
+          "category": "Privacy Torts",
+          "subtopics": [
+            {
+              "name": "Intrusion Upon Seclusion",
+              "rule": "Intentional intrusion upon the solitude or seclusion of another that would be highly offensive to a reasonable person.",
+              "elements": [
+                "1. Intentional intrusion - Deliberate act of prying",
+                "2. Into private affairs - Area in which plaintiff has reasonable expectation of privacy",
+                "3. Highly offensive - Would offend a reasonable person's sense of privacy"
+              ],
+              "examples": [
+                "Wiretapping phone calls",
+                "Secret recording in private spaces",
+                "Peeping into windows",
+                "Reading private mail or email",
+                "Persistent surveillance"
+              ],
+              "notIntrusion": [
+                "Observation in public places",
+                "Photography in public",
+                "Recording where no privacy expectation"
+              ],
+              "note": "No publication required - the intrusion itself is the tort",
+              "mnemonics": "Intrusion = 'I'm invading your space' (no publication needed)",
+              "essayTips": "No publication required - distinguish from disclosure. Analyze reasonable expectation of privacy. Highly offensive standard is objective. Public places generally not protected.",
+              "mbeTips": "NO publication required. Requires reasonable expectation of privacy. Public places = no expectation. Focus on the intrusion itself."
+            },
+            {
+              "name": "Public Disclosure of Private Facts",
+              "rule": "Publicizing private information about another that would be highly offensive to a reasonable person and is not of legitimate public concern.",
+              "elements": [
+                "1. Public disclosure - Widespread communication to the public",
+                "2. Private facts - True information not publicly known",
+                "3. Highly offensive - Would offend a reasonable person",
+                "4. Not newsworthy - Not of legitimate public concern"
+              ],
+              "notActionable": [
+                "Disclosure to one person or small group",
+                "Matters of public record",
+                "Newsworthy information about public figures"
+              ],
+              "mnemonics": "Disclosure = 'Don't tell everyone my true secrets'",
+              "essayTips": "Must be WIDESPREAD disclosure, not just to one person. Truth is NOT a defense (unlike defamation). Newsworthiness is a complete defense. Distinguish from defamation - this involves TRUE facts.",
+              "mbeTips": "Truth is NOT a defense. Requires widespread publication. Newsworthy = not actionable. Public records are fair game."
+            },
+            {
+              "name": "False Light",
+              "rule": "Publicizing information that places another in a false light that would be highly offensive to a reasonable person.",
+              "elements": [
+                "1. Publication - Widespread communication",
+                "2. False light - Creates false impression about plaintiff",
+                "3. Highly offensive - Would offend a reasonable person",
+                "4. Fault - Actual malice for matters of public concern"
+              ],
+              "examples": [
+                "Using plaintiff's photo next to unrelated scandalous story",
+                "Attributing views to plaintiff they don't hold",
+                "Fictional accounts presented as true"
+              ],
+              "contrastWithDefamation": [
+                "False light need not damage reputation",
+                "False light requires widespread publication",
+                "Different focus: defamation = reputation; false light = mental distress"
+              ],
+              "mnemonics": "False Light = 'You made me look bad/weird with false impression'",
+              "essayTips": "Overlaps significantly with defamation but focus is different. Doesn't require damage to reputation. May cover non-defamatory falsehoods. Some states don't recognize this tort.",
+              "mbeTips": "Widespread publication required (unlike defamation). Focus is on false impression, not reputation. Some jurisdictions don't recognize it."
+            },
+            {
+              "name": "Appropriation of Name or Likeness",
+              "rule": "Using another's name, likeness, or identity for commercial advantage without consent.",
+              "elements": [
+                "1. Appropriation - Use of name, likeness, or identity",
+                "2. For commercial purpose - Usually advertising or trade",
+                "3. Without consent - No permission granted"
+              ],
+              "examples": [
+                "Using celebrity photo in advertisement without permission",
+                "Using someone's name to endorse product",
+                "Using look-alike or sound-alike to evoke celebrity"
+              ],
+              "rightOfPublicity": {
+                "rule": "Related but distinct - protects commercial value of celebrity identity",
+                "differences": [
+                  "Survives death in some jurisdictions",
+                  "Focuses on economic interest, not privacy",
+                  "Applies primarily to celebrities"
+                ]
+              },
+              "defenses": [
+                "Newsworthiness",
+                "Consent",
+                "Incidental use"
+              ],
+              "mnemonics": "Appropriation = 'You're using ME to make money'",
+              "essayTips": "Distinguish from right of publicity. Commercial purpose is key. Newsworthiness is a defense. Celebrity look-alikes/sound-alikes may be covered.",
+              "mbeTips": "Must be commercial use. News/editorial use is protected. Right of publicity is related but distinct. Consent is complete defense."
+            }
+          ]
+        },
+        {
+          "category": "Misrepresentation",
+          "subtopics": [
+            {
+              "name": "Intentional Misrepresentation (Fraud/Deceit)",
+              "rule": "A false representation of material fact, made with knowledge of falsity and intent to induce reliance, upon which plaintiff justifiably relies to their detriment.",
+              "elements": [
+                "1. False representation - Of existing material fact (not opinion or future intent)",
+                "2. Scienter - Knowledge of falsity or reckless disregard for truth",
+                "3. Intent to induce reliance - Purpose of inducing plaintiff to act",
+                "4. Justifiable reliance - Plaintiff actually and reasonably relied",
+                "5. Damages - Economic loss caused by reliance"
+              ],
+              "whatCounts": [
+                "Affirmative misstatement",
+                "Concealment (active hiding)",
+                "Nondisclosure when duty to speak exists"
+              ],
+              "dutyToDisclose": [
+                "Fiduciary relationship",
+                "Active concealment",
+                "Partial disclosure making statement misleading",
+                "Known reliance on defendant's specialized knowledge"
+              ],
+              "mnemonics": "Fraud = FRIDR (False statement, Reliance, Intent, Damages, Reasonable reliance)",
+              "essayTips": "Analyze each element carefully. Scienter is key - knowledge or recklessness. Opinion generally not actionable unless speaker has superior knowledge. Check for duty to disclose if no affirmative statement.",
+              "mbeTips": "Must be statement of FACT, not opinion (generally). Scienter = knowledge or recklessness. Puffery not actionable. Damages = pecuniary loss."
+            },
+            {
+              "name": "Negligent Misrepresentation",
+              "rule": "A false statement made without reasonable care as to its truth, in a business or professional context, to guide others in business transactions.",
+              "elements": [
+                "1. False statement - Regarding material fact",
+                "2. Breach of duty of care - In obtaining or communicating information",
+                "3. Business or professional context - Information provided in commercial setting",
+                "4. Intent for guidance - Statement meant to guide business transactions",
+                "5. Justifiable reliance - By plaintiff or known limited group",
+                "6. Damages - Pecuniary loss"
+              ],
+              "limitedLiability": {
+                "rule": "Liability limited to those for whose guidance information was supplied or known limited group",
+                "contrast": "Narrower scope than intentional misrepresentation"
+              },
+              "mnemonics": "Negligent Misrepresentation = Careless commercial statements",
+              "essayTips": "Narrower scope than fraud - only liable to known group. Must be business/professional context. Compare with fraud elements. Pecuniary loss required.",
+              "mbeTips": "Limited to known group or class. Business/professional context required. Negligence, not scienter. Pecuniary damages only."
+            }
+          ]
+        },
+        {
+          "category": "Wrongful Civil Proceedings",
+          "subtopics": [
+            {
+              "name": "Malicious Prosecution",
+              "rule": "Wrongfully initiating criminal proceedings against another.",
+              "elements": [
+                "1. Institution of criminal proceedings - Defendant initiated prosecution",
+                "2. Without probable cause - No reasonable basis to believe plaintiff guilty",
+                "3. With malice - Improper purpose beyond bringing offender to justice",
+                "4. Termination in plaintiff's favor - Proceedings ended favorably to plaintiff",
+                "5. Damages - Injury to plaintiff"
+              ],
+              "favorableTermination": [
+                "Acquittal",
+                "Dismissal",
+                "Nolle prosequi (not abandonment for practical reasons)"
+              ],
+              "mnemonics": "Malicious Prosecution = Criminal case + No probable cause + Malice + Win",
+              "essayTips": "Requires favorable termination FIRST. Analyze whether there was probable cause. Malice can be inferred from lack of probable cause. Heavy burden - disfavored action.",
+              "mbeTips": "Must terminate in plaintiff's favor first. Probable cause negates claim. Malice = improper purpose. High burden of proof."
+            },
+            {
+              "name": "Abuse of Process",
+              "rule": "Using civil or criminal process for an improper collateral purpose.",
+              "elements": [
+                "1. Legal process - Legitimate process was used",
+                "2. Improper purpose - Process used for purpose for which it was not designed",
+                "3. Act or threat - Perverting the process in some way"
+              ],
+              "distinction": "Unlike malicious prosecution, process may have been properly issued; the MISUSE is the wrong",
+              "examples": [
+                "Using subpoena power to harass",
+                "Filing suit solely to coerce unrelated settlement",
+                "Using attachment to extort"
+              ],
+              "mnemonics": "Abuse of Process = 'Right process, wrong purpose'",
+              "essayTips": "Distinguish from malicious prosecution - no need for favorable termination. Focus is on misuse of proper process. Must identify the improper collateral purpose.",
+              "mbeTips": "No favorable termination required. Process was proper but misused. Look for collateral/ulterior purpose."
+            }
+          ]
+        }
+      ],
+      "keyDistinctions": [
+        {
+          "distinction": "Battery vs. Assault",
+          "explanation": "Battery requires harmful or offensive CONTACT; Assault requires APPREHENSION of imminent contact, no contact needed. Battery victim need not be aware; Assault victim must perceive the threat."
+        },
+        {
+          "distinction": "Trespass to Land vs. Nuisance",
+          "explanation": "Trespass requires physical invasion; Nuisance requires interference with use and enjoyment (can be noise, odors, etc. without physical invasion)."
+        },
+        {
+          "distinction": "Trespass to Chattels vs. Conversion",
+          "explanation": "Trespass to chattels = minor interference, actual damages required, property can be returned. Conversion = serious interference, forced sale remedy, defendant pays FMV."
+        },
+        {
+          "distinction": "Intentional Torts vs. Negligence",
+          "explanation": "Intentional torts require intent (purpose or substantial certainty). Negligence requires only failure to exercise reasonable care. Different defenses apply."
+        },
+        {
+          "distinction": "Comparative vs. Contributory Negligence",
+          "explanation": "Contributory negligence completely bars recovery (minority rule). Comparative negligence reduces recovery proportionally (majority rule)."
+        },
+        {
+          "distinction": "Negligence vs. Strict Liability",
+          "explanation": "Negligence requires showing defendant failed to exercise reasonable care. Strict liability imposes liability regardless of care exercised (abnormally dangerous activities, wild animals, products)."
+        },
+        {
+          "distinction": "Manufacturing Defect vs. Design Defect",
+          "explanation": "Manufacturing defect = this unit differs from intended design. Design defect = all units are defective because design is unreasonably dangerous."
+        },
+        {
+          "distinction": "Defamation vs. False Light",
+          "explanation": "Defamation focuses on reputation harm from false statements. False light focuses on mental distress from false impressions. False light requires widespread publication; defamation requires only publication to one third party."
+        },
+        {
+          "distinction": "Private Nuisance vs. Public Nuisance",
+          "explanation": "Private nuisance protects individual's use of their property. Public nuisance protects rights common to the public; private party needs special damage to sue."
+        },
+        {
+          "distinction": "Fraud vs. Negligent Misrepresentation",
+          "explanation": "Fraud requires scienter (knowledge of falsity or recklessness). Negligent misrepresentation requires only failure to use reasonable care. Negligent misrep has narrower scope of liability."
+        }
+      ],
+      "frequentlyTestedAreas": [
+        "Negligence elements (duty, breach, causation, damages)",
+        "Standard of care (reasonable person, professionals, children)",
+        "Proximate cause and intervening/superseding causes",
+        "Products liability (three theories, three defect types)",
+        "Comparative negligence calculations",
+        "Vicarious liability and respondeat superior",
+        "Intentional torts and their elements",
+        "Defenses to intentional torts (self-defense, necessity, consent)",
+        "Defamation and constitutional standards (public figure analysis)",
+        "Strict liability for abnormally dangerous activities",
+        "Landowner duties (trespasser, licensee, invitee)"
+      ]
+    },
+    {
+      "id": "contracts",
+      "name": "Contracts",
+      "isMBE": true,
+      "overview": "Contracts governs the formation, performance, and enforcement of legally binding agreements. Key distinction: Common Law governs services and real property; UCC Article 2 governs sale of goods.",
+      "topics": [
+        {
+          "category": "Contract Formation",
+          "subtopics": [
+            {
+              "name": "Mutual Assent - Overview",
+              "rule": "A valid contract requires mutual assent: an offer and acceptance, creating a 'meeting of the minds.'",
+              "objectiveTheory": "Contract formation is judged by outward, objective manifestations of intent, not secret subjective intentions.",
+              "mnemonics": "Contract = Offer + Acceptance + Consideration (OAC)",
+              "essayTips": "Always analyze whether a valid offer was made and properly accepted. Look for ambiguities that could defeat mutual assent. Apply objective theory - what would a reasonable person understand?",
+              "mbeTips": "Objective theory is key - look at what was said/written, not secret intent. Jokes may create contracts if reasonable person would take seriously."
+            },
+            {
+              "name": "Offer",
+              "rule": "An offer is a manifestation of willingness to enter into a bargain, creating a power of acceptance in the offeree.",
+              "elements": [
+                "1. Manifestation of intent - Objective intention to be bound",
+                "2. Definiteness - Essential terms are certain or determinable",
+                "3. Communication - Offer must be communicated to offeree"
+              ],
+              "essentialTerms": {
+                "commonLaw": [
+                  "Parties identified",
+                  "Subject matter",
+                  "Price",
+                  "Time for performance",
+                  "Quantity"
+                ],
+                "ucc": [
+                  "Quantity (only essential term)",
+                  "UCC fills gaps for other terms (reasonable price, reasonable time)"
+                ]
+              },
+              "notOffers": [
+                "Advertisements (generally invitations to deal, not offers)",
+                "Price quotes",
+                "Preliminary negotiations",
+                "Expressions of opinion",
+                "Statements of intention"
+              ],
+              "advertisementExceptions": [
+                "Clear, definite, explicit terms",
+                "Limits quantity ('first come, first served')",
+                "Leaves nothing open to negotiation"
+              ],
+              "mnemonics": "Offer = Present intent to be bound NOW (not just negotiating)",
+              "essayTips": "Distinguish offers from invitations to deal. Check definiteness - common law stricter than UCC. Advertisements rarely offers unless specific terms + limited quantity. Communication required.",
+              "mbeTips": "UCC requires only quantity term. Ads = usually not offers (exception: specific + limited quantity). Look for language showing intent to be bound NOW."
+            },
+            {
+              "name": "Termination of Offer",
+              "rule": "An offer can be terminated before acceptance by various means.",
+              "methods": [
+                {
+                  "method": "Revocation by Offeror",
+                  "rule": "Offeror may revoke any time before acceptance",
+                  "effective": "When received by offeree (or offeree learns from reliable source)",
+                  "limitations": [
+                    "Option contracts (supported by consideration)",
+                    "UCC Firm Offer (merchant's signed writing, up to 3 months)",
+                    "Detrimental reliance (foreseeable, substantial reliance)",
+                    "Beginning performance of unilateral contract"
+                  ]
+                },
+                {
+                  "method": "Rejection by Offeree",
+                  "rule": "Offeree's rejection terminates the offer",
+                  "effective": "When received by offeror",
+                  "counteroffer": "Counteroffer = rejection + new offer"
+                },
+                {
+                  "method": "Lapse of Time",
+                  "rule": "Offer terminates after stated time or reasonable time if none stated"
+                },
+                {
+                  "method": "Death or Incapacity",
+                  "rule": "Death of either party terminates offer (exception: irrevocable offers)"
+                },
+                {
+                  "method": "Destruction of Subject Matter",
+                  "rule": "Offer terminates if subject matter destroyed before acceptance"
+                },
+                {
+                  "method": "Supervening Illegality",
+                  "rule": "Offer terminates if performance becomes illegal before acceptance"
+                }
+              ],
+              "mnemonics": "Revocation terminates UNLESS: Option, Firm Offer, Reliance, Unilateral performance begun (OFRU)",
+              "essayTips": "Check timing - was acceptance effective before termination? Know the irrevocable offer exceptions. UCC Firm Offer is commonly tested. Detrimental reliance can make offer irrevocable under Restatement.",
+              "mbeTips": "Revocation effective on receipt. Firm Offer = merchant + signed writing + up to 3 months. Option requires consideration. Death terminates non-irrevocable offers automatically."
+            },
+            {
+              "name": "Acceptance",
+              "rule": "Acceptance is a manifestation of assent to the terms of an offer in the manner invited or required by the offer.",
+              "requirements": [
+                "1. By proper offeree (or their authorized agent)",
+                "2. Unequivocal acceptance (common law) / Any reasonable manner (UCC)",
+                "3. Communicated to offeror (if required)"
+              ],
+              "mannerOfAcceptance": {
+                "bilateralContract": "Acceptance by promise - acceptance effective when dispatched (mailbox rule)",
+                "unilateralContract": "Acceptance by performance only - acceptance upon completion of performance"
+              },
+              "mailboxRule": {
+                "rule": "Acceptance is effective when dispatched (put in mail), not when received",
+                "exceptions": [
+                  "Offer states otherwise",
+                  "Option contracts (effective on receipt)",
+                  "Revocation sent before acceptance dispatched",
+                  "Rejection dispatched before acceptance (first to arrive governs)"
+                ]
+              },
+              "silenceAsAcceptance": {
+                "generalRule": "Silence is not acceptance",
+                "exceptions": [
+                  "Prior course of dealing",
+                  "Offeree takes benefit of services knowing compensation expected",
+                  "Offer states silence is acceptance AND offeree intends to accept"
+                ]
+              },
+              "mnemonics": "Mailbox Rule = Acceptance 'drops in the mail,' revocation 'received in hand'",
+              "essayTips": "Apply mailbox rule carefully. Check if acceptance matches offer terms (common law mirror image rule). UCC is more flexible. Unilateral contracts - performance only, not promise.",
+              "mbeTips": "Mailbox rule: acceptance effective on dispatch. Revocation effective on receipt. Silence rarely acceptance. UCC allows acceptance in any reasonable manner."
+            },
+            {
+              "name": "Mirror Image Rule vs. UCC Battle of Forms",
+              "commonLawRule": {
+                "rule": "Acceptance must mirror offer exactly; any deviation is counteroffer",
+                "effect": "Material change = rejection + counteroffer"
+              },
+              "ucc2207": {
+                "rule": "UCC § 2-207 - Definite expression of acceptance operates as acceptance even with additional/different terms",
+                "betweenMerchants": {
+                  "additionalTerms": "Become part of contract UNLESS: (1) offer expressly limits acceptance to its terms, (2) terms materially alter, or (3) offeror objects within reasonable time",
+                  "materialAlterations": "Arbitration clauses, warranty disclaimers, limitations on remedies"
+                },
+                "nonMerchants": "Additional terms are proposals only; require assent to be included",
+                "knockout": "If writings don't agree and conduct shows contract, terms on which writings agree + UCC gap-fillers"
+              },
+              "mnemonics": "Common Law = Mirror; UCC 2-207 = 'Additional terms sneak in for merchants'",
+              "essayTips": "First identify: Common Law or UCC? If UCC, analyze 2-207 carefully. Check if both parties are merchants. Identify additional vs. different terms. Material alterations don't become part of contract.",
+              "mbeTips": "Know 2-207 cold. Material alterations (arbitration, warranty disclaimer) don't become part of contract. Both merchants needed for additional terms to enter contract."
+            }
+          ]
+        },
+        {
+          "category": "Consideration",
+          "subtopics": [
+            {
+              "name": "Consideration - Elements",
+              "rule": "Consideration is a bargained-for exchange of legal value (benefit to promisor or detriment to promisee).",
+              "elements": [
+                "1. Bargained-for exchange - Promise induces detriment AND detriment induces promise",
+                "2. Legal value - Detriment to promisee OR benefit to promisor"
+              ],
+              "legalDetriment": [
+                "Doing something not legally obligated to do",
+                "Refraining from something legally entitled to do",
+                "Promise to do or refrain"
+              ],
+              "adequacy": "Courts do not inquire into adequacy of consideration - peppercorn is sufficient",
+              "mnemonics": "Consideration = 'I give to get' (bargained exchange)",
+              "essayTips": "Look for the exchange - both sides must give something. Past consideration fails. Pre-existing duty issues are common. Gift promises lack consideration.",
+              "mbeTips": "Adequacy doesn't matter - any detriment is enough. Must be bargained for - not a gift or past action. Both parties must give something."
+            },
+            {
+              "name": "Consideration Problems",
+              "issues": [
+                {
+                  "issue": "Past Consideration",
+                  "rule": "Past actions cannot serve as consideration for a new promise",
+                  "reason": "No bargain - action already occurred, not induced by new promise",
+                  "exceptions": [
+                    "Promise to pay debt barred by statute of limitations",
+                    "Promise to pay debt discharged in bankruptcy",
+                    "Promise to perform voidable obligation (ratification)"
+                  ]
+                },
+                {
+                  "issue": "Pre-existing Duty Rule",
+                  "rule": "Doing or promising what you're already obligated to do is not consideration",
+                  "modifications": {
+                    "commonLaw": "Contract modifications require new consideration",
+                    "ucc": "Modifications in good faith need no new consideration"
+                  },
+                  "exceptions": [
+                    "Unforeseen circumstances making performance more difficult",
+                    "Additional duties beyond original obligation",
+                    "Third party promise to pay for existing duty"
+                  ]
+                },
+                {
+                  "issue": "Illusory Promises",
+                  "rule": "Promise that reserves complete discretion to perform or not is illusory - not consideration",
+                  "examples": [
+                    "'I'll buy if I feel like it'",
+                    "Unfettered termination at will without notice"
+                  ],
+                  "notIllusory": [
+                    "Requirements/output contracts (good faith limitation)",
+                    "Satisfaction clauses (judged by reasonable person or good faith)",
+                    "Conditional promises (condition is outside promisor's control)"
+                  ]
+                }
+              ],
+              "mnemonics": "Pre-existing duty = 'Doing what you're already supposed to do doesn't count'",
+              "essayTips": "Watch for modification issues - common law requires consideration, UCC needs only good faith. Requirements contracts are NOT illusory because of good faith. Past consideration = no consideration.",
+              "mbeTips": "UCC modifications need no consideration - key distinction! Requirements contracts are valid. Pre-existing duty exceptions are narrow. Past consideration fails."
+            },
+            {
+              "name": "Substitutes for Consideration",
+              "substitutes": [
+                {
+                  "name": "Promissory Estoppel",
+                  "rule": "A promise is enforceable without consideration if necessary to prevent injustice when promisor should reasonably expect reliance and promisee does rely to their detriment.",
+                  "elements": [
+                    "1. Promise - Clear and definite promise",
+                    "2. Foreseeable reliance - Promisor should expect reliance",
+                    "3. Actual reliance - Promisee actually relied",
+                    "4. Detriment - Reliance caused detriment",
+                    "5. Injustice - Enforcement necessary to avoid injustice"
+                  ],
+                  "damages": "May be limited to reliance damages (not expectation)"
+                },
+                {
+                  "name": "Moral Obligation (Material Benefit)",
+                  "rule": "Promise to pay for benefit previously received is enforceable if necessary to prevent injustice",
+                  "requirements": [
+                    "Promisor received material benefit",
+                    "Promise made in recognition of benefit",
+                    "Not a gift; no adequate opportunity to negotiate"
+                  ],
+                  "example": "Promise to pay someone who saved your life"
+                },
+                {
+                  "name": "Seal (Historical)",
+                  "rule": "At common law, a sealed instrument required no consideration; most jurisdictions have abolished this"
+                }
+              ],
+              "mnemonics": "Promissory Estoppel = 'Promise + Reliance + Injustice'",
+              "essayTips": "Promissory estoppel is a fallback when consideration fails. Damages may be limited. Charitable subscriptions often enforced via promissory estoppel. Moral obligation doctrine is limited.",
+              "mbeTips": "Promissory estoppel requires foreseeable, actual, detrimental reliance. Remedy may be limited to reliance rather than expectation. Charitable promises may be enforced."
+            }
+          ]
+        },
+        {
+          "category": "Defenses to Formation",
+          "subtopics": [
+            {
+              "name": "Statute of Frauds",
+              "rule": "Certain contracts must be evidenced by a signed writing to be enforceable.",
+              "categoriesMYLEGS": [
+                {
+                  "letter": "M",
+                  "category": "Marriage",
+                  "rule": "Contracts made in consideration of marriage (not mutual promises to marry)"
+                },
+                {
+                  "letter": "Y",
+                  "category": "Year",
+                  "rule": "Contracts that cannot be performed within one year from making",
+                  "note": "Measured from CONTRACT formation, not start of performance; if POSSIBLE to complete in one year, SOF doesn't apply"
+                },
+                {
+                  "letter": "L",
+                  "category": "Land",
+                  "rule": "Contracts for sale or transfer of interest in land",
+                  "includes": "Sales, mortgages, easements, leases over one year"
+                },
+                {
+                  "letter": "E",
+                  "category": "Executor",
+                  "rule": "Promise by executor to pay estate debts from personal funds"
+                },
+                {
+                  "letter": "G",
+                  "category": "Goods",
+                  "rule": "Sale of goods $500 or more (UCC § 2-201)",
+                  "exceptions": [
+                    "Specially manufactured goods",
+                    "Admission in court",
+                    "Partial performance (goods delivered and accepted)",
+                    "Merchant confirmatory memo (both merchants, no objection in 10 days)"
+                  ]
+                },
+                {
+                  "letter": "S",
+                  "category": "Surety",
+                  "rule": "Promise to answer for debt of another (guarantee)",
+                  "mainPurposeException": "If guarantor's main purpose is their own benefit, no writing required"
+                }
+              ],
+              "writingRequirement": {
+                "commonLaw": "Signed writing identifying parties, subject matter, essential terms",
+                "ucc": "Writing indicating contract, quantity term, signed by party to be charged"
+              },
+              "exceptions": [
+                "Full performance",
+                "Part performance (land: possession + improvements + payment)",
+                "Promissory estoppel",
+                "Admission in court (UCC)"
+              ],
+              "mnemonics": "MY LEGS = Marriage, Year, Land, Executor, Goods $500+, Surety",
+              "essayTips": "First check if SOF applies. Then check if exception applies. One-year rule: if any possibility of performance within one year, SOF doesn't apply. Part performance doctrine for land is frequently tested.",
+              "mbeTips": "One-year rule is measured from CONTRACT date. Look for possibility of completion within one year. Land = possession + payment + improvements. UCC = $500, quantity required."
+            },
+            {
+              "name": "Capacity",
+              "rule": "Parties must have legal capacity to enter into a binding contract.",
+              "categories": [
+                {
+                  "category": "Minors",
+                  "rule": "Contracts with minors are voidable at minor's option",
+                  "disaffirmance": "Minor can disaffirm during minority or within reasonable time after reaching majority",
+                  "ratification": "Minor can ratify upon reaching majority (express words or conduct)",
+                  "necessaries": "Minor liable for reasonable value of necessaries (food, shelter, clothing, medical care)",
+                  "restitution": "Upon disaffirmance, minor must return what they still have; split on depreciation"
+                },
+                {
+                  "category": "Mental Incapacity",
+                  "rule": "Contract voidable if party unable to understand nature and consequences",
+                  "tests": [
+                    "Cognitive test: Unable to understand nature and consequences",
+                    "Volitional test: Unable to act reasonably AND other party has reason to know"
+                  ]
+                },
+                {
+                  "category": "Intoxication",
+                  "rule": "Contract voidable if party so intoxicated they don't understand the nature of the transaction AND other party knew or should have known"
+                }
+              ],
+              "mnemonics": "Minors can Make contracts but Might void them (voidable, not void)",
+              "essayTips": "Distinguish void from voidable. Minors liable for necessaries at reasonable value. Mental incapacity = cognitive OR volitional test. Intoxication requires other party's knowledge.",
+              "mbeTips": "Minor's contracts are VOIDABLE, not void. Necessaries exception - reasonable value, not contract price. Disaffirmance must return benefits if still possessed."
+            },
+            {
+              "name": "Duress and Undue Influence",
+              "types": [
+                {
+                  "type": "Physical Duress",
+                  "rule": "Contract is VOID if induced by physical compulsion",
+                  "example": "Signing at gunpoint"
+                },
+                {
+                  "type": "Economic Duress",
+                  "rule": "Contract is VOIDABLE if induced by wrongful threat leaving no reasonable alternative",
+                  "elements": [
+                    "1. Wrongful or improper threat",
+                    "2. No reasonable alternative but to agree",
+                    "3. Threat induced the contract"
+                  ],
+                  "wrongfulThreats": [
+                    "Threat to breach existing contract",
+                    "Threat of criminal prosecution",
+                    "Threat to property"
+                  ]
+                },
+                {
+                  "type": "Undue Influence",
+                  "rule": "Contract voidable if party in dominant position uses unfair persuasion",
+                  "factors": [
+                    "Confidential relationship",
+                    "Weakened mental condition",
+                    "Discussion at unusual time/place",
+                    "Insistence on immediate action",
+                    "Emphasis on consequences of delay",
+                    "Multiple persuaders",
+                    "Absence of independent advice"
+                  ]
+                }
+              ],
+              "mnemonics": "Physical Duress = Void (gun to head); Economic Duress = Voidable (no choice)",
+              "essayTips": "Distinguish physical (void) from economic (voidable). Economic duress requires no reasonable alternative. Undue influence often involves elderly or ill persons. Confidential relationships are key factor.",
+              "mbeTips": "Physical duress = void contract. Economic duress needs wrongful threat + no alternatives. Undue influence looks at relationship + unfair persuasion."
+            },
+            {
+              "name": "Misrepresentation and Fraud",
+              "types": [
+                {
+                  "type": "Fraudulent Misrepresentation",
+                  "rule": "Contract voidable if induced by knowing or reckless misrepresentation of material fact justifiably relied upon",
+                  "elements": [
+                    "1. Misrepresentation of material fact (or fraudulent opinion)",
+                    "2. Scienter (knowledge of falsity or reckless disregard)",
+                    "3. Intent to induce reliance",
+                    "4. Justifiable reliance",
+                    "5. Resulting damages"
+                  ]
+                },
+                {
+                  "type": "Negligent or Innocent Misrepresentation",
+                  "rule": "Contract voidable if induced by material misrepresentation, even if innocently made",
+                  "requirements": "Material misrepresentation + justifiable reliance"
+                },
+                {
+                  "type": "Nondisclosure",
+                  "rule": "Generally no duty to disclose; contract may be voidable if:",
+                  "exceptions": [
+                    "Fiduciary relationship",
+                    "Active concealment",
+                    "Half-truths (partial disclosure)",
+                    "Known mistake regarding basic assumption",
+                    "Statute requires disclosure"
+                  ]
+                }
+              ],
+              "remedies": [
+                "Rescission (cancel contract)",
+                "Damages (benefit of the bargain or out-of-pocket)"
+              ],
+              "mnemonics": "Fraud = False statement + Reliance = Rescission",
+              "essayTips": "Distinguish fraud (scienter) from innocent misrepresentation. Both can void contract. Analyze whether there was duty to disclose. Material = would affect reasonable person's decision.",
+              "mbeTips": "Fraud requires scienter. Innocent misrepresentation also grounds for rescission. Look for concealment or half-truths. Reliance must be justifiable."
+            },
+            {
+              "name": "Mistake",
+              "types": [
+                {
+                  "type": "Mutual Mistake",
+                  "rule": "Contract voidable if both parties share mistaken belief about basic assumption material to the exchange",
+                  "elements": [
+                    "1. Mistake about existing fact (not future conditions)",
+                    "2. Both parties share same mistake",
+                    "3. Mistake concerns basic assumption",
+                    "4. Material effect on exchange",
+                    "5. Adversely affected party did not bear risk"
+                  ],
+                  "example": "Both parties believe painting is copy when it's an original"
+                },
+                {
+                  "type": "Unilateral Mistake",
+                  "rule": "Contract voidable only if non-mistaken party knew or should have known of mistake, OR enforcement would be unconscionable",
+                  "generalRule": "Unilateral mistake is NOT grounds for rescission unless other party knew or should have known"
+                }
+              ],
+              "riskAllocation": {
+                "rule": "No relief if mistaken party bears risk of mistake",
+                "bearingRisk": [
+                  "Agreement allocates risk to that party",
+                  "Aware of limited knowledge but treated as sufficient",
+                  "Court allocates risk as reasonable"
+                ]
+              },
+              "mnemonics": "Mutual Mistake = Both wrong on BASIC assumption = voidable; Unilateral = Usually stuck",
+              "essayTips": "Distinguish mutual from unilateral mistake. Mutual mistake requires shared basic assumption. Unilateral requires other party's knowledge or unconscionability. Check who bears risk of mistake.",
+              "mbeTips": "Mutual mistake = both wrong, contract voidable. Unilateral = generally no relief unless other party knew. Basic assumption = material foundation of deal."
+            },
+            {
+              "name": "Unconscionability",
+              "rule": "Contract or clause may be unenforceable if unconscionable at time of formation.",
+              "types": [
+                {
+                  "type": "Procedural Unconscionability",
+                  "rule": "Unfairness in bargaining process",
+                  "factors": [
+                    "Lack of meaningful choice",
+                    "Hidden terms (fine print)",
+                    "High pressure tactics",
+                    "Unequal bargaining power",
+                    "Lack of understanding"
+                  ]
+                },
+                {
+                  "type": "Substantive Unconscionability",
+                  "rule": "Unfairness in the terms themselves",
+                  "factors": [
+                    "One-sided terms",
+                    "Excessive price",
+                    "Terms that 'shock the conscience'"
+                  ]
+                }
+              ],
+              "requirement": "Most courts require BOTH procedural and substantive elements (sliding scale)",
+              "remedies": [
+                "Refuse to enforce entire contract",
+                "Refuse to enforce unconscionable clause",
+                "Limit application of clause"
+              ],
+              "mnemonics": "Unconscionability = Unfair PROCESS + Unfair TERMS",
+              "essayTips": "Analyze BOTH procedural and substantive elements. Courts use sliding scale - more of one can compensate for less of other. Determined at time of formation, not later. Judge decides, not jury.",
+              "mbeTips": "Need both procedural AND substantive (sliding scale). Determined at CONTRACT formation. Unequal bargaining power alone is insufficient. Judge, not jury, decides."
+            },
+            {
+              "name": "Illegality and Public Policy",
+              "rules": [
+                {
+                  "rule": "Contracts to commit illegal acts are void and unenforceable",
+                  "examples": [
+                    "Contract to commit crime",
+                    "Gambling contracts (where illegal)",
+                    "Contracts in restraint of trade"
+                  ]
+                },
+                {
+                  "rule": "Contracts violating public policy may be unenforceable",
+                  "factors": [
+                    "Strength of policy",
+                    "Likelihood that refusing enforcement furthers policy",
+                    "Seriousness of misconduct",
+                    "Parties' relative fault"
+                  ]
+                }
+              ],
+              "effects": {
+                "generalRule": "Court leaves parties where it finds them - no recovery",
+                "exceptions": [
+                  "Party not equally at fault (in pari delicto)",
+                  "Party protected by statute",
+                  "Excusable ignorance",
+                  "Partial illegality - sever legal portion"
+                ]
+              },
+              "covenantNotToCompete": {
+                "employment": "Enforceable if reasonable in scope (geography, time, activities)",
+                "saleBusiness": "Generally more freely enforced as part of goodwill sale",
+                "modification": "Many courts will 'blue pencil' to make reasonable"
+              },
+              "mnemonics": "Illegal = Void, court won't help either party",
+              "essayTips": "Identify the illegality or policy violation. Check if severance is possible. Non-compete reasonableness is frequently tested. Some states (CA) ban non-competes.",
+              "mbeTips": "Illegal contracts = void and unenforceable. Court won't assist either party. Non-competes must be reasonable. Some states allow blue penciling."
+            }
+          ]
+        },
+        {
+          "category": "Interpretation and Parol Evidence",
+          "subtopics": [
+            {
+              "name": "Parol Evidence Rule",
+              "rule": "A final written agreement may not be contradicted or supplemented by prior or contemporaneous agreements.",
+              "integration": [
+                {
+                  "type": "Complete Integration",
+                  "test": "Writing is intended as final and complete statement of terms",
+                  "effect": "Bars all prior/contemporaneous agreements on same subject"
+                },
+                {
+                  "type": "Partial Integration",
+                  "test": "Writing is final but not complete",
+                  "effect": "Cannot contradict but may supplement with consistent additional terms"
+                }
+              ],
+              "exceptionsAlwaysAdmissible": [
+                "Formation issues (fraud, duress, mistake, illegality)",
+                "Condition precedent to effectiveness",
+                "Subsequent modifications",
+                "Collateral agreements (separate consideration, doesn't contradict)",
+                "Interpretation of ambiguous terms",
+                "Course of dealing, usage of trade, course of performance (UCC)"
+              ],
+              "uccApproach": "More liberal - admits course of dealing, usage of trade, course of performance to explain or supplement",
+              "mnemonics": "Parol Evidence = Prior promises are Pushed out by Paper",
+              "essayTips": "First determine if writing is complete or partial integration. Complete = can't add or contradict. Partial = can add consistent terms. ALWAYS analyze exceptions. UCC is more permissive.",
+              "mbeTips": "Complete integration bars contradiction AND supplementation. Partial bars contradiction only. Formation defects always admissible. UCC admits trade usage, course of dealing."
+            },
+            {
+              "name": "Interpretation Principles",
+              "rules": [
+                "Plain meaning given if unambiguous",
+                "Ambiguities construed against drafter (contra proferentem)",
+                "Specific terms control general terms",
+                "Handwritten terms control typed; typed control printed",
+                "All provisions should be given effect if possible",
+                "Course of performance > course of dealing > usage of trade (UCC)"
+              ],
+              "extrinsicEvidence": "Admissible to interpret ambiguous terms, even in integrated agreements",
+              "essayTips": "Look for ambiguities to allow in extrinsic evidence. Apply canons of construction. Note who drafted the agreement.",
+              "mbeTips": "Plain meaning first. Ambiguity construed against drafter. Specific beats general. UCC hierarchy: performance > dealing > trade usage."
+            }
+          ]
+        },
+        {
+          "category": "Third Party Rights",
+          "subtopics": [
+            {
+              "name": "Third Party Beneficiaries",
+              "rule": "A third party may enforce a contract made for their benefit if they are an intended beneficiary.",
+              "types": [
+                {
+                  "type": "Intended Beneficiary",
+                  "test": "Promisor's performance intended to benefit third party (not just incidentally)",
+                  "subtypes": [
+                    {
+                      "name": "Creditor Beneficiary",
+                      "definition": "Performance will satisfy promisee's debt to beneficiary"
+                    },
+                    {
+                      "name": "Donee Beneficiary",
+                      "definition": "Performance intended as gift to beneficiary"
+                    }
+                  ],
+                  "rights": "Can enforce contract once rights have vested"
+                },
+                {
+                  "type": "Incidental Beneficiary",
+                  "definition": "Benefits from performance but wasn't intended purpose",
+                  "rights": "NO right to enforce"
+                }
+              ],
+              "vesting": {
+                "rule": "Parties can modify/rescind until beneficiary's rights vest",
+                "vestingOccurs": [
+                  "Beneficiary learns of contract and assents",
+                  "Beneficiary materially changes position in reliance",
+                  "Beneficiary files suit to enforce"
+                ]
+              },
+              "defenses": "Promisor may assert against beneficiary any defense promisor could have against promisee",
+              "mnemonics": "Intended = 'I' can sue; Incidental = 'I' cannot",
+              "essayTips": "First classify as intended or incidental. Check if rights vested - if not, contract can be modified. Analyze promisor's defenses. Creditor vs. donee distinction matters for vesting.",
+              "mbeTips": "Incidental beneficiaries have NO rights. Rights vest upon reliance, assent, or lawsuit. Promisor can raise any defense against promisee."
+            },
+            {
+              "name": "Assignment of Rights",
+              "rule": "Assignment is the transfer of rights under a contract to a third party (assignee).",
+              "generalRule": "All contract rights are assignable unless:",
+              "exceptions": [
+                "Assignment materially changes obligor's duties",
+                "Assignment materially impairs obligor's chance of return performance",
+                "Contract prohibits assignment",
+                "Personal services contracts (material impairment)"
+              ],
+              "antiAssignmentClauses": {
+                "generalRule": "Clause prohibiting assignment is construed to bar only delegation, not assignment of right to payment",
+                "effect": "Assignment in breach of clause is valid but may be breach of contract"
+              },
+              "rights": {
+                "assignee": [
+                  "Takes all rights of assignor",
+                  "Subject to all defenses obligor could raise against assignor",
+                  "Not subject to defenses arising AFTER assignment if obligor has notice"
+                ],
+                "obligor": [
+                  "Must perform for assignee after notice",
+                  "Payment to assignor before notice is valid",
+                  "May raise defenses against assignee"
+                ]
+              },
+              "multipleAssignees": {
+                "commonLaw": "First in time, first in right",
+                "modernRule": "First to give notice prevails if took for value without notice of prior assignment"
+              },
+              "mnemonics": "Assignment = 'A' gives rights to 'B'; Delegation = 'A' gives duties to 'B'",
+              "essayTips": "Check if assignment is prohibited. Assignee takes subject to defenses. Obligor needs notice before required to perform to assignee. Anti-assignment clauses narrowly construed.",
+              "mbeTips": "Assignee stands in assignor's shoes - takes subject to defenses. Notice to obligor is important. Anti-assignment clauses don't bar right to payment usually."
+            },
+            {
+              "name": "Delegation of Duties",
+              "rule": "Delegation is the transfer of performance duties under a contract to a third party (delegate).",
+              "generalRule": "All contract duties are delegable unless:",
+              "exceptions": [
+                "Contract prohibits delegation",
+                "Other party has substantial interest in having original party perform (personal services)",
+                "Delegation would materially change performance"
+              ],
+              "effects": {
+                "delegator": "Remains liable unless other party agrees to novation",
+                "delegate": "Liable to obligee only if delegate assumes duty for consideration (promisee can enforce as third party beneficiary)"
+              },
+              "novation": {
+                "rule": "Agreement releasing delegator and substituting delegate as new party",
+                "requirements": "Obligee must agree to release delegator"
+              },
+              "mnemonics": "Delegation = 'D' delegates Duties; Delegator still liable (no free pass)",
+              "essayTips": "Delegator remains liable unless novation. Personal services cannot be delegated. Assumption creates liability to obligee. Distinguish from assignment (rights vs. duties).",
+              "mbeTips": "Delegator stays liable unless novation. Personal services are non-delegable. Assumption by delegate creates third party beneficiary rights."
+            }
+          ]
+        },
+        {
+          "category": "Conditions",
+          "subtopics": [
+            {
+              "name": "Types of Conditions",
+              "rule": "A condition is an event, not certain to occur, that must occur before performance becomes due.",
+              "types": [
+                {
+                  "type": "Condition Precedent",
+                  "rule": "Must occur BEFORE performance is due",
+                  "example": "'I'll buy the house if it passes inspection'"
+                },
+                {
+                  "type": "Condition Subsequent",
+                  "rule": "Terminates duty to perform AFTER it has become absolute",
+                  "example": "'Insurance coverage terminated if not notified within 30 days of loss'"
+                },
+                {
+                  "type": "Concurrent Conditions",
+                  "rule": "Each party's performance is conditioned on other's simultaneous performance",
+                  "example": "Sale of goods - delivery and payment concurrent"
+                }
+              ],
+              "sources": [
+                {
+                  "source": "Express Condition",
+                  "rule": "Explicitly stated in contract; must be strictly complied with",
+                  "language": "'If,' 'provided that,' 'on condition that'"
+                },
+                {
+                  "source": "Implied Condition (Constructive)",
+                  "rule": "Implied by law to do justice; substantial performance may suffice"
+                }
+              ],
+              "satisfactionClauses": {
+                "objectiveStandard": "Mechanical/commercial contracts - judged by reasonable person",
+                "subjectiveStandard": "Aesthetic/personal contracts - genuine satisfaction required (good faith)"
+              },
+              "mnemonics": "Express condition = exact compliance; Implied condition = substantial OK",
+              "essayTips": "Identify condition type (precedent, subsequent, concurrent). Express conditions require strict compliance. Constructive conditions need only substantial performance. Satisfaction clauses - determine objective vs. subjective standard.",
+              "mbeTips": "Express = strict compliance. Implied = substantial performance may suffice. Condition precedent shifts burden to prove occurrence. Look for condition language ('if,' 'provided that')."
+            },
+            {
+              "name": "Excuse of Conditions",
+              "methods": [
+                {
+                  "method": "Waiver",
+                  "rule": "Voluntary relinquishment of known right",
+                  "retraction": "Can be retracted unless other party relied"
+                },
+                {
+                  "method": "Prevention/Hindrance",
+                  "rule": "Condition excused if party whose performance is conditioned wrongfully prevents occurrence"
+                },
+                {
+                  "method": "Anticipatory Repudiation",
+                  "rule": "If obligor repudiates, obligee's conditions excused"
+                },
+                {
+                  "method": "Estoppel",
+                  "rule": "Statement that condition won't be insisted upon, followed by detrimental reliance"
+                },
+                {
+                  "method": "Forfeiture",
+                  "rule": "Court may excuse condition if enforcement would cause disproportionate forfeiture"
+                }
+              ],
+              "mnemonics": "Excuses = WPAEF (Waiver, Prevention, Anticipatory repudiation, Estoppel, Forfeiture)",
+              "essayTips": "Look for conduct suggesting waiver. Prevention/hindrance is common issue. Forfeiture requires disproportionate harm. Waiver can be retracted if no reliance.",
+              "mbeTips": "Waiver = voluntary relinquishment. Prevention/hindrance excuses the condition. Forfeiture doctrine prevents unjust results. Retraction of waiver allowed if no reliance."
+            }
+          ]
+        },
+        {
+          "category": "Performance and Breach",
+          "subtopics": [
+            {
+              "name": "Substantial Performance",
+              "rule": "A party who substantially performs is entitled to contract price minus damages for deviation.",
+              "requirements": [
+                "Performance must be close to complete",
+                "Defects must be minor and unintentional",
+                "Essential purpose of contract must be fulfilled"
+              ],
+              "notSubstantialPerformance": [
+                "Willful breach",
+                "Material deviation from specifications",
+                "Failure to fulfill essential purpose"
+              ],
+              "recovery": "Contract price minus cost of completion or diminution in value",
+              "uccPerfectTender": "For goods, perfect tender rule applies - buyer can reject for any defect (with exceptions)",
+              "mnemonics": "Substantial = 'Close enough' for common law; UCC = Perfect tender",
+              "essayTips": "Distinguish common law (substantial performance) from UCC (perfect tender). Check if breach was willful. Calculate damages: contract price minus cost to complete.",
+              "mbeTips": "Substantial performance applies to services/construction (common law). UCC uses perfect tender. Willful breach = no substantial performance."
+            },
+            {
+              "name": "Material Breach",
+              "rule": "A material breach is a failure of performance that substantially defeats the purpose of the contract.",
+              "factors": [
+                "Extent to which injured party is deprived of expected benefit",
+                "Extent to which injured party can be compensated",
+                "Extent of part performance",
+                "Likelihood of cure",
+                "Good or bad faith of breaching party"
+              ],
+              "effects": [
+                "Non-breaching party may suspend performance",
+                "If breach is total, non-breaching party is discharged and may sue immediately",
+                "Non-breaching party still entitled to sue for damages"
+              ],
+              "partialBreach": "Non-breaching party must continue performance but may sue for damages from partial breach",
+              "mnemonics": "Material Breach = Major failure = Other party can walk away",
+              "essayTips": "Apply factors to determine materiality. Material breach excuses other party's performance. Partial breach doesn't excuse - only damages. Time is of the essence = material if missed.",
+              "mbeTips": "Material breach = other party can suspend/cancel. Partial breach = must continue, can sue. 'Time is of the essence' makes delays material."
+            },
+            {
+              "name": "Anticipatory Repudiation",
+              "rule": "An unequivocal statement or conduct indicating party will not perform when due.",
+              "requirements": [
+                "Statement must be clear and unequivocal",
+                "Must relate to material obligation",
+                "Must be before performance is due"
+              ],
+              "responses": [
+                "Treat as immediate breach and sue",
+                "Suspend own performance and wait",
+                "Urge retraction",
+                "Ignore and wait for performance date"
+              ],
+              "retraction": {
+                "rule": "Repudiating party may retract if:",
+                "conditions": [
+                  "Other party has not materially changed position",
+                  "Other party has not indicated repudiation is accepted",
+                  "Notice of retraction given"
+                ]
+              },
+              "uccAdequateAssurance": {
+                "rule": "If reasonable grounds for insecurity, party may demand adequate assurance and suspend performance",
+                "failure": "Failure to provide assurance within 30 days is repudiation (UCC)"
+              },
+              "mnemonics": "Anticipatory Repudiation = 'Advance notice I won't perform' = Immediate breach",
+              "essayTips": "Statement must be CLEAR and UNEQUIVOCAL. Mere expressions of doubt insufficient. Check if retraction possible. UCC allows demanding assurance if insecure.",
+              "mbeTips": "Must be clear and unequivocal - doubt isn't enough. Retraction allowed until other party relies or accepts. UCC: demand assurance, 30 days to respond."
+            },
+            {
+              "name": "UCC Perfect Tender Rule",
+              "rule": "For sale of goods, if goods or tender fail in any respect to conform to contract, buyer may reject whole, accept whole, or accept any commercial unit and reject rest.",
+              "exceptions": [
+                {
+                  "exception": "Cure",
+                  "rule": "Seller may cure defective tender if time for performance hasn't expired or seller reasonably believed goods would be acceptable"
+                },
+                {
+                  "exception": "Installment Contracts",
+                  "rule": "Buyer can reject only if defect substantially impairs that installment and cannot be cured; can cancel only if defect substantially impairs whole contract"
+                },
+                {
+                  "exception": "Revocation of Acceptance",
+                  "rule": "Buyer who accepted can later revoke if defect substantially impairs value and was latent or buyer reasonably relied on seller's assurance of cure"
+                }
+              ],
+              "acceptanceOfGoods": {
+                "occurs": [
+                  "Express statement of acceptance",
+                  "Failure to reject within reasonable time",
+                  "Doing any act inconsistent with seller's ownership"
+                ],
+                "effect": "Buyer must pay contract price but can recover damages for non-conformity"
+              },
+              "mnemonics": "Perfect Tender = Any defect = right to reject (but seller may cure)",
+              "essayTips": "Perfect tender for single delivery; substantial performance for installments. Seller's right to cure is important. Acceptance limits buyer to damages. Revocation requires substantial impairment + justification.",
+              "mbeTips": "Single delivery = perfect tender. Installments = substantial impairment. Cure allowed if time remains or seller reasonably expected acceptance. Revocation = substantial impairment required."
+            }
+          ]
+        },
+        {
+          "category": "Excuse of Performance",
+          "subtopics": [
+            {
+              "name": "Impossibility",
+              "rule": "Performance is excused when it becomes objectively impossible due to circumstances beyond party's control.",
+              "requirements": [
+                "Event made performance objectively impossible (not just difficult)",
+                "Event was not foreseeable at time of contracting",
+                "Risk was not assumed by party seeking excuse"
+              ],
+              "categories": [
+                {
+                  "category": "Death or Incapacity",
+                  "rule": "Death/incapacity of person necessary for performance excuses obligation"
+                },
+                {
+                  "category": "Destruction of Subject Matter",
+                  "rule": "Destruction of specific subject matter through no fault excuses performance"
+                },
+                {
+                  "category": "Supervening Illegality",
+                  "rule": "Performance becoming illegal after formation excuses obligation"
+                }
+              ],
+              "temporaryImpossibility": "Suspends duty; performance required when possibility resumes unless burden materially increased",
+              "mnemonics": "Impossibility = 'Can't be done by anyone' (objective, not subjective)",
+              "essayTips": "Distinguish objective ('no one can do it') from subjective ('I can't do it'). Subjective impossibility no excuse. Must be unforeseeable and unassumed. Temporary impossibility only suspends.",
+              "mbeTips": "Must be OBJECTIVE impossibility. Subjective difficulty is not excuse. Foreseeable events don't excuse. Death excuses personal services only."
+            },
+            {
+              "name": "Impracticability",
+              "rule": "Performance excused when supervening event makes performance extremely difficult or costly beyond what was reasonably foreseeable.",
+              "elements": [
+                "1. Extreme difficulty or expense (not just more burdensome)",
+                "2. Due to unforeseen supervening event",
+                "3. Non-occurrence of event was basic assumption of contract",
+                "4. Party seeking excuse did not assume risk"
+              ],
+              "notImpracticability": [
+                "Normal market fluctuations",
+                "Increased costs (unless extreme)",
+                "Difficulty that was foreseeable"
+              ],
+              "uccApproach": "Section 2-615: Failure of presupposed conditions excuses delay or non-delivery",
+              "mnemonics": "Impracticability = 'Extreme hardship' (not just harder/more expensive)",
+              "essayTips": "Higher bar than just 'more difficult.' Analyze whether risk was allocated by contract. Market fluctuations usually not enough. Compare with impossibility - both are excuse doctrines.",
+              "mbeTips": "Extreme burden required - ordinary cost increases not enough. Risk allocation in contract controls. UCC 2-615 applies to goods. Foreseeable = no excuse."
+            },
+            {
+              "name": "Frustration of Purpose",
+              "rule": "Performance excused when supervening event substantially frustrates the principal purpose of the contract.",
+              "elements": [
+                "1. Principal purpose is substantially frustrated",
+                "2. By supervening event not reasonably foreseeable",
+                "3. Non-occurrence was basic assumption of contract",
+                "4. Frustration is substantial (not just less valuable)"
+              ],
+              "distinction": "Unlike impossibility - performance IS possible but has become pointless",
+              "example": "Coronation cases: Room rented to view parade, parade cancelled - performance possible but purpose frustrated",
+              "mnemonics": "Frustration = 'I CAN do it but now there's no point'",
+              "essayTips": "Key: purpose must be SUBSTANTIALLY frustrated. Purpose must be known to both parties. Performance is still possible - distinguishes from impossibility. Classic coronation cases.",
+              "mbeTips": "Purpose must be principal, known to both, and substantially frustrated. Performance is possible but meaningless. Both parties must know the purpose."
+            },
+            {
+              "name": "Modification and Accord",
+              "modification": {
+                "commonLaw": "Modification requires new consideration",
+                "ucc": "Modification in good faith needs no consideration (§ 2-209)",
+                "statuteOfFrauds": "Modification must comply if modified contract falls within SOF"
+              },
+              "accord": {
+                "definition": "Agreement to accept a different performance than originally owed",
+                "satisfaction": "Performance of the accord (satisfaction) discharges original duty",
+                "effect": "Original duty suspended when accord made; discharged when satisfied"
+              },
+              "novation": {
+                "definition": "Substitution of new party for original party",
+                "requirements": "All parties must agree",
+                "effect": "Original party discharged from liability"
+              },
+              "mnemonics": "Accord = Agreement for substituted performance; Novation = New party substituted",
+              "essayTips": "UCC vs common law on modification consideration. Accord suspends until satisfaction. Novation requires all parties' consent. Check SOF for modifications.",
+              "mbeTips": "UCC modifications need no consideration - must be good faith. Common law needs consideration. Novation = complete discharge of original party."
+            }
+          ]
+        },
+        {
+          "category": "Remedies",
+          "subtopics": [
+            {
+              "name": "Expectation Damages",
+              "rule": "Damages to put plaintiff in position they would have been in had the contract been performed.",
+              "formula": "Loss in value (what you would have received) + Other loss (consequential/incidental) - Cost avoided - Loss avoided",
+              "limitations": [
+                {
+                  "limitation": "Foreseeability (Hadley v. Baxendale)",
+                  "rule": "Damages must be foreseeable at time of contracting as probable result of breach",
+                  "types": [
+                    "General damages - arise naturally from breach",
+                    "Consequential damages - from special circumstances known to breaching party"
+                  ]
+                },
+                {
+                  "limitation": "Certainty",
+                  "rule": "Damages must be proven with reasonable certainty",
+                  "newBusiness": "New business lost profits may be speculative but not barred as matter of law"
+                },
+                {
+                  "limitation": "Mitigation",
+                  "rule": "Non-breaching party must take reasonable steps to mitigate damages",
+                  "cannotRecover": "Damages that could have been reasonably avoided"
+                }
+              ],
+              "mnemonics": "Expectation = What you Expected to gain; limited by FCC (Foreseeability, Certainty, mitigation Costs)",
+              "essayTips": "Calculate expectation damages with formula. Apply Hadley v. Baxendale foreseeability test. Check mitigation efforts. New business profits aren't automatically barred.",
+              "mbeTips": "Expectation = benefit of the bargain. Consequential damages must be foreseeable. Mitigation required. Certainty needed for amount."
+            },
+            {
+              "name": "Reliance Damages",
+              "rule": "Damages to restore plaintiff to position before the contract, recovering expenditures made in reliance.",
+              "when": [
+                "Expectation damages too speculative",
+                "Plaintiff chooses reliance over expectation",
+                "Promissory estoppel cases"
+              ],
+              "limitation": "Cannot recover reliance damages that would exceed expectation damages (can't turn losing contract into winning)",
+              "mnemonics": "Reliance = What you Relied on and spent",
+              "essayTips": "Alternative to expectation damages. Good choice when lost profits are speculative. Cannot turn bad deal into good deal - capped at expectation. Common in promissory estoppel.",
+              "mbeTips": "Cannot exceed expectation damages. Useful when profits are speculative. Common in promissory estoppel. Pre-contract expenses may be included if in reliance."
+            },
+            {
+              "name": "Restitution",
+              "rule": "Damages to restore to plaintiff benefits conferred on defendant, preventing unjust enrichment.",
+              "availability": [
+                "Breaching party in some cases (minus damages caused to other party)",
+                "Non-breaching party as alternative to expectation",
+                "Where no enforceable contract exists"
+              ],
+              "measure": "Value of benefit conferred on defendant (not plaintiff's cost)",
+              "breachingParty": {
+                "majorityRule": "Breaching party can recover restitution minus damages (to prevent windfall)",
+                "traditionalRule": "Breaching party cannot recover"
+              },
+              "mnemonics": "Restitution = Return what was Received",
+              "essayTips": "Focus on benefit to defendant. Available even without contract. Breaching party recovery is controversial - know both rules. Alternative remedy when contract is unenforceable.",
+              "mbeTips": "Measure is benefit to defendant. Available even to breaching party (modern rule, minus damages). Not limited by contract price."
+            },
+            {
+              "name": "Specific Performance",
+              "rule": "Equitable remedy compelling party to perform contract as promised.",
+              "requirements": [
+                "Valid, enforceable contract",
+                "Inadequate legal remedy (money damages insufficient)",
+                "Feasibility of enforcement",
+                "Mutuality of remedy (modern: not absolute requirement)",
+                "No equitable defenses (unclean hands, laches)"
+              ],
+              "realProperty": "Specific performance routinely granted - land is unique",
+              "goods": "Available under UCC for unique goods or other proper circumstances",
+              "personalServices": "Not available for personal services (involuntary servitude, enforcement problems)",
+              "mnemonics": "Specific Performance = 'Do exactly what you promised' (when money won't work)",
+              "essayTips": "Land = presumptively unique. Personal services = never specific performance. UCC: unique goods or proper circumstances. Check for equitable defenses. Analyze adequacy of legal remedy.",
+              "mbeTips": "Real property = specific performance. Personal services = no. Unique goods = yes. Check feasibility and equitable defenses."
+            },
+            {
+              "name": "Liquidated Damages",
+              "rule": "Pre-agreed damages provision enforceable if reasonable estimate of harm and actual damages difficult to ascertain.",
+              "requirements": [
+                "1. Damages were difficult to estimate at time of contracting",
+                "2. Amount is reasonable forecast of harm",
+                "3. Not a penalty"
+              ],
+              "penalty": "If amount is disproportionate to actual/anticipated harm, it's an unenforceable penalty",
+              "reasonablenessTest": {
+                "firstRestatement": "Reasonable at time of contracting",
+                "secondRestatement": "Reasonable at time of contracting OR in light of actual loss"
+              },
+              "mnemonics": "Liquidated Damages = 'Let's agree now' (if reasonable, not penalty)",
+              "essayTips": "Apply two-part test: difficulty of estimation + reasonableness. Compare to actual damages if known. Courts dislike penalties. UCC similar approach but may consider actual harm.",
+              "mbeTips": "Must be reasonable estimate when contract formed. Penalty clauses unenforceable. Actual harm may be considered in some jurisdictions."
+            },
+            {
+              "name": "UCC Buyer's Remedies",
+              "remedies": [
+                {
+                  "remedy": "Cover",
+                  "rule": "Buy substitute goods and recover difference from contract price (§ 2-712)",
+                  "formula": "Cover price - Contract price + Incidental/Consequential damages"
+                },
+                {
+                  "remedy": "Market Damages",
+                  "rule": "If no cover, recover market-contract differential (§ 2-713)",
+                  "formula": "Market price (at time of breach) - Contract price + Incidental/Consequential damages"
+                },
+                {
+                  "remedy": "Specific Performance",
+                  "rule": "Available for unique goods or other proper circumstances"
+                },
+                {
+                  "remedy": "Replevin",
+                  "rule": "Recovery of identified goods when cover unavailable"
+                }
+              ],
+              "incidentalDamages": "Expenses incident to breach (inspection, receipt, custody of rejected goods)",
+              "consequentialDamages": "Foreseeable losses from breach (lost profits, other damages)",
+              "mnemonics": "Buyer's Remedies: CMSRC (Cover, Market, Specific performance, Replevin, Consequential)",
+              "essayTips": "Cover is preferred remedy. Market damages use market price at breach. Consequential damages must be foreseeable. Specific performance for unique goods.",
+              "mbeTips": "Cover must be in good faith and reasonable. Market damages when no cover. Both incidental AND consequential available to buyers."
+            },
+            {
+              "name": "UCC Seller's Remedies",
+              "remedies": [
+                {
+                  "remedy": "Resale",
+                  "rule": "Resell goods and recover difference from contract price (§ 2-706)",
+                  "formula": "Contract price - Resale price + Incidental damages"
+                },
+                {
+                  "remedy": "Market Damages",
+                  "rule": "

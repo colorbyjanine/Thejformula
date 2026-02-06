@@ -1,3 +1,4 @@
+import ShareButton from "@/components/ShareButton";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,6 +13,8 @@ export default function RedLightTherapy() {
               <span className="text-xs tracking-widest uppercase text-[#9A9086]">Hair Health</span>
               <span className="text-xs text-[#D4C5B5]">•</span>
               <span className="text-xs text-[#9A9086]">8 min read</span>
+              <span className="text-xs text-[#D4C5B5]">•</span>
+              <ShareButton url="/learn/red-light-therapy" title="Red Light Therapy" />
             </div>
             <h1 className="text-4xl md:text-5xl font-[family-name:var(--font-cormorant)] text-[#3D3935] mb-6">
               Red Light Therapy for Hair Growth: What the Studies Actually Say

@@ -1,0 +1,1482 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2026-02-06",
+    "totalCases": 130,
+    "description": "Landmark law school cases organized by subject"
+  },
+  "subjects": {
+    "torts": {
+      "name": "Torts",
+      "description": "Civil wrongs causing harm or loss",
+      "cases": [
+        {
+          "id": "torts-001",
+          "name": "Palsgraf v. Long Island Railroad Co.",
+          "citation": "248 N.Y. 339, 162 N.E. 99 (1928)",
+          "year": 1928,
+          "court": "New York Court of Appeals",
+          "facts": "Railroad employees helped a passenger board a moving train, causing him to drop a package containing fireworks. The explosion knocked over scales at the other end of the platform, injuring Mrs. Palsgraf.",
+          "issue": "Does a defendant owe a duty of care to an unforeseeable plaintiff?",
+          "holding": "A defendant owes a duty of care only to foreseeable plaintiffs within the zone of danger. Negligence in the air will not suffice; there must be negligence to the particular plaintiff.",
+          "whyItMatters": "Establishes the foreseeability requirement for duty in negligence and is the most famous torts case in American law. Creates the framework for analyzing proximate cause through the lens of duty."
+        },
+        {
+          "id": "torts-002",
+          "name": "Vosburg v. Putney",
+          "citation": "80 Wis. 523, 50 N.W. 403 (1891)",
+          "year": 1891,
+          "court": "Wisconsin Supreme Court",
+          "facts": "During class, a 12-year-old boy lightly kicked another student in the shin. The kicked student had a pre-existing condition that was aggravated by the kick, causing permanent injury to his leg.",
+          "issue": "Is a defendant liable for unforeseeable consequences of an intentional harmful touching?",
+          "holding": "Intent to make contact is sufficient for battery; intent to cause harm is not required. The wrongdoer takes his victim as he finds him (eggshell skull rule).",
+          "whyItMatters": "Defines the intent requirement for battery and establishes the eggshell plaintiff rule - a defendant is liable for all consequences of a wrongful act, even unforeseeable ones."
+        },
+        {
+          "id": "torts-003",
+          "name": "Brown v. Kendall",
+          "citation": "60 Mass. 292 (1850)",
+          "year": 1850,
+          "court": "Massachusetts Supreme Judicial Court",
+          "facts": "Defendant was trying to separate two fighting dogs with a stick when he accidentally struck the plaintiff in the eye, causing injury.",
+          "issue": "What standard of care applies when an injury results from a lawful act done without intent to harm?",
+          "holding": "A plaintiff must prove the defendant failed to exercise ordinary care appropriate to the circumstances. The burden is on the plaintiff to show negligence.",
+          "whyItMatters": "Establishes the fault-based negligence standard, replacing strict liability. Marks the birth of modern negligence law in America."
+        },
+        {
+          "id": "torts-004",
+          "name": "Garratt v. Dailey",
+          "citation": "46 Wash. 2d 197, 279 P.2d 1091 (1955)",
+          "year": 1955,
+          "court": "Washington Supreme Court",
+          "facts": "A five-year-old boy moved a chair just as an elderly woman was sitting down, causing her to fall and fracture her hip.",
+          "issue": "What level of intent is required for battery when a child commits the act?",
+          "holding": "Battery requires only substantial certainty that contact will occur, not intent to harm. Even a young child can form the requisite intent if he knows with substantial certainty his actions will cause contact.",
+          "whyItMatters": "Defines the intent standard for intentional torts as 'substantial certainty' rather than purpose or desire to cause harm."
+        },
+        {
+          "id": "torts-005",
+          "name": "Talmage v. Smith",
+          "citation": "101 Mich. 370, 59 N.W. 656 (1894)",
+          "year": 1894,
+          "court": "Michigan Supreme Court",
+          "facts": "Defendant threw a stick at boys trespassing on his property, intending to hit one boy but striking another in the eye, blinding him.",
+          "issue": "Is a defendant liable for battery when he intends to hit one person but accidentally strikes another?",
+          "holding": "The intent to commit battery against one person transfers to the actual victim. The doctrine of transferred intent applies to intentional torts.",
+          "whyItMatters": "Establishes the transferred intent doctrine - intent to harm one person satisfies the intent requirement when another person is injured."
+        },
+        {
+          "id": "torts-006",
+          "name": "Katko v. Briney",
+          "citation": "183 N.W.2d 657 (Iowa 1971)",
+          "year": 1971,
+          "court": "Iowa Supreme Court",
+          "facts": "Owners of an unoccupied farmhouse set up a spring-loaded shotgun trap that injured a trespasser who broke in to steal old bottles and jars.",
+          "issue": "May a property owner use deadly force through mechanical devices to protect unoccupied property?",
+          "holding": "A property owner may not use deadly force or devices capable of causing death or serious injury to protect property alone. Human life takes precedence over property interests.",
+          "whyItMatters": "Limits the privilege of defense of property and establishes that spring guns and deadly traps are not permitted even against trespassers."
+        },
+        {
+          "id": "torts-007",
+          "name": "MacPherson v. Buick Motor Co.",
+          "citation": "217 N.Y. 382, 111 N.E. 1050 (1916)",
+          "year": 1916,
+          "court": "New York Court of Appeals",
+          "facts": "Plaintiff was injured when a defective wheel on his Buick automobile collapsed. He sued Buick although he had purchased the car from a dealer, not directly from Buick.",
+          "issue": "Does a manufacturer owe a duty of care to consumers with whom it has no contractual relationship?",
+          "holding": "A manufacturer owes a duty of care to the ultimate consumer if the product is reasonably certain to be dangerous if negligently made.",
+          "whyItMatters": "Eliminates the privity requirement in products liability and expands manufacturer liability to all foreseeable users. Foundation of modern products liability law."
+        },
+        {
+          "id": "torts-008",
+          "name": "Greenman v. Yuba Power Products, Inc.",
+          "citation": "59 Cal. 2d 57, 377 P.2d 897 (1963)",
+          "year": 1963,
+          "court": "California Supreme Court",
+          "facts": "Plaintiff was injured when a piece of wood flew out of a power tool (Shopsmith) due to inadequate set screws. He had received the tool as a gift.",
+          "issue": "Is a manufacturer strictly liable for injuries caused by defective products?",
+          "holding": "A manufacturer is strictly liable when a defective product causes injury, regardless of whether the plaintiff can prove negligence.",
+          "whyItMatters": "Establishes strict products liability in tort, eliminating the need to prove negligence or breach of warranty in defective product cases."
+        },
+        {
+          "id": "torts-009",
+          "name": "Byrne v. Boadle",
+          "citation": "2 H. & C. 722, 159 Eng. Rep. 299 (1863)",
+          "year": 1863,
+          "court": "Court of Exchequer (England)",
+          "facts": "Plaintiff was walking past defendant's warehouse when a barrel of flour fell from a window and struck him. There was no direct evidence of how the barrel fell.",
+          "issue": "Can negligence be inferred from the circumstances of an accident when direct evidence is unavailable?",
+          "holding": "When an accident is of a type that ordinarily does not occur without negligence, the mere occurrence of the accident allows an inference of negligence (res ipsa loquitur).",
+          "whyItMatters": "Creates the doctrine of res ipsa loquitur ('the thing speaks for itself'), allowing plaintiffs to establish negligence through circumstantial evidence."
+        },
+        {
+          "id": "torts-010",
+          "name": "The T.J. Hooper",
+          "citation": "60 F.2d 737 (2d Cir. 1932)",
+          "year": 1932,
+          "court": "U.S. Court of Appeals, Second Circuit",
+          "facts": "Two tugboats without working radios lost barges in a storm. If they had radios, they would have received weather warnings and taken shelter.",
+          "issue": "Does compliance with industry custom establish reasonable care?",
+          "holding": "Industry custom is evidence of reasonable care but is not conclusive. An entire industry may be negligent in failing to adopt reasonable precautions.",
+          "whyItMatters": "Establishes that custom does not define the standard of care. Courts can find an industry negligent even when following common practice (Hand Formula application)."
+        },
+        {
+          "id": "torts-011",
+          "name": "United States v. Carroll Towing Co.",
+          "citation": "159 F.2d 169 (2d Cir. 1947)",
+          "year": 1947,
+          "court": "U.S. Court of Appeals, Second Circuit",
+          "facts": "A barge broke loose in New York Harbor and sank after colliding with a tanker. No bargee was aboard to prevent the accident.",
+          "issue": "What is the standard for determining whether conduct constitutes negligence?",
+          "holding": "Negligence is determined by balancing: B < P × L, where B is the burden of precaution, P is the probability of harm, and L is the magnitude of the loss.",
+          "whyItMatters": "Creates the Hand Formula, the foundational cost-benefit analysis for determining breach in negligence cases."
+        },
+        {
+          "id": "torts-012",
+          "name": "Tarasoff v. Regents of University of California",
+          "citation": "17 Cal. 3d 425, 551 P.2d 334 (1976)",
+          "year": 1976,
+          "court": "California Supreme Court",
+          "facts": "A psychotherapy patient told his therapist he intended to kill Tatiana Tarasoff. The therapist notified campus police but not Tarasoff or her family. The patient later killed her.",
+          "issue": "Does a therapist have a duty to warn foreseeable victims of a patient's threats?",
+          "holding": "When a therapist determines a patient presents a serious danger to an identifiable third party, the therapist has a duty to warn or protect that person.",
+          "whyItMatters": "Creates a duty to warn third parties in professional relationships, expanding liability beyond traditional privity requirements."
+        },
+        {
+          "id": "torts-013",
+          "name": "Sindell v. Abbott Laboratories",
+          "citation": "26 Cal. 3d 588, 607 P.2d 924 (1980)",
+          "year": 1980,
+          "court": "California Supreme Court",
+          "facts": "Plaintiff's mother took DES (diethylstilbestrol) during pregnancy, causing plaintiff to develop cancer. Plaintiff could not identify which of over 200 manufacturers made the specific drug her mother took.",
+          "issue": "Can a plaintiff recover when unable to identify which defendant caused her injury?",
+          "holding": "In cases involving fungible products with multiple manufacturers, liability may be apportioned based on market share when plaintiff cannot identify the specific manufacturer.",
+          "whyItMatters": "Creates market share liability, a revolutionary approach to causation that allows recovery even when the specific tortfeasor cannot be identified."
+        },
+        {
+          "id": "torts-014",
+          "name": "New York Times Co. v. Sullivan",
+          "citation": "376 U.S. 254 (1964)",
+          "year": 1964,
+          "court": "U.S. Supreme Court",
+          "facts": "The Times published an advertisement containing minor factual errors about civil rights events in Alabama. A Montgomery city commissioner sued for libel.",
+          "issue": "What standard applies to defamation claims brought by public officials?",
+          "holding": "Public officials must prove 'actual malice' - that the defendant made the statement knowing it was false or with reckless disregard for its truth.",
+          "whyItMatters": "Constitutionalizes defamation law and protects press freedom by creating a heightened standard for public official plaintiffs."
+        },
+        {
+          "id": "torts-015",
+          "name": "Liebeck v. McDonald's Restaurants",
+          "citation": "No. CV-93-02419 (N.M. Dist. Ct. 1994)",
+          "year": 1994,
+          "court": "New Mexico District Court",
+          "facts": "79-year-old Stella Liebeck suffered third-degree burns when she spilled McDonald's coffee heated to 180-190°F. McDonald's had received over 700 prior burn complaints.",
+          "issue": "Was McDonald's coffee unreasonably dangerous due to its temperature?",
+          "holding": "The jury found McDonald's liable for serving unreasonably dangerous coffee, awarding compensatory and punitive damages (later reduced).",
+          "whyItMatters": "Often misunderstood, this case actually demonstrates proper application of products liability principles. Became a cultural touchstone for tort reform debates."
+        },
+        {
+          "id": "torts-016",
+          "name": "Summers v. Tice",
+          "citation": "33 Cal. 2d 80, 199 P.2d 1 (1948)",
+          "year": 1948,
+          "court": "California Supreme Court",
+          "facts": "Two hunters negligently fired in plaintiff's direction simultaneously. One shot hit plaintiff's eye, but it was impossible to determine whose shot caused the injury.",
+          "issue": "How is causation established when two defendants acted negligently but only one caused the harm?",
+          "holding": "When two defendants act negligently and cause harm, but plaintiff cannot prove which one caused the injury, the burden shifts to defendants to prove they did not cause the harm.",
+          "whyItMatters": "Creates alternative liability doctrine, shifting burden of proof on causation when multiple defendants act negligently but only one caused injury."
+        },
+        {
+          "id": "torts-017",
+          "name": "Ultramares Corp. v. Touche",
+          "citation": "255 N.Y. 170, 174 N.E. 441 (1931)",
+          "year": 1931,
+          "court": "New York Court of Appeals",
+          "facts": "Accountants negligently certified a company's financial statements. Plaintiff relied on these statements in extending credit and suffered losses when the company went bankrupt.",
+          "issue": "To whom do professionals owe a duty of care for negligent misrepresentation?",
+          "holding": "Absent privity or a relationship approaching privity, accountants are not liable to third parties for negligence. However, they may be liable for fraud.",
+          "whyItMatters": "Limits professional liability for negligent misrepresentation to avoid 'liability in an indeterminate amount for an indeterminate time to an indeterminate class.'"
+        },
+        {
+          "id": "torts-018",
+          "name": "Escola v. Coca Cola Bottling Co.",
+          "citation": "24 Cal. 2d 453, 150 P.2d 436 (1944)",
+          "year": 1944,
+          "court": "California Supreme Court",
+          "facts": "A waitress was injured when a Coca-Cola bottle exploded in her hand while she was putting it in a refrigerator.",
+          "issue": "Should manufacturers be strictly liable for defective products?",
+          "holding": "Majority applied res ipsa loquitur. Justice Traynor's concurrence argued for strict liability, which later became law in Greenman.",
+          "whyItMatters": "Traynor's concurrence laid the intellectual foundation for strict products liability, arguing manufacturers can best bear and distribute risks."
+        },
+        {
+          "id": "torts-019",
+          "name": "Rowland v. Christian",
+          "citation": "69 Cal. 2d 108, 443 P.2d 561 (1968)",
+          "year": 1968,
+          "court": "California Supreme Court",
+          "facts": "A social guest was injured by a broken faucet handle in the defendant's bathroom. The defendant knew of the defect but did not warn him.",
+          "issue": "Should the traditional categories of trespasser, licensee, and invitee determine a landowner's duty?",
+          "holding": "The traditional categorical approach is abolished. Landowners owe a general duty of reasonable care to all entrants.",
+          "whyItMatters": "Abolishes the rigid common law categories for premises liability in favor of a unified reasonable care standard."
+        },
+        {
+          "id": "torts-020",
+          "name": "Vincent v. Lake Erie Transportation Co.",
+          "citation": "109 Minn. 456, 124 N.W. 221 (1910)",
+          "year": 1910,
+          "court": "Minnesota Supreme Court",
+          "facts": "During a severe storm, a ship remained tied to plaintiff's dock to save the ship, causing damage to the dock. The captain kept the ship moored and even replaced broken lines.",
+          "issue": "Is a party liable for property damage caused while exercising the privilege of private necessity?",
+          "holding": "While necessity justifies the trespass and prevents liability for the act itself, the party must compensate for actual damage caused.",
+          "whyItMatters": "Establishes that private necessity is an incomplete privilege - it justifies the action but requires compensation for resulting harm."
+        }
+      ]
+    },
+    "contracts": {
+      "name": "Contracts",
+      "description": "Formation, enforcement, and breach of agreements",
+      "cases": [
+        {
+          "id": "contracts-001",
+          "name": "Hadley v. Baxendale",
+          "citation": "9 Ex. 341, 156 Eng. Rep. 145 (1854)",
+          "year": 1854,
+          "court": "Court of Exchequer (England)",
+          "facts": "A mill's crankshaft broke, and the mill owners hired a carrier to transport it for repair. The carrier delayed delivery, extending the mill's shutdown and lost profits.",
+          "issue": "What damages are recoverable for breach of contract?",
+          "holding": "Damages are limited to those arising naturally from the breach or those within the contemplation of the parties at the time of contracting.",
+          "whyItMatters": "Establishes the foreseeability doctrine for consequential damages. Parties must know of special circumstances to be liable for special damages."
+        },
+        {
+          "id": "contracts-002",
+          "name": "Lucy v. Zehmer",
+          "citation": "196 Va. 493, 84 S.E.2d 516 (1954)",
+          "year": 1954,
+          "court": "Virginia Supreme Court",
+          "facts": "After drinking, Zehmer wrote and signed a contract to sell his farm to Lucy for $50,000. Zehmer later claimed it was a joke. Lucy tried to enforce the contract.",
+          "issue": "Is a contract enforceable when one party claims it was made in jest?",
+          "holding": "A contract is judged by outward manifestations, not secret intentions. If words and conduct would lead a reasonable person to believe a contract was formed, it is enforceable.",
+          "whyItMatters": "Establishes the objective theory of contracts - mutual assent is determined by outward expressions, not undisclosed mental states."
+        },
+        {
+          "id": "contracts-003",
+          "name": "Hawkins v. McGee",
+          "citation": "84 N.H. 114, 146 A. 641 (1929)",
+          "year": 1929,
+          "court": "New Hampshire Supreme Court",
+          "facts": "A doctor promised to give a boy a '100% perfect hand' through skin graft surgery. The operation failed, leaving the hand worse with hair growing on it.",
+          "issue": "What is the proper measure of damages for breach of a contract to achieve a specific result?",
+          "holding": "Expectation damages are measured by the difference between what was promised and what was received, not the difference between the original and final condition.",
+          "whyItMatters": "The 'Hairy Hand Case' - illustrates expectation damages and the difference between contract and tort measures of recovery."
+        },
+        {
+          "id": "contracts-004",
+          "name": "Carlill v. Carbolic Smoke Ball Co.",
+          "citation": "[1893] 1 Q.B. 256 (CA)",
+          "year": 1893,
+          "court": "Court of Appeal (England)",
+          "facts": "A company advertised that it would pay £100 to anyone who used its smoke ball product and still caught the flu. Mrs. Carlill used the product as directed but caught the flu.",
+          "issue": "Can an advertisement constitute an offer, and can acceptance be by performance?",
+          "holding": "An advertisement can be a unilateral offer if it is specific and shows intent to be bound. Acceptance occurs through performance; no notice of acceptance is required.",
+          "whyItMatters": "Foundational case on unilateral contracts, advertisements as offers, and acceptance by performance."
+        },
+        {
+          "id": "contracts-005",
+          "name": "Hamer v. Sidway",
+          "citation": "124 N.Y. 538, 27 N.E. 256 (1891)",
+          "year": 1891,
+          "court": "New York Court of Appeals",
+          "facts": "An uncle promised his nephew $5,000 if the nephew refrained from drinking, smoking, swearing, and gambling until age 21. The nephew complied, but the uncle died before paying.",
+          "issue": "Is forbearance from legal activities sufficient consideration to support a contract?",
+          "holding": "Consideration need not benefit the promisor; it is sufficient that the promisee suffers a legal detriment by giving up something he had a right to do.",
+          "whyItMatters": "Defines consideration as legal detriment, not economic benefit. Giving up a legal right constitutes sufficient consideration."
+        },
+        {
+          "id": "contracts-006",
+          "name": "Jacob & Youngs, Inc. v. Kent",
+          "citation": "230 N.Y. 239, 129 N.E. 889 (1921)",
+          "year": 1921,
+          "court": "New York Court of Appeals",
+          "facts": "A contractor built a house but used Cohoes pipe instead of the specified Reading pipe. Both pipes were of equivalent quality. Fixing it would require demolishing the completed house.",
+          "issue": "Must a contractor perfectly perform every specification, or is substantial performance sufficient?",
+          "holding": "Substantial performance allows recovery minus damages for the deficiency when the breach is minor and unintentional, measured by difference in value, not cost of repair.",
+          "whyItMatters": "Establishes the substantial performance doctrine and the distinction between cost-of-repair and diminution-in-value damages."
+        },
+        {
+          "id": "contracts-007",
+          "name": "Peevyhouse v. Garland Coal & Mining Co.",
+          "citation": "382 P.2d 109 (Okla. 1962)",
+          "year": 1962,
+          "court": "Oklahoma Supreme Court",
+          "facts": "A coal company leased land and promised to restore it after strip mining. Restoration would cost $29,000 but would only increase the land's value by $300.",
+          "issue": "Should damages be measured by cost of performance or diminution in value?",
+          "holding": "When cost of performance is grossly disproportionate to the benefit, damages are measured by diminution in value, not cost of repair.",
+          "whyItMatters": "Creates the economic waste doctrine - courts may deny cost-of-performance damages when disproportionate to the injury. Controversial and often criticized."
+        },
+        {
+          "id": "contracts-008",
+          "name": "Williams v. Walker-Thomas Furniture Co.",
+          "citation": "350 F.2d 445 (D.C. Cir. 1965)",
+          "year": 1965,
+          "court": "U.S. Court of Appeals, D.C. Circuit",
+          "facts": "A furniture store used a cross-collateral clause allowing repossession of all items purchased if any payment was missed. A welfare recipient signed contracts she did not understand.",
+          "issue": "Can a court refuse to enforce an unconscionable contract?",
+          "holding": "Courts may refuse to enforce contracts that are unconscionable, considering both procedural unconscionability (unfair bargaining) and substantive unconscionability (unfair terms).",
+          "whyItMatters": "Establishes the modern doctrine of unconscionability with its two-prong analysis of procedural and substantive unfairness."
+        },
+        {
+          "id": "contracts-009",
+          "name": "Sherwood v. Walker",
+          "citation": "66 Mich. 568, 33 N.W. 919 (1887)",
+          "year": 1887,
+          "court": "Michigan Supreme Court",
+          "facts": "A cow named 'Rose 2d of Aberlone' was sold as barren for $80. Before delivery, she was discovered to be pregnant, making her worth $750-$1,000.",
+          "issue": "When does a mutual mistake regarding the subject matter of a contract permit rescission?",
+          "holding": "A contract may be rescinded for mutual mistake when the mistake goes to the substance or essence of the thing bargained for, not merely its quality.",
+          "whyItMatters": "Foundational case on mutual mistake. Distinguishes between mistakes that go to the essence versus those that merely affect value or quality."
+        },
+        {
+          "id": "contracts-010",
+          "name": "Raffles v. Wichelhaus (The Peerless Case)",
+          "citation": "2 H. & C. 906, 159 Eng. Rep. 375 (1864)",
+          "year": 1864,
+          "court": "Court of Exchequer (England)",
+          "facts": "A contract was made for cotton to arrive on the ship 'Peerless' from Bombay. Unknown to both parties, there were two ships named Peerless leaving Bombay at different times.",
+          "issue": "Is there a binding contract when each party has a different understanding of an ambiguous term?",
+          "holding": "No contract exists when there is latent ambiguity and the parties attach different meanings to a material term, with no way to determine which meaning controls.",
+          "whyItMatters": "Illustrates the meeting of the minds requirement and the effect of latent ambiguity on contract formation."
+        },
+        {
+          "id": "contracts-011",
+          "name": "ProCD, Inc. v. Zeidenberg",
+          "citation": "86 F.3d 1447 (7th Cir. 1996)",
+          "year": 1996,
+          "court": "U.S. Court of Appeals, Seventh Circuit",
+          "facts": "Software was sold with a 'shrinkwrap' license visible only after opening the package. The license restricted commercial use. Buyer used the data commercially.",
+          "issue": "Are shrinkwrap license terms enforceable when presented after purchase?",
+          "holding": "Shrinkwrap licenses are enforceable when the buyer has an opportunity to review terms and return the product if the terms are unacceptable.",
+          "whyItMatters": "Validates rolling contracts and shrinkwrap agreements, establishing that contracts can be formed in stages with post-purchase terms."
+        },
+        {
+          "id": "contracts-012",
+          "name": "Wood v. Lucy, Lady Duff-Gordon",
+          "citation": "222 N.Y. 88, 118 N.E. 214 (1917)",
+          "year": 1917,
+          "court": "New York Court of Appeals",
+          "facts": "A fashion designer gave Wood exclusive rights to market her designs in exchange for half the profits. No explicit promise to market was included. She then sold endorsements herself.",
+          "issue": "Is a contract illusory when one party's performance is not explicitly required?",
+          "holding": "Courts may imply a duty of good faith and reasonable efforts even when not expressly stated. The exclusive dealing arrangement itself implied a duty to use reasonable efforts.",
+          "whyItMatters": "Justice Cardozo's opinion establishes that implied obligations of good faith and reasonable efforts can provide consideration in exclusive dealing contracts."
+        },
+        {
+          "id": "contracts-013",
+          "name": "Dougherty v. Salt",
+          "citation": "227 N.Y. 200, 125 N.E. 94 (1919)",
+          "year": 1919,
+          "court": "New York Court of Appeals",
+          "facts": "An aunt gave her nephew a promissory note for $3,000 'for value received' purely out of affection. She received nothing in return.",
+          "issue": "Is a recital of consideration in a written instrument conclusive proof of consideration?",
+          "holding": "A written recital of consideration is not conclusive. The actual presence of bargained-for consideration is required for an enforceable promise.",
+          "whyItMatters": "Demonstrates that consideration requires actual bargained-for exchange; mere recital of consideration in a document is not sufficient."
+        },
+        {
+          "id": "contracts-014",
+          "name": "Ricketts v. Scothorn",
+          "citation": "57 Neb. 51, 77 N.W. 365 (1898)",
+          "year": 1898,
+          "court": "Nebraska Supreme Court",
+          "facts": "A grandfather gave his granddaughter a promissory note so she would not have to work. She quit her job in reliance on the promise. The grandfather died before paying.",
+          "issue": "Can a promise be enforced despite lack of consideration when the promisee relies on it?",
+          "holding": "A promise that induces definite and substantial action or forbearance may be enforced to prevent injustice, even without consideration.",
+          "whyItMatters": "Early case establishing promissory estoppel as a consideration substitute, later codified in Restatement § 90."
+        },
+        {
+          "id": "contracts-015",
+          "name": "Hoffman v. Red Owl Stores",
+          "citation": "26 Wis. 2d 683, 133 N.W.2d 267 (1965)",
+          "year": 1965,
+          "court": "Wisconsin Supreme Court",
+          "facts": "Red Owl repeatedly assured Hoffman he would receive a franchise if he took certain steps (selling his bakery, buying a grocery store, etc.). After Hoffman complied, Red Owl increased demands and no franchise was granted.",
+          "issue": "Can promissory estoppel apply during the negotiation process before a final contract is formed?",
+          "holding": "Promissory estoppel may apply to precontractual negotiations when a party relies on representations during negotiations to their detriment.",
+          "whyItMatters": "Extends promissory estoppel to precontractual negotiations, creating potential liability for bad faith dealing before contract formation."
+        },
+        {
+          "id": "contracts-016",
+          "name": "Taylor v. Caldwell",
+          "citation": "3 B. & S. 826, 122 Eng. Rep. 309 (1863)",
+          "year": 1863,
+          "court": "King's Bench (England)",
+          "facts": "A music hall was rented for concerts. Before the concerts occurred, the hall was destroyed by fire through no fault of either party.",
+          "issue": "Is a party excused from performance when circumstances make performance impossible?",
+          "holding": "When a contract requires the existence of a particular thing for performance, destruction of that thing without fault of either party excuses performance.",
+          "whyItMatters": "Creates the doctrine of impossibility of performance, later expanded to commercial impracticability."
+        },
+        {
+          "id": "contracts-017",
+          "name": "Laidlaw v. Organ",
+          "citation": "15 U.S. (2 Wheat.) 178 (1817)",
+          "year": 1817,
+          "court": "U.S. Supreme Court",
+          "facts": "A buyer learned the War of 1812 had ended before the seller. He bought tobacco at a low price knowing it would increase dramatically with news of peace.",
+          "issue": "Must a buyer disclose material information unknown to the seller?",
+          "holding": "Generally, a buyer is not required to disclose material information to a seller. Parties may remain silent about information giving them a bargaining advantage.",
+          "whyItMatters": "Establishes the limited duty to disclose in arm's-length transactions. Foundational for understanding fraud and misrepresentation in contracts."
+        },
+        {
+          "id": "contracts-018",
+          "name": "Kingston v. Preston",
+          "citation": "2 Doug. 689 (KB 1773)",
+          "year": 1773,
+          "court": "King's Bench (England)",
+          "facts": "A servant agreed to work for a master who would then sell him the business. The servant was to provide security before the sale. The servant failed to provide security.",
+          "issue": "Must a party perform if the other party has not performed a dependent covenant?",
+          "holding": "Performance of conditions may be dependent, independent, or concurrent. A party need not perform if the other party has failed to perform a condition on which performance depends.",
+          "whyItMatters": "Creates the doctrine of constructive conditions - obligations may be dependent on each other, establishing the order of performance."
+        },
+        {
+          "id": "contracts-019",
+          "name": "Hochster v. De La Tour",
+          "citation": "2 E. & B. 678, 118 Eng. Rep. 922 (1853)",
+          "year": 1853,
+          "court": "Queen's Bench (England)",
+          "facts": "De La Tour hired Hochster as a courier for travel beginning June 1. On May 11, De La Tour repudiated the agreement. Hochster sued immediately.",
+          "issue": "May a party sue for breach of contract before performance is due when the other party repudiates?",
+          "holding": "Anticipatory repudiation of a contract before performance is due gives rise to an immediate cause of action. The non-breaching party need not wait until performance is due.",
+          "whyItMatters": "Creates the doctrine of anticipatory breach, allowing immediate remedies when a party clearly indicates they will not perform."
+        },
+        {
+          "id": "contracts-020",
+          "name": "Alaska Packers' Assn. v. Domenico",
+          "citation": "117 F. 99 (9th Cir. 1902)",
+          "year": 1902,
+          "court": "U.S. Court of Appeals, Ninth Circuit",
+          "facts": "Fishermen contracted to work in Alaska for the season. Once there, they demanded higher wages, threatening to quit. The company agreed to pay more but later refused.",
+          "issue": "Is a promise to pay more for the same performance the promisor is already obligated to provide enforceable?",
+          "holding": "A promise to pay additional consideration for performance already owed under an existing contract is not enforceable due to the pre-existing duty rule.",
+          "whyItMatters": "Illustrates the pre-existing duty rule - performing or promising to perform an existing obligation is not new consideration for a modification."
+        }
+      ]
+    },
+    "criminalLaw": {
+      "name": "Criminal Law",
+      "description": "Offenses against society and their punishments",
+      "cases": [
+        {
+          "id": "crim-001",
+          "name": "People v. Anderson",
+          "citation": "70 Cal. 2d 15, 447 P.2d 942 (1968)",
+          "year": 1968,
+          "court": "California Supreme Court",
+          "facts": "Defendant killed a child in a brutal manner involving over 60 wounds. The prosecution sought first-degree murder based on premeditation.",
+          "issue": "What evidence is sufficient to establish premeditation and deliberation for first-degree murder?",
+          "holding": "Premeditation requires evidence of (1) planning activity, (2) motive, and (3) manner of killing suggesting preconceived design. No single factor is required.",
+          "whyItMatters": "Establishes the Anderson factors for analyzing premeditation and deliberation in first-degree murder cases."
+        },
+        {
+          "id": "crim-002",
+          "name": "People v. Conley",
+          "citation": "187 Ill. App. 3d 234, 543 N.E.2d 138 (1989)",
+          "year": 1989,
+          "court": "Illinois Appellate Court",
+          "facts": "Defendant hit a victim in the face with a wine bottle, causing permanent injury. He claimed he did not intend permanent disability.",
+          "issue": "What level of intent is required for aggravated battery causing permanent disability?",
+          "holding": "Intent to cause the resulting harm is satisfied if the defendant intends to cause the specific type of harm, or knows the harm is substantially certain to result.",
+          "whyItMatters": "Clarifies the intent requirement for specific intent crimes, distinguishing purpose and knowledge."
+        },
+        {
+          "id": "crim-003",
+          "name": "Regina v. Cunningham",
+          "citation": "[1957] 2 Q.B. 396",
+          "year": 1957,
+          "court": "Court of Criminal Appeal (England)",
+          "facts": "Defendant tore a gas meter from a wall to steal money, causing gas to leak into a neighboring house and injuring an occupant.",
+          "issue": "Does 'maliciously' in a criminal statute require intent or awareness of harm, or mere carelessness?",
+          "holding": "Maliciously requires either (1) actual intent to do harm, or (2) recklessness in the sense of foreseeing harm but proceeding anyway.",
+          "whyItMatters": "Defines criminal recklessness as subjective awareness of risk, distinguishing it from negligence. Foundational for MPC recklessness."
+        },
+        {
+          "id": "crim-004",
+          "name": "People v. Newton",
+          "citation": "8 Cal. App. 3d 359, 87 Cal. Rptr. 394 (1970)",
+          "year": 1970,
+          "court": "California Court of Appeal",
+          "facts": "Black Panther leader Huey Newton was shot in the abdomen during a confrontation with police. He was then accused of shooting an officer, but claimed he was unconscious from his wound.",
+          "issue": "Can unconsciousness negate the voluntary act requirement for criminal liability?",
+          "holding": "An act committed while unconscious is not a voluntary act. Unconsciousness is a complete defense when not self-induced.",
+          "whyItMatters": "Illustrates the voluntary act requirement as the threshold for criminal liability."
+        },
+        {
+          "id": "crim-005",
+          "name": "Martin v. State",
+          "citation": "31 Ala. App. 334, 17 So. 2d 427 (1944)",
+          "year": 1944,
+          "court": "Alabama Court of Appeals",
+          "facts": "Police arrested defendant at home, took him onto a public highway, and then charged him with public drunkenness when he used profane language.",
+          "issue": "Is the voluntary act requirement satisfied when police compel the defendant's presence?",
+          "holding": "A criminal act must be voluntary. Being involuntarily placed in a public place by police negates the voluntary act requirement.",
+          "whyItMatters": "Core case on the voluntary act requirement - the actus reus must be the product of the defendant's volition."
+        },
+        {
+          "id": "crim-006",
+          "name": "State v. Nations",
+          "citation": "676 S.W.2d 282 (Mo. Ct. App. 1984)",
+          "year": 1984,
+          "court": "Missouri Court of Appeals",
+          "facts": "A bar owner employed an underage girl as a dancer. Police found the 16-year-old dancing scantily clad. The owner claimed she believed the girl was of age.",
+          "issue": "What mental state is required for child endangerment - knowledge or negligence?",
+          "holding": "Under MPC knowledge requires awareness that a fact exists or practical certainty that conduct will cause a result. Willful blindness may substitute for knowledge.",
+          "whyItMatters": "Illustrates the distinction between MPC mental states and the concept of willful blindness."
+        },
+        {
+          "id": "crim-007",
+          "name": "M'Naghten's Case",
+          "citation": "8 Eng. Rep. 718 (1843)",
+          "year": 1843,
+          "court": "House of Lords (England)",
+          "facts": "Daniel M'Naghten shot and killed the secretary to the Prime Minister, believing the government was persecuting him. He was acquitted by reason of insanity.",
+          "issue": "What is the legal standard for the insanity defense?",
+          "holding": "A defendant is not responsible if, due to mental disease, he did not know the nature and quality of his act, or did not know that what he was doing was wrong.",
+          "whyItMatters": "Establishes the M'Naghten Rule, the foundational cognitive test for legal insanity still used in many jurisdictions."
+        },
+        {
+          "id": "crim-008",
+          "name": "People v. Dlugash",
+          "citation": "41 N.Y.2d 725, 363 N.E.2d 1155 (1977)",
+          "year": 1977,
+          "court": "New York Court of Appeals",
+          "facts": "Dlugash shot a man in the head multiple times. However, the victim may have already been dead from wounds inflicted by another person moments earlier.",
+          "issue": "Can a defendant be convicted of attempted murder when the victim may have already been dead?",
+          "holding": "A defendant can be convicted of attempt if he believed the victim was alive, even if it was factually impossible to complete the crime.",
+          "whyItMatters": "Illustrates the treatment of factual impossibility in attempt - it is not a defense under modern law."
+        },
+        {
+          "id": "crim-009",
+          "name": "People v. Goetz",
+          "citation": "68 N.Y.2d 96, 497 N.E.2d 41 (1986)",
+          "year": 1986,
+          "court": "New York Court of Appeals",
+          "facts": "Bernard Goetz shot four young men on a subway who approached him and asked for five dollars. Goetz claimed self-defense, saying they were trying to rob him.",
+          "issue": "Should the self-defense standard be subjective (defendant's honest belief) or objective (reasonable person)?",
+          "holding": "Self-defense requires both a subjective belief in the necessity of force AND an objectively reasonable basis for that belief.",
+          "whyItMatters": "Defines the hybrid subjective/objective standard for self-defense that most jurisdictions follow."
+        },
+        {
+          "id": "crim-010",
+          "name": "State v. Norman",
+          "citation": "324 N.C. 253, 378 S.E.2d 8 (1989)",
+          "year": 1989,
+          "court": "North Carolina Supreme Court",
+          "facts": "A battered woman shot her sleeping husband after years of severe abuse. He was asleep at the time, and she was not in imminent danger.",
+          "issue": "Can battered woman syndrome support a self-defense claim when there is no imminent threat?",
+          "holding": "Self-defense requires imminent threat of harm. Killing a sleeping abuser, even after long-term abuse, does not satisfy the imminence requirement.",
+          "whyItMatters": "Addresses the limits of the battered spouse defense and the traditional imminence requirement for self-defense."
+        },
+        {
+          "id": "crim-011",
+          "name": "People v. Beardsley",
+          "citation": "150 Mich. 206, 113 N.W. 1128 (1907)",
+          "year": 1907,
+          "court": "Michigan Supreme Court",
+          "facts": "A man spent a weekend with a woman who was not his wife. She took morphine tablets, and he failed to call for help. She died.",
+          "issue": "Does a person have a legal duty to rescue or assist someone in peril?",
+          "holding": "There is no general duty to rescue. A legal duty to act requires a special relationship such as spouse, parent-child, or contractual obligation.",
+          "whyItMatters": "Establishes the no-duty-to-rescue rule and the limited circumstances that create affirmative legal duties."
+        },
+        {
+          "id": "crim-012",
+          "name": "Regina v. Dudley and Stephens",
+          "citation": "14 Q.B.D. 273 (1884)",
+          "year": 1884,
+          "court": "Queen's Bench Division (England)",
+          "facts": "Shipwrecked sailors, facing starvation, killed and ate the cabin boy to survive. They were rescued four days later.",
+          "issue": "Is necessity a defense to murder?",
+          "holding": "Necessity is not a defense to intentional murder. The preservation of one's own life does not justify taking another innocent life.",
+          "whyItMatters": "Establishes that necessity cannot justify homicide. Foundational case on the limits of the necessity defense."
+        },
+        {
+          "id": "crim-013",
+          "name": "Pinkerton v. United States",
+          "citation": "328 U.S. 640 (1946)",
+          "year": 1946,
+          "court": "U.S. Supreme Court",
+          "facts": "Two brothers conspired to evade taxes. While one was in prison, the other committed substantive tax offenses. The imprisoned brother was convicted of these offenses.",
+          "issue": "Is a conspirator liable for substantive crimes committed by co-conspirators?",
+          "holding": "A conspirator is liable for all foreseeable crimes committed by co-conspirators in furtherance of the conspiracy.",
+          "whyItMatters": "Creates Pinkerton liability - conspiracy makes each member liable for the foreseeable crimes of other conspirators."
+        },
+        {
+          "id": "crim-014",
+          "name": "People v. Stamp",
+          "citation": "2 Cal. App. 3d 203, 82 Cal. Rptr. 598 (1969)",
+          "year": 1969,
+          "court": "California Court of Appeal",
+          "facts": "During an armed robbery, a victim with a pre-existing heart condition died from a heart attack caused by the stress of the robbery.",
+          "issue": "Does the felony murder rule apply when death results from fright rather than violence?",
+          "holding": "Felony murder applies to any death that is a direct causal result of the felony, regardless of whether the death was foreseeable or intended.",
+          "whyItMatters": "Illustrates the broad application of felony murder rule - causation need not be foreseeable or direct violence."
+        },
+        {
+          "id": "crim-015",
+          "name": "Powell v. Texas",
+          "citation": "392 U.S. 514 (1968)",
+          "year": 1968,
+          "court": "U.S. Supreme Court",
+          "facts": "A chronic alcoholic was convicted of public drunkenness. He argued that punishing him violated the Eighth Amendment because his alcoholism was a disease.",
+          "issue": "Does the Constitution prohibit criminalizing conduct that is a product of a disease or compulsion?",
+          "holding": "The state may punish conduct (public drunkenness) even when that conduct is related to a condition or disease. Status vs. conduct distinction.",
+          "whyItMatters": "Limits Robinson v. California - states cannot criminalize status (being an addict) but can criminalize conduct (public intoxication)."
+        }
+      ]
+    },
+    "constitutionalLaw": {
+      "name": "Constitutional Law",
+      "description": "Structure of government and fundamental rights",
+      "cases": [
+        {
+          "id": "conlaw-001",
+          "name": "Marbury v. Madison",
+          "citation": "5 U.S. (1 Cranch) 137 (1803)",
+          "year": 1803,
+          "court": "U.S. Supreme Court",
+          "facts": "William Marbury was appointed Justice of the Peace by outgoing President Adams, but his commission was not delivered. He sued Secretary of State Madison for a writ of mandamus.",
+          "issue": "Does the Supreme Court have authority to declare acts of Congress unconstitutional?",
+          "holding": "The Supreme Court has the power of judicial review to declare laws unconstitutional. A law repugnant to the Constitution is void.",
+          "whyItMatters": "Establishes judicial review as the foundation of American constitutional law. The Court becomes the final arbiter of constitutional meaning."
+        },
+        {
+          "id": "conlaw-002",
+          "name": "McCulloch v. Maryland",
+          "citation": "17 U.S. (4 Wheat.) 316 (1819)",
+          "year": 1819,
+          "court": "U.S. Supreme Court",
+          "facts": "Maryland taxed the Second Bank of the United States. McCulloch, a bank cashier, refused to pay. Maryland argued Congress had no power to create a national bank.",
+          "issue": "Does Congress have implied powers beyond those explicitly enumerated? May states tax federal institutions?",
+          "holding": "Congress has implied powers under the Necessary and Proper Clause to enact laws that are 'necessary and proper' for executing its enumerated powers. States cannot tax federal instrumentalities.",
+          "whyItMatters": "Establishes broad congressional power through the Necessary and Proper Clause and federal supremacy over states."
+        },
+        {
+          "id": "conlaw-003",
+          "name": "Brown v. Board of Education",
+          "citation": "347 U.S. 483 (1954)",
+          "year": 1954,
+          "court": "U.S. Supreme Court",
+          "facts": "Black children were denied admission to white public schools under 'separate but equal' policies. NAACP challenged segregation as violating equal protection.",
+          "issue": "Does segregation of public schools by race violate the Equal Protection Clause?",
+          "holding": "Separate educational facilities are inherently unequal. Segregation in public schools violates the Fourteenth Amendment's Equal Protection Clause.",
+          "whyItMatters": "Overrules Plessy v. Ferguson's 'separate but equal' doctrine. Landmark civil rights case that began dismantling legal segregation."
+        },
+        {
+          "id": "conlaw-004",
+          "name": "Gideon v. Wainwright",
+          "citation": "372 U.S. 335 (1963)",
+          "year": 1963,
+          "court": "U.S. Supreme Court",
+          "facts": "Clarence Earl Gideon was charged with felony breaking and entering. He requested a lawyer but was denied because Florida only provided counsel in capital cases.",
+          "issue": "Does the Sixth Amendment require states to provide counsel to indigent defendants in felony cases?",
+          "holding": "The Sixth Amendment right to counsel is fundamental and applies to the states through the Fourteenth Amendment. States must provide attorneys to indigent defendants in felony cases.",
+          "whyItMatters": "Incorporates the right to counsel against the states and establishes the public defender system."
+        },
+        {
+          "id": "conlaw-005",
+          "name": "Miranda v. Arizona",
+          "citation": "384 U.S. 436 (1966)",
+          "year": 1966,
+          "court": "U.S. Supreme Court",
+          "facts": "Ernesto Miranda confessed to rape and kidnapping during police interrogation without being informed of his right to remain silent or have an attorney.",
+          "issue": "What procedural safeguards are required to protect Fifth Amendment rights during custodial interrogation?",
+          "holding": "Police must inform suspects of their rights before custodial interrogation: right to remain silent, that statements can be used against them, right to an attorney, and right to appointed counsel if indigent.",
+          "whyItMatters": "Creates the Miranda warnings as constitutional requirement for admissible confessions."
+        },
+        {
+          "id": "conlaw-006",
+          "name": "Mapp v. Ohio",
+          "citation": "367 U.S. 643 (1961)",
+          "year": 1961,
+          "court": "U.S. Supreme Court",
+          "facts": "Police forcibly entered Dollree Mapp's home without a warrant and found obscene materials. She was convicted of possessing them.",
+          "issue": "Does the exclusionary rule apply to state criminal prosecutions?",
+          "holding": "Evidence obtained through unconstitutional searches is inadmissible in state courts. The exclusionary rule applies to the states through the Fourteenth Amendment.",
+          "whyItMatters": "Incorporates the exclusionary rule against the states, giving teeth to Fourth Amendment protections."
+        },
+        {
+          "id": "conlaw-007",
+          "name": "Roe v. Wade",
+          "citation": "410 U.S. 113 (1973)",
+          "year": 1973,
+          "court": "U.S. Supreme Court",
+          "facts": "Jane Roe challenged a Texas law criminalizing abortion except to save the mother's life.",
+          "issue": "Does the Constitution protect a woman's right to terminate a pregnancy?",
+          "holding": "The right to privacy encompasses a woman's decision to terminate a pregnancy. Created a trimester framework balancing privacy rights against state interests.",
+          "whyItMatters": "Established constitutional protection for abortion rights (later modified by Casey and overruled by Dobbs in 2022)."
+        },
+        {
+          "id": "conlaw-008",
+          "name": "Griswold v. Connecticut",
+          "citation": "381 U.S. 479 (1965)",
+          "year": 1965,
+          "court": "U.S. Supreme Court",
+          "facts": "A Connecticut law prohibited the use of contraceptives. Planned Parenthood officials were convicted for providing contraceptive advice to married couples.",
+          "issue": "Does the Constitution protect a right to privacy in marital relations?",
+          "holding": "The Bill of Rights contains penumbras and emanations that create zones of privacy. The right to marital privacy invalidates the ban on contraceptives.",
+          "whyItMatters": "Establishes the constitutional right to privacy, foundational for later cases on contraception, abortion, and intimate conduct."
+        },
+        {
+          "id": "conlaw-009",
+          "name": "New York Times Co. v. United States (Pentagon Papers)",
+          "citation": "403 U.S. 713 (1971)",
+          "year": 1971,
+          "court": "U.S. Supreme Court",
+          "facts": "The government sought to enjoin publication of classified documents about the Vietnam War. The Times and Washington Post had obtained the 'Pentagon Papers.'",
+          "issue": "Can the government impose prior restraints on publication of classified information?",
+          "holding": "Prior restraints on speech bear a heavy presumption of unconstitutionality. The government did not meet the heavy burden required to justify prior restraint.",
+          "whyItMatters": "Establishes the strong presumption against prior restraints on speech, even for national security information."
+        },
+        {
+          "id": "conlaw-010",
+          "name": "Brandenburg v. Ohio",
+          "citation": "395 U.S. 444 (1969)",
+          "year": 1969,
+          "court": "U.S. Supreme Court",
+          "facts": "A Ku Klux Klan leader was convicted under Ohio's criminal syndicalism law for advocating violence at a rally.",
+          "issue": "When may the government punish advocacy of illegal conduct?",
+          "holding": "Speech advocating illegal conduct is protected unless it is directed to inciting imminent lawless action and is likely to produce such action.",
+          "whyItMatters": "Creates the modern incitement test, providing strong First Amendment protection for inflammatory speech."
+        },
+        {
+          "id": "conlaw-011",
+          "name": "Lemon v. Kurtzman",
+          "citation": "403 U.S. 602 (1971)",
+          "year": 1971,
+          "court": "U.S. Supreme Court",
+          "facts": "Pennsylvania and Rhode Island laws provided state aid to private religious schools for teacher salaries and educational materials.",
+          "issue": "What test determines whether a law violates the Establishment Clause?",
+          "holding": "Laws must (1) have a secular purpose, (2) have a primary effect that neither advances nor inhibits religion, and (3) not foster excessive government entanglement with religion.",
+          "whyItMatters": "Creates the Lemon test for Establishment Clause analysis (though later limited and questioned by the Court)."
+        },
+        {
+          "id": "conlaw-012",
+          "name": "United States v. Lopez",
+          "citation": "514 U.S. 549 (1995)",
+          "year": 1995,
+          "court": "U.S. Supreme Court",
+          "facts": "A high school student was charged under the Gun-Free School Zones Act for possessing a handgun at school. He challenged Congress's power to enact the law.",
+          "issue": "Does the Commerce Clause authorize Congress to regulate gun possession in school zones?",
+          "holding": "Congress may regulate only three categories: channels of interstate commerce, instrumentalities of commerce, and activities substantially affecting commerce. Gun possession near schools does not substantially affect interstate commerce.",
+          "whyItMatters": "First case in 60 years to strike down a law as exceeding Commerce Clause power. Revives limits on federal power."
+        },
+        {
+          "id": "conlaw-013",
+          "name": "District of Columbia v. Heller",
+          "citation": "554 U.S. 570 (2008)",
+          "year": 2008,
+          "court": "U.S. Supreme Court",
+          "facts": "D.C. law banned handgun possession in the home and required rifles and shotguns to be kept unloaded and disassembled. A security guard challenged the law.",
+          "issue": "Does the Second Amendment protect an individual right to possess firearms unconnected with militia service?",
+          "holding": "The Second Amendment protects an individual right to keep and bear arms for self-defense in the home, unconnected with militia service.",
+          "whyItMatters": "Establishes individual rights interpretation of the Second Amendment and strikes down handgun bans."
+        },
+        {
+          "id": "conlaw-014",
+          "name": "Obergefell v. Hodges",
+          "citation": "576 U.S. 644 (2015)",
+          "year": 2015,
+          "court": "U.S. Supreme Court",
+          "facts": "Same-sex couples challenged state laws banning same-sex marriage. Several states refused to recognize same-sex marriages performed elsewhere.",
+          "issue": "Does the Constitution require states to license and recognize same-sex marriages?",
+          "holding": "The fundamental right to marry extends to same-sex couples under the Due Process and Equal Protection Clauses. States must license and recognize same-sex marriages.",
+          "whyItMatters": "Establishes marriage equality nationwide and expands substantive due process protections."
+        },
+        {
+          "id": "conlaw-015",
+          "name": "Korematsu v. United States",
+          "citation": "323 U.S. 214 (1944)",
+          "year": 1944,
+          "court": "U.S. Supreme Court",
+          "facts": "During WWII, Fred Korematsu refused to leave a military exclusion zone that applied to Japanese Americans. He was convicted of violating the exclusion order.",
+          "issue": "Can the government exclude citizens from areas based on race during wartime?",
+          "holding": "The exclusion order was constitutional as a wartime military necessity, though racial classifications require strict scrutiny.",
+          "whyItMatters": "Upheld internment camps (now widely condemned). Established strict scrutiny for racial classifications but failed to apply it rigorously. Formally repudiated in Trump v. Hawaii (2018)."
+        },
+        {
+          "id": "conlaw-016",
+          "name": "Gibbons v. Ogden",
+          "citation": "22 U.S. (9 Wheat.) 1 (1824)",
+          "year": 1824,
+          "court": "U.S. Supreme Court",
+          "facts": "New York granted a monopoly on steamboat operations in its waters. Ogden held this license. Gibbons operated competing steamboats under a federal license.",
+          "issue": "What is the scope of congressional power to regulate interstate commerce?",
+          "holding": "Commerce includes navigation and extends to all commercial intercourse between states. Federal power over interstate commerce is plenary and supreme over conflicting state laws.",
+          "whyItMatters": "First major Commerce Clause case. Establishes broad federal commerce power and supremacy over state regulations."
+        },
+        {
+          "id": "conlaw-017",
+          "name": "Wickard v. Filburn",
+          "citation": "317 U.S. 111 (1942)",
+          "year": 1942,
+          "court": "U.S. Supreme Court",
+          "facts": "A farmer grew wheat exceeding his federal allotment for home consumption. He was fined under the Agricultural Adjustment Act.",
+          "issue": "Can Congress regulate purely local activities under the Commerce Clause?",
+          "holding": "Congress can regulate even local activities if, in the aggregate, they substantially affect interstate commerce. Home-consumed wheat affects the national wheat market.",
+          "whyItMatters": "Maximum expansion of Commerce Clause power. 'Aggregation principle' allows regulation of virtually any economic activity."
+        },
+        {
+          "id": "conlaw-018",
+          "name": "Youngstown Sheet & Tube Co. v. Sawyer",
+          "citation": "343 U.S. 579 (1952)",
+          "year": 1952,
+          "court": "U.S. Supreme Court",
+          "facts": "During the Korean War, President Truman seized steel mills to prevent a strike, claiming inherent executive power during wartime.",
+          "issue": "Can the President seize private property without congressional authorization?",
+          "holding": "The President has no inherent power to seize private property. Executive power is at its lowest when acting contrary to Congress's expressed or implied will.",
+          "whyItMatters": "Justice Jackson's concurrence creates the tripartite framework for analyzing presidential power in relation to Congress."
+        },
+        {
+          "id": "conlaw-019",
+          "name": "Shelby County v. Holder",
+          "citation": "570 U.S. 529 (2013)",
+          "year": 2013,
+          "court": "U.S. Supreme Court",
+          "facts": "Section 4(b) of the Voting Rights Act established a coverage formula requiring certain jurisdictions to obtain preclearance before changing voting laws.",
+          "issue": "Is the coverage formula of the Voting Rights Act constitutional?",
+          "holding": "The coverage formula is unconstitutional because it is based on outdated data and conditions. The principle of equal sovereignty requires that Congress treat states equally.",
+          "whyItMatters": "Effectively gutted Section 5 preclearance by invalidating the coverage formula. Major federalism and voting rights decision."
+        },
+        {
+          "id": "conlaw-020",
+          "name": "Citizens United v. FEC",
+          "citation": "558 U.S. 310 (2010)",
+          "year": 2010,
+          "court": "U.S. Supreme Court",
+          "facts": "Citizens United, a nonprofit corporation, sought to air a film critical of Hillary Clinton close to the 2008 primary election, prohibited by campaign finance law.",
+          "issue": "Can the government restrict corporate independent political expenditures?",
+          "holding": "The First Amendment prohibits restrictions on independent political expenditures by corporations, labor unions, and other associations. Political speech does not lose protection merely because its source is a corporation.",
+          "whyItMatters": "Extends First Amendment protection to corporate political speech. Dramatically changed campaign finance law."
+        },
+        {
+          "id": "conlaw-021",
+          "name": "Heart of Atlanta Motel v. United States",
+          "citation": "379 U.S. 241 (1964)",
+          "year": 1964,
+          "court": "U.S. Supreme Court",
+          "facts": "A motel near interstate highways refused to rent rooms to Black guests. It challenged Title II of the Civil Rights Act of 1964.",
+          "issue": "Can Congress prohibit racial discrimination by private businesses under the Commerce Clause?",
+          "holding": "Congress may prohibit racial discrimination by businesses serving interstate travelers because such discrimination substantially affects interstate commerce.",
+          "whyItMatters": "Upholds Civil Rights Act under Commerce Clause. Congress can use commerce power to address civil rights."
+        },
+        {
+          "id": "conlaw-022",
+          "name": "Loving v. Virginia",
+          "citation": "388 U.S. 1 (1967)",
+          "year": 1967,
+          "court": "U.S. Supreme Court",
+          "facts": "Mildred Jeter (Black) and Richard Loving (white) married in D.C. and returned to Virginia, where interracial marriage was a felony. They were convicted.",
+          "issue": "Do laws prohibiting interracial marriage violate the Equal Protection and Due Process Clauses?",
+          "holding": "Anti-miscegenation laws violate both Equal Protection (racial classification) and Due Process (freedom to marry). Marriage is a fundamental right.",
+          "whyItMatters": "Strikes down all anti-miscegenation laws. Establishes marriage as a fundamental right protected by substantive due process."
+        },
+        {
+          "id": "conlaw-023",
+          "name": "Texas v. Johnson",
+          "citation": "491 U.S. 397 (1989)",
+          "year": 1989,
+          "court": "U.S. Supreme Court",
+          "facts": "Gregory Johnson burned an American flag during a protest at the Republican National Convention. He was convicted under Texas's flag desecration law.",
+          "issue": "Is flag burning protected symbolic speech under the First Amendment?",
+          "holding": "Flag burning is expressive conduct protected by the First Amendment. The government cannot prohibit expression of an idea merely because society finds it offensive.",
+          "whyItMatters": "Protects symbolic speech even when deeply offensive. Government cannot prohibit expression based on its message."
+        },
+        {
+          "id": "conlaw-024",
+          "name": "National Federation of Independent Business v. Sebelius",
+          "citation": "567 U.S. 519 (2012)",
+          "year": 2012,
+          "court": "U.S. Supreme Court",
+          "facts": "The Affordable Care Act required individuals to purchase health insurance or pay a penalty. States were required to expand Medicaid or lose all federal Medicaid funding.",
+          "issue": "Is the individual mandate constitutional? Is the Medicaid expansion coercive?",
+          "holding": "The individual mandate is constitutional as a tax but exceeds Commerce Clause power (can't compel commerce). The Medicaid expansion is unconstitutionally coercive, but states can choose to participate.",
+          "whyItMatters": "Sets new limits on Commerce Clause (can't mandate activity) and Spending Clause (can't coerce states)."
+        },
+        {
+          "id": "conlaw-025",
+          "name": "Dobbs v. Jackson Women's Health Organization",
+          "citation": "597 U.S. ___ (2022)",
+          "year": 2022,
+          "court": "U.S. Supreme Court",
+          "facts": "Mississippi banned most abortions after 15 weeks. The only abortion clinic in the state challenged the law as violating Roe v. Wade.",
+          "issue": "Does the Constitution confer a right to abortion?",
+          "holding": "There is no constitutional right to abortion. Roe v. Wade and Planned Parenthood v. Casey are overruled. Abortion regulation is returned to the states.",
+          "whyItMatters": "Overrules 50 years of precedent. States may now prohibit abortion entirely. Major substantive due process decision."
+        }
+      ]
+    },
+    "civilProcedure": {
+      "name": "Civil Procedure",
+      "description": "Rules governing the litigation process",
+      "cases": [
+        {
+          "id": "civpro-001",
+          "name": "Pennoyer v. Neff",
+          "citation": "95 U.S. 714 (1878)",
+          "year": 1878,
+          "court": "U.S. Supreme Court",
+          "facts": "Neff owned land in Oregon but was not served process there. A default judgment was entered against him, and Pennoyer bought his land at a sheriff's sale. Neff later challenged the judgment.",
+          "issue": "What are the constitutional limits on a state court's power to adjudicate claims?",
+          "holding": "A state may exercise jurisdiction only over persons within its territory (in personam) or property within its territory (in rem). Service of process must be made within the state.",
+          "whyItMatters": "Establishes the territorial theory of jurisdiction under Due Process. Foundation for all personal jurisdiction analysis."
+        },
+        {
+          "id": "civpro-002",
+          "name": "International Shoe Co. v. Washington",
+          "citation": "326 U.S. 310 (1945)",
+          "year": 1945,
+          "court": "U.S. Supreme Court",
+          "facts": "International Shoe, a Delaware corporation with headquarters in Missouri, employed salesmen in Washington but had no offices there. Washington sought to collect unpaid unemployment taxes.",
+          "issue": "When may a state exercise personal jurisdiction over an out-of-state corporation?",
+          "holding": "A state may exercise jurisdiction over an out-of-state defendant if the defendant has 'minimum contacts' with the forum such that suit does not offend 'traditional notions of fair play and substantial justice.'",
+          "whyItMatters": "Revolutionizes personal jurisdiction doctrine by replacing Pennoyer's territorial approach with minimum contacts analysis."
+        },
+        {
+          "id": "civpro-003",
+          "name": "Erie Railroad Co. v. Tompkins",
+          "citation": "304 U.S. 64 (1938)",
+          "year": 1938,
+          "court": "U.S. Supreme Court",
+          "facts": "Tompkins was injured by a train while walking along tracks in Pennsylvania. He sued in federal court in New York, which applied general federal common law rather than Pennsylvania law.",
+          "issue": "Should federal courts in diversity cases apply federal common law or state substantive law?",
+          "holding": "Except in matters governed by the Constitution or federal statutes, federal courts in diversity cases must apply state substantive law. There is no general federal common law.",
+          "whyItMatters": "Overrules Swift v. Tyson. Federal courts must apply state substantive law in diversity cases, eliminating forum shopping."
+        },
+        {
+          "id": "civpro-004",
+          "name": "World-Wide Volkswagen Corp. v. Woodson",
+          "citation": "444 U.S. 286 (1980)",
+          "year": 1980,
+          "court": "U.S. Supreme Court",
+          "facts": "New York residents bought a car in New York and were injured in Oklahoma when it caught fire. They sued the New York dealer and regional distributor in Oklahoma.",
+          "issue": "May a state exercise jurisdiction over defendants who did not purposefully avail themselves of the forum?",
+          "holding": "Jurisdiction requires purposeful availment - the defendant must purposefully direct activities at the forum state. The unilateral activity of a third party (driving the car to Oklahoma) is insufficient.",
+          "whyItMatters": "Creates the purposeful availment requirement and the stream of commerce debate for personal jurisdiction."
+        },
+        {
+          "id": "civpro-005",
+          "name": "Burger King Corp. v. Rudzewicz",
+          "citation": "471 U.S. 462 (1985)",
+          "year": 1985,
+          "court": "U.S. Supreme Court",
+          "facts": "Rudzewicz, a Michigan resident, entered a franchise agreement with Burger King, headquartered in Florida. When the franchisee defaulted, Burger King sued in Florida.",
+          "issue": "Can an out-of-state defendant who entered into a contract with a forum resident be sued there?",
+          "holding": "A defendant who deliberately reaches out and creates continuing obligations with a forum resident may be subject to jurisdiction there. Choice of law provisions are relevant but not dispositive.",
+          "whyItMatters": "Applies purposeful availment to contract cases. Emphasizes defendant's deliberate affiliation with the forum."
+        },
+        {
+          "id": "civpro-006",
+          "name": "Iqbal v. Ashcroft",
+          "citation": "556 U.S. 662 (2009)",
+          "year": 2009,
+          "court": "U.S. Supreme Court",
+          "facts": "A Pakistani Muslim detained after 9/11 sued Attorney General Ashcroft and FBI Director Mueller, alleging they knew of and condoned discriminatory treatment.",
+          "issue": "What pleading standard must plaintiffs meet to survive a motion to dismiss?",
+          "holding": "Complaints must contain 'plausible' factual allegations supporting each element. Legal conclusions and 'formulaic recitations' of elements are not entitled to assumption of truth.",
+          "whyItMatters": "Establishes the plausibility pleading standard. Courts must assess whether the facts alleged make the claim plausible on its face."
+        },
+        {
+          "id": "civpro-007",
+          "name": "Bell Atlantic Corp. v. Twombly",
+          "citation": "550 U.S. 544 (2007)",
+          "year": 2007,
+          "court": "U.S. Supreme Court",
+          "facts": "Plaintiffs alleged an antitrust conspiracy among telecommunications companies, based on parallel business conduct. No direct evidence of agreement was alleged.",
+          "issue": "What level of factual detail is required in a complaint to survive a motion to dismiss?",
+          "holding": "A complaint must allege 'enough facts to state a claim to relief that is plausible on its face.' Parallel conduct alone, without 'plus factors,' is insufficient.",
+          "whyItMatters": "Retires the 'no set of facts' standard from Conley. Creates plausibility pleading, later extended by Iqbal."
+        },
+        {
+          "id": "civpro-008",
+          "name": "Mullane v. Central Hanover Bank & Trust Co.",
+          "citation": "339 U.S. 306 (1950)",
+          "year": 1950,
+          "court": "U.S. Supreme Court",
+          "facts": "A bank sought judicial settlement of accounts for a common trust fund. Notice was given only by publication in a local newspaper. Many beneficiaries lived out of state.",
+          "issue": "What notice is constitutionally required before a person may be bound by a judgment?",
+          "holding": "Due process requires notice 'reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action.'",
+          "whyItMatters": "Establishes the constitutional standard for adequate notice in civil proceedings. Mail notice required when addresses are known."
+        },
+        {
+          "id": "civpro-009",
+          "name": "Shaffer v. Heitner",
+          "citation": "433 U.S. 186 (1977)",
+          "year": 1977,
+          "court": "U.S. Supreme Court",
+          "facts": "Shareholders sued corporate officers in Delaware, where the company was incorporated. Jurisdiction was based on sequestering stock located in Delaware under state law.",
+          "issue": "Does International Shoe's minimum contacts test apply to in rem and quasi in rem jurisdiction?",
+          "holding": "All assertions of jurisdiction must satisfy International Shoe's minimum contacts test. Mere presence of property in the forum is insufficient unless the property is related to the claims.",
+          "whyItMatters": "Extends minimum contacts to all types of jurisdiction, including in rem. Property presence alone no longer establishes jurisdiction."
+        },
+        {
+          "id": "civpro-010",
+          "name": "Celotex Corp. v. Catrett",
+          "citation": "477 U.S. 317 (1986)",
+          "year": 1986,
+          "court": "U.S. Supreme Court",
+          "facts": "Catrett's husband died from asbestos exposure. She sued Celotex but could not produce evidence that her husband was exposed to Celotex products specifically.",
+          "issue": "What is the burden on a moving party seeking summary judgment?",
+          "holding": "A party moving for summary judgment need not produce evidence negating the opponent's claim, but may point to the absence of evidence supporting the opponent's case.",
+          "whyItMatters": "Clarifies summary judgment standards. Moving party can satisfy burden by pointing out lack of evidence on essential elements."
+        },
+        {
+          "id": "civpro-011",
+          "name": "Hanna v. Plumer",
+          "citation": "380 U.S. 460 (1965)",
+          "year": 1965,
+          "court": "U.S. Supreme Court",
+          "facts": "Hanna sued in federal court in Massachusetts and served process under the Federal Rules. Massachusetts law required in-hand service. Defendant moved to dismiss.",
+          "issue": "Should a federal court apply state procedural rules that conflict with the Federal Rules of Civil Procedure?",
+          "holding": "When a Federal Rule of Civil Procedure applies, it prevails over state law if the Rule is valid under the Rules Enabling Act. Erie does not require application of conflicting state procedural rules.",
+          "whyItMatters": "Resolves Erie/Rules Enabling Act tension. Valid Federal Rules trump conflicting state rules in federal court."
+        },
+        {
+          "id": "civpro-012",
+          "name": "Bristol-Myers Squibb Co. v. Superior Court",
+          "citation": "582 U.S. ___, 137 S. Ct. 1773 (2017)",
+          "year": 2017,
+          "court": "U.S. Supreme Court",
+          "facts": "Plaintiffs from multiple states sued Bristol-Myers in California over a drug. The company was incorporated in Delaware and headquartered in New York, though it did extensive business in California.",
+          "issue": "May a court exercise specific jurisdiction over claims by out-of-state plaintiffs that arise from out-of-state conduct?",
+          "holding": "Specific jurisdiction requires a connection between the forum and the specific claims at issue. General contacts with the forum are insufficient to establish jurisdiction over unrelated claims.",
+          "whyItMatters": "Tightens specific jurisdiction requirements. Each plaintiff's claim must arise from the defendant's forum contacts."
+        },
+        {
+          "id": "civpro-013",
+          "name": "Daimler AG v. Bauman",
+          "citation": "571 U.S. 117 (2014)",
+          "year": 2014,
+          "court": "U.S. Supreme Court",
+          "facts": "Argentine plaintiffs sued DaimlerChrysler in California for alleged human rights violations in Argentina, based on the activities of a U.S. subsidiary there.",
+          "issue": "When is a corporation subject to general jurisdiction in a state where it is not incorporated or headquartered?",
+          "holding": "General jurisdiction exists only where a corporation is 'at home' - typically its state of incorporation and principal place of business. Extensive contacts are insufficient without being 'at home.'",
+          "whyItMatters": "Dramatically narrows general jurisdiction. Corporations are subject to general jurisdiction only where they are essentially 'at home.'"
+        },
+        {
+          "id": "civpro-014",
+          "name": "Asahi Metal Industry Co. v. Superior Court",
+          "citation": "480 U.S. 102 (1987)",
+          "year": 1987,
+          "court": "U.S. Supreme Court",
+          "facts": "A Japanese manufacturer sold tire valve assemblies to a Taiwanese company, which incorporated them into tubes sold worldwide. A tube failed in California, causing injury.",
+          "issue": "Does placing a product in the stream of commerce create personal jurisdiction where the product causes injury?",
+          "holding": "The Court fragmented: some justices required additional conduct beyond placing products in the stream of commerce; others found stream of commerce sufficient. All agreed exercise of jurisdiction was unreasonable here.",
+          "whyItMatters": "The stream of commerce debate remains unresolved. Illustrates the reasonableness prong of personal jurisdiction analysis."
+        },
+        {
+          "id": "civpro-015",
+          "name": "J. McIntyre Machinery, Ltd. v. Nicastro",
+          "citation": "564 U.S. 873 (2011)",
+          "year": 2011,
+          "court": "U.S. Supreme Court",
+          "facts": "A British manufacturer sold machines through a U.S. distributor. One machine ended up in New Jersey, where it injured Nicastro. The manufacturer never targeted New Jersey specifically.",
+          "issue": "Can specific jurisdiction exist based on nationwide distribution when the defendant did not specifically target the forum state?",
+          "holding": "Plurality held that a defendant must target the forum state specifically. Justice Breyer's concurrence emphasized that only a few machines reached the forum, leaving stream of commerce doctrine unclear.",
+          "whyItMatters": "Further fragments stream of commerce doctrine. Targeting the forum specifically may be required for specific jurisdiction."
+        },
+        {
+          "id": "civpro-016",
+          "name": "Gasperini v. Center for Humanities, Inc.",
+          "citation": "518 U.S. 415 (1996)",
+          "year": 1996,
+          "court": "U.S. Supreme Court",
+          "facts": "A photographer sued for lost slides in federal court. New York had a law allowing appellate review of jury awards for excessiveness. The federal standard limited review to the trial court.",
+          "issue": "Should federal courts apply state standards for reviewing jury verdicts?",
+          "holding": "State standards that affect the outcome and serve substantive policies may apply in federal diversity cases, but must be applied by the trial court (not appellate court) under federal procedure.",
+          "whyItMatters": "Illustrates the Erie analysis where federal and state procedures conflict. Substantive state interests may require accommodation."
+        },
+        {
+          "id": "civpro-017",
+          "name": "Goodyear Dunlop Tires Operations, S.A. v. Brown",
+          "citation": "564 U.S. 915 (2011)",
+          "year": 2011,
+          "court": "U.S. Supreme Court",
+          "facts": "North Carolina residents died in a bus accident in France caused by allegedly defective tires made by Goodyear subsidiaries in Turkey and Luxembourg. Plaintiffs sued in North Carolina.",
+          "issue": "Can foreign subsidiaries be subject to general jurisdiction based on products entering the forum through the stream of commerce?",
+          "holding": "General jurisdiction requires that a defendant's contacts be so continuous and systematic as to render it essentially 'at home' in the forum. Stream of commerce contacts are insufficient.",
+          "whyItMatters": "Distinguishes general from specific jurisdiction. Stream of commerce theory applies only to specific jurisdiction."
+        },
+        {
+          "id": "civpro-018",
+          "name": "Burnham v. Superior Court",
+          "citation": "495 U.S. 604 (1990)",
+          "year": 1990,
+          "court": "U.S. Supreme Court",
+          "facts": "A husband was served with divorce papers while temporarily in California visiting his children. He was domiciled in New Jersey.",
+          "issue": "Does transient presence ('tag' jurisdiction) satisfy due process for personal jurisdiction?",
+          "holding": "Service of process on a defendant physically present in the forum state satisfies due process. Transient jurisdiction remains valid.",
+          "whyItMatters": "Preserves 'tag' jurisdiction. Physical presence during service establishes personal jurisdiction regardless of the defendant's contacts."
+        },
+        {
+          "id": "civpro-019",
+          "name": "Hickman v. Taylor",
+          "citation": "329 U.S. 495 (1947)",
+          "year": 1947,
+          "court": "U.S. Supreme Court",
+          "facts": "After a tugboat sinking killed five crew members, an attorney interviewed witnesses. The opposing party sought these interview notes through discovery.",
+          "issue": "Are attorney work product and mental impressions discoverable?",
+          "holding": "Materials prepared by an attorney in anticipation of litigation are protected 'work product.' Mental impressions, conclusions, and legal theories receive near-absolute protection.",
+          "whyItMatters": "Creates the work product doctrine, later codified in Rule 26(b)(3). Protects attorney preparation materials."
+        },
+        {
+          "id": "civpro-020",
+          "name": "Hansberry v. Lee",
+          "citation": "311 U.S. 32 (1940)",
+          "year": 1940,
+          "court": "U.S. Supreme Court",
+          "facts": "A racially restrictive covenant was upheld in a prior class action. The Hansberry family (Black) bought property in the restricted area and was sued. They argued they were not bound by the prior judgment.",
+          "issue": "When are absent parties bound by a class action judgment?",
+          "holding": "Due process requires adequate representation of absent class members. A judgment in a class action cannot bind absent members whose interests were not adequately represented.",
+          "whyItMatters": "Establishes due process requirements for class actions. Adequate representation is constitutionally required for binding effect."
+        }
+      ]
+    },
+    "property": {
+      "name": "Property",
+      "description": "Rights in real and personal property",
+      "cases": [
+        {
+          "id": "property-001",
+          "name": "Pierson v. Post",
+          "citation": "3 Cai. R. 175, 2 Am. Dec. 264 (N.Y. 1805)",
+          "year": 1805,
+          "court": "New York Supreme Court",
+          "facts": "Post was hunting a fox on unoccupied land. Pierson, knowing Post was pursuing the fox, killed and captured it. Post sued for the fox.",
+          "issue": "What acts are required to establish property rights in wild animals?",
+          "holding": "Mere pursuit is insufficient to establish property in a wild animal. Possession requires actual capture or mortal wounding with continued pursuit.",
+          "whyItMatters": "First case in most property courses. Establishes the rule of capture and that possession requires more than pursuit."
+        },
+        {
+          "id": "property-002",
+          "name": "Johnson v. M'Intosh",
+          "citation": "21 U.S. (8 Wheat.) 543 (1823)",
+          "year": 1823,
+          "court": "U.S. Supreme Court",
+          "facts": "Johnson's predecessors purchased land from Native American tribes. M'Intosh later obtained a grant to the same land from the United States. Johnson sued to establish superior title.",
+          "issue": "Could Native American tribes convey valid title to land?",
+          "holding": "Native Americans had the right of occupancy but not title. Only the sovereign (European discoverers and their successors) could convey full title. Discovery gave exclusive right to extinguish Indian title.",
+          "whyItMatters": "Establishes the discovery doctrine and the foundation of American property law. Controversial but doctrinally central."
+        },
+        {
+          "id": "property-003",
+          "name": "Kelo v. City of New London",
+          "citation": "545 U.S. 469 (2005)",
+          "year": 2005,
+          "court": "U.S. Supreme Court",
+          "facts": "New London used eminent domain to take private homes for an economic development project, including a Pfizer research facility. The homeowners challenged the 'public use' justification.",
+          "issue": "Does economic development qualify as 'public use' for eminent domain purposes?",
+          "holding": "Economic development, even when benefiting private parties, qualifies as public use if part of a comprehensive development plan. Courts defer to legislative determinations of public purpose.",
+          "whyItMatters": "Expands the definition of public use under the Takings Clause. Sparked legislative backlash in many states."
+        },
+        {
+          "id": "property-004",
+          "name": "Lucas v. South Carolina Coastal Council",
+          "citation": "505 U.S. 1003 (1992)",
+          "year": 1992,
+          "court": "U.S. Supreme Court",
+          "facts": "Lucas bought beachfront lots intending to build homes. After purchase, a state law prohibited construction, rendering the land valueless.",
+          "issue": "When does a regulation constitute a compensable taking?",
+          "holding": "A regulation that denies all economically beneficial use of property is a per se taking requiring compensation, unless the restriction inheres in background principles of property law.",
+          "whyItMatters": "Creates the categorical rule that total economic deprivation is a taking. Background principles exception allows nuisance-based restrictions."
+        },
+        {
+          "id": "property-005",
+          "name": "Penn Central Transportation Co. v. New York City",
+          "citation": "438 U.S. 104 (1978)",
+          "year": 1978,
+          "court": "U.S. Supreme Court",
+          "facts": "New York City designated Grand Central Terminal as a landmark, preventing Penn Central from building a high-rise tower above it. Penn Central sought compensation.",
+          "issue": "What test determines when a regulation constitutes a taking?",
+          "holding": "Regulatory takings are evaluated by balancing (1) the economic impact on the owner, (2) interference with investment-backed expectations, and (3) the character of the government action.",
+          "whyItMatters": "Establishes the Penn Central balancing test for regulatory takings, the default standard when no categorical rule applies."
+        },
+        {
+          "id": "property-006",
+          "name": "Shelley v. Kraemer",
+          "citation": "334 U.S. 1 (1948)",
+          "year": 1948,
+          "court": "U.S. Supreme Court",
+          "facts": "African Americans purchased property subject to a racially restrictive covenant. White neighbors sued to enforce the covenant and prevent the sale.",
+          "issue": "Does judicial enforcement of racially restrictive covenants violate the Equal Protection Clause?",
+          "holding": "While private racial covenants are not themselves unconstitutional, state court enforcement of such covenants constitutes state action that violates the Fourteenth Amendment.",
+          "whyItMatters": "Expands state action doctrine to judicial enforcement. Effectively ended judicial enforcement of racial covenants."
+        },
+        {
+          "id": "property-007",
+          "name": "Village of Euclid v. Ambler Realty Co.",
+          "citation": "272 U.S. 365 (1926)",
+          "year": 1926,
+          "court": "U.S. Supreme Court",
+          "facts": "Euclid enacted a comprehensive zoning ordinance dividing the town into residential, commercial, and industrial districts. Ambler owned land restricted to residential use, reducing its value.",
+          "issue": "Is comprehensive zoning a valid exercise of police power?",
+          "holding": "Comprehensive zoning is a valid exercise of police power if not arbitrary or unreasonable. Segregating incompatible uses serves public welfare.",
+          "whyItMatters": "Establishes the constitutionality of zoning. Foundation for all modern land use regulation."
+        },
+        {
+          "id": "property-008",
+          "name": "Armory v. Delamirie",
+          "citation": "1 Strange 505, 93 Eng. Rep. 664 (K.B. 1722)",
+          "year": 1722,
+          "court": "King's Bench (England)",
+          "facts": "A chimney sweep's boy found a jewel and brought it to a goldsmith to learn its value. The goldsmith's apprentice removed the stone and refused to return it.",
+          "issue": "What rights does a finder have against subsequent possessors?",
+          "holding": "A finder has title superior to all the world except the true owner. The finder could recover the full value of the jewel because defendant's wrongful conduct precluded him from contesting value.",
+          "whyItMatters": "Establishes that possession is title against all but the true owner. Foundational for understanding relative title."
+        },
+        {
+          "id": "property-009",
+          "name": "Javins v. First National Realty Corp.",
+          "citation": "428 F.2d 1071 (D.C. Cir. 1970)",
+          "year": 1970,
+          "court": "U.S. Court of Appeals, D.C. Circuit",
+          "facts": "Tenants withheld rent due to housing code violations including broken windows, leaking toilets, and rodent infestation. The landlord sought to evict them for nonpayment.",
+          "issue": "Does a landlord impliedly warrant that leased premises are habitable?",
+          "holding": "In residential leases, there is an implied warranty of habitability. Breach allows tenants to withhold rent. The landlord's obligation and tenant's rent are dependent covenants.",
+          "whyItMatters": "Creates the implied warranty of habitability, revolutionizing landlord-tenant law from its feudal origins."
+        },
+        {
+          "id": "property-010",
+          "name": "Delfino v. Vealencis",
+          "citation": "181 Conn. 533, 436 A.2d 27 (1980)",
+          "year": 1980,
+          "court": "Connecticut Supreme Court",
+          "facts": "Co-tenants owned property as tenants in common. One operated a garbage hauling business on the property. The others sought partition by sale to develop the land.",
+          "issue": "When should a court order partition by sale rather than partition in kind?",
+          "holding": "Partition in kind is the preferred remedy. Partition by sale is appropriate only when physical partition is impractical or would result in material prejudice to the parties.",
+          "whyItMatters": "Reinforces the preference for partition in kind over partition by sale in co-tenancy disputes."
+        },
+        {
+          "id": "property-011",
+          "name": "State v. Shack",
+          "citation": "58 N.J. 297, 277 A.2d 369 (1971)",
+          "year": 1971,
+          "court": "New Jersey Supreme Court",
+          "facts": "A legal services attorney and a health worker entered a private farm to assist migrant workers living there. The farm owner ordered them to leave and had them arrested for trespassing.",
+          "issue": "Can a property owner exclude those seeking to assist residents on the property?",
+          "holding": "Property rights are not absolute. An owner's right to exclude must yield to the rights of workers to receive visitors providing necessary services.",
+          "whyItMatters": "Illustrates limits on the right to exclude. Human values may override property rights in appropriate circumstances."
+        },
+        {
+          "id": "property-012",
+          "name": "White v. Brown",
+          "citation": "559 S.W.2d 938 (Tenn. 1977)",
+          "year": 1977,
+          "court": "Tennessee Supreme Court",
+          "facts": "A will stated 'I give my home to White...she is not to sell it.' After White's death, the heirs claimed the land, arguing White had only a life estate.",
+          "issue": "Did the will create a fee simple absolute or a life estate?",
+          "holding": "The law prefers a fee simple interpretation. Ambiguous language is construed to create the largest estate possible. The restriction on sale is void as a restraint on alienation.",
+          "whyItMatters": "Illustrates the preference for fee simple and the rule against restraints on alienation."
+        },
+        {
+          "id": "property-013",
+          "name": "Loretto v. Teleprompter Manhattan CATV Corp.",
+          "citation": "458 U.S. 419 (1982)",
+          "year": 1982,
+          "court": "U.S. Supreme Court",
+          "facts": "New York law required landlords to permit cable companies to install equipment on their buildings. The equipment occupied only about 1.5 cubic feet on Loretto's building.",
+          "issue": "Does a permanent physical occupation of property constitute a per se taking?",
+          "holding": "A permanent physical occupation of property, however minor, is a per se taking requiring compensation. The magnitude of the invasion is irrelevant.",
+          "whyItMatters": "Creates a categorical rule: permanent physical occupations are always takings, regardless of economic impact or public benefit."
+        },
+        {
+          "id": "property-014",
+          "name": "Tulk v. Moxhay",
+          "citation": "41 Eng. Rep. 1143 (Ch. 1848)",
+          "year": 1848,
+          "court": "Court of Chancery (England)",
+          "facts": "Tulk sold land with a covenant to maintain it as a garden. After several transfers, Moxhay bought the land with notice of the covenant and planned to build on it.",
+          "issue": "Can an equitable servitude be enforced against a subsequent purchaser with notice?",
+          "holding": "A covenant touching and concerning land will be enforced in equity against subsequent purchasers who take with notice, even without privity of estate.",
+          "whyItMatters": "Creates the doctrine of equitable servitudes, allowing enforcement of restrictive covenants without privity."
+        },
+        {
+          "id": "property-015",
+          "name": "Sanborn v. McLean",
+          "citation": "233 Mich. 227, 206 N.W. 496 (1925)",
+          "year": 1925,
+          "court": "Michigan Supreme Court",
+          "facts": "The McLeans began building a gas station on their residential lot. Neighbors sued, claiming the lot was subject to a residential restriction, though their deed contained no express covenant.",
+          "issue": "Can a restrictive covenant be implied from a common development scheme?",
+          "holding": "A reciprocal negative easement arises by implication when the owner of two or more lots sells one with restrictions benefiting retained land. The restriction applies to all lots in the scheme.",
+          "whyItMatters": "Creates implied reciprocal servitudes in subdivision developments. Purchasers are on inquiry notice of a common scheme."
+        }
+      ]
+    },
+    "evidence": {
+      "name": "Evidence",
+      "description": "Rules governing proof at trial",
+      "cases": [
+        {
+          "id": "evidence-001",
+          "name": "Daubert v. Merrell Dow Pharmaceuticals, Inc.",
+          "citation": "509 U.S. 579 (1993)",
+          "year": 1993,
+          "court": "U.S. Supreme Court",
+          "facts": "Children born with birth defects claimed the drug Bendectin caused their injuries. Plaintiffs offered expert testimony that had not been published or peer-reviewed.",
+          "issue": "What standard governs the admissibility of scientific expert testimony?",
+          "holding": "The trial court must act as a gatekeeper to ensure expert testimony is based on reliable scientific methodology. Factors include testability, peer review, error rates, and general acceptance.",
+          "whyItMatters": "Replaces the Frye 'general acceptance' test with a reliability-focused inquiry. Courts must screen expert evidence for scientific validity."
+        },
+        {
+          "id": "evidence-002",
+          "name": "Frye v. United States",
+          "citation": "293 F. 1013 (D.C. Cir. 1923)",
+          "year": 1923,
+          "court": "U.S. Court of Appeals, D.C. Circuit",
+          "facts": "A murder defendant sought to introduce results from a systolic blood pressure deception test (an early polygraph). The court excluded the evidence.",
+          "issue": "When is scientific evidence admissible?",
+          "holding": "Scientific evidence is admissible only when the underlying technique has gained general acceptance in the relevant scientific community.",
+          "whyItMatters": "Established the 'general acceptance' test for scientific evidence, which dominated for 70 years before Daubert. Still used in some states."
+        },
+        {
+          "id": "evidence-003",
+          "name": "Crawford v. Washington",
+          "citation": "541 U.S. 36 (2004)",
+          "year": 2004,
+          "court": "U.S. Supreme Court",
+          "facts": "Crawford's wife gave a recorded statement to police implicating him in a stabbing. She did not testify at trial, but the statement was admitted.",
+          "issue": "Does the Confrontation Clause permit admission of testimonial hearsay when the declarant is unavailable?",
+          "holding": "Testimonial statements by unavailable witnesses are inadmissible unless the defendant had a prior opportunity for cross-examination. The Confrontation Clause is not satisfied by reliability.",
+          "whyItMatters": "Revolutionizes Confrontation Clause analysis. Testimonial hearsay requires prior cross-examination, regardless of reliability."
+        },
+        {
+          "id": "evidence-004",
+          "name": "Mutual Life Insurance Co. v. Hillmon",
+          "citation": "145 U.S. 285 (1892)",
+          "year": 1892,
+          "court": "U.S. Supreme Court",
+          "facts": "Hillmon allegedly died in Kansas. His wife sought life insurance proceeds. The insurer claimed the body was actually Walters, not Hillmon. Letters from Walters stating his intent to travel with Hillmon were offered.",
+          "issue": "Are statements of intent admissible to prove the declarant's subsequent conduct?",
+          "holding": "A declarant's statement of intent is admissible to prove the declarant's subsequent conduct. The state of mind exception allows such statements as evidence of later action.",
+          "whyItMatters": "Creates the Hillmon doctrine - statements of intent are admissible to prove subsequent conduct by the declarant."
+        },
+        {
+          "id": "evidence-005",
+          "name": "Old Chief v. United States",
+          "citation": "519 U.S. 172 (1997)",
+          "year": 1997,
+          "court": "U.S. Supreme Court",
+          "facts": "Old Chief, charged with felon in possession of a firearm, offered to stipulate to his prior felony conviction. The prosecution insisted on presenting the nature of the prior crime (assault).",
+          "issue": "Must a court accept a defendant's stipulation to prevent unfair prejudice?",
+          "holding": "When a defendant offers to stipulate to a prior conviction, the prosecution generally cannot introduce the nature of the conviction to prove status. The risk of unfair prejudice substantially outweighs probative value.",
+          "whyItMatters": "Illustrates Rule 403 balancing. Stipulations may be required when evidence is offered only for status and carries prejudicial details."
+        },
+        {
+          "id": "evidence-006",
+          "name": "Bourjaily v. United States",
+          "citation": "483 U.S. 171 (1987)",
+          "year": 1987,
+          "court": "U.S. Supreme Court",
+          "facts": "A coconspirator's statements were offered against Bourjaily under the coconspirator hearsay exception. Bourjaily argued the statements themselves could not be used to prove the conspiracy.",
+          "issue": "May a court consider the hearsay statement itself in determining whether a coconspirator exception applies?",
+          "holding": "Courts may consider the hearsay statement itself, along with other evidence, in determining preliminary facts under Rule 104(a). Bootstrapping is permitted.",
+          "whyItMatters": "Allows bootstrapping for hearsay foundations. The statement itself can help establish the conditions for its own admissibility."
+        },
+        {
+          "id": "evidence-007",
+          "name": "Trammel v. United States",
+          "citation": "445 U.S. 40 (1980)",
+          "year": 1980,
+          "court": "U.S. Supreme Court",
+          "facts": "A husband was charged with drug trafficking. The government wanted to call his wife as a witness. The husband claimed the marital privilege to prevent her testimony.",
+          "issue": "Who holds the privilege to prevent adverse spousal testimony?",
+          "holding": "The witness spouse alone holds the privilege to refuse to testify adversely. The defendant spouse cannot prevent a willing spouse from testifying.",
+          "whyItMatters": "Modifies the spousal testimonial privilege. The witness spouse, not the defendant, controls whether to testify."
+        },
+        {
+          "id": "evidence-008",
+          "name": "Tome v. United States",
+          "citation": "513 U.S. 150 (1995)",
+          "year": 1995,
+          "court": "U.S. Supreme Court",
+          "facts": "A child testified that her father sexually abused her. The father argued she was motivated by a desire to live with her mother. The prosecution offered prior consistent statements made after the motive arose.",
+          "issue": "Must a prior consistent statement predate the alleged motive to fabricate?",
+          "holding": "Under Rule 801(d)(1)(B), prior consistent statements are admissible to rebut a charge of recent fabrication only if made before the alleged motive to fabricate arose.",
+          "whyItMatters": "Establishes the premotive requirement for prior consistent statements. Timing of the statement relative to motive is critical."
+        },
+        {
+          "id": "evidence-009",
+          "name": "United States v. Abel",
+          "citation": "469 U.S. 45 (1984)",
+          "year": 1984,
+          "court": "U.S. Supreme Court",
+          "facts": "A defense witness testified favorably for the defendant. The prosecution showed both were members of a prison gang that required members to lie for each other.",
+          "issue": "May bias evidence be admitted even if it would otherwise be inadmissible character evidence?",
+          "holding": "Evidence of bias is always admissible for impeachment. The Rules do not prohibit showing a witness's bias, and gang membership showing willingness to lie for a fellow member is proper impeachment.",
+          "whyItMatters": "Confirms that bias is always a proper ground for impeachment, not subject to the character evidence rules."
+        },
+        {
+          "id": "evidence-010",
+          "name": "Huddleston v. United States",
+          "citation": "485 U.S. 681 (1988)",
+          "year": 1988,
+          "court": "U.S. Supreme Court",
+          "facts": "Huddleston was charged with selling stolen goods. The prosecution offered evidence of prior similar acts to show knowledge. Huddleston argued the prior acts must be proven by clear and convincing evidence.",
+          "issue": "What standard of proof applies to Rule 404(b) evidence of other crimes?",
+          "holding": "The court need only determine that a jury could reasonably find by a preponderance that the act occurred. Clear and convincing evidence is not required.",
+          "whyItMatters": "Sets the low standard for admitting 404(b) evidence. Jury decides if prior act occurred; judge screens only for sufficient evidence."
+        },
+        {
+          "id": "evidence-011",
+          "name": "Jaffee v. Redmond",
+          "citation": "518 U.S. 1 (1996)",
+          "year": 1996,
+          "court": "U.S. Supreme Court",
+          "facts": "A police officer shot and killed a suspect. She underwent counseling with a social worker. In the subsequent civil suit, the plaintiff sought the therapist's notes.",
+          "issue": "Do federal courts recognize a psychotherapist-patient privilege?",
+          "holding": "Communications between a patient and psychotherapist (including licensed social workers) are privileged in federal court. The privilege serves public and private interests in mental health treatment.",
+          "whyItMatters": "Recognizes the psychotherapist-patient privilege in federal courts as a matter of common law under Rule 501."
+        },
+        {
+          "id": "evidence-012",
+          "name": "Upjohn Co. v. United States",
+          "citation": "449 U.S. 383 (1981)",
+          "year": 1981,
+          "court": "U.S. Supreme Court",
+          "facts": "Upjohn's attorneys investigated potential bribery by interviewing employees at all levels. The IRS sought the interview notes and questionnaire responses.",
+          "issue": "Does attorney-client privilege protect communications with lower-level corporate employees?",
+          "holding": "The privilege protects communications with any employee when made at the direction of superiors to obtain legal advice. The 'control group' test is rejected.",
+          "whyItMatters": "Extends corporate attorney-client privilege beyond the control group to any employee communicating for purpose of obtaining legal advice."
+        },
+        {
+          "id": "evidence-013",
+          "name": "People v. Collins",
+          "citation": "68 Cal. 2d 319, 438 P.2d 33 (1968)",
+          "year": 1968,
+          "court": "California Supreme Court",
+          "facts": "Robbery witnesses described suspects with distinctive characteristics. A prosecutor used probability calculations to argue the chances of another couple matching were infinitesimal.",
+          "issue": "When is statistical probability evidence admissible?",
+          "holding": "Probability evidence is inadmissible without foundation establishing the validity of the statistical methodology and the independence of the variables. The prosecutor's calculations were speculative.",
+          "whyItMatters": "Cautions against misuse of probability evidence. Statistical proof requires proper foundation and methodology."
+        },
+        {
+          "id": "evidence-014",
+          "name": "United States v. Salerno",
+          "citation": "505 U.S. 317 (1992)",
+          "year": 1992,
+          "court": "U.S. Supreme Court",
+          "facts": "The government sought to introduce grand jury testimony of witnesses who were now unavailable. Defendants argued this violated their right to confront witnesses.",
+          "issue": "Is former testimony admissible when the defendant had no prior opportunity to cross-examine with similar motive?",
+          "holding": "Rule 804(b)(1) requires 'similar motive' to develop testimony. Grand jury questioning may not satisfy this because the motive differs from trial cross-examination.",
+          "whyItMatters": "Interprets the 'similar motive' requirement strictly. Prior testimony is inadmissible without adequate motive for cross-examination."
+        },
+        {
+          "id": "evidence-015",
+          "name": "Williams v. Illinois",
+          "citation": "567 U.S. 50 (2012)",
+          "year": 2012,
+          "court": "U.S. Supreme Court",
+          "facts": "An expert testified that a DNA profile from a rape kit matched the defendant. The profile was generated by an outside lab whose analysts did not testify.",
+          "issue": "Does expert testimony based on a non-testifying analyst's report violate the Confrontation Clause?",
+          "holding": "Fractured opinion: plurality found no violation because the report was not offered for its truth. Concurrence found no violation because the report was not testimonial. No majority rationale emerged.",
+          "whyItMatters": "Illustrates ongoing confusion about forensic evidence and the Confrontation Clause. Expert basis testimony and testimonial hearsay intersection remains unsettled."
+        }
+      ]
+    }
+  }
+}

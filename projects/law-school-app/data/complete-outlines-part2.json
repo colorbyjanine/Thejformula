@@ -1,0 +1,84 @@
+{
+  "continuation": "Completing Contracts and adding remaining subjects",
+  "contractsCompletion": {
+    "uccSellerRemedies": {
+      "name": "UCC Seller's Remedies",
+      "remedies": [
+        {
+          "remedy": "Resale",
+          "rule": "Resell goods and recover difference from contract price (§ 2-706)",
+          "formula": "Contract price - Resale price + Incidental damages"
+        },
+        {
+          "remedy": "Market Damages",
+          "rule": "If no resale, recover contract-market differential (§ 2-708(1))",
+          "formula": "Contract price - Market price + Incidental damages"
+        },
+        {
+          "remedy": "Lost Profits",
+          "rule": "For lost volume sellers, recover lost profit (§ 2-708(2))",
+          "formula": "Profit seller would have made + Incidental damages + Costs reasonably incurred"
+        },
+        {
+          "remedy": "Price Action",
+          "rule": "Recover full price if goods accepted, lost/damaged after risk passed, or identified and cannot be resold (§ 2-709)"
+        },
+        {
+          "remedy": "Stoppage in Transit",
+          "rule": "Stop delivery of goods in transit upon buyer's insolvency or repudiation"
+        }
+      ],
+      "incidentalDamages": "Expenses related to breach (storage, resale, transportation)",
+      "noConsequential": "Seller generally cannot recover consequential damages under UCC",
+      "mnemonics": "Seller's Remedies: RMLPS (Resale, Market, Lost profit, Price, Stoppage)",
+      "essayTips": "Lost volume seller doctrine is frequently tested. Seller must mitigate. Price action is limited. No consequential damages for sellers (generally).",
+      "mbeTips": "Lost volume seller gets profit, not just resale difference. Resale must be commercially reasonable. Price action requires inability to resell."
+    }
+  },
+  "contractsKeyDistinctions": [
+    {
+      "distinction": "Common Law vs. UCC",
+      "explanation": "Common Law governs services and real property; UCC Article 2 governs goods. If mixed contract, majority test applies (what is predominant purpose)."
+    },
+    {
+      "distinction": "Bilateral vs. Unilateral Contract",
+      "explanation": "Bilateral: exchange of promises; accepted by promise. Unilateral: promise for performance; accepted only by completing performance."
+    },
+    {
+      "distinction": "Express vs. Implied Conditions",
+      "explanation": "Express conditions require STRICT compliance. Implied/constructive conditions require only substantial performance."
+    },
+    {
+      "distinction": "Assignment vs. Delegation",
+      "explanation": "Assignment transfers RIGHTS; delegation transfers DUTIES. Assignor remains liable unless novation; delegator always remains liable."
+    },
+    {
+      "distinction": "Offer vs. Invitation to Deal",
+      "explanation": "Offer creates power of acceptance; invitation (ads, price quotes) is just negotiation. Look for definiteness and intent to be bound."
+    },
+    {
+      "distinction": "Void vs. Voidable Contracts",
+      "explanation": "Void = no legal effect from start (illegal, no capacity). Voidable = valid until avoided by party with right to avoid (minor, fraud, duress)."
+    },
+    {
+      "distinction": "Material Breach vs. Minor Breach",
+      "explanation": "Material breach excuses other party's performance. Minor breach allows damages but doesn't excuse performance."
+    },
+    {
+      "distinction": "Impossibility vs. Impracticability vs. Frustration",
+      "explanation": "Impossibility: literally cannot perform. Impracticability: extremely burdensome. Frustration: can perform but purpose destroyed."
+    }
+  ],
+  "contractsFrequentlyTestedAreas": [
+    "Contract formation (offer, acceptance, consideration)",
+    "Statute of Frauds and its exceptions",
+    "Parol Evidence Rule",
+    "Conditions (types, excuse)",
+    "Breach (material vs. minor, anticipatory repudiation)",
+    "UCC Article 2 (formation, warranties, perfect tender, remedies)",
+    "Third party beneficiaries",
+    "Assignment and delegation",
+    "Remedies (expectation, reliance, restitution, specific performance)",
+    "Defenses (mistake, fraud, duress, unconscionability)"
+  ]
+}

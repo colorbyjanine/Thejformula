@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0d0d12;
+  --card: #15151d;
+  --border: rgba(255,255,255,0.1);
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.5);
+  --accent: #f0c674;
+  --blue: #81a2be;
+  --green: #8abeb7;
+  --red: #cc6666;
+  --purple: #b294bb;
+  --orange: #de935f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
