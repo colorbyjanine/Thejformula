@@ -7,7 +7,7 @@ export default function DigitalCard() {
   
   const contactInfo = {
     name: "Janine Fernandez",
-    title: "Hair Color Specialist",
+    title: "Color | Extensions",
     email: "colorbyjanine@gmail.com",
     website: "https://thejformula.com",
     instagram: "colorbyjanine",
@@ -27,7 +27,7 @@ export default function DigitalCard() {
 VERSION:3.0
 N:Fernandez;Janine;;;
 FN:Janine Fernandez
-TITLE:Hair Color Specialist
+TITLE:Color | Extensions
 ORG:Volume III Salon
 EMAIL:colorbyjanine@gmail.com
 URL:https://thejformula.com
