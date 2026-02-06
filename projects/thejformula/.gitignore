@@ -39,3 +39,5 @@ openclaw.json
 memory/
 MEMORY.md
 memory/
+node_modules/
+.next/
