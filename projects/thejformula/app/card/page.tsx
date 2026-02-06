@@ -52,14 +52,14 @@ END:VCARD`;
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
           {/* Header */}
           <div className="bg-gradient-to-br from-[#3D3935] to-[#5A534D] p-8 text-center">
+            <p className="text-white/70 text-sm tracking-wide mb-4">{contactInfo.title}</p>
             <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#E8967A] to-[#D4826A] flex items-center justify-center text-white text-3xl font-semibold shadow-lg">
               J
             </div>
             <h1 className="text-2xl font-[family-name:var(--font-cormorant)] text-white mb-1">
               {contactInfo.name}
             </h1>
-            <p className="text-white/70 text-sm">{contactInfo.title}</p>
-            <p className="text-white/50 text-xs mt-1">{contactInfo.salon}</p>
+            <p className="text-white/50 text-xs">{contactInfo.salon}</p>
           </div>
 
           {/* Links */}
