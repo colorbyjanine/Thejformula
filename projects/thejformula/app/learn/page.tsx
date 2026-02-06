@@ -2,6 +2,14 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "bond-builders-explained",
+    title: "Bond Builders Explained: Olaplex, K18 & More",
+    excerpt: "What are bond builders? Learn the science behind Olaplex, K18, and other hair repair treatments — and which one is right for your hair.",
+    category: "Hair Health",
+    categoryDisplay: "Hair Science",
+    readTime: "10 min read",
+  },
+  {
     slug: "why-toner-fades",
     title: "Why Your Toner Fades So Fast",
     excerpt: "The science behind toner longevity and what you can do about it. Spoiler: it's not always your stylist's fault.",
