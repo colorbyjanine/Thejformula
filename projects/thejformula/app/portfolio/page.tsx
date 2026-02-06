@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const portfolioImages = [
+  { src: "/portfolio-13.jpg", alt: "Long brunette balayage with caramel highlights", category: "Brunette" },
+  { src: "/portfolio-14.jpg", alt: "Medium length brunette with soft dimension", category: "Brunette" },
   { src: "/work-blonde-balayage.jpg", alt: "Dimensional blonde balayage", category: "Blonde" },
   { src: "/work-brunette-balayage.jpg", alt: "Brunette balayage with caramel highlights", category: "Brunette" },
   { src: "/work-ash-blonde.jpg", alt: "Ash blonde with dimension", category: "Blonde" },
