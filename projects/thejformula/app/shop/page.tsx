@@ -82,6 +82,7 @@ const collections = {
       { name: "PRETTYGARDEN Blazer Vest Top", amazonId: "B0DM4HDG7K", price: "$40", tag: "Work" },
       { name: "KIRUNDO Fitted Blazer Vest", amazonId: "B0DRJH535X", price: "$56", tag: "Work" },
       { name: "Acelitt Linen Beach Pants", amazonId: "B0CGVBQ95D", price: "$30", tag: "Vacation" },
+      { name: "PRETTYGARDEN Strapless Maxi Dress", amazonId: "B0DKDXYVY2", price: "$45", tag: "Vacation" },
     ],
   },
   home: {
