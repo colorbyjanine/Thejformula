@@ -64,6 +64,7 @@ const collections = {
     color: "from-[#8B7355] to-[#6B5344]",
     products: [
       { name: "Fiery Chef Bamboo Cutting Board Set of 4", amazonId: "B0DK9KYBBQ", price: "$30", tag: "Kitchen" },
+      { name: "KITEISCAT Glass Salad Bowl Set with Acacia Base", amazonId: "B0BZ8C6JM5", price: "$40", tag: "Hosting" },
     ],
   },
 };
