@@ -92,6 +92,7 @@ const collections = {
       { name: "AUTOMET Fleece Zip Up Jacket", amazonId: "B0FDQGY6Y5", price: "$40", tag: "Cozy" },
       { name: "Project Cloud Leather Clogs", amazonId: "B0DHSXW6VT", price: "$90", tag: "Comfort" },
       { name: "Panadila Sherpa Fleece Pullover", amazonId: "B0FKT96JLJ", price: "$46", tag: "Cozy" },
+      { name: "ABYOVRT Backless Bodycon Maxi Dress", amazonId: "B0C5CKRWGR", price: "$40", tag: "Going Out" },
     ],
   },
   home: {
