@@ -67,6 +67,7 @@ const collections = {
     products: [
       { name: "Milumia Striped Oversized Cardigan", amazonId: "B0G2M9ZMPP", price: "$36", tag: "Cozy" },
       { name: "ViewJoy Retro Oval Sunglasses 2-Pack", amazonId: "B0F8HWPP54", price: "$17", tag: "Y2K" },
+      { name: "Ray-Ban Oval Sunglasses Black", amazonId: "B0DP3D8Q5P", price: "$128", tag: "Classic" },
       { name: "DLOODA Pleated Tennis Skirt with Pockets", amazonId: "B0DSSDPFY5", price: "$25", tag: "Athletic" },
       { name: "ABOCIW Athletic Tennis Dress", amazonId: "B0DDXWTR5K", price: "$40", tag: "Athletic" },
       { name: "Trendy Queen 2-Piece Lounge Set", amazonId: "B0DXBYDK56", price: "$35", tag: "Travel" },
