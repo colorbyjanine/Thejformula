@@ -15,6 +15,7 @@ const collections = {
     products: [
       { name: "K18 Leave-In Molecular Repair Mask", amazonId: "B0961ZS96M", price: "$29", tag: "Holy Grail" },
       { name: "Olaplex No. 3 Hair Perfector", amazonId: "B00SNM5US4", price: "$30", tag: "Repair" },
+      { name: "Olaplex No. 4D Dry Shampoo", amazonId: "B0BTWR89FV", price: "$30", tag: "Fresh" },
       { name: "Redken Acidic Bonding Leave-In", amazonId: "B08P67N41H", price: "$36", tag: "Strength" },
       { name: "UNITE 7SECONDS Detangler", amazonId: "B00UYBSZ52", price: "$35", tag: "Detangle" },
       { name: "Amika Un.Done Texture Spray", amazonId: "B07H3CZHLG", price: "$29", tag: "Texture" },
