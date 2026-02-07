@@ -104,6 +104,8 @@ const collections = {
       { name: "Mulberry Silk Pillowcases 2-Pack", amazonId: "B0D1VMFWYN", price: "$20", tag: "Beauty Sleep" },
       { name: "XXL Electric Warming Tray 32x18", amazonId: "B0D8SDKSQJ", price: "$70", tag: "Hosting" },
       { name: "Meridian Boucle Art Deco Bench", amazonId: "B0CK8MDV67", price: "$450", tag: "Decor" },
+      { name: "Saludi Smokey Sand Wine Glasses Set of 6", amazonId: "B0BS1M3NW2", price: "$70", tag: "Hosting" },
+      { name: "WORHE Travertine Match Holder", amazonId: "B0DYJS7G9X", price: "$22", tag: "Decor" },
     ],
   },
   kids: {
