@@ -63,6 +63,7 @@ const collections = {
     products: [
       { name: "Milumia Striped Oversized Cardigan", amazonId: "B0G2M9ZMPP", price: "$36", tag: "Cozy" },
       { name: "ViewJoy Retro Oval Sunglasses 2-Pack", amazonId: "B0F8HWPP54", price: "$17", tag: "Y2K" },
+      { name: "DLOODA Pleated Tennis Skirt with Pockets", amazonId: "B0DSSDPFY5", price: "$25", tag: "Athletic" },
     ],
   },
   home: {
