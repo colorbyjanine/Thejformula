@@ -28,6 +28,7 @@ const collections = {
     color: "from-[#9CAF88] to-[#7A9968]",
     products: [
       { name: "Salt & Stone Body Cream – Bergamot & Hinoki", amazonId: "B0FJVNQDFQ", price: "$42", tag: "Luxe" },
+      { name: "ELEMIS Frangipani Monoi Body Oil", amazonId: "B00L9XRVM2", price: "$49", tag: "Luxe" },
       { name: "Yoken Vitamin E Oil 16oz", amazonId: "B0DXBPBDH6", price: "$15", tag: "Skin" },
       { name: "Nutrafol Women Hair Growth", amazonId: "B00LU4CZP8", price: "$88", tag: "Hair Growth" },
       { name: "Vital Proteins Collagen", amazonId: "B00K6JUG4K", price: "$27", tag: "Daily" },
@@ -42,6 +43,8 @@ const collections = {
     color: "from-[#3D3935] to-[#5A534D]",
     products: [
       { name: "Dyson Airwrap Complete", amazonId: "B0B61XH5YT", price: "$599", tag: "Investment" },
+      { name: "BaBylissPRO Nano Titanium 1\" Curling Iron", amazonId: "B0047WX5B8", price: "$60", tag: "Pro" },
+      { name: "BaBylissPRO Nano Titanium 1.25\" Curling Iron", amazonId: "B0047WYSRI", price: "$65", tag: "Pro" },
       { name: "SHASH Boar Bristle Brush", amazonId: "B07YXC5C26", price: "$40", tag: "German Made" },
       { name: "Olivia Garden Round Brush", amazonId: "B000N8DMJK", price: "$25", tag: "Blowout" },
       { name: "Velvet Hangers 50pk", amazonId: "B00FXNAAW2", price: "$26", tag: "Closet" },
@@ -65,6 +68,7 @@ const collections = {
     products: [
       { name: "Fiery Chef Bamboo Cutting Board Set of 4", amazonId: "B0DK9KYBBQ", price: "$30", tag: "Kitchen" },
       { name: "KITEISCAT Glass Salad Bowl Set with Acacia Base", amazonId: "B0BZ8C6JM5", price: "$40", tag: "Hosting" },
+      { name: "Mulberry Silk Pillowcases 2-Pack", amazonId: "B0D1VMFWYN", price: "$20", tag: "Beauty Sleep" },
     ],
   },
 };
