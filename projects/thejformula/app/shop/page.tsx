@@ -54,6 +54,7 @@ const collections = {
       { name: "SHASH Boar Bristle Brush", amazonId: "B07YXC5C26", price: "$40", tag: "German Made" },
       { name: "Olivia Garden Round Brush", amazonId: "B000N8DMJK", price: "$25", tag: "Blowout" },
       { name: "Velvet Hangers 50pk", amazonId: "B00FXNAAW2", price: "$26", tag: "Closet" },
+      { name: "SUPERONE 99W Retractable Car Charger", amazonId: "B0D2C73TLR", price: "$25", tag: "Travel" },
     ],
   },
   fashion: {
