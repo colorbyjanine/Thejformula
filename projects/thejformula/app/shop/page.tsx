@@ -72,6 +72,7 @@ const collections = {
       { name: "ANRABESS Rib Knit Slim Fit Top", amazonId: "B0DDGXNQTY", price: "$25", tag: "Basic" },
       { name: "MICIFA Mesh Ballet Flats", amazonId: "B0D46DGX6M", price: "$50", tag: "Chic" },
       { name: "Lhamo Latso Satin Bow Flats", amazonId: "B0FR3PX9C7", price: "$46", tag: "Elegant" },
+      { name: "GTBINGGO Square Toe Mary Jane Flats", amazonId: "B0FNDQD8NR", price: "$40", tag: "Classic" },
     ],
   },
   home: {
