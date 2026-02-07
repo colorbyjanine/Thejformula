@@ -46,6 +46,15 @@ const collections = {
       { name: "Velvet Hangers 50pk", amazonId: "B00FXNAAW2", price: "$26", tag: "Closet" },
     ],
   },
+  fashion: {
+    title: "Style Picks",
+    subtitle: "Closet favorites",
+    emoji: "👗",
+    color: "from-[#C4A484] to-[#A68B6A]",
+    products: [
+      { name: "Milumia Striped Oversized Cardigan", amazonId: "B0G2M9ZMPP", price: "$36", tag: "Cozy" },
+    ],
+  },
 };
 
 type CollectionKey = keyof typeof collections;
