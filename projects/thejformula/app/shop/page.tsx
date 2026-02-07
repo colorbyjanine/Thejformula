@@ -71,6 +71,7 @@ const collections = {
       { name: "Ceoon Pilates Grip Socks 3-Pack", amazonId: "B0CZ384SXK", price: "$12", tag: "Pilates" },
       { name: "ANRABESS Rib Knit Slim Fit Top", amazonId: "B0DDGXNQTY", price: "$25", tag: "Basic" },
       { name: "MICIFA Mesh Ballet Flats", amazonId: "B0D46DGX6M", price: "$50", tag: "Chic" },
+      { name: "Lhamo Latso Satin Bow Flats", amazonId: "B0FR3PX9C7", price: "$46", tag: "Elegant" },
     ],
   },
   home: {
