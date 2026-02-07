@@ -84,6 +84,15 @@ const collections = {
       { name: "XXL Electric Warming Tray 32x18", amazonId: "B0D8SDKSQJ", price: "$70", tag: "Hosting" },
     ],
   },
+  kids: {
+    title: "Kids & Family",
+    subtitle: "Mom-approved picks",
+    emoji: "👶",
+    color: "from-[#E8A598] to-[#D4826A]",
+    products: [
+      { name: "ROBUD Wooden Play Kitchen Set", amazonId: "B0D97FQQDX", price: "$150", tag: "Gift" },
+    ],
+  },
 };
 
 type CollectionKey = keyof typeof collections;
