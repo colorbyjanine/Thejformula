@@ -85,6 +85,7 @@ const collections = {
       { name: "PRETTYGARDEN Strapless Maxi Dress", amazonId: "B0DKDXYVY2", price: "$45", tag: "Vacation" },
       { name: "Y2K Polka Dot Halter Maxi Dress", amazonId: "B0DYNZ7611", price: "$38", tag: "Vacation" },
       { name: "Xunger Cropped Bomber Jacket", amazonId: "B0FNBRCSQH", price: "$33", tag: "Streetwear" },
+      { name: "Amiblvowa Satin Lace Lounge Shorts", amazonId: "B0FP5CDV24", price: "$18", tag: "Loungewear" },
     ],
   },
   home: {
