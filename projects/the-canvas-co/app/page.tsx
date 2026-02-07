@@ -16,7 +16,7 @@ const businessTypes = [
     id: 'ecommerce', 
     title: 'E-Commerce',
     subtitle: 'Online Shops & Product Brands',
-    desc: 'Beautiful storefronts that convert browsers into buyers',
+    desc: 'Product catalogs with easy self-management (Premium tier)',
     image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
     color: 'from-amber-100 to-yellow-50'
   },
@@ -385,22 +385,22 @@ export default function Home() {
               {
                 name: 'Essential',
                 price: '$497',
-                desc: 'Perfect for personal brands and simple businesses',
-                features: ['Up to 5 pages', 'Mobile responsive', 'Contact form', 'Basic SEO', '7-day delivery'],
+                desc: 'Perfect for landing pages & simple sites',
+                features: ['Up to 5 pages', 'Mobile responsive', 'Contact form', 'Basic SEO', '7-day delivery', 'One-time build'],
                 popular: false
               },
               {
                 name: 'Professional',
                 price: '$997',
-                desc: 'For growing brands that need more functionality',
-                features: ['Up to 10 pages', 'Online booking', 'E-commerce ready', 'Blog integration', 'Advanced SEO', '5-day delivery'],
+                desc: 'Full websites with easy self-editing',
+                features: ['Up to 10 pages', 'Basic CMS (edit text & photos)', 'Online booking', 'Blog integration', 'Advanced SEO', '5-day delivery'],
                 popular: true
               },
               {
                 name: 'Premium',
                 price: '$1,997',
-                desc: 'Complete solution with custom features & support',
-                features: ['Unlimited pages', 'All Pro features', 'Custom functionality', 'Strategy session', '30-day support', 'Priority delivery'],
+                desc: 'Product catalogs & full content management',
+                features: ['Unlimited pages', 'Full CMS with product catalog', 'Inventory management', 'All Pro features', 'Strategy session', '30-day support'],
                 popular: false
               }
             ].map((tier) => (
@@ -444,6 +444,19 @@ export default function Home() {
                 </Link>
               </div>
             ))}
+          </div>
+          
+          {/* Maintenance Add-on */}
+          <div className="mt-12 text-center">
+            <div className="inline-block bg-[#F5F1EB] border border-[#E8DDD4] rounded-2xl px-8 py-6">
+              <p className="text-[#6B635A] text-sm uppercase tracking-wider mb-2">Optional Add-on</p>
+              <p className="text-2xl font-light text-[#1a1814]">
+                <span className="font-semibold">+$150</span>/month
+              </p>
+              <p className="text-[#6B635A] mt-2">
+                Maintenance Package — We handle all updates for you
+              </p>
+            </div>
           </div>
         </div>
       </section>
