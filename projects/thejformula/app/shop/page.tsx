@@ -18,6 +18,7 @@ const collections = {
       { name: "Olaplex No. 4D Dry Shampoo", amazonId: "B0BTWR89FV", price: "$30", tag: "Fresh" },
       { name: "Briogeo Scalp Revival Dry Shampoo", amazonId: "B06XNPXM53", price: "$26", tag: "Scalp" },
       { name: "Briogeo Don't Despair Repair Shampoo", amazonId: "B07JW5YG8H", price: "$69", tag: "Repair" },
+      { name: "Briogeo Destined For Density Shampoo + Conditioner Set", amazonId: "B0DLCC25XZ", price: "$54", tag: "Thickening" },
       { name: "Redken Acidic Bonding Leave-In", amazonId: "B08P67N41H", price: "$36", tag: "Strength" },
       { name: "UNITE 7SECONDS Detangler", amazonId: "B00UYBSZ52", price: "$35", tag: "Detangle" },
       { name: "Amika Un.Done Texture Spray", amazonId: "B07H3CZHLG", price: "$29", tag: "Texture" },
