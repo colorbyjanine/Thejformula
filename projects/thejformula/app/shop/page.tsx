@@ -68,6 +68,7 @@ const collections = {
       { name: "ABOCIW Athletic Tennis Dress", amazonId: "B0DDXWTR5K", price: "$40", tag: "Athletic" },
       { name: "Trendy Queen 2-Piece Lounge Set", amazonId: "B0DXBYDK56", price: "$35", tag: "Travel" },
       { name: "Ceoon Pilates Grip Socks 3-Pack", amazonId: "B0CZ384SXK", price: "$12", tag: "Pilates" },
+      { name: "ANRABESS Rib Knit Slim Fit Top", amazonId: "B0DDGXNQTY", price: "$25", tag: "Basic" },
     ],
   },
   home: {
