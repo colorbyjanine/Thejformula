@@ -70,6 +70,7 @@ const collections = {
       { name: "Trendy Queen 2-Piece Lounge Set", amazonId: "B0DXBYDK56", price: "$35", tag: "Travel" },
       { name: "Ceoon Pilates Grip Socks 3-Pack", amazonId: "B0CZ384SXK", price: "$12", tag: "Pilates" },
       { name: "ANRABESS Rib Knit Slim Fit Top", amazonId: "B0DDGXNQTY", price: "$25", tag: "Basic" },
+      { name: "MICIFA Mesh Ballet Flats", amazonId: "B0D46DGX6M", price: "$50", tag: "Chic" },
     ],
   },
   home: {
