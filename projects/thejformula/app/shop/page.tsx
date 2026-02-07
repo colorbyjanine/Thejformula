@@ -56,6 +56,7 @@ const collections = {
       { name: "Velvet Hangers 50pk", amazonId: "B00FXNAAW2", price: "$26", tag: "Closet" },
       { name: "SUPERONE 99W Retractable Car Charger", amazonId: "B0D2C73TLR", price: "$25", tag: "Travel" },
       { name: "iRestore Pro Laser Hair Growth Cap", amazonId: "B07M5X4D3P", price: "$799", tag: "Investment" },
+      { name: "Laser Therapy Hair Growth Comb", amazonId: "B0DWKD697N", price: "$50", tag: "Hair Growth" },
     ],
   },
   fashion: {
