@@ -77,6 +77,7 @@ const collections = {
       { name: "Veja Volley Canvas Sneakers", amazonId: "B0DVVC8BSQ", price: "$115", tag: "Sustainable" },
       { name: "Veja Campo Bold Sneakers", amazonId: "B082X7X2RD", price: "$175", tag: "Sustainable" },
       { name: "Veja Campo Sneakers White/Khaki", amazonId: "B08JZ4YZHF", price: "$165", tag: "Sustainable" },
+      { name: "Adidas Cozy Holiday Sweatshirt", amazonId: "B0DL2TMWB1", price: "$55", tag: "Cozy" },
     ],
   },
   home: {
