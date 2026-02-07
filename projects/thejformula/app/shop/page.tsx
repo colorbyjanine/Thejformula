@@ -75,6 +75,7 @@ const collections = {
       { name: "GTBINGGO Square Toe Mary Jane Flats", amazonId: "B0FNDQD8NR", price: "$40", tag: "Classic" },
       { name: "THESHY Square Toe Slide Sandals", amazonId: "B0DBTN139J", price: "$35", tag: "Summer" },
       { name: "Veja Volley Canvas Sneakers", amazonId: "B0DVVC8BSQ", price: "$115", tag: "Sustainable" },
+      { name: "Veja Campo Bold Sneakers", amazonId: "B082X7X2RD", price: "$175", tag: "Sustainable" },
     ],
   },
   home: {
