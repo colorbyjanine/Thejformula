@@ -90,6 +90,7 @@ const collections = {
       { name: "Xunger Cropped Bomber Jacket", amazonId: "B0FNBRCSQH", price: "$33", tag: "Streetwear" },
       { name: "Amiblvowa Satin Lace Lounge Shorts", amazonId: "B0FP5CDV24", price: "$18", tag: "Loungewear" },
       { name: "AUTOMET Fleece Zip Up Jacket", amazonId: "B0FDQGY6Y5", price: "$40", tag: "Cozy" },
+      { name: "Project Cloud Leather Clogs", amazonId: "B0DHSXW6VT", price: "$90", tag: "Comfort" },
     ],
   },
   home: {
