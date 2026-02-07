@@ -78,6 +78,7 @@ const collections = {
       { name: "Veja Campo Bold Sneakers", amazonId: "B082X7X2RD", price: "$175", tag: "Sustainable" },
       { name: "Veja Campo Sneakers White/Khaki", amazonId: "B08JZ4YZHF", price: "$165", tag: "Sustainable" },
       { name: "Adidas Cozy Holiday Sweatshirt", amazonId: "B0DL2TMWB1", price: "$55", tag: "Cozy" },
+      { name: "SweatyRocks Asymmetrical Mock Neck Top", amazonId: "B0FK4NZM2T", price: "$26", tag: "Going Out" },
     ],
   },
   home: {
