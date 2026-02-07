@@ -57,6 +57,15 @@ const collections = {
       { name: "ViewJoy Retro Oval Sunglasses 2-Pack", amazonId: "B0F8HWPP54", price: "$17", tag: "Y2K" },
     ],
   },
+  home: {
+    title: "Home & Kitchen",
+    subtitle: "Elevated everyday essentials",
+    emoji: "🏠",
+    color: "from-[#8B7355] to-[#6B5344]",
+    products: [
+      { name: "Fiery Chef Bamboo Cutting Board Set of 4", amazonId: "B0DK9KYBBQ", price: "$30", tag: "Kitchen" },
+    ],
+  },
 };
 
 type CollectionKey = keyof typeof collections;
