@@ -101,6 +101,7 @@ const collections = {
       { name: "KITEISCAT Glass Salad Bowl Set with Acacia Base", amazonId: "B0BZ8C6JM5", price: "$40", tag: "Hosting" },
       { name: "Mulberry Silk Pillowcases 2-Pack", amazonId: "B0D1VMFWYN", price: "$20", tag: "Beauty Sleep" },
       { name: "XXL Electric Warming Tray 32x18", amazonId: "B0D8SDKSQJ", price: "$70", tag: "Hosting" },
+      { name: "Meridian Boucle Art Deco Bench", amazonId: "B0CK8MDV67", price: "$450", tag: "Decor" },
     ],
   },
   kids: {
