@@ -35,6 +35,7 @@ const collections = {
       { name: "Salt & Stone Body Cream – Bergamot & Hinoki", amazonId: "B0FJVNQDFQ", price: "$42", tag: "Luxe" },
       { name: "ELEMIS Frangipani Monoi Body Oil", amazonId: "B00L9XRVM2", price: "$49", tag: "Luxe" },
       { name: "Yoken Vitamin E Oil 16oz", amazonId: "B0DXBPBDH6", price: "$15", tag: "Skin" },
+      { name: "Medicube Collagen Wrapping Mask", amazonId: "B0BRMYHMS5", price: "$19", tag: "K-Beauty" },
       { name: "Nutrafol Women Hair Growth", amazonId: "B00LU4CZP8", price: "$88", tag: "Hair Growth" },
       { name: "Vital Proteins Collagen", amazonId: "B00K6JUG4K", price: "$27", tag: "Daily" },
       { name: "Thorne Biotin 8mg", amazonId: "B0797CG5R8", price: "$28", tag: "Hair & Nails" },
