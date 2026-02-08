@@ -213,13 +213,23 @@ export default function Shop() {
                   className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all duration-200"
                 >
                   {/* Product Image */}
-                  <div className="aspect-square bg-gradient-to-br from-[#E8DDD4] to-[#D8CEC5] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-[#E8DDD4] to-[#D8CEC5] rounded-lg mb-3 flex items-center justify-center overflow-hidden relative">
                     <img 
-                      src={(product as Product).image || `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${product.amazonId}&Format=_SL250_&ID=AsinImage&tag=${AFFILIATE_TAG}`}
+                      src={(product as Product).image || `https://m.media-amazon.com/images/P/${product.amazonId}.01._SCLZZZZZZZ_SX300_.jpg`}
                       alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
                       loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.nextElementSibling?.classList.remove('hidden');
+                      }}
                     />
+                    <div className="hidden absolute inset-0 flex items-center justify-center">
+                      <span className="text-4xl font-[family-name:var(--font-cormorant)] text-[#9A9086]">
+                        {product.name.charAt(0)}
+                      </span>
+                    </div>
                   </div>
                   
                   {/* Tag */}
@@ -273,13 +283,23 @@ export default function Shop() {
                     rel="noopener noreferrer"
                     className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all"
                   >
-                    <div className="aspect-square bg-gradient-to-br from-[#E8DDD4] to-[#D8CEC5] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-[#E8DDD4] to-[#D8CEC5] rounded-lg mb-3 flex items-center justify-center overflow-hidden relative">
                       <img 
-                        src={(product as Product).image || `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${product.amazonId}&Format=_SL250_&ID=AsinImage&tag=${AFFILIATE_TAG}`}
+                        src={(product as Product).image || `https://m.media-amazon.com/images/P/${product.amazonId}.01._SCLZZZZZZZ_SX300_.jpg`}
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
                         loading="lazy"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
                       />
+                      <div className="hidden absolute inset-0 flex items-center justify-center">
+                        <span className="text-4xl font-[family-name:var(--font-cormorant)] text-[#9A9086]">
+                          {product.name.charAt(0)}
+                        </span>
+                      </div>
                     </div>
                     <span className="inline-block text-[10px] bg-[#E8967A]/20 text-[#E8967A] px-2 py-0.5 rounded-full mb-2">
                       {product.tag}
