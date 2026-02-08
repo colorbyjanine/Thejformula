@@ -212,10 +212,14 @@ export default function Shop() {
                   rel="noopener noreferrer"
                   className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all duration-200"
                 >
-                  {/* Product Image - Styled Placeholder */}
-                  <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex flex-col items-center justify-center overflow-hidden group-hover:from-[#EDE6DE] group-hover:to-[#DDD5CC] transition-all">
-                    <span className="text-5xl mb-2 opacity-60">{collections[activeCategory].emoji}</span>
-                    <span className="text-xs text-[#9A9086] font-medium tracking-wide">TAP TO VIEW</span>
+                  {/* Product Image */}
+                  <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src={`/api/amazon-image?asin=${product.amazonId}`}
+                      alt={product.name}
+                      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
+                      loading="lazy"
+                    />
                   </div>
                   
                   {/* Tag */}
@@ -269,9 +273,13 @@ export default function Shop() {
                     rel="noopener noreferrer"
                     className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all"
                   >
-                    <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex flex-col items-center justify-center overflow-hidden group-hover:from-[#EDE6DE] group-hover:to-[#DDD5CC] transition-all">
-                      <span className="text-4xl mb-1 opacity-60">✨</span>
-                      <span className="text-[10px] text-[#9A9086] font-medium tracking-wide">TAP TO VIEW</span>
+                    <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                      <img 
+                        src={`/api/amazon-image?asin=${product.amazonId}`}
+                        alt={product.name}
+                        className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
+                        loading="lazy"
+                      />
                     </div>
                     <span className="inline-block text-[10px] bg-[#E8967A]/20 text-[#E8967A] px-2 py-0.5 rounded-full mb-2">
                       {product.tag}
