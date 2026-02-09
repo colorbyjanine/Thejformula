@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// Webhook URL for Janine HQ (appointment notifications)
-const HQ_WEBHOOK = "https://janine-hq.vercel.app/api/appointments";
+import { addRequest, isDbConfigured } from "@/lib/db";
 
 export async function POST(request: NextRequest) {
   try {
@@ -27,32 +25,23 @@ export async function POST(request: NextRequest) {
       reply = "Hey there! 👋 Thanks for reaching out. Are you looking to book an appointment, or do you have questions I can help with?";
     }
 
-    // Send to Janine HQ as appointment request (if it looks like a booking inquiry)
-    const isAppointmentRelated = lowerMessage.includes("book") || 
-                                  lowerMessage.includes("appointment") || 
-                                  lowerMessage.includes("available") ||
-                                  lowerMessage.includes("consultation") ||
-                                  lowerMessage.includes("schedule") ||
-                                  userContact; // If they provided contact info, it's likely serious
-
-    if (isAppointmentRelated || userContact) {
+    // Save to persistent database if configured
+    if (isDbConfigured()) {
       try {
-        await fetch(HQ_WEBHOOK, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: userName || "Website Visitor",
-            email: userContact || "",
-            message: message,
-            source: "thejformula.com/chat",
-            timestamp: timestamp || new Date().toISOString()
-          })
+        const savedRequest = await addRequest({
+          type: 'chat',
+          name: userName || 'Website Visitor',
+          email: userContact || undefined,
+          message: message,
+          source: 'thejformula.com/chat',
         });
-        console.log("[Chat] Sent appointment request to HQ");
-      } catch (webhookError) {
-        console.error("[Chat] Failed to notify HQ:", webhookError);
-        // Don't fail the user's request if webhook fails
+        console.log('[Chat] Saved to database:', savedRequest.id);
+      } catch (dbError) {
+        console.error('[Chat] Database save failed:', dbError);
+        // Don't fail the user's request if DB fails
       }
+    } else {
+      console.log('[Chat] Database not configured - message not persisted');
     }
 
     return NextResponse.json({ 
@@ -72,6 +61,7 @@ export async function POST(request: NextRequest) {
 export async function GET() {
   return NextResponse.json({ 
     status: "Chat API active",
+    dbConfigured: isDbConfigured(),
     message: "POST messages to this endpoint" 
   });
 }
