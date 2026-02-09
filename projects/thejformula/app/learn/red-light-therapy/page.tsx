@@ -1,6 +1,5 @@
 import ShareButton from "@/components/ShareButton";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function RedLightTherapy() {
   return (
@@ -25,13 +24,12 @@ export default function RedLightTherapy() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative aspect-[16/9] mb-12 overflow-hidden">
-            <Image
-              src="/article-redlight.jpg"
-              alt="Red light therapy for hair growth"
-              fill
-              className="object-cover"
-            />
+          <div className="relative aspect-[16/9] mb-12 overflow-hidden rounded-lg bg-gradient-to-br from-[#2D1B1B] to-[#1A0F0F] flex items-center justify-center">
+            <div className="text-center p-8">
+              <div className="text-6xl mb-4">🔴</div>
+              <p className="text-[#E8967A] text-lg font-medium">Red Light Therapy</p>
+              <p className="text-[#9A9086] text-sm mt-2">Low-Level Laser Treatment for Hair Growth</p>
+            </div>
           </div>
 
           {/* Content */}
