@@ -61,6 +61,7 @@ Janine wants to build something huge to **help kids in need**. The J Formula bra
 - Warm/organic over cool/moody aesthetic
 - Free options when available (practical about spending)
 - Being surprised with progress while she sleeps
+- **Amazon links → add to shop immediately** (no asking, just do it)
 
 ### What Janine Doesn't Need
 - Don't share credentials through chat (security)
