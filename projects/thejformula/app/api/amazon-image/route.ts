@@ -5,7 +5,13 @@ const knownImages: Record<string, string> = {
   // Olaplex products
   'B00SNM5US4': 'https://m.media-amazon.com/images/I/61dPlqQnWzL._SL1500_.jpg', // Olaplex No. 3
   'B0BTWR89FV': 'https://m.media-amazon.com/images/I/61NfL4qU2eL._SL1500_.jpg', // Olaplex No. 4D
-  // Add more as needed
+  // New products
+  'B0CF76VGD5': 'https://m.media-amazon.com/images/I/71oJLj0g9kL._SL1500_.jpg', // Kitsch Heatless Curler
+  'B09V7Z4TJG': 'https://m.media-amazon.com/images/I/61jJQAjPDqL._SL1500_.jpg', // Medicube Pore Pads
+  'B0G7NRYFJS': 'https://m.media-amazon.com/images/I/61TYnpqBZ-L._SL1500_.jpg', // LANEIGE Lip
+  'B07H3GBSC3': 'https://m.media-amazon.com/images/I/71Xnj0RYFFL._SL1500_.jpg', // Amika Soulfood
+  'B0DHLCYJMF': 'https://m.media-amazon.com/images/I/71CZO4bLgpL._AC_SL1500_.jpg', // Moe's Table
+  'B09CLRY9F1': 'https://m.media-amazon.com/images/I/81tPJ8B0J5L._AC_SL1500_.jpg', // Loloi Rug
 };
 
 export async function GET(request: NextRequest) {

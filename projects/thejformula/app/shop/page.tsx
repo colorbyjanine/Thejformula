@@ -32,6 +32,8 @@ const collections = {
       { name: "UNITE 7SECONDS Detangler", amazonId: "B00UYBSZ52", price: "$35", tag: "Detangle" },
       { name: "Amika Un.Done Texture Spray", amazonId: "B07H3CZHLG", price: "$29", tag: "Texture" },
       { name: "Redken One United 25-in-1", amazonId: "B013IL9XC8", price: "$31", tag: "Multi-Use" },
+      { name: "Amika Soulfood Nourishing Mask", amazonId: "B07H3GBSC3", price: "$28", tag: "Mask" },
+      { name: "Kitsch XL Heatless Curler Set", amazonId: "B0CF76VGD5", price: "$22", tag: "Heatless" },
     ],
   },
   wellness: {
@@ -48,6 +50,8 @@ const collections = {
       { name: "Vital Proteins Collagen", amazonId: "B00K6JUG4K", price: "$27", tag: "Daily" },
       { name: "Thorne Biotin 8mg", amazonId: "B0797CG5R8", price: "$28", tag: "Hair & Nails" },
       { name: "Thorne Vitamin D + K2", amazonId: "B0038NF8MG", price: "$34", tag: "Essential" },
+      { name: "Medicube Zero Pore Pads", amazonId: "B09V7Z4TJG", price: "$23", tag: "K-Beauty" },
+      { name: "LANEIGE Lip Sleeping Mask", amazonId: "B0G7NRYFJS", price: "$24", tag: "Lip Care" },
     ],
   },
   tools: {
@@ -117,6 +121,8 @@ const collections = {
       { name: "Saludi Smokey Sand Wine Glasses Set of 6", amazonId: "B0BS1M3NW2", price: "$70", tag: "Hosting" },
       { name: "WORHE Travertine Match Holder", amazonId: "B0DYJS7G9X", price: "$22", tag: "Decor" },
       { name: "Alice Lane Bubble Candle Dish", amazonId: "B0FDXY4XS3", price: "$35", tag: "Decor" },
+      { name: "Moe's Rosa Marble Accent Table", amazonId: "B0DHLCYJMF", price: "$899", tag: "Furniture" },
+      { name: "Loloi Margot Runner Rug", amazonId: "B09CLRY9F1", price: "$76", tag: "Rug" },
     ],
   },
   kids: {
