@@ -13,6 +13,45 @@ type Product = {
   image?: string;
 };
 
+// Product image component with error handling
+function ProductImage({ asin, name }: { asin: string; name: string }) {
+  const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  if (hasError) {
+    // Show nice placeholder with product initial
+    return (
+      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8]">
+        <div className="text-center">
+          <span className="text-4xl text-[#C4A484]">✨</span>
+          <p className="text-xs text-[#9A9086] mt-1 px-2 line-clamp-2">{name.split(' ').slice(0, 2).join(' ')}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {isLoading && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-6 h-6 border-2 border-[#E8967A] border-t-transparent rounded-full animate-spin" />
+        </div>
+      )}
+      <img 
+        src={`/api/amazon-image?asin=${asin}`}
+        alt={name}
+        className={`w-full h-full object-contain p-2 group-hover:scale-105 transition-transform ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+        loading="lazy"
+        onLoad={() => setIsLoading(false)}
+        onError={() => {
+          setHasError(true);
+          setIsLoading(false);
+        }}
+      />
+    </>
+  );
+}
+
 // VERIFIED products only - Janine approved
 const collections = {
   hair: {
@@ -234,13 +273,8 @@ export default function Shop() {
                   className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all duration-200"
                 >
                   {/* Product Image */}
-                  <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
-                    <img 
-                      src={`/api/amazon-image?asin=${product.amazonId}`}
-                      alt={product.name}
-                      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
-                      loading="lazy"
-                    />
+                  <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden relative">
+                    <ProductImage asin={product.amazonId} name={product.name} />
                   </div>
                   
                   {/* Tag */}
@@ -294,13 +328,8 @@ export default function Shop() {
                     rel="noopener noreferrer"
                     className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all"
                   >
-                    <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden">
-                      <img 
-                        src={`/api/amazon-image?asin=${product.amazonId}`}
-                        alt={product.name}
-                        className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform"
-                        loading="lazy"
-                      />
+                    <div className="aspect-square bg-gradient-to-br from-[#F5F0EB] to-[#E8E0D8] rounded-lg mb-3 flex items-center justify-center overflow-hidden relative">
+                      <ProductImage asin={product.amazonId} name={product.name} />
                     </div>
                     <span className="inline-block text-[10px] bg-[#E8967A]/20 text-[#E8967A] px-2 py-0.5 rounded-full mb-2">
                       {product.tag}
