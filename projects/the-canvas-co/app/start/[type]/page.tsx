@@ -662,9 +662,32 @@ export default function TypeQuestionnaire() {
     });
   };
 
-  const handleSubmit = () => {
-    console.log('Form submitted:', { type, answers });
-    setSubmitted(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type,
+          answers,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert('Something went wrong. Please try again or contact us directly.');
+      }
+    } catch (error) {
+      console.error('Submit error:', error);
+      alert('Something went wrong. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -830,12 +853,15 @@ export default function TypeQuestionnaire() {
 
           <button
             onClick={isLastSection ? handleSubmit : () => setCurrentSection(prev => prev + 1)}
-            className="group flex items-center gap-2 bg-[#1a1814] text-white px-8 py-4 rounded-full font-medium hover:bg-[#6B635A] transition-all"
+            disabled={isSubmitting}
+            className="group flex items-center gap-2 bg-[#1a1814] text-white px-8 py-4 rounded-full font-medium hover:bg-[#6B635A] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isLastSection ? 'Submit' : 'Continue'}
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLastSection ? "M5 13l4 4L19 7" : "M17 8l4 4m0 0l-4 4m4-4H3"} />
-            </svg>
+            {isSubmitting ? 'Sending...' : isLastSection ? 'Submit' : 'Continue'}
+            {!isSubmitting && (
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLastSection ? "M5 13l4 4L19 7" : "M17 8l4 4m0 0l-4 4m4-4H3"} />
+              </svg>
+            )}
           </button>
         </div>
       </main>
