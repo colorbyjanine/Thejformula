@@ -1,17 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Known good image URLs for products that fail scraping
+// Using ssl-images-amazon P format which is more stable
 const knownImages: Record<string, string> = {
   // Olaplex products
-  'B00SNM5US4': 'https://m.media-amazon.com/images/I/61dPlqQnWzL._SL1500_.jpg', // Olaplex No. 3
-  'B0BTWR89FV': 'https://m.media-amazon.com/images/I/61NfL4qU2eL._SL1500_.jpg', // Olaplex No. 4D
-  // New products
-  'B0CF76VGD5': 'https://m.media-amazon.com/images/I/71oJLj0g9kL._SL1500_.jpg', // Kitsch Heatless Curler
-  'B09V7Z4TJG': 'https://m.media-amazon.com/images/I/61jJQAjPDqL._SL1500_.jpg', // Medicube Pore Pads
-  'B0G7NRYFJS': 'https://m.media-amazon.com/images/I/61TYnpqBZ-L._SL1500_.jpg', // LANEIGE Lip
-  'B07H3GBSC3': 'https://m.media-amazon.com/images/I/71Xnj0RYFFL._SL1500_.jpg', // Amika Soulfood
-  'B0DHLCYJMF': 'https://m.media-amazon.com/images/I/71CZO4bLgpL._AC_SL1500_.jpg', // Moe's Table
-  'B09CLRY9F1': 'https://m.media-amazon.com/images/I/81tPJ8B0J5L._AC_SL1500_.jpg', // Loloi Rug
+  'B00SNM5US4': 'https://images-na.ssl-images-amazon.com/images/P/B00SNM5US4.01._SCLZZZZZZZ_.jpg', // Olaplex No. 3
+  'B0BTWR89FV': 'https://images-na.ssl-images-amazon.com/images/P/B0BTWR89FV.01._SCLZZZZZZZ_.jpg', // Olaplex No. 4D
+  // New products - using stable P format URLs
+  'B0CF76VGD5': 'https://images-na.ssl-images-amazon.com/images/P/B0CF76VGD5.01._SCLZZZZZZZ_.jpg', // Kitsch Heatless Curler
+  'B09V7Z4TJG': 'https://images-na.ssl-images-amazon.com/images/P/B09V7Z4TJG.01._SCLZZZZZZZ_.jpg', // Medicube Pore Pads
+  'B0G7NRYFJS': 'https://images-na.ssl-images-amazon.com/images/P/B0G7NRYFJS.01._SCLZZZZZZZ_.jpg', // LANEIGE Lip
+  'B07H3GBSC3': 'https://images-na.ssl-images-amazon.com/images/P/B07H3GBSC3.01._SCLZZZZZZZ_.jpg', // Amika Soulfood
+  'B0DHLCYJMF': 'https://images-na.ssl-images-amazon.com/images/P/B0DHLCYJMF.01._SCLZZZZZZZ_.jpg', // Moe's Table
+  'B09CLRY9F1': 'https://images-na.ssl-images-amazon.com/images/P/B09CLRY9F1.01._SCLZZZZZZZ_.jpg', // Loloi Rug
 };
 
 export async function GET(request: NextRequest) {
@@ -26,8 +27,8 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(knownImages[asin]);
   }
 
-  // Try direct Amazon image URL pattern (works for many products)
-  const directUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX300_.jpg`;
+  // Try direct Amazon image URL pattern (P format is more stable)
+  const directUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`;
   
   try {
     // Test if direct URL works
@@ -81,13 +82,13 @@ export async function GET(request: NextRequest) {
       return NextResponse.redirect(imageUrl);
     }
 
-    // Last fallback - try m.media-amazon.com pattern
-    const fallbackUrl = `https://m.media-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX300_.jpg`;
+    // Last fallback - use stable P format
+    const fallbackUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`;
     return NextResponse.redirect(fallbackUrl);
     
   } catch (error) {
     console.error('Error fetching Amazon image:', error);
-    // Return a nicer placeholder
-    return NextResponse.redirect(`https://m.media-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX300_.jpg`);
+    // Return stable P format as fallback
+    return NextResponse.redirect(`https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`);
   }
 }
