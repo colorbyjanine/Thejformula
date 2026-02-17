@@ -1,5 +1,17 @@
 {
-  "outlines": [],
+  "outlines": [
+    {
+      "id": "1708199400000",
+      "name": "Civil Procedure Master Outline - Weeks 1-6.docx",
+      "subject": "Civil Procedure",
+      "week": "2026-02-17",
+      "uploadDate": "2026-02-17T19:00:00.000Z",
+      "size": 45000,
+      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "path": "/uploads/civil-procedure-master-outline-weeks1-6.docx",
+      "notes": "Jurisdiction, Venue, Service & Pleadings - Prof. Semeraro, Thomas Jefferson School of Law"
+    }
+  ],
   "subjects": [
     "Torts",
     "Contracts",
