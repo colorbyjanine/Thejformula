@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // ============================================================================
 // COMPREHENSIVE BAR PREP CONTENT
@@ -2314,12 +2314,93 @@ CONCLUSION: Self-defense requires an objectively reasonable belief in the necess
   }
 ];
 
+interface Outline {
+  id: string;
+  name: string;
+  subject: string;
+  week: string;
+  uploadDate: string;
+  size: number;
+  type: string;
+  path: string;
+  content?: string;
+  notes?: string;
+}
+
 export default function BarPrepApp() {
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
   const [selectedCase, setSelectedCase] = useState<CaseInfo | null>(null);
+  const [activeTab, setActiveTab] = useState<'study' | 'outlines'>('study');
+  const [outlines, setOutlines] = useState<Outline[]>([]);
+  const [outlineSubjects, setOutlineSubjects] = useState<string[]>([]);
+  const [uploading, setUploading] = useState(false);
+  const [selectedOutlineSubject, setSelectedOutlineSubject] = useState('All');
 
   const daysUntil = Math.ceil((new Date('2026-07-28').getTime() - Date.now()) / 86400000);
+
+  // Fetch outlines
+  const fetchOutlines = () => {
+    fetch('/api/outlines')
+      .then(res => res.json())
+      .then(data => {
+        if (data.outlines) setOutlines(data.outlines);
+        if (data.subjects) setOutlineSubjects(data.subjects);
+      })
+      .catch(() => {});
+  };
+
+  useEffect(() => {
+    fetchOutlines();
+  }, []);
+
+  const handleOutlineUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('subject', selectedOutlineSubject === 'All' ? 'Other' : selectedOutlineSubject);
+    formData.append('week', new Date().toISOString().split('T')[0]);
+
+    try {
+      const response = await fetch('/api/outlines', {
+        method: 'POST',
+        body: formData,
+      });
+      if (response.ok) {
+        fetchOutlines();
+      }
+    } catch (error) {
+      console.error('Upload failed:', error);
+    } finally {
+      setUploading(false);
+      e.target.value = '';
+    }
+  };
+
+  const handleDeleteOutline = async (id: string) => {
+    if (!confirm('Delete this outline?')) return;
+    try {
+      const response = await fetch('/api/outlines', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id }),
+      });
+      if (response.ok) {
+        fetchOutlines();
+      }
+    } catch (error) {
+      console.error('Delete failed:', error);
+    }
+  };
+
+  const formatFileSize = (bytes: number) => {
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+  };
 
   // Case Essay Modal
   if (selectedCase) {
@@ -2499,10 +2580,126 @@ export default function BarPrepApp() {
         <div className="max-w-lg mx-auto">
           <p className="text-xs tracking-[0.2em] text-white/40 uppercase mb-1">California Bar 2026</p>
           <h1 className="text-2xl font-semibold tracking-tight">Bar Prep</h1>
+          
+          {/* Tab Navigation */}
+          <div className="flex gap-2 mt-4">
+            <button
+              onClick={() => setActiveTab('study')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                activeTab === 'study' 
+                  ? 'bg-white/10 text-white' 
+                  : 'text-white/40 hover:text-white/60'
+              }`}
+            >
+              📚 Study
+            </button>
+            <button
+              onClick={() => setActiveTab('outlines')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                activeTab === 'outlines' 
+                  ? 'bg-white/10 text-white' 
+                  : 'text-white/40 hover:text-white/60'
+              }`}
+            >
+              📝 My Outlines {outlines.length > 0 && <span className="ml-1 text-xs">({outlines.length})</span>}
+            </button>
+          </div>
         </div>
       </header>
 
       <main className="max-w-lg mx-auto px-5 pb-12">
+        {/* Outlines Tab */}
+        {activeTab === 'outlines' && (
+          <div className="space-y-6">
+            {/* Upload Section */}
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5">
+              <p className="text-xs tracking-[0.15em] text-purple-400 uppercase font-medium mb-4">📤 Upload Outline</p>
+              
+              <div className="mb-4">
+                <label className="text-xs text-white/40 mb-2 block">Subject</label>
+                <select
+                  value={selectedOutlineSubject}
+                  onChange={(e) => setSelectedOutlineSubject(e.target.value)}
+                  className="w-full p-3 rounded-xl bg-white/[0.05] border border-white/[0.1] text-sm text-white"
+                >
+                  <option value="All">Select Subject...</option>
+                  {outlineSubjects.map(s => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+
+              <label className="flex flex-col items-center justify-center p-8 border-2 border-dashed border-white/10 rounded-xl cursor-pointer hover:border-purple-500/50 hover:bg-purple-500/5 transition-all">
+                <input
+                  type="file"
+                  onChange={handleOutlineUpload}
+                  className="hidden"
+                  accept=".pdf,.doc,.docx,.txt,.md,.pages"
+                  disabled={uploading}
+                />
+                {uploading ? (
+                  <span className="text-sm text-white/50">Uploading...</span>
+                ) : (
+                  <>
+                    <span className="text-4xl mb-3">📎</span>
+                    <span className="text-sm text-white/80 font-medium">Tap to upload</span>
+                    <span className="text-xs text-white/40 mt-1">PDF, Word, or Text files</span>
+                  </>
+                )}
+              </label>
+            </div>
+
+            {/* Outlines List */}
+            {outlines.length === 0 ? (
+              <div className="text-center py-12">
+                <span className="text-5xl mb-4 block">📚</span>
+                <p className="text-lg font-medium text-white/80 mb-2">No outlines yet</p>
+                <p className="text-sm text-white/40">Upload your first master outline to get started!</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {outlineSubjects.filter(s => outlines.some(o => o.subject === s)).map(subject => (
+                  <div key={subject}>
+                    <p className="text-xs tracking-[0.15em] text-white/40 uppercase font-medium mb-3">{subject}</p>
+                    <div className="space-y-2">
+                      {outlines.filter(o => o.subject === subject).map(outline => (
+                        <div key={outline.id} className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-4 flex items-center gap-4 group">
+                          <span className="text-2xl">
+                            {outline.type.includes('pdf') ? '📕' : 
+                             outline.type.includes('word') || outline.type.includes('doc') ? '📘' : '📄'}
+                          </span>
+                          <div className="flex-1 min-w-0">
+                            <a 
+                              href={outline.path} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-sm font-medium text-white/90 hover:text-purple-400 truncate block transition"
+                            >
+                              {outline.name}
+                            </a>
+                            <p className="text-xs text-white/40">
+                              {formatFileSize(outline.size)} • {new Date(outline.uploadDate).toLocaleDateString()}
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => handleDeleteOutline(outline.id)}
+                            className="p-2 text-red-400 opacity-0 group-hover:opacity-100 hover:bg-red-500/10 rounded-lg transition-all"
+                          >
+                            🗑️
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Study Tab */}
+        {activeTab === 'study' && (
+          <>
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 mb-10">
           <div className="bg-gradient-to-br from-emerald-500/20 to-emerald-600/5 border border-emerald-500/20 rounded-2xl p-4 text-center">
@@ -2568,6 +2765,8 @@ export default function BarPrepApp() {
             ))}
           </div>
         </div>
+          </>
+        )}
       </main>
 
       <footer className="text-center py-8 text-xs text-white/20">
