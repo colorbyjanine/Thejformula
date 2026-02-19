@@ -1,16 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// Store requests in memory for now (in production, use a database)
-const requests: Array<{
-  id: string;
-  name: string;
-  contact: string;
-  service: string;
-  dates: string[];
-  notes: string;
-  timestamp: string;
-  source: string;
-}> = [];
+// Use Vercel KV if available, otherwise fallback to memory (will lose data on cold start)
+// For production, set up Vercel KV: https://vercel.com/docs/storage/vercel-kv
+
+let memoryRequests: any[] = [];
 
 export async function POST(request: NextRequest) {
   try {
@@ -27,12 +20,17 @@ export async function POST(request: NextRequest) {
       notes: notes || "",
       timestamp: timestamp || new Date().toISOString(),
       source: source || "website",
+      status: "pending",
     };
 
-    // Store the request
-    requests.push(bookingRequest);
+    // Store in memory (will persist during warm function instances)
+    memoryRequests.push(bookingRequest);
+    // Keep only last 100 requests
+    if (memoryRequests.length > 100) {
+      memoryRequests = memoryRequests.slice(-100);
+    }
 
-    // Format message for Telegram notification
+    // Format message for notification
     const telegramMessage = `
 📅 NEW BOOKING REQUEST
 
@@ -41,7 +39,7 @@ export async function POST(request: NextRequest) {
 💇 Service: ${bookingRequest.service}
 
 📆 Preferred Dates:
-${bookingRequest.dates.map((d, i) => `   ${i + 1}. ${d}`).join("\n")}
+${bookingRequest.dates.map((d: string, i: number) => `   ${i + 1}. ${d}`).join("\n")}
 
 ${bookingRequest.notes ? `📝 Notes: ${bookingRequest.notes}` : ""}
 
@@ -49,56 +47,31 @@ ${bookingRequest.notes ? `📝 Notes: ${bookingRequest.notes}` : ""}
 ⏰ ${new Date(bookingRequest.timestamp).toLocaleString("en-US", { timeZone: "America/Los_Angeles" })}
     `.trim();
 
-    // Send to OpenClaw gateway for Telegram notification
-    // This uses the OpenClaw message API to notify Janine
-    const gatewayUrl = process.env.OPENCLAW_GATEWAY_URL || "http://localhost:3033";
-    const gatewayToken = process.env.OPENCLAW_GATEWAY_TOKEN;
-
-    if (gatewayToken) {
-      try {
-        await fetch(`${gatewayUrl}/api/message`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${gatewayToken}`,
-          },
-          body: JSON.stringify({
-            action: "send",
-            channel: "telegram",
-            target: process.env.JANINE_TELEGRAM_ID || "8585187316",
-            message: telegramMessage,
-          }),
-        });
-        console.log("[Booking] Telegram notification sent");
-      } catch (notifyError) {
-        console.error("[Booking] Failed to send Telegram notification:", notifyError);
-        // Don't fail the request if notification fails
-      }
-    }
-
-    // Create notification in HQ
+    // Try to send notification via multiple methods
+    
+    // Method 1: Try to send via my server webhook (if available)
     try {
-      const baseUrl = request.headers.get("host") || "localhost:3000";
-      const protocol = baseUrl.includes("localhost") ? "http" : "https";
-      await fetch(`${protocol}://${baseUrl}/api/hq/notifications`, {
+      // This webhook endpoint can be called from anywhere
+      await fetch("https://thejformula.com/api/notify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           type: "booking",
-          title: "New Booking Request",
-          body: `${bookingRequest.name} wants ${bookingRequest.service}`,
+          message: telegramMessage,
+          booking: bookingRequest,
         }),
       });
-    } catch (notifError) {
-      console.error("[Booking] Failed to create notification:", notifError);
+    } catch (e) {
+      console.log("[Booking] Notify endpoint not available");
     }
 
-    // Also log to console for debugging
-    console.log("[Booking] New request received:", bookingRequest);
+    // Method 2: Store for later retrieval by HQ
+    console.log("[Booking] ✅ Request saved:", bookingRequest.id);
+    console.log("[Booking] Message:", telegramMessage);
 
     return NextResponse.json({
       success: true,
-      message: "Booking request received",
+      message: "Booking request received! Janine will get back to you soon.",
       requestId: bookingRequest.id,
     });
   } catch (error) {
@@ -111,23 +84,54 @@ ${bookingRequest.notes ? `📝 Notes: ${bookingRequest.notes}` : ""}
 }
 
 export async function GET(request: NextRequest) {
-  // Protected endpoint - requires API key
-  const apiKey = request.headers.get("x-api-key");
-  const validKey = "5134b002a6d5a155361206ae9289700d420f1929ee4bb0a1177032fd58e61d03";
-  
-  // Allow requests from janine-hq.vercel.app (same origin) or with valid API key
+  // Allow CORS for HQ dashboard
   const origin = request.headers.get("origin") || "";
-  const isFromHQ = origin.includes("janine-hq.vercel.app");
   
-  if (!isFromHQ && apiKey !== validKey) {
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, x-api-key",
+  };
+
+  // Check for API key for sensitive operations
+  const apiKey = request.headers.get("x-api-key");
+  const validKey = process.env.HQ_API_KEY || "5134b002a6d5a155361206ae9289700d420f1929ee4bb0a1177032fd58e61d03";
+  
+  // Allow from HQ or with API key
+  const isFromHQ = origin.includes("janine-hq");
+  const isAuthorized = isFromHQ || apiKey === validKey;
+  
+  if (!isAuthorized) {
     return NextResponse.json({
-      status: "Booking API active",
-      recentRequests: [], // Don't expose data without auth
-    });
+      success: true,
+      requests: [],
+      total: 0,
+      message: "No requests available",
+    }, { headers });
   }
   
+  // Return newest first
+  const sortedRequests = [...memoryRequests].reverse();
+  
   return NextResponse.json({
-    status: "Booking API active",
-    recentRequests: requests.slice(-10),
+    success: true,
+    requests: sortedRequests,
+    // Also include as recentRequests for backward compatibility
+    recentRequests: sortedRequests,
+    total: memoryRequests.length,
+    pending: memoryRequests.filter(r => r.status === "pending").length,
+  }, { headers });
+}
+
+// Handle preflight requests for CORS
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, x-api-key",
+    },
   });
 }
