@@ -115,6 +115,7 @@ const collections = {
       { name: "iRestore Pro Laser Hair Growth Cap", amazonId: "B07M5X4D3P", price: "$799", tag: "Investment" },
       { name: "Laser Therapy Hair Growth Comb", amazonId: "B0DWKD697N", price: "$50", tag: "Hair Growth" },
       { name: "Shiseido Eyelash Curler", amazonId: "B000FNF5IO", price: "$23", tag: "Cult Fave" },
+      { name: "KUNPHY Ultrasonic Jewelry Cleaner 12oz", amazonId: "B08LN5Z9WH", price: "$24", tag: "Jewelry Care" },
     ],
   },
   fashion: {
